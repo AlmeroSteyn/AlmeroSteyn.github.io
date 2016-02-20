@@ -8,7 +8,7 @@ description: >
 baseurl: ""
 url: "http://almerosteyn.github.io"
 fixedNav: 'true' # true or false
-theme: orange # green, blue, orange, purple, grey
+theme: green # green, blue, orange, purple, grey
 twitterUsername: kryptos_rsa
 githubUsername: AlmeroSteyn
 dribbbleUsername:
