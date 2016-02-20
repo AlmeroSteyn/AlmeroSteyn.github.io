@@ -320,5 +320,3 @@ One final caveat was to define the functionBinding function in my class definiti
 This way I am also able to write the function call with TypeScript without generating compiler errors.
 
 And that solves all the issues of translating the javaScript version of the AngularJS 1.5 component to TypeScript.
-
-
