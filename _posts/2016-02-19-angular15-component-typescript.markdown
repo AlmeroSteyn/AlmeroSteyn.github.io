@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Creating an AngularJS 1.5 component in TypeScript without losing your hair."
+description: "Crash course in making a shiny AngularJS 1.5 component in Typescript..."
 date:   2016-02-19 19:52:21 -0200
 categories: angularJS1.5 component typescript
 ---
