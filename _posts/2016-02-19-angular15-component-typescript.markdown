@@ -83,7 +83,7 @@ The template:
 {% highlight html %}
 <div>
     <h1>{{::$ctrl.headerText}}</h1>
-    <span>You have clicked the button {{$ctrl.dataBinding}} times.</span>
+    <span>You have clicked the button {{'{{$ctrl.dataBinding}}'}} times.</span>
     <button ng-click="$ctrl.add()">Add Click</button>
 </div>
 {% endhighlight %}
