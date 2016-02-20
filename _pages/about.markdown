@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<p><div><image class="author-photo" src="/css/images/avatar.jpg" alt="Author Photo" title="Author Photo"></div><p>
+![Author Photo](/css/images/avatar.jpg "Author Photo"){: .author-photo}
 
 I am crazy about Angular. Let's get that straight. Hey, I work as an Angular Engineer and Trainer. That's a lot of Angular
 every day!
