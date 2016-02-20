@@ -4,8 +4,11 @@ title:  "Creating an AngularJS 1.5 component in TypeScript without losing your h
 date:   2016-02-19 19:52:21 -0200
 categories: angularJS1.5 component typescript
 ---
+*Refers to AngularJS v1.5.0.*
+
 This article assumes that you already know what is new in AngularJS 1.5 with regards to building component 
-directives and that you have already looked at creating AngularJS elements in TypeScript.
+directives and that you have already looked at creating AngularJS elements in 
+<a href="http://www.typescriptlang.org/" target="_blank">TypeScript</a>.
 
 At the time of writing this, I had just embarked on my first attempt to create applications 
 in AngularJS using TypeScript. All was going reasonably well until I started refactoring my 
