@@ -13,7 +13,7 @@ directives and that you have already looked at creating AngularJS elements in
 At the time of writing this, I had just embarked on my first attempt to create applications 
 in AngularJS using TypeScript. All was going reasonably well until I started refactoring my 
 brand new and shiny AngularJS 1.5 Component file. As I was also using this exercise to learn TypeScript, 
-I guess you can imagine the consequences…
+I guess you can imagine the consequences…fds
 
 For the record I have been using AngularJS to create enterprise applications for a while, but in Javascript.  
 So translating standard element directives into the new component structure was an easy refactor.
