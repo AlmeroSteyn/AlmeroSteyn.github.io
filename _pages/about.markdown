@@ -8,7 +8,7 @@ permalink: /about/
 I am crazy about Angular. Let's get that straight. Hey, I work as an Angular Engineer and Trainer. That's a lot of Angular
 every day!
 
-I am also wild about a11y.
+I am also wild about <a href="https://en.wikipedia.org/wiki/Accessibility" target="_blank">a11y</a>.
 
 Let's get something else straight. The internet is for everyone. Those making webpages deserve great tools and technologies, 
 while those we inflict our creations on deserve a great accessible experience.
