@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Angular component"
+title:  "Creating an AngularJS 1.5 component in TypeScript without losing your hair."
 date:   2016-02-19 19:52:21 -0200
-categories: jekyll update
+categories: angularJS1.5 component typescript
 ---
 Does this work?dsa
 
