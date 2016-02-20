@@ -128,19 +128,17 @@ Sitting there, looking accusingly at the search result screen, it dawned on me t
 file for AngularJS. So I fetched the latest version of the angular.d.ts file from the 
 <a href="http://definitelytyped.org/" target="_blank">DefinitelyTyped</a>
 website and found that some unnamed savior had already added the types for the AngularJS 1.5 component. 
-Whoever you are, you rock! (*Note: At the time of writing the type file still did not include the changes 
-to the component interface from AngularJS 1.5-rc.1*)
+Whoever you are, you rock!
 
 {% highlight javascript %}
 interface IComponentOptions {
- controller?: string | Function;
+ controller?: any;
  controllerAs?: string;
  template?: string | Function;
  templateUrl?: string | Function;
  bindings?: any;
  transclude?: boolean;
- isolate?: boolean;
- restrict?: string;
+ require?: Object;
  $canActivate?: () => boolean;
  $routeConfig?: RouteDefinition[];
 }
@@ -192,8 +190,7 @@ My component will fetch its HTML from a file and, as I also want some function, 
 So I created a class implementing the interface from the angular.d.ts file and defined 
 the three properties I want to use in this example. As all properties of the configuration 
 object are marked as optional in the interface I am free to only define the ones I will 
-actually use. YAY! (*This also means that the current component interface definition still 
-works with the slightly different component definition object from AngularJS 1.5.0. Double YAY!*).
+actually use. YAY!
 
 Having defined the class, I can now set these properties in my class constructor. 
 Then I am able to register it with AngularJS using the new keyword and that will generate 
