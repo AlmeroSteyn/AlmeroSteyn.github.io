@@ -3,7 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+{:refdef: style="text-align: center;"}
 ![Author Photo](/css/images/avatar.jpg "Author Photo"){: .author-photo}
+{: refdef}
 
 I am crazy about Angular. Let's get that straight. Hey, I work as an Angular Engineer and Trainer. That's a lot of Angular
 every day!
