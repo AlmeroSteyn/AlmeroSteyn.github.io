@@ -5,12 +5,13 @@ permalink: /about/
 ---
 ![Author Photo](/css/images/avatar.jpg "Author Photo")
 
-The maker of this blog is crazy about Angular. Let's get that straight. He works as an Angular Engineer and Trainer.
+I am crazy about Angular. Let's get that straight. Hey, I work as an Angular Engineer and Trainer. That's a lot of Angular
+every day!
 
-He is also wild about a11y.
+I am also wild about a11y.
 
-He also believes that the internet is for everyone. Those making webpages deserve great tools and technologies, while those
-we inflict our creations on deserve a great accessible experience.
+Let's get something else straight. The internet is for everyone. Those making webpages deserve great tools and technologies, 
+while those we inflict our creations on deserve a great accessible experience.
 
 When not busy working on awesome projects at a great company in the Netherlands, called <a href="http://www.qdelft.nl" target="_blank">QDelft</a>, 
-he can be found working on this blog, looking at great new technologies or spending his time of one of various other geeky pastimes.
+I can be found working on this blog, looking at great new technologies or spending my time on one of various other geeky pastimes.
