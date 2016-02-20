@@ -15,7 +15,7 @@ in AngularJS using TypeScript. All was going reasonably well until I started ref
 brand new and shiny AngularJS 1.5 Component file. As I was also using this exercise to learn TypeScript, 
 I guess you can imagine the consequences…
 
-For the record I have been using AngularJS to create enterprise applications for a while, but in Javascript.  
+For the record I have been using AngularJS to create enterprise applications for a while, but in javaScript.  
 So translating standard element directives into the new component structure was an easy refactor.
 
 However, the TypeScript version posed a few more challenges. This article will show you how to use TypeScript to 
@@ -63,7 +63,7 @@ module app.directives {
         constructor() {
             this.bindings = {
                 textBinding: '@',
-                dataBinding: '=',
+                dataBinding: '<',
                 functionBinding: '&'
             };
             this.controller = SomeComponentController;
@@ -89,7 +89,7 @@ The template:
 
 **Remember your training, Luke.**
 
-So with one hand behind your back, blindfolded, while tapdancing with one foot you could write the following JavaScript 
+So with one hand behind your back, blindfolded, while tapdancing with one foot you could write the following javaScript 
 to create the component:
 
 {% highlight javascript %}
@@ -99,7 +99,7 @@ to create the component:
     angular.module('appModule').component('someComponent', {
         bindings: {
             textBinding: '@',
-            dataBinding: '=',
+            dataBinding: '<',
             functionBinding: '&'
         },
         controller: SomeComponentController,
@@ -125,7 +125,8 @@ This feels like visiting the dusty basement of Search Engine Optimization. What?
 NOOOOOOOOOO!!!!!!!!!”*
 
 Sitting there, looking accusingly at the search result screen, it dawned on me to have a look at the 
-file for Angular. So I fetched the latest version of the angular.d.ts file from the DefinitelyTyped 
+file for AngularJS. So I fetched the latest version of the angular.d.ts file from the 
+<a href="http://definitelytyped.org/" target="_blank">DefinitelyTyped</a>
 website and found that some unnamed savior had already added the types for the AngularJS 1.5 component. 
 Whoever you are, you rock! (*Note: At the time of writing the type file still did not include the changes 
 to the component interface from AngularJS 1.5-rc.1*)
@@ -147,7 +148,7 @@ interface IComponentOptions {
 
 So I flexed my awesome five-day-old TypeScript skills and realized again why, despite knowing that 
 this is also recommended best practice in AngularJS 1.x, there remains a resistance amongst some 
-Javascript developers to make the transition to TypeScript. I mean, how do you translate this into a 
+javaScript developers to make the transition to TypeScript. I mean, how do you translate this into a 
 working piece of code?
 
 What makes this quite different to the normal AngularJS directive examples in TypeScript is that the 
@@ -157,7 +158,7 @@ instance of a class within TypeScript.
 
 Now everything should be easy, yes? Well no, not if you have not done this before.
 
-So let’s start by defining the body of the component and registering it with Angular.
+So let’s start by defining the body of the component and registering it with AngularJS.
 
 {% highlight javascript %}
 module app.directives {
@@ -171,7 +172,7 @@ module app.directives {
         constructor() {
             this.bindings = {
                 textBinding: '@',
-                dataBinding: '=',
+                dataBinding: '<',
                 functionBinding: '&'
             };
             this.controller = SomeComponentController;
@@ -195,7 +196,7 @@ actually use. YAY! (*This also means that the current component interface defini
 works with the slightly different component definition object from AngularJS 1.5.0. Double YAY!*).
 
 Having defined the class, I can now set these properties in my class constructor. 
-Then I am able to register it with angular using the new keyword and that will generate 
+Then I am able to register it with AngularJS using the new keyword and that will generate 
 the needed configuration object to get my component working.
 
 BUT, that was only step one. The real challenge for me was creating my controller. 
@@ -237,14 +238,15 @@ class SomeComponentController implements ISomeComponentController {
 }
 {% endhighlight %}
 
-Like many AngularJS developers today, I use the John Papa AngularJS Style Guide. 
+Like many AngularJS developers today, I use the 
+<a href="https://github.com/johnpapa/angular-styleguide" target="_blank">John Papa AngularJS Style Guide</a>. 
 [*As an AngularJS developer you need to at least be aware of this document. 
 So if you are reading this and have not seen this style guide, please read it*]. 
 According to the guide, it is important to define the user interface of the AngularJS element 
 you are writing as high up in the code file as possible. This makes it instantly clear to the 
-reader of your code what the intention of you code is.
+reader of your code what the intention of your code is.
 
-When writing the AngularJS 1.5 component in Javascript, this interface becomes clear 
+When writing the AngularJS 1.5 component in javaScript, this interface becomes clear 
 from the configuration object, but in TypeScript we use an interface for the job.
 
 So, what is the interface of my component? As it turns out, there are two.
@@ -319,7 +321,7 @@ class SomeComponentController implements ISomeComponentController {
 One final caveat was to define the functionBinding function in my class definition by using the fat arrow syntax. 
 This way I am also able to write the function call with TypeScript without generating compiler errors.
 
-And that solves all the issues of translating the Javascript version of the AngularJS 1.5 component to TypeScript.
+And that solves all the issues of translating the javaScript version of the AngularJS 1.5 component to TypeScript.
 
 Please let me know if you found this article useful and if it helped you. Also feel free to share the 
 alternative methods you have found to solve this problem.
