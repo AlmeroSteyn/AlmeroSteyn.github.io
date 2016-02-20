@@ -21,7 +21,8 @@ create AngularJS 1.5 Components.
 For those only interested in the code, here it is, but unless it is immediately clear why this is working, 
 I invite you to stay for the discussion.
 
-{% highlight typescript %}
+{% highlight javascript %}
+
 module app.directives {
  
     interface ISomeComponentBindings {
