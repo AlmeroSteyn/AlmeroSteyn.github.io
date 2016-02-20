@@ -120,10 +120,10 @@ to create the component:
 But how does this work in TypeScript? I mean literally thousands of people have done this with the new 1.5 
 version of AngularJS and posted their results online, haven’t they?
 
-*“Hello Google my old friend, I’ve come to speak to you again! Yeah I will have this up and 
-running in no time. Yeah, any time now. Urm…. Ok why am I on page 2 of the search results? 
-This feels like visiting the dusty basement of Search Engine Optimization. What? What am I doing on page 3?! 
-NOOOOOOOOOO!!!!!!!!!”*
+>*“Hello Google my old friend, I’ve come to speak to you again! Yeah I will have this up and 
+>running in no time. Yeah, any time now. Urm…. Ok why am I on page 2 of the search results? 
+>This feels like visiting the dusty basement of Search Engine Optimization. What? What am I doing on page 3?! 
+>NOOOOOOOOOO!!!!!!!!!”*
 
 Sitting there, looking accusingly at the search result screen, it dawned on me to have a look at the 
 file for AngularJS. So I fetched the latest version of the angular.d.ts file from the 
