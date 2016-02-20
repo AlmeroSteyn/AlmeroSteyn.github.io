@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<img src="/css/images/avatar.jpg" alt="Author Photo" title="Author Photo">
+<img class="author-photo" src="/css/images/avatar.jpg" alt="Author Photo" title="Author Photo">
 
 I am crazy about Angular. Let's get that straight. Hey, I work as an Angular Engineer and Trainer. That's a lot of Angular
 every day!
