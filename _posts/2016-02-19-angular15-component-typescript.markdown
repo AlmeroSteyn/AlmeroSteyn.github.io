@@ -321,7 +321,4 @@ This way I am also able to write the function call with TypeScript without gener
 
 And that solves all the issues of translating the javaScript version of the AngularJS 1.5 component to TypeScript.
 
-Please let me know if you found this article useful and if it helped you. Also feel free to share the 
-alternative methods you have found to solve this problem.
-
 
