@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-{:refdef: style="text-align: center;"}
+{:refdef: class="image-parent"}
 ![Author Photo](/css/images/avatar.jpg "Author Photo"){: .author-photo}
 {: refdef}
 
