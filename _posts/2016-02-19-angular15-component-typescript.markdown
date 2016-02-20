@@ -82,7 +82,7 @@ The template:
 
 {% highlight html %}
 <div>
-    <h1>{{::$ctrl.headerText}}</h1>
+    {% raw %}<h1>{{::$ctrl.headerText}}</h1>{% endraw %}
     {% raw %}<span>You have clicked the button {{$ctrl.dataBinding}} times.</span>{% endraw %}
     <button ng-click="$ctrl.add()">Add Click</button>
 </div>
