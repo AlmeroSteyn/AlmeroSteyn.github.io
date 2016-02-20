@@ -13,7 +13,7 @@ directives and that you have already looked at creating AngularJS elements in
 At the time of writing this, I had just embarked on my first attempt to create applications 
 in AngularJS using TypeScript. All was going reasonably well until I started refactoring my 
 brand new and shiny AngularJS 1.5 Component file. As I was also using this exercise to learn TypeScript, 
-I guess you can imagine the consequences…fds
+I guess you can imagine the consequences…
 
 For the record I have been using AngularJS to create enterprise applications for a while, but in Javascript.  
 So translating standard element directives into the new component structure was an easy refactor.
@@ -117,7 +117,7 @@ to create the component:
 {% endhighlight %}
 
 But how does this work in TypeScript? I mean literally thousands of people have done this with the new 1.5 
-version of Angular and posted their results online, haven’t they?
+version of AngularJS and posted their results online, haven’t they?
 
 *“Hello Google my old friend, I’ve come to speak to you again! Yeah I will have this up and 
 running in no time. Yeah, any time now. Urm…. Ok why am I on page 2 of the search results? 
