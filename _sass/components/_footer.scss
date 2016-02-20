@@ -12,6 +12,7 @@
 
   p {
     @include fs--meta;
+    margin-bottom: 10px;
   }
 
   a:not(:first-of-type) {
