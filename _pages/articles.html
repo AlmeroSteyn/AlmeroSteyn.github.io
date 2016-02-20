@@ -11,11 +11,10 @@ permalink: /articles/
         <h2 class="c-archives__year" id="{{ this_year }}-ref">{{this_year}}</h2>
         <ul class="c-archives__list">
     {% endif %}
-        <li class="c-archives__item">
-            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <p>{{ post.description}}</p>
-            <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-        </li>
+        <dl class="c-archives__item">
+            <dt><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></dt>
+            <dd>{{ post.description}} - {{ post.date | date: "%b %-d, %Y" }}</dd>
+        </dl>
     {% if forloop.last %}
         </ul>
     {% else %}
