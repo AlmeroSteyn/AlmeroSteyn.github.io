@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<image src="http://media02.hongkiat.com/sass-vs-less/sass-less-cover.jpg" alt="Author Photo" title="Author Photo">
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 The maker of this blog is crazy about Angular. Let's get that straight. He works as an Angular Engineer and Trainer.
 
