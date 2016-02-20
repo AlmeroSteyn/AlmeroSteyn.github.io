@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-![Author Photo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Author Photo")
+![Author Photo](/css/images/avatar.jpg "Author Photo")
 
 The maker of this blog is crazy about Angular. Let's get that straight. He works as an Angular Engineer and Trainer.
 
