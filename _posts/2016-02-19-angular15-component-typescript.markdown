@@ -83,3 +83,8 @@ The template:
     <button ng-click="$ctrl.add()">Add Click</button>
 </div>
 {% endhighlight %}
+
+**Remember your training, Luke.**
+
+So with one hand behind your back, blindfolded, while tapdancing with one foot you could write the following JavaScript 
+to create the component:
