@@ -4,24 +4,30 @@ title: Articles
 permalink: /articles/
 ---
 {% for post in site.posts  %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-    {% if forloop.first %}
-        <h2 class="c-archives__year" id="{{ this_year }}-ref">{{this_year}}</h2>
-        <ul class="c-archives__list">
+{% if forloop.first %}
+<section>
+<h2 class="c-archives__year" id="{{ this_year }}-ref">{{this_year}}</h2>
+<ul class="c-archives__list">
     {% endif %}
-        <dl class="c-archives__item">
-            <dt><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></dt>
-            <dd>{{ post.description}} - {{ post.date | date: "%b %-d, %Y" }}</dd>
-        </dl>
+    <li>
+        <article class="c-archives__item">
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <p>{{ post.description}} - {{ post.date | date: "%b %-d, %Y" }}</p>
+        </article>
+    </li>
     {% if forloop.last %}
-        </ul>
-    {% else %}
-        {% if this_year != next_year %}
-        </ul>
-        <h2 class="c-archives__year" id="{{ next_year }}-ref">{{next_year}}</h2>
-        <ul class="c-archives__list">
-        {% endif %}
+</ul>
+</section>
+{% else %}
+{% if this_year != next_year %}
+</ul>
+</section>
+<section>
+<h2 class="c-archives__year" id="{{ next_year }}-ref">{{next_year}}</h2>
+<ul class="c-archives__list">
     {% endif %}
-{% endfor %}
+    {% endif %}
+    {% endfor %}
