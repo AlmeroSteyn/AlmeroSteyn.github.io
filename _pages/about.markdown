@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<article markdown="1">
+<article role="article" markdown="1">
 {:refdef: class="image-parent"}
 ![Author Photo](/css/images/avatar.jpg){: .author-photo}
 {: refdef}
