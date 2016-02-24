@@ -15,8 +15,17 @@
     margin-bottom: 10px;
   }
 
-  a:not(:first-of-type) {
-    margin-left: 2rem;
+  @media screen and (min-width: 500px) {
+    a:not(:first-of-type) {
+      margin-left: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    a {
+      display: block;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -25,11 +34,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
