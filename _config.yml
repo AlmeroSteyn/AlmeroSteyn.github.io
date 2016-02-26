@@ -15,10 +15,9 @@ codepenUsername:
 # Build settings
 permalink: /:year/:month/:title
 markdown: kramdown
-# include: [_pages]
+include: [_pages]
 # highlighter: pygments
-# fdsfdsfds
-port: 8889
+# port: 8889
 exclude: [_site, CHANGELOG.md, LICENSE, README.md]
 sass:
   style: compressed
