@@ -26,6 +26,16 @@ quite a few answers that worked very well. And that is when we decided to create
 
 Who could have imagined the journey we were about to embark on!
 
+So let's summarise the lessons we have learnt. After that I will go into each point showing the result to give you an 
+idea of how to approach this.
+
+* Developers love code so give them code.
+* Create a structure that you would like to see.
+* Stay up to date with your course material.
+* Don't cheat! Don't show something you don't do yourself.
+* Make it fun. Humour is your friend.
+* 
+
 >*"But there are so many training courses and tutorials our there!"*
 
 And that is true, but what we wanted to do differently was to give a one-stop-shop for a someone who wanted to use 
@@ -79,6 +89,7 @@ Yup, as there was to be sections on unit testing, the example application itself
 </figure>
 {:/}
 
+Creating working code is what we do as developers. But we needed  
 
 
 
