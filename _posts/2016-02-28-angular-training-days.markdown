@@ -29,12 +29,15 @@ Who could have imagined the journey we were about to embark on!
 So let's summarise the lessons we have learnt. After that I will go into each point showing the result to give you an 
 idea of how to approach this.
 
-* Developers love code so give them code.
-* Create a structure that you would like to see.
-* Stay up to date with your course material.
+* Developers love code.
+* 
+* Create a structure that does not fall down.
+* People come for the latest information.
 * Don't cheat! Don't show something you don't do yourself.
 * Make it fun. Humour is your friend.
-* 
+* Enjoy the little things.
+* Keep them awake!
+* Give them something to take home.
 
 >*"But there are so many training courses and tutorials our there!"*
 
