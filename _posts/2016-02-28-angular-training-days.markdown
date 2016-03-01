@@ -151,6 +151,31 @@ We ended up supporting our example application with a set of slides designed to 
 </figure>
 {:/}
 
+**Enjoy the little things.**
+
+Adding some nice touches to your training will make it just that little bit nicer to attend. You do not need to go 
+whole hog, of course. Everyone and every company has it's limits. But do what you can.
+
+For us, one such little extra was laminating the course certificates.
+
+{::nomarkdown}
+<figure>
+    <a href="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" target="_blank">
+        <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" alt="Laminating the certificates.">
+        <figcaption>The weather may be dull but our training won't be.</figcaption>
+    </a>
+</figure>
+{:/}
+
+{::nomarkdown}
+<figure>
+    <a href="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" target="_blank">
+        <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" alt="Trimming the laminated certificates.">
+        <figcaption>Who does not love using one of these?</figcaption>
+    </a>
+</figure>
+{:/}
+
 
 {::nomarkdown}
 <figure>
