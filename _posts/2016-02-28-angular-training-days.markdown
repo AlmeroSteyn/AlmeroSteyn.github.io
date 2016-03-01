@@ -44,7 +44,11 @@ idea of how to approach this.
 Let's get this out there from the get-go. The reason anyone wants to come to your training course is because you
 know something they don't. They already know this. You don't have to keep telling them that.
 
-Who amongst us have not at some point been 
+Few things will frustrate your students as much as the feeling that your course can only be understood by someone 
+who already knows the subject matter.
+
+So avoid acronym hell and explain things that seem obvious to you. You will be surprised how many people in your course
+have never even heard about the concept that you use every day.
 
 **Developers love code.**
 
@@ -66,7 +70,8 @@ application we had ever seen*).
 </figure>
 {:/}
 
-This application would show code examples inside areas demonstrating the actual running examples.
+We created a showcase of example code blocks right next to actual working examples of the code being demonstrated. This 
+way the developer in question could hack into the actual working code if required.
 
 {::nomarkdown}
 <figure>
@@ -76,6 +81,18 @@ This application would show code examples inside areas demonstrating the actual 
     </a>
 </figure>
 {:/}
+
+**Create a structure that does not fall down.**
+
+Your course will stand or fall depending on its structure. You got to get this one right.
+
+Separate the easy concepts from the hard ones and don't go jumping in with a gigantic **YEEEEHAAAAWWWW!**. Create a 
+logical flow of concepts and bounce it of someone else to see if it makes sense to them as well.
+
+Once you have an outline you can start filling out the concepts. If the outline is clear the course has a very good
+chance of staying clear.
+
+
 
 And the most important part was staying up to date with the newest functionality in the framework.
 
