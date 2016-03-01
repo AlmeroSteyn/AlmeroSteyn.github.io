@@ -32,7 +32,7 @@ idea of how to approach this.
 * There are no experts in your course.
 * Developers love code.
 * Create a structure that does not fall down.
-* People come for the latest information.
+* Don't sell antiques.
 * Don't cheat! Don't show something you don't do yourself.
 * Make it fun. Humour is your friend.
 * Enjoy the little things.
@@ -89,25 +89,38 @@ Your course will stand or fall depending on its structure. You got to get this o
 Separate the easy concepts from the hard ones and don't go jumping in with a gigantic **YEEEEHAAAAWWWW!**. Create a 
 logical flow of concepts and bounce it of someone else to see if it makes sense to them as well.
 
-Once you have an outline you can start filling out the concepts. If the outline is clear the course has a very good
-chance of staying clear.
+Once you have an outline you can start filling out the concepts. If the outline is clear and understandable you are well
+on your way to creating a course that others can follow.
 
+**Don't sell antiques.**
 
+Another reason people go to training courses is to learn about the latest and greatest in their area of interest. No 
+one wants to see how things were done yesterday so keep your course updated. 
 
-And the most important part was staying up to date with the newest functionality in the framework.
+We kept up to date with our example application, refactoring it before every new session and adding the new stable
+functions in AngularJS as well as keeping up to date with best practise. 
+ 
+By doing this we could proudly show the AngularJS 1.5.0 component within days of its release!
 
 {::nomarkdown}
 <figure>
     <a href="/css/images/2016-02-28-angular-training-days/app-3.jpg" target="_blank">
         <img src="/css/images/2016-02-28-angular-training-days/app-3.jpg" alt="Example application with newest functionality covered.">
-        <figcaption>Moving quickly to include the newest function.</figcaption>
+        <figcaption>We moved quickly to include the newest function.</figcaption>
     </a>
 </figure>
 {:/}
 
->*"It is not fair to ask of others what you are not willing to do yourself."* - Eleanor Roosevelt
- 
-Yup, as there was to be sections on unit testing, the example application itself would need to be tested.
+**Don't cheat! Don't show something you don't do yourself.**
+
+If you want your students to follow you have to be willing to do it all yourself. Do not opt for shortcuts and steer 
+clear of *Don't do as I do, do as I say*.
+
+In our training course we covered AngularJS unit testing in detail. So we decided to write unit tests for our training
+application. And I am talking 100% code coverage here.
+
+Doing this means more work later when you have to adjust, but go this extra mile and most of your students will be 
+willing to walk that mile with you.
 
 {::nomarkdown}
 <figure>
@@ -118,8 +131,25 @@ Yup, as there was to be sections on unit testing, the example application itself
 </figure>
 {:/}
 
-Creating working code is what we do as developers. But we needed  
+**Make it fun. Humour is your friend.**
 
+If your students are smiling and laughing it is usually a good sign. Unless they are laughing at you, of course.
+
+But seriously, don't be too serious. Keep the mood light and add fun things to your training. 
+
+That said, don't be a clown. No one likes a clown. Clowns are creepy. (*If you are a reading this and your other
+occupation is being a clown, you'll know this is a joke as you are a clown.*)
+
+We ended up supporting our example application with a set of slides designed to be as much fun as possible.
+
+{::nomarkdown}
+<figure>
+    <a href="/css/images/2016-02-28-angular-training-days/slides.jpg" target="_blank">
+        <img src="/css/images/2016-02-28-angular-training-days/slides.jpg" alt="Example of the slides used.">
+        <figcaption>Fun slides can make all the difference.</figcaption>
+    </a>
+</figure>
+{:/}
 
 
 {::nomarkdown}

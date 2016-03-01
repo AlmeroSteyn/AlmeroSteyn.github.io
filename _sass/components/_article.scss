@@ -46,4 +46,11 @@
       background: $c__light-grey;
     }
   }
+
+  article {
+    figcaption {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+  }
 }
