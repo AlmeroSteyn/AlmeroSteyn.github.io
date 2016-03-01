@@ -29,8 +29,8 @@ Who could have imagined the journey we were about to embark on!
 So let's summarise the lessons we have learnt. After that I will go into each point showing the result to give you an 
 idea of how to approach this.
 
+* There are no experts in your course.
 * Developers love code.
-* 
 * Create a structure that does not fall down.
 * People come for the latest information.
 * Don't cheat! Don't show something you don't do yourself.
@@ -39,14 +39,23 @@ idea of how to approach this.
 * Keep them awake!
 * Give them something to take home.
 
->*"But there are so many training courses and tutorials our there!"*
+**There are no experts in your course.**
 
-And that is true, but what we wanted to do differently was to give a one-stop-shop for a someone who wanted to use 
-AngularJS to develop serious applications. You know, translate the questions we struggled with into answers. And what
-better way is there than to present this in the form of raw functional code.
+Let's get this out there from the get-go. The reason anyone wants to come to your training course is because you
+know something they don't. They already know this. You don't have to keep telling them that.
 
-So we went to create a functional application that would serve as example for all the would be victims of our training
-course. 
+Who amongst us have not at some point been 
+
+**Developers love code.**
+
+The main reason we write code is because we love to code. Don't forget that. 
+
+This is the reason that every development course worth its salt features functional code examples.
+
+So we set out to make a one-stop-shop for a someone who wanted to use 
+AngularJS to develop serious applications. You know, translate the questions we struggled with into answers. And this
+lead to us creating the mother of all course example applications (*or at least the mother of all course example
+application we had ever seen*).
 
 {::nomarkdown}
 <figure>
