@@ -38,8 +38,9 @@ will be a short discussion about each point, tying it into our actual training c
 * [Make it fun. Humour is your friend.](#header-6)
 * [Enjoy the little things.](#header-7)
 * [Keep them awake!](#header-8)
-* [Give them something to take home.](#header-9)
-* [Claim your reward.](#header-10)
+* [Make them code.](#header-9)
+* [Give them something to take home.](#header-10)
+* [Claim your reward.](#header-11)
 </nav>
 
 <section markdown="1">
@@ -236,7 +237,22 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 
 <section markdown="1">
 <header markdown="1">
-## Give them something to take home. {#header-9}
+## Make them code. {#header-9}
+</header>
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-02-28-angular-training-days/homework.jpg" alt="Practical element of the course.">
+    <figcaption>Keep conversing with your audience.</figcaption>
+</figure>
+{:/}
+
+
+</section>
+
+<section markdown="1">
+<header markdown="1">
+## Give them something to take home. {#header-10}
 </header>
 
 You have to make sure that your attendees take something home from your course. 
@@ -258,7 +274,7 @@ We did this through certificates and copies of the fully functional code to use 
 
 <section markdown="1">
 <header markdown="1">
-## Claim your reward. {#header-10}
+## Claim your reward. {#header-11}
 </header>
 
 Some of the biggest rewards are yours. And it has nothing to do with stature.
