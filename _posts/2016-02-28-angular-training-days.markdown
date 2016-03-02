@@ -53,8 +53,8 @@ can teach them something they don't already know. And they already know this. Yo
 Few things will frustrate your students as much as the feeling that your course can only be understood by someone 
 who already knows the subject matter.
 
-So avoid acronym hell and explain things that seem obvious to you. You will be surprised how many people in your course
-have never even heard about the concept that you use every day.
+So avoid acronym hell and explain things even when they seem obvious to you. You use the terms every day, the developers
+in your training don't.
 </section>
 
 <section markdown="1">
@@ -66,10 +66,10 @@ The main reason we write code is because we love to code. Don't forget that.
 
 This is the reason that every development course worth its salt features functional code examples.
 
-So we set out to make a one-stop-shop for a someone who wanted to use 
-AngularJS to develop serious applications. You know, translate the questions we struggled with into answers. And this
-lead to us creating the mother of all course example applications (*or at least the mother of all course example
-application we had ever seen*).
+So we set out to make a one-stop-shop for someone who wanted to use 
+AngularJS to develop enterprise scale applications. You know, translate the questions we struggled with into answers. And this
+lead to us creating the mother of all course example applications (*or at least the mother of all example
+applications we had ever seen*).
 
 {::nomarkdown}
 <figure>
@@ -78,7 +78,7 @@ application we had ever seen*).
 </figure>
 {:/}
 
-We created a showcase of example code blocks right next to actual working examples of the code being demonstrated. This 
+We created a showcase of example code blocks running side by side with actual working examples of the code being demonstrated. This 
 way the developer in question could hack into the actual working code if required.
 
 {::nomarkdown}
