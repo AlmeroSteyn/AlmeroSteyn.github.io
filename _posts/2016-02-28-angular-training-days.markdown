@@ -38,6 +38,7 @@ idea of how to approach this.
 * Enjoy the little things.
 * Keep them awake!
 * Give them something to take home.
+* Claim your reward.
 
 **There are no experts in your course.**
 
@@ -208,6 +209,27 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 {:/}
 
 **Give them something to take home.**
+
+You have to make sure that your students take something home from your course. 
+
+The big, glaring, neon-sign, obvious takeaway should always be new knowledge. This is why they come to your course,
+so make sure you are adding value.
+
+But, aside from that, reinforce this with something else. 
+
+We did this by providing certificates.
+
+{::nomarkdown}
+<figure>
+    <a href="/css/images/2016-02-28-angular-training-days/result.jpg" target="_blank">
+        <img src="/css/images/2016-02-28-angular-training-days/result.jpg" alt="Course conclusion with certificates.">
+        <figcaption>Wrapping up another training.</figcaption>
+    </a>
+</figure>
+{:/}
+
+**Claim your reward.**
+
 
 {::nomarkdown}
 <figure>
