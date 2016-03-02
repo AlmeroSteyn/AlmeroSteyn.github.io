@@ -30,7 +30,7 @@ Let us start with a list of things to think about when creating training materia
 will be a short discussion about each point, tying it into our actual training course.
 
 <nav markdown="1">
-* [There are no experts in your course.](#header-1)
+* [There are no topic experts in your course.](#header-1)
 * [Developers love code.](#header-2)
 * [Create a structure that does not fall down.](#header-3)
 * [Don't sell antiques.](#header-4)
@@ -44,11 +44,11 @@ will be a short discussion about each point, tying it into our actual training c
 
 <section markdown="1">
 <header markdown="1">
-## There are no experts in your course. {#header-1}
+## There are no topic experts in your course. {#header-1}
 </header>
 
 Let's get this out there from the get-go. The reason anyone wants to come to your training course is because you
-know something they don't. They already know this. You don't have to keep telling them that.
+can teach them something they don't already know. And they already know this. You don't have to keep telling them that.
 
 Few things will frustrate your students as much as the feeling that your course can only be understood by someone 
 who already knows the subject matter.
