@@ -167,6 +167,8 @@ For us, one such little extra was laminating the course certificates.
 </figure>
 {:/}
 
+Then unleashing our pirate spirits on them...
+
 {::nomarkdown}
 <figure>
     <a href="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" target="_blank">
@@ -176,6 +178,31 @@ For us, one such little extra was laminating the course certificates.
 </figure>
 {:/}
 
+**Keep them awake!**
+
+If your students sleep through your training or spend that time on a mental stroll along some tropical island beach 
+they won't be taking much knowledge with them. Yup, this may seem obvious but in practise its more tricky. Especially 
+if you are really getting down into the nuts and bolts of particularly difficult sections.
+
+Keep an eye on your audience and engage with them often. Have a conversation with them and be lively.
+
+{::nomarkdown}
+<figure>
+    <a href="/css/images/2016-02-28-angular-training-days/course-active.jpg" target="_blank">
+        <img src="/css/images/2016-02-28-angular-training-days/course-active.jpg" alt="Pointing out important parts.">
+        <figcaption>Bring important concepts to their attention.</figcaption>
+    </a>
+</figure>
+{:/}
+
+{::nomarkdown}
+<figure>
+    <a href="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" target="_blank">
+        <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging the audience.">
+        <figcaption>Keep conversing with your audience.</figcaption>
+    </a>
+</figure>
+{:/}
 
 {::nomarkdown}
 <figure>
