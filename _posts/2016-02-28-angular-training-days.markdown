@@ -135,7 +135,7 @@ clear of *Don't do as I do, do as I say*.
 In our training course we covered AngularJS unit testing in detail. So we decided to write unit tests for our training
 application. And I am talking 100% code coverage here.
 
-Doing this means more work later when you have to adjust, but go this extra mile and your audience will be 
+Doing this means more work later when you have to adjust, but just go for it and your audience will be 
 willing to walk that extra mile with you.
 
 {::nomarkdown}
