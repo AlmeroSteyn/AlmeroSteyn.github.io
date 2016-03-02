@@ -51,7 +51,7 @@ will be a short discussion about each point, tying it into our actual training c
 Let's get this out there from the get-go. The reason anyone wants to come to your training course is because you
 can teach them something they don't already know. And they already know this. You don't have to keep telling them that.
 
-Few things will frustrate your students as much as the feeling that your course can only be understood by someone 
+Few things will frustrate your audience as much as the feeling that your course can only be understood by someone 
 who already knows the subject matter.
 
 So avoid acronym hell and explain things even when they seem obvious to you. You use the terms every day, the developers
@@ -75,7 +75,6 @@ applications we had ever seen*).
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/app-1.jpg" alt="Example application main screen.">
-    <figcaption>Creating an example application was a crucial ingredient.</figcaption>
 </figure>
 {:/}
 
@@ -85,7 +84,6 @@ way the developer in question could hack into the actual working code if require
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/app-2.jpg" alt="Example application showing code example.">
-    <figcaption>Showing code example in blocks containing the actual function was our goal.</figcaption>
 </figure>
 {:/}
 </section>
@@ -120,7 +118,6 @@ By doing this we could proudly show the AngularJS 1.5.0 component within days of
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/app-3.jpg" alt="Example application with newest functionality covered.">
-    <figcaption>We moved quickly to include the newest function.</figcaption>
 </figure>
 {:/}
 </section>
@@ -142,7 +139,6 @@ willing to walk that extra mile with you.
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/app-4.jpg" alt="Unit test coverage report showing 100 percent coverage">
-    <figcaption>100% unit test coverage.</figcaption>
 </figure>
 {:/}
 </section>
@@ -152,7 +148,7 @@ willing to walk that extra mile with you.
 ## Make it fun. Humour is your friend. {#header-6}
 </header>
 
-If your students are smiling and laughing it is usually a good sign. Unless they are laughing at you, of course.
+If your attendees are smiling and laughing it is usually a good sign. Unless they are laughing at you, of course.
 
 But seriously, don't be too serious. Keep the mood light and add fun things to your training. 
 
@@ -164,7 +160,6 @@ We ended up supporting our example application with a set of slides designed to 
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/slides.jpg" alt="Example of the slides used.">
-    <figcaption>Fun slides can make all the difference.</figcaption>
 </figure>
 {:/}
 </section>
@@ -182,7 +177,6 @@ For us, one such little extra was laminating the course certificates.
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" alt="Laminating the certificates.">
-    <figcaption>The weather may be dull but our training won't be.</figcaption>
 </figure>
 {:/}
 
@@ -191,7 +185,6 @@ Then unleashing our pirate spirit on them...
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" alt="Trimming the laminated certificates.">
-    <figcaption>Who does not love using one of these?</figcaption>
 </figure>
 {:/}
 
@@ -201,7 +194,6 @@ cookies!
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/training-setup.jpg" alt="Training venue.">
-    <figcaption>Training venue prepared and ready.</figcaption>
 </figure>
 {:/}
 </section>
@@ -223,14 +215,12 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/course-active.jpg" alt="Pointing out important parts.">
-    <figcaption>Bring important concepts to their attention.</figcaption>
 </figure>
 {:/}
 
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging your audience.">
-    <figcaption>Keep conversing with your audience.</figcaption>
 </figure>
 {:/}
 </section>
@@ -243,7 +233,6 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/homework.jpg" alt="Practical element of the course.">
-    <figcaption>Keep conversing with your audience.</figcaption>
 </figure>
 {:/}
 
@@ -267,7 +256,6 @@ We did this through certificates and copies of the fully functional code to use 
 {::nomarkdown}
 <figure>
     <img src="/css/images/2016-02-28-angular-training-days/result.jpg" alt="Course conclusion with certificates.">
-    <figcaption>Wrapping up another training.</figcaption>
 </figure>
 {:/}
 </section>
