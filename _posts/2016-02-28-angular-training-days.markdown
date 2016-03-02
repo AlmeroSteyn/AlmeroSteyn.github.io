@@ -29,18 +29,23 @@ Who could have imagined the journey we were about to embark on!
 So let's summarise the lessons we have learnt. After that I will go into each point showing the result to give you an 
 idea of how to approach this.
 
-* There are no experts in your course.
-* Developers love code.
-* Create a structure that does not fall down.
-* Don't sell antiques.
-* Don't cheat! Don't show something you don't do yourself.
-* Make it fun. Humour is your friend.
-* Enjoy the little things.
-* Keep them awake!
-* Give them something to take home.
-* Claim your reward.
+<nav markdown="1">
+* [There are no experts in your course.](#header-1)
+* [Developers love code.](#header-2)
+* [Create a structure that does not fall down.](#header-3)
+* [Don't sell antiques.](#header-4)
+* [Don't cheat! Don't show something you don't do yourself.](#header-5)
+* [Make it fun. Humour is your friend.](#header-6)
+* [Enjoy the little things.](#header-7)
+* [Keep them awake!](#header-8)
+* [Give them something to take home.](#header-9)
+* [Claim your reward.](#header-10)
+</nav>
 
-**There are no experts in your course.**
+<section markdown="1">
+<header markdown="1">
+## There are no experts in your course. {#header-1}
+</header>
 
 Let's get this out there from the get-go. The reason anyone wants to come to your training course is because you
 know something they don't. They already know this. You don't have to keep telling them that.
@@ -50,8 +55,12 @@ who already knows the subject matter.
 
 So avoid acronym hell and explain things that seem obvious to you. You will be surprised how many people in your course
 have never even heard about the concept that you use every day.
+</section>
 
-**Developers love code.**
+<section markdown="1">
+<header markdown="1">
+## Developers love code. {#header-2}
+</header>
 
 The main reason we write code is because we love to code. Don't forget that. 
 
@@ -64,10 +73,8 @@ application we had ever seen*).
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/app-1.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/app-1.jpg" alt="Example application main screen.">
-        <figcaption>Creating an example application was a crucial ingredient.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/app-1.jpg" alt="Example application main screen.">
+    <figcaption>Creating an example application was a crucial ingredient.</figcaption>
 </figure>
 {:/}
 
@@ -76,14 +83,16 @@ way the developer in question could hack into the actual working code if require
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/app-2.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/app-2.jpg" alt="Example application showing code example.">
-        <figcaption>Showing code example in blocks containing the actual function was our goal.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/app-2.jpg" alt="Example application showing code example.">
+    <figcaption>Showing code example in blocks containing the actual function was our goal.</figcaption>
 </figure>
 {:/}
+</section>
 
-**Create a structure that does not fall down.**
+<section markdown="1">
+<header markdown="1">
+## Create a structure that does not fall down. {#header-3}
+</header>
 
 Your course will stand or fall depending on its structure. You got to get this one right.
 
@@ -92,8 +101,12 @@ logical flow of concepts and bounce it of someone else to see if it makes sense 
 
 Once you have an outline you can start filling out the concepts. If the outline is clear and understandable you are well
 on your way to creating a course that others can follow.
+</section>
 
-**Don't sell antiques.**
+<section markdown="1">
+<header markdown="1">
+## Don't sell antiques. {#header-4}
+</header>
 
 Another reason people go to training courses is to learn about the latest and greatest in their area of interest. No 
 one wants to see how things were done yesterday so keep your course updated. 
@@ -105,14 +118,16 @@ By doing this we could proudly show the AngularJS 1.5.0 component within days of
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/app-3.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/app-3.jpg" alt="Example application with newest functionality covered.">
-        <figcaption>We moved quickly to include the newest function.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/app-3.jpg" alt="Example application with newest functionality covered.">
+    <figcaption>We moved quickly to include the newest function.</figcaption>
 </figure>
 {:/}
+</section>
 
-**Don't cheat! Don't show something you don't do yourself.**
+<section markdown="1">
+<header markdown="1">
+## Don't cheat! Don't show something you don't do yourself. {#header-5}
+</header>
 
 If you want your students to follow you have to be willing to do it all yourself. Do not opt for shortcuts and steer 
 clear of *Don't do as I do, do as I say*.
@@ -125,14 +140,16 @@ willing to walk that mile with you.
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/app-4.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/app-4.jpg" alt="Unit test coverage report showing 100 percent coverage">
-        <figcaption>100% unit test coverage.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/app-4.jpg" alt="Unit test coverage report showing 100 percent coverage">
+    <figcaption>100% unit test coverage.</figcaption>
 </figure>
 {:/}
+</section>
 
-**Make it fun. Humour is your friend.**
+<section markdown="1">
+<header markdown="1">
+## Make it fun. Humour is your friend. {#header-6}
+</header>
 
 If your students are smiling and laughing it is usually a good sign. Unless they are laughing at you, of course.
 
@@ -145,14 +162,16 @@ We ended up supporting our example application with a set of slides designed to 
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/slides.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/slides.jpg" alt="Example of the slides used.">
-        <figcaption>Fun slides can make all the difference.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/slides.jpg" alt="Example of the slides used.">
+    <figcaption>Fun slides can make all the difference.</figcaption>
 </figure>
 {:/}
+</section>
 
-**Enjoy the little things.**
+<section markdown="1">
+<header markdown="1">
+## Enjoy the little things. {#header-7}
+</header>
 
 Adding some nice touches to your training will make it just that little bit nicer to attend. You do not need to go 
 whole hog, of course. Everyone and every company has it's limits. But do what you can.
@@ -161,25 +180,25 @@ For us, one such little extra was laminating the course certificates.
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" alt="Laminating the certificates.">
-        <figcaption>The weather may be dull but our training won't be.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" alt="Laminating the certificates.">
+    <figcaption>The weather may be dull but our training won't be.</figcaption>
 </figure>
 {:/}
 
-Then unleashing our pirate spirits on them...
+Then unleashing our pirate spirit on them...
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" alt="Trimming the laminated certificates.">
-        <figcaption>Who does not love using one of these?</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" alt="Trimming the laminated certificates.">
+    <figcaption>Who does not love using one of these?</figcaption>
 </figure>
 {:/}
+</section>
 
-**Keep them awake!**
+<section markdown="1">
+<header markdown="1">
+## Keep them awake! {#header-8}
+</header>
 
 If your students sleep through your training or spend that time on a mental stroll along some tropical island beach 
 they won't be taking much knowledge with them. Yup, this may seem obvious but in practise its more tricky. Especially 
@@ -192,23 +211,23 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/course-active.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/course-active.jpg" alt="Pointing out important parts.">
-        <figcaption>Bring important concepts to their attention.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/course-active.jpg" alt="Pointing out important parts.">
+    <figcaption>Bring important concepts to their attention.</figcaption>
 </figure>
 {:/}
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging your audience.">
-        <figcaption>Keep conversing with your audience.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging your audience.">
+    <figcaption>Keep conversing with your audience.</figcaption>
 </figure>
 {:/}
+</section>
 
-**Give them something to take home.**
+<section markdown="1">
+<header markdown="1">
+## Give them something to take home. {#header-9}
+</header>
 
 You have to make sure that your students take something home from your course. 
 
@@ -221,21 +240,25 @@ We did this by providing certificates.
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/result.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/result.jpg" alt="Course conclusion with certificates.">
-        <figcaption>Wrapping up another training.</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/result.jpg" alt="Course conclusion with certificates.">
+    <figcaption>Wrapping up another training.</figcaption>
 </figure>
 {:/}
+</section>
 
-**Claim your reward.**
+<section markdown="1">
+<header markdown="1">
+## Claim your reward. {#header-10}
+</header>
+
+</section>
+
+
 
 
 {::nomarkdown}
 <figure>
-    <a href="/css/images/2016-02-28-angular-training-days/training-setup.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/training-setup.jpg" alt="Setting up the training">
-        <figcaption>Test caption</figcaption>
-    </a>
+    <img src="/css/images/2016-02-28-angular-training-days/training-setup.jpg" alt="Setting up the training">
+    <figcaption>Test caption</figcaption>
 </figure>
 {:/}
