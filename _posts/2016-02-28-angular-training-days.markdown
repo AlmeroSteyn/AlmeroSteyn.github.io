@@ -210,7 +210,7 @@ cookies!
 ## Keep them awake! {#header-8}
 </header>
 
-If your students sleep through your training or spend that time on a mental stroll along some tropical island beach 
+If your audience sleep through your training or spend that time on a mental stroll along some tropical island beach 
 they won't be taking much knowledge with them. Yup, this may seem obvious but in practise its more tricky. Especially 
 if you are really getting down into the nuts and bolts of particularly difficult sections.
 
@@ -239,14 +239,14 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 ## Give them something to take home. {#header-9}
 </header>
 
-You have to make sure that your students take something home from your course. 
+You have to make sure that your attendees take something home from your course. 
 
 The big, glaring, neon-sign, obvious takeaway should always be new knowledge. This is why they come to your course,
 so make sure you are adding value.
 
 But, aside from that, reinforce this with something else. 
 
-We did this by providing certificates.
+We did this through certificates and copies of the fully functional code to use later.
 
 {::nomarkdown}
 <figure>
@@ -264,14 +264,14 @@ We did this by providing certificates.
 Some of the biggest rewards are yours. And it has nothing to do with stature.
 
 It is certainly true that you don't fully understand something until you have taught it. Teaching something well means
-being to explain everything about the subject which, in turn, means investigating everything about it and learning it
+being to explain everything about the subject which, in turn, means investigating everything about it and learning about it
 yourself.
 
 After having used AngularJS for a couple of years we still learnt a whole lot of new things and better practices 
 while we made the example application and thought about how to explain it to others.
 
-The second big reward is meeting the folks you will be teaching. Talking to and sharing ideas with top developers while 
-hearing new points of view on the subject you are teaching. And then the greatest moment when another developer
+The second big reward is meeting the folks you will be teaching. Talking to and sharing ideas with top developers, while 
+hearing new points of view on the subject you are teaching. And that greatest of moments when another developer
 tells you that he/she was able to solve new problems because of your course. There is no better feeling.
 
 And, finally, there is the personal victory of getting involved, getting out there and rising above your own fears.
