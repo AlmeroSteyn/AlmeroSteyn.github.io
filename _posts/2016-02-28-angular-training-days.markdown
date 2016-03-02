@@ -1,33 +1,33 @@
 ---
 layout: post
-title:  "Creating an AngularJS training: From zero to creating heroes."
+title:  "Getting involved: The anatomy of an AngularJS training course."
 description: "Helping other Angular..."
 date:   2016-02-28 10:33:21 -0100
-categories: angularJS training 
+categories: angularJS training sharing knowledge
 ---
-I think it would be safe to say that every single developer ever have at some point stood on the shoulders of giants. 
-Even the very first coding pioneers, who boldly went where no-one had gone before, did so on machines created by 
+*Whilst this article refers to creating a training course in AngularJS, the concepts are really technology independent.*
+
+I think it would be safe to say that every single developer have at some point stood on the shoulders of giants. 
+Even the very first coding pioneers, who boldly went where no-one had gone before, did so using machines created by 
 other giants. 
 
-And, I guess, because we view these people as giants, it becomes pretty hard to ever imagine that you can contribute to
-the community and add some knowledge and become one of the steps another developer can take to realise his or her own 
-potential.
+The problem with giants are that we never think that we can be them. The point of this article is to share how a group
+of developers in the Netherlands took that first step to help others. 
 
-**WHOA**. Let's read that last sentence again? Let's not become another article of highfalutin language while saying
-very little. I think we should rather take a fun journey down the road of getting out of your comfort zone and sharing.
+So let's take a journey down the road of getting out of your comfort zone and sharing your knowledge. zone and sharing.
 
 >*At this stage I would have loved a beautifully animated clip of a momma-bird kicking out the doubtful baby, but due to 
 >budget cuts **YOU** will have to imagine it. You know, said bird tumbling through the air only to hit mother
 >earth with a **SMACK***.
 
-For me, that **SMACK** came middle 2015. After many months of using AngularJS in various web applications and bumping
-heads with the challenges of using such a framework in a serious application, our team found that we had collected
-quite a few answers that worked very well. And that is when we decided to create an in-house AngularJS training. 
+For us, that **SMACK** came middle 2015. After many months of using AngularJS in various web applications and bumping
+heads with the challenges of using such a framework in a enterprise scale application, our team found that we had collected
+quite a few answers that worked very well. And that is when we decided to create our own AngularJS training. 
 
 Who could have imagined the journey we were about to embark on!
 
-So let's summarise the lessons we have learnt. After that I will go into each point showing the result to give you an 
-idea of how to approach this.
+Let us start with a list of things to think about when creating training material and presenting it. After that there
+will be a short discussion about each point, tying it into our actual training course.
 
 <nav markdown="1">
 * [There are no experts in your course.](#header-1)
@@ -251,6 +251,22 @@ We did this by providing certificates.
 ## Claim your reward. {#header-10}
 </header>
 
+Some of the biggest rewards are yours. And it has nothing to do with stature.
+
+It is certainly true that you don't fully understand something until you have taught it. Teaching something well means
+being to explain everything about the subject which, in turn, means investigating everything about it and learning it
+yourself.
+
+After having used AngularJS for a couple of years we still learnt a whole lot of new things and better practices 
+while we made the example application and thought about how to explain it to others.
+
+The second big reward is meeting the folks you will be teaching. Talking to and sharing ideas with top developers while 
+hearing new points of view on the subject you are teaching. And then the greatest moment when another developer
+tells you that he/she was able to solve new problems because of your course. There is no better feeling.
+
+And, finally, there is the personal victory of getting involved, getting out there and rising above your own fears.
+
+We can personally attest to it that making and running this course has been worth it, every step of the way.
 
 </section>
 
