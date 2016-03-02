@@ -193,6 +193,16 @@ Then unleashing our pirate spirit on them...
     <figcaption>Who does not love using one of these?</figcaption>
 </figure>
 {:/}
+
+Also, ensure that the space you will be using for the training is well suited. Think about power outlets, glare.... and 
+cookies!
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-02-28-angular-training-days/training-setup.jpg" alt="Training venue.">
+    <figcaption>Training venue prepared and ready.</figcaption>
+</figure>
+{:/}
 </section>
 
 <section markdown="1">
@@ -269,13 +279,3 @@ And, finally, there is the personal victory of getting involved, getting out the
 We can personally attest to it that making and running this course has been worth it, every step of the way.
 
 </section>
-
-
-
-
-{::nomarkdown}
-<figure>
-    <img src="/css/images/2016-02-28-angular-training-days/training-setup.jpg" alt="Setting up the training">
-    <figcaption>Test caption</figcaption>
-</figure>
-{:/}
