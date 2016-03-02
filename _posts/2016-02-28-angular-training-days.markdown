@@ -156,7 +156,7 @@ If your students are smiling and laughing it is usually a good sign. Unless they
 But seriously, don't be too serious. Keep the mood light and add fun things to your training. 
 
 That said, don't be a clown. No one likes a clown. Clowns are creepy. (*If you are a reading this and your other
-occupation is being a clown, you'll know this is a joke as you are a clown.*)
+occupation is being a clown, you'll know this is a joke. As you are a clown.*)
 
 We ended up supporting our example application with a set of slides designed to be as much fun as possible.
 
@@ -174,7 +174,7 @@ We ended up supporting our example application with a set of slides designed to 
 </header>
 
 Adding some nice touches to your training will make it just that little bit nicer to attend. You do not need to go 
-whole hog, of course. Everyone and every company has it's limits. But do what you can.
+the whole hog, of course. Time is precious, but do what you can.
 
 For us, one such little extra was laminating the course certificates.
 
