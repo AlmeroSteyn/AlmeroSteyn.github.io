@@ -186,6 +186,9 @@ if you are really getting down into the nuts and bolts of particularly difficult
 
 Keep an eye on your audience and engage with them often. Have a conversation with them and be lively.
 
+In order to facilitate this, we limited the number of attendees. By asking for feedback after each main point you 
+can gauge if your audience is following and, if not, you can adjust accordingly.
+
 {::nomarkdown}
 <figure>
     <a href="/css/images/2016-02-28-angular-training-days/course-active.jpg" target="_blank">
@@ -198,11 +201,13 @@ Keep an eye on your audience and engage with them often. Have a conversation wit
 {::nomarkdown}
 <figure>
     <a href="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" target="_blank">
-        <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging the audience.">
+        <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging your audience.">
         <figcaption>Keep conversing with your audience.</figcaption>
     </a>
 </figure>
 {:/}
+
+**Give them something to take home.**
 
 {::nomarkdown}
 <figure>
