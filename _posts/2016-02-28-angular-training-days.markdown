@@ -108,11 +108,11 @@ on your way to creating a course that others can follow.
 ## Don't sell antiques. {#header-4}
 </header>
 
-Another reason people go to training courses is to learn about the latest and greatest in their area of interest. No 
+People want to learn about the latest and greatest in their area of interest. No 
 one wants to see how things were done yesterday so keep your course updated. 
 
-We kept up to date with our example application, refactoring it before every new session and adding the new stable
-functions in AngularJS as well as keeping up to date with best practise. 
+We kept up to date with our example application, refactoring it before every new session and adding the newest 
+functionality in AngularJS as well as keeping up to date with best practise. 
  
 By doing this we could proudly show the AngularJS 1.5.0 component within days of its release!
 
@@ -129,14 +129,14 @@ By doing this we could proudly show the AngularJS 1.5.0 component within days of
 ## Don't cheat! Don't show something you don't do yourself. {#header-5}
 </header>
 
-If you want your students to follow you have to be willing to do it all yourself. Do not opt for shortcuts and steer 
+If you want your audience to follow you have to be willing to lead. Do not opt for shortcuts and steer 
 clear of *Don't do as I do, do as I say*.
 
 In our training course we covered AngularJS unit testing in detail. So we decided to write unit tests for our training
 application. And I am talking 100% code coverage here.
 
-Doing this means more work later when you have to adjust, but go this extra mile and most of your students will be 
-willing to walk that mile with you.
+Doing this means more work later when you have to adjust, but go this extra mile and your audience will be 
+willing to walk that extra mile with you.
 
 {::nomarkdown}
 <figure>
