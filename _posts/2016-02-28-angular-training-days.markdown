@@ -21,8 +21,8 @@ So let's take a journey down the road of getting out of your comfort zone and sh
 >budget cuts **YOU** will have to imagine it. You know, said bird tumbling through the air only to hit mother
 >earth with a **SMACK***.
 
-For us, that **SMACK** came middle of 2015. After many months of using AngularJS in various web applications and bumping
-heads with the challenges of using such a framework in a enterprise scale application, our team found that we had collected
+For us, that **SMACK** came middle of 2015. After many many months of using AngularJS in various web applications and struggling
+with the challenges of using such a framework in a enterprise scale application, our team found that we had collected
 quite a few answers that worked very well. And that is when we decided to create our own AngularJS training. 
 
 Who could have imagined the journey we were about to embark on!
@@ -79,8 +79,8 @@ applications we had ever seen*).
 </figure>
 {:/}
 
-We created a showcase of example code blocks running side by side with actual working examples of the code being demonstrated. This 
-way the developer in question could hack into the actual working code if required.
+We created a showcase of example code blocks running side-by-side with actual working examples of the code being demonstrated. This 
+way the developer in question could hack into the working code if required.
 
 {::nomarkdown}
 <figure>
@@ -94,12 +94,13 @@ way the developer in question could hack into the actual working code if require
 ## Create a structure that does not fall down. {#header-3}
 </header>
 
-Your course will stand or fall depending on its structure. You got to get this one right.
+Your course will stand or fall by its structure. You have to get this one right.
 
-Separate the easy concepts from the hard ones and don't go jumping in with a gigantic **YEEEEHAAAAWWWW!**. Create a 
-logical flow of concepts and bounce it of someone else to see if it makes sense to them as well.
+Don't just go jumping in with a gigantic **YEEEEHAAAAWWWW!**. Separate the easy concepts from the hard ones so that 
+you can create a logical progression of points from basic to complex. Create an outline 
+of concepts and bounce it off someone else to see if it makes sense to them as well.
 
-Once you have an outline you can start filling out the concepts. If the outline is clear and understandable you are well
+Once you have an outline, you can start filling out the concepts. If the outline is clear and understandable you are well
 on your way to creating a course that others can follow.
 </section>
 
@@ -109,10 +110,10 @@ on your way to creating a course that others can follow.
 </header>
 
 People want to learn about the latest and greatest in their area of interest. No 
-one wants to see how things were done yesterday so keep your course updated. 
+one wants to see how things were done yesterday, so keep your course updated. 
 
 We kept up to date with our example application, refactoring it before every new session and adding the newest 
-functionality in AngularJS as well as keeping up to date with best practise. 
+functionality in AngularJS, as well as keeping up to date with best practise. 
  
 By doing this we could proudly show the AngularJS 1.5.0 component within days of its release!
 
@@ -128,8 +129,8 @@ By doing this we could proudly show the AngularJS 1.5.0 component within days of
 ## Don't cheat! Don't show something you don't do yourself. {#header-5}
 </header>
 
-If you want your audience to follow you have to be willing to lead. Do not opt for shortcuts and steer 
-clear of *Don't do as I do, do as I say*.
+If you want your audience to follow, you have to be willing to lead. Do not opt for shortcuts and steer 
+clear of *"Don't do as I do, do as I say"*.
 
 In our training course we covered AngularJS unit testing in detail. So we decided to write unit tests for our training
 application. And I am talking 100% code coverage here.
@@ -169,8 +170,8 @@ We ended up supporting our example application with a set of slides designed to 
 ## Enjoy the little things. {#header-7}
 </header>
 
-Adding some nice touches to your training will make it just that little bit nicer to attend. You do not need to go 
-the whole hog, of course. Time is precious, but do what you can.
+Adding some nice touches to your training will make it just that little bit nicer to attend. Think about what you can do
+extra to make your attendees smile.
 
 For us, one such little extra was laminating the course certificates.
 
@@ -203,7 +204,7 @@ cookies!
 ## Keep them awake! {#header-8}
 </header>
 
-If your audience sleep through your training or spend that time on a mental stroll along some tropical island beach 
+If your audience sleeps through your training or spends that time on a mental stroll along some tropical island beach 
 they won't be taking much knowledge with them. Yup, this may seem obvious but in practise its more tricky. Especially 
 if you are really getting down into the nuts and bolts of particularly difficult sections.
 
@@ -239,12 +240,12 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 Practise makes perfect, they say. And in development it is a crucial element of learning a new skill. So you need to 
 let them get their hands dirty. 
 
-Practically it may not always be possible to host a full workshop in your course. For us it was not. Due to the amount
-of AngularJS we wanted to cover, it did not allow for this. But we had a solution. 
+Practically it may not always be possible to host a full workshop in your course. Due to the amount
+of AngularJS we wanted to cover, we simply did not have the time. But we had a solution. 
 
 Each training session featured homework the attendees had to complete before the next session.
 
-Do not run a pure theoretical coding course.
+Point is, do not run a pure theoretical coding course.
 
 </section>
 
@@ -260,7 +261,7 @@ so make sure you are adding value.
 
 But, aside from that, reinforce this with something else. 
 
-We did this through certificates and copies of the fully functional code to use later.
+We handed out course certificates and copies of the fully functional code to use later.
 
 {::nomarkdown}
 <figure>
@@ -274,9 +275,9 @@ We did this through certificates and copies of the fully functional code to use 
 ## Claim your reward. {#header-11}
 </header>
 
-Some of the biggest rewards are yours. And it has nothing to do with stature.
+Some of the biggest rewards are yours for the taking. And it has nothing to do with stature.
 
-It is certainly true that you don't fully understand something until you have taught it. Teaching something well means
+It is so true that you don't fully understand something until you have taught it. Teaching something well means
 being to explain everything about the subject which, in turn, means investigating everything about it and learning about it
 yourself.
 
@@ -285,7 +286,7 @@ while we made the example application and thought about how to explain it to oth
 
 The second big reward is meeting the folks you will be teaching. Talking to and sharing ideas with top developers, while 
 hearing new points of view on the subject you are teaching. And that greatest of moments when another developer
-tells you that he/she was able to solve new problems because of your course. There is no better feeling.
+tells you that he/she was able to solve some problems because of your course. There is no better feeling.
 
 And, finally, there is the personal victory of getting involved, getting out there and rising above your own fears.
 
