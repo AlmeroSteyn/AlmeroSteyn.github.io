@@ -8,11 +8,11 @@ categories: angularJS training sharing knowledge
 *Whilst this article refers to creating a training course in AngularJS, the concepts are applicable to any development
 training.*
 
-I think it would be safe to say that every single developer have at some point stood on the shoulders of giants. 
+I think it would be safe to say that every single developer has at some point stood on the shoulders of giants. 
 Even the very first coding pioneers, who boldly went where no-one had gone before, did so using machines created by 
 other giants. 
 
-The problem with giants are that we never think that we can be them. The point of this article is to share how a team
+The problem with giants is that we never think that we can be them. The point of this article is to share how a team
 in the Netherlands took that first step to help others. 
 
 So let's take a journey down the road of getting out of your comfort zone and sharing your knowledge.
@@ -50,7 +50,7 @@ will be a short discussion about each point, tying it into our actual training c
 </header>
 
 Let's get this out there from the get-go. The reason anyone wants to come to your training course is because you
-can teach them something they don't already know. And they already know this. You don't have to keep telling them that.
+can teach them something they don't know. And they already know this. You don't have to keep telling them that.
 
 Few things will frustrate your audience as much as the feeling that your course can only be understood by someone 
 who already knows the subject matter.
@@ -70,7 +70,7 @@ This is the reason that every development course worth its salt features functio
 
 So we set out to make a one-stop-shop for someone who wanted to use 
 AngularJS to develop enterprise scale applications. You know, translate the questions we struggled with into answers. And this
-lead to us creating the mother of all course example applications (*or at least the mother of all example
+lead to us creating the mother of all course example applications (*or at least the biggest mother of all example
 applications we had ever seen*).
 
 {::nomarkdown}
@@ -97,7 +97,7 @@ way the developer in question could hack into the working code if required.
 Your course will stand or fall by its structure. You have to get this one right.
 
 Don't just go jumping in with a gigantic **YEEEEHAAAAWWWW!**. Separate the easy concepts from the hard ones so that 
-you can create a logical progression of points from basic to complex. Create an outline 
+you can create a logical progression of points from basic through to complex. Create an outline 
 of concepts and bounce it off someone else to see if it makes sense to them as well.
 
 Once you have an outline, you can start filling out the concepts. If the outline is clear and understandable you are well
@@ -113,7 +113,7 @@ People want to learn about the latest and greatest in their area of interest. No
 one wants to see how things were done yesterday, so keep your course updated. 
 
 We kept up to date with our example application, refactoring it before every new session and adding the newest 
-functionality in AngularJS, as well as keeping up to date with best practise. 
+functionality in AngularJS, as well as keeping up to date with best practice. 
  
 By doing this we could proudly show the AngularJS 1.5.0 component within days of its release!
 
@@ -205,7 +205,7 @@ cookies!
 </header>
 
 If your audience sleeps through your training or spends that time on a mental stroll along some tropical island beach 
-they won't be taking much knowledge with them. Yup, this may seem obvious but in practise its more tricky. Especially 
+they won't be taking much knowledge with them. Yup, this may seem obvious but in practice its more tricky. Especially 
 if you are really getting down into the nuts and bolts of particularly difficult sections.
 
 Keep an eye on your audience and engage with them often. Have a conversation with them and be lively.
@@ -237,13 +237,13 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 </figure>
 {:/}
 
-Practise makes perfect, they say. And in development it is a crucial element of learning a new skill. So you need to 
+Practice makes perfect, they say. And in development it is a crucial element of learning a new skill. So you need to 
 let them get their hands dirty. 
 
 Practically it may not always be possible to host a full workshop in your course. Due to the amount
 of AngularJS we wanted to cover, we simply did not have the time. But we had a solution. 
 
-Each training session featured homework the attendees had to complete before the next session.
+Each training session featured homework that the attendees had to complete before the next session.
 
 Point is, do not run a pure theoretical coding course.
 
@@ -304,7 +304,7 @@ This course was made for and presented at <a href="http://www.qdelft.nl" target=
 **The Q&A team**:
 
 <a href="https://twitter.com/matas_u" target="_blank">Matas</a> spent hours helping writing the code, created
-the gorgeous slides, supported the homework and sat through session after session to assist and answer questions. 
+genius slides, supported the homework and sat through session after session to assist and answer questions. 
 
 Thomas magicked a test server into existence and helped with the code.
 
