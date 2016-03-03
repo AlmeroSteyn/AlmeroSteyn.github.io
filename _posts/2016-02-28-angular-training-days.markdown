@@ -1,26 +1,27 @@
 ---
 layout: post
 title:  "Getting involved: The anatomy of an AngularJS training course."
-description: "Helping other Angular..."
+description: "A few pointers to help you share what you know..."
 date:   2016-02-28 10:33:21 -0100
 categories: angularJS training sharing knowledge
 ---
-*Whilst this article refers to creating a training course in AngularJS, the concepts are really technology independent.*
+*Whilst this article refers to creating a training course in AngularJS, the concepts are applicable to any development
+training.*
 
 I think it would be safe to say that every single developer have at some point stood on the shoulders of giants. 
 Even the very first coding pioneers, who boldly went where no-one had gone before, did so using machines created by 
 other giants. 
 
-The problem with giants are that we never think that we can be them. The point of this article is to share how a group
-of developers in the Netherlands took that first step to help others. 
+The problem with giants are that we never think that we can be them. The point of this article is to share how a team
+in the <a href="http://www.qdelft.nl" target="_blank">Netherlands</a> took that first step to help others. 
 
-So let's take a journey down the road of getting out of your comfort zone and sharing your knowledge. zone and sharing.
+So let's take a journey down the road of getting out of your comfort zone and sharing your knowledge.
 
 >*At this stage I would have loved a beautifully animated clip of a momma-bird kicking out the doubtful baby, but due to 
 >budget cuts **YOU** will have to imagine it. You know, said bird tumbling through the air only to hit mother
 >earth with a **SMACK***.
 
-For us, that **SMACK** came middle 2015. After many months of using AngularJS in various web applications and bumping
+For us, that **SMACK** came middle of 2015. After many months of using AngularJS in various web applications and bumping
 heads with the challenges of using such a framework in a enterprise scale application, our team found that we had collected
 quite a few answers that worked very well. And that is when we decided to create our own AngularJS training. 
 
@@ -152,8 +153,7 @@ If your attendees are smiling and laughing it is usually a good sign. Unless the
 
 But seriously, don't be too serious. Keep the mood light and add fun things to your training. 
 
-That said, don't be a clown. No one likes a clown. Clowns are creepy. (*If you are a reading this and your other
-occupation is being a clown, you'll know this is a joke. As you are a clown.*)
+That said, try not to go over the top.
 
 We ended up supporting our example application with a set of slides designed to be as much fun as possible.
 
@@ -236,6 +236,15 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 </figure>
 {:/}
 
+Practise makes perfect, they say. And in development it is a crucial element of learning a new skill. So you need to 
+let them get their hands dirty. 
+
+Practically it may not always be possible to host a full workshop in your course. For us it was not. Due to the amount
+of AngularJS we wanted to cover, it did not allow for this. But we had a solution. 
+
+Each training session featured homework the attendees had to complete before the next session.
+
+Do not run a pure theoretical coding course.
 
 </section>
 
@@ -281,5 +290,25 @@ tells you that he/she was able to solve new problems because of your course. The
 And, finally, there is the personal victory of getting involved, getting out there and rising above your own fears.
 
 We can personally attest to it that making and running this course has been worth it, every step of the way.
+
+</section>
+
+<section markdown="1">
+<header markdown="1">
+## Shout-out!
+</header>
+
+This course was made for and presented at <a href="http://www.qdelft.nl" target="_blank">QDelft</a>. 
+
+**The Q&A team**:
+
+<a href="https://twitter.com/matas_u" target="_blank">Matas</a> spent hours helping writing the code, created
+the gorgeous slides, supported the homework and sat through session after session to assist and answer questions. 
+
+Thomas magicked a test server into existence and helped with the code.
+
+Peggy, Jaimy and Arisca made arranging a training seem effortless.
+
+You guys all rock!
 
 </section>
