@@ -301,7 +301,7 @@ We can personally attest to it that making and running this course has been wort
 
 This course was made for and presented at <a href="http://www.qdelft.nl" target="_blank">QDelft</a>. 
 
-**The Q&A team**:
+**The rest of the Q&A team**:
 
 <a href="https://twitter.com/matas_u" target="_blank">Matas</a> spent hours helping writing the code, created
 genius slides, supported the homework and sat through session after session to assist and answer questions. 
