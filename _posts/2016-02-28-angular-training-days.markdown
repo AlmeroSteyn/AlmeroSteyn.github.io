@@ -13,7 +13,7 @@ Even the very first coding pioneers, who boldly went where no-one had gone befor
 other giants. 
 
 The problem with giants are that we never think that we can be them. The point of this article is to share how a team
-in the <a href="http://www.qdelft.nl" target="_blank">Netherlands</a> took that first step to help others. 
+in the Netherlands took that first step to help others. 
 
 So let's take a journey down the road of getting out of your comfort zone and sharing your knowledge.
 
