@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting involved: The anatomy of an AngularJS training course."
 description: "A few pointers to help you share what you know..."
-date:   2016-02-28 10:33:21 -0100
+date:   2016-03-02 20:10:21 -0100
 categories: angularJS training sharing knowledge
 ---
 *Whilst this article refers to creating a training course in AngularJS, the concepts are applicable to any development
@@ -75,7 +75,7 @@ applications we had ever seen*).
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/app-1.jpg" alt="Example application main screen.">
+    <img src="/css/images/2016-03-02-angular-training-days/app-1.jpg" alt="Example application main screen.">
 </figure>
 {:/}
 
@@ -84,7 +84,7 @@ way the developer in question could hack into the working code if required.
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/app-2.jpg" alt="Example application showing code example.">
+    <img src="/css/images/2016-03-02-angular-training-days/app-2.jpg" alt="Example application showing code example.">
 </figure>
 {:/}
 </section>
@@ -119,7 +119,7 @@ By doing this we could proudly show the AngularJS 1.5.0 component within days of
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/app-3.jpg" alt="Example application with newest functionality covered.">
+    <img src="/css/images/2016-03-02-angular-training-days/app-3.jpg" alt="Example application with newest functionality covered.">
 </figure>
 {:/}
 </section>
@@ -140,7 +140,7 @@ willing to walk that extra mile with you.
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/app-4.jpg" alt="Unit test coverage report showing 100 percent coverage">
+    <img src="/css/images/2016-03-02-angular-training-days/app-4.jpg" alt="Unit test coverage report showing 100 percent coverage">
 </figure>
 {:/}
 </section>
@@ -160,7 +160,7 @@ We ended up supporting our example application with a set of slides designed to 
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/slides.jpg" alt="Example of the slides used.">
+    <img src="/css/images/2016-03-02-angular-training-days/slides.jpg" alt="Example of the slides used.">
 </figure>
 {:/}
 </section>
@@ -177,7 +177,7 @@ For us, one such little extra was laminating the course certificates.
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes.jpg" alt="Laminating the certificates.">
+    <img src="/css/images/2016-03-02-angular-training-days/behind-the-scenes.jpg" alt="Laminating the certificates.">
 </figure>
 {:/}
 
@@ -185,7 +185,7 @@ Then unleashing our pirate spirit on them...
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/behind-the-scenes-2.jpg" alt="Trimming the laminated certificates.">
+    <img src="/css/images/2016-03-02-angular-training-days/behind-the-scenes-2.jpg" alt="Trimming the laminated certificates.">
 </figure>
 {:/}
 
@@ -194,7 +194,7 @@ cookies!
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/training-setup.jpg" alt="Training venue.">
+    <img src="/css/images/2016-03-02-angular-training-days/training-setup.jpg" alt="Training venue.">
 </figure>
 {:/}
 </section>
@@ -215,13 +215,13 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/course-active.jpg" alt="Pointing out important parts.">
+    <img src="/css/images/2016-03-02-angular-training-days/course-active.jpg" alt="Pointing out important parts.">
 </figure>
 {:/}
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/course-active-2.jpg" alt="Engaging your audience.">
+    <img src="/css/images/2016-03-02-angular-training-days/course-active-2.jpg" alt="Engaging your audience.">
 </figure>
 {:/}
 </section>
@@ -233,7 +233,7 @@ can gauge if your audience is following and, if not, you can adjust accordingly.
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/homework.jpg" alt="Practical element of the course.">
+    <img src="/css/images/2016-03-02-angular-training-days/homework.jpg" alt="Practical element of the course.">
 </figure>
 {:/}
 
@@ -265,7 +265,7 @@ We handed out course certificates and copies of the fully functional code to use
 
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-02-28-angular-training-days/result.jpg" alt="Course conclusion with certificates.">
+    <img src="/css/images/2016-03-02-angular-training-days/result.jpg" alt="Course conclusion with certificates.">
 </figure>
 {:/}
 </section>
