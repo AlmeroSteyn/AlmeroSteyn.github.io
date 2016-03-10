@@ -80,15 +80,24 @@ The following snippet of HTML worked like a charm when binding to a locally defi
 <child-component [person]="selectedPerson" (onChange)="save($event)"></child-component>
 {% endhighlight %}
 
-But as soon as this 
+But as soon as this the **selectedPerson** object gets populated as a result of subscribing to an observable, the undefined
+errors start appearing.
 
-The problem described started when the object populated asynchronously via 
+There had to be a way to solve this without using ***ngIf** or sacrificing the immutable input. 
 
-A quick search suggested that adding ***ngIf** to the html 
+The reason I do not like solving this with ***ngIf** is that overuse can cause some issues, from confusing assistive 
+technologies to problems with CSS animation. No, we should try to solve this using the shiny tools that Angular2 gives us.
 
-There simply had to be a way to use the beautiful new binding tools in Angular2 to make this work. 
+Yes, it gives us a very natural way to directly subscribe to an **Observable** stream by using the **Async pipe**. 
+
+So in the parent component I would store the **Observable** in **selectedPerson**:
+
+{% highlight javascript %}
+this.itemEntry = this.contacts.getContact(this.params.get('id'));
+{% endhighlight %}
 
 
+At first it did not look like 
 
 
 
