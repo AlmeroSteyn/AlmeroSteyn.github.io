@@ -93,11 +93,65 @@ Yes, it gives us a very natural way to directly subscribe to an **Observable** s
 So in the parent component I would store the **Observable** in **selectedPerson**:
 
 {% highlight javascript %}
-this.itemEntry = this.contacts.getContact(this.params.get('id'));
+this.selectedPerson = this.someService.getPersonFromObservable();
+{% endhighlight %}
+
+And then it should magically work by changing the HTML above to:
+
+{% highlight html %}
+<child-component [person]="selectedPerson | async" 
+                 (onChange)="save($event)">
+</child-component>
+{% endhighlight %}
+
+Right??!!!
+
+WRONG!!
+
+Even though the async pipe will handle subscribing to the observable, the child component will still initialize before
+the data hits the the **person** input. And the undefined errors continue to pour out on the console.
+
+**ngOnChanges: The secret sauce.**
+
+So up to this point I have data being fetches asynchronously and then being given to a child component who has not idea
+that this is happening. There was one more required change. The child component had to somehow wait for the input to 
+be populated before making the copy that could be edited.
+
+And a quick dive in the **Angular2 Docs** revealed another lifecycle event I could use. And that is **ngOnChanges**.
+
+What this does it to react to changes to the **@Input()** values of the component. BINGO!
+
+And as the component is seeing its input as immutable the this function will only be executed when the data is changed 
+from the parent component, thereby also avoiding this function from being overly executed.
+
+{% highlight javascript %}
+@Component({
+  selector: 'child-component',
+  templateUrl: './child-component.html',
+  directives: [FORM_DIRECTIVES]
+})
+export class ChildComponent implements OnChanges {
+
+  @Input() person:IContact;
+  @Output() onChange:EventEmitter<IContact> = new EventEmitter();
+
+   internalItem:IContact = new Contact();
+  
+    ngOnChanges(changes:any):void {
+      var personChange:IContact = changes.person.currentValue;
+      if (personChange) {
+        this.internalItem = new Contact(personChange.id, personChange.firstname, personChange.lastname);
+      }
+    }
+  
+    save():void {
+      this.onChange.emit(this.internalItem);
+    }
+
+}
 {% endhighlight %}
 
 
-At first it did not look like 
 
 
 
