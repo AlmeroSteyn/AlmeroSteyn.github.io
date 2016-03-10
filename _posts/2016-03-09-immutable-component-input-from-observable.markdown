@@ -6,7 +6,7 @@ date:   2016-03-09 13:10:21 -0100
 categories: angular2 component observable @input immutable ngOnChanges
 ---
 
-Today I was confronted with my first not-so-obvious challenge in Angular2. After moving past the basics, it was time to
+Today I was confronted with my first not-so-obvious challenge in **Angular2**. After moving past the basics, it was time to
 take the next step towards building a serious application in this shiny new framework.
 
 And the challenge came in the form of passing the result of an **RxJS Observable** stream into an immutable component 
@@ -47,15 +47,11 @@ export class ChildComponent implements OnInit {
 And the template for the component, where the properties of the incoming input were being displayed and edited in
 input fields.
 
-{% highlight javascript %}
+{% highlight html %}
 <form (submit)="save()">
   <div>
-    <label for="firstName">First Name:
       <input id="firstName" [(ngModel)]="internalItem.firstname">
-    </label>
-    <label for="lastName">Last Name:
       <input id="lastName" [(ngModel)]="internalItem.lastname">
-    </label>
   </div>
   <button type="submit">Save</button>
 </form>
@@ -72,6 +68,17 @@ this was happening, it was not so obvious how to solve this, it first.
 
 **Is it a bird? Is it a plane? It's ASYNC PIPE!**
 
+The following snippet of HTML worked like a charm when binding to an object that is not fetched asynchronously:
+
+{% highlight html %}
+<child-component [person]="selectedPerson" (onChange)="save($event)"></child-component>
+{% endhighlight %}
+
+The problem described started when the object populated asynchronously via 
+
+A quick search suggested that adding ***ngIf** to the html 
+
+There simply had to be a way to use the beautiful new binding tools in Angular2 to make this work. 
 
 
 
