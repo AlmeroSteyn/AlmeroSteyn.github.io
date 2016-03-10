@@ -17,16 +17,13 @@ All worked perfectly smoothly while using static local data, but then I translat
 using **Http** and suddenly it was a few hours later with my application bleeding red error messages all over my
 Chrome console.
 
-I finally found a solution to this problem not using ***ngIf** and, as this type of solution is not yet easy to find, I 
-thought maybe I should show it here. 
+So come with me and I will show you, oh intrepid Angular2 adventurer, how to consume an **Observable** in a child component
+without using ***ngIf** whilst still retaining an immutable object as a component input.
+
 
 **Simple binding eh? What gives?** 
 
-I wanted to create a re-usable child component to edit an incoming value and then pass the changed value back to the 
-parent component. Also I wanted the incoming value to be immutable, so the value has to be first copied in the child 
-component, before making any changes to it.
-
-Here follows the code that, at first, worked perfectly well.
+It all started with what seemed like a completely innocent child component. 
 
 {% highlight javascript %}
 @Component({
@@ -67,20 +64,23 @@ input fields.
 
 This all works very well until the incoming value is being fetched from an **Observable** stream.
 
-Of course, at the time of **ngOnInit**, there is no guarantee that a value has been resolved from the **Observable**. And,
-in fact, even with a server running locally and fetching data with **Http**, the **person** input ended up being
-undefined.
+Why?
 
-Oh the horror! My nice Angular2 application started bleeding red all over the console and, while it was quickly clear why
-this was happening, it was not so obvious how to solve this, it first.
+Because, at the time of **ngOnInit**, there is no guarantee that a value has been resolved from the **Observable**. And,
+in fact, even with a server running locally and fetching data with **Http**, the **person** input ended up being
+undefined. 
+
+Oh the horror! 
 
 **Is it a bird? Is it a plane? It's ASYNC PIPE!**
 
-The following snippet of HTML worked like a charm when binding to an object that is not fetched asynchronously:
+The following snippet of HTML worked like a charm when binding to a locally defined static object:
 
 {% highlight html %}
 <child-component [person]="selectedPerson" (onChange)="save($event)"></child-component>
 {% endhighlight %}
+
+But as soon as this 
 
 The problem described started when the object populated asynchronously via 
 
