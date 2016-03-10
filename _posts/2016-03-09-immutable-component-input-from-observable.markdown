@@ -6,16 +6,24 @@ date:   2016-03-09 13:10:21 -0100
 categories: angular2 component observable @input immutable ngOnChanges
 ---
 
-Today I was confronted with my first not-so-obvious challenge in **Angular2**. After moving past the basics, it was time to
-take the next step towards building a serious application in this shiny new framework.
+Sometimes it is the simple things that can cost you hours when looking at new technology. For me it was creating a simple
+binding in **Angular2**.
 
-And the challenge came in the form of passing the result of an **RxJS Observable** stream into an immutable component 
-input.
+I wanted to create a re-usable child component to pass some data into, then edit it and finally pass the changed value back to the 
+parent component. Also I wanted the incoming value to be immutable so, before making changes to the data in the child
+component, I first wanted to make a copy of it.
 
-**The problem** 
+All worked perfectly smoothly while using static local data, but then I translated it to fetching data from the server
+using **Http** and suddenly it was a few hours later with my application bleeding red error messages all over my
+Chrome console.
+
+I finally found a solution to this problem not using ***ngIf** and, as this type of solution is not yet easy to find, I 
+thought maybe I should show it here. 
+
+**Simple binding eh? What gives?** 
 
 I wanted to create a re-usable child component to edit an incoming value and then pass the changed value back to the 
-parent component. Also I wanted the incoming value to be immutable, so the value was first copied in the the child 
+parent component. Also I wanted the incoming value to be immutable, so the value has to be first copied in the child 
 component, before making any changes to it.
 
 Here follows the code that, at first, worked perfectly well.
