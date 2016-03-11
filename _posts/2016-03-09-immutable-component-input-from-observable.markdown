@@ -114,16 +114,18 @@ the data hits the the **person** input. And the undefined errors continue to pou
 
 **ngOnChanges: The secret sauce.**
 
-So up to this point I have data being fetches asynchronously and then being given to a child component who has not idea
-that this is happening. There was one more required change. The child component had to somehow wait for the input to 
-be populated before making the copy that could be edited.
+So up to this point we have data being fetched asynchronously and then being passed into a child component. However, 
+there is nothing telling the child component to calm down, relax, and wait a little before making a copy of the data
+and turning us into happy developers. There was one more required change.
 
-And a quick dive in the **Angular2 Docs** revealed another lifecycle event I could use. And that is **ngOnChanges**.
+A quick dive in the **Angular2 Docs** reveals a lifecycle event we could use. And that is **ngOnChanges**.
 
 What this does it to react to changes to the **@Input()** values of the component. BINGO!
 
-And as the component is seeing its input as immutable the this function will only be executed when the data is changed 
-from the parent component, thereby also avoiding this function from being overly executed.
+And, as we are treating the input as immutable, the function will only be executed when the data is changed 
+from the parent component, thereby also avoiding unnecessary execution of the code inside the function.
+
+So out child component becomes:
 
 {% highlight javascript %}
 @Component({
@@ -154,7 +156,11 @@ export class ChildComponent implements OnChanges {
 }
 {% endhighlight %}
 
+It starts off creating an empty version of the data model to, firstly, avoid the **ngModel** bindings from freaking out
+and giving undefined errors and, secondly, so that we can use this component not only to edit incoming data, but also 
+serve us to create new entries of the same type.
 
+And so we have restored calm to the town of 
 
 
 
