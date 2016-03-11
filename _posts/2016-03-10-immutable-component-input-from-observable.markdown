@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Angular2: Binding an observable to an immutable child component input."
-description: "Avoiding an undefined component input..."
-date:   2016-03-09 13:10:21 -0100
-categories: angular2 component observable @input immutable ngOnChanges
+description: "Avoiding undefined errors due to asynchronicity..."
+date:   2016-03-10 16:10:21 -0100
+categories: angular2 component observable @input immutable ngOnChanges async pipe
 ---
 
 Sometimes it is the simple things that can cost you hours when looking at new technology. For me it was creating an asynchronous
