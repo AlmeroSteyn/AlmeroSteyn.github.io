@@ -17,9 +17,8 @@ All worked perfectly smoothly while using static local data, but then I refactor
 using **Http** and suddenly it was a few hours later with my application bleeding red error messages all over my
 Chrome console.
 
-So come with me and I will show you, oh intrepid Angular2 adventurer, how to consume an **Observable** in a child component
+So come with me, oh intrepid Angular2 adventurer, let us discover together how to consume an **Observable** in a child component
 without using ***ngIf** whilst still retaining an immutable object as a component input.
-
 
 **Simple binding eh? What gives?** 
 
@@ -66,29 +65,30 @@ This all works very well until the incoming value is fetched from an **Observabl
 
 Why?
 
-Because, at the time of **ngOnInit**, there is no guarantee that a value has been resolved from the **Observable**. And,
-in fact, even with a server running locally and fetching data with **Http**, the **person** input ended up being
-undefined. 
+Because, at the time of **ngOnInit**, the value has not yet been resolved from the **Observable**.
 
-Oh the horror! 
+Oh the horror! There was a monster loose in the once peaceful and happy town of *AngularComponent*.
 
 **Is it a bird? Is it a plane? It's ASYNC PIPE!**
 
-The following snippet of HTML worked like a charm when binding to a locally defined static object:
+The following snippet of HTML works like a charm when binding to a locally defined static object:
 
 {% highlight html %}
 <child-component [person]="selectedPerson" (onChange)="save($event)"></child-component>
 {% endhighlight %}
 
-But as soon as this the **selectedPerson** object was populated by subscribing to an observable, the undefined
-errors started to appear.
+But as soon as this **selectedPerson** object is populated by subscribing to an observable, the undefined
+errors starts to appear.
 
-There had to be a way to solve this without using ***ngIf** or sacrificing the immutable input. 
+There has to be a way to solve this without using ***ngIf** or sacrificing the immutable input... 
 
-The reason I do not like solving this with ***ngIf** is that overuse can cause some issues, from confusing assistive 
-technologies to problems with CSS animation. No, we should try to solve this using the shiny tools that Angular2 gives us.
+The reason that solving this with ***ngIf** may not be the best solution is that overuse can cause some issues, from 
+confusing assistive technologies to creating problems with CSS animation. Remember that this directive completely 
+removes elements from the DOM and do not simply hide them. No, we should try to solve this by using the other shiny tools 
+that Angular2 gives us. Removing DOM elements to solve a binding problem in our JavaScript should indicate that our
+bindings are not very robust.
 
-And it indeed gives us a very natural way to directly subscribe to an **Observable** stream in your HTML 
+And indeed **Angular2** gives us a very natural way to directly subscribe to an **Observable** stream in your HTML 
 by using the **Async pipe**. 
 
 So in the parent component we could store the **Observable** in **selectedPerson**:
@@ -160,9 +160,15 @@ It starts off creating an empty version of the data model to, firstly, avoid the
 and giving undefined errors and, secondly, so that we can use this component not only to edit incoming data, but also 
 serve us to create new entries of the same type.
 
-And so we have restored calm to the town of 
+Every change to our incoming **person** input will trigger this function. And, ideally, this will be twice. Once at 
+component initialization. And then again when the data has been resolved from the **Observable**. 
 
+At that point we can safely make a copy of the data into the internal model of our child component.
 
+And so we have restored calm to the town of *AngularComponent*. The monster has been slain.
 
+**Points to remember**
 
-
+* Store your **Observable** stream in a data item inside your parent component.
+* Use **ngOnChanges** to watch the immutable input in your child component.
+* Then connect them up in the HTML template of your parent component using the **Async Pipe**.
