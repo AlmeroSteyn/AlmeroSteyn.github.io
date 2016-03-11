@@ -13,7 +13,7 @@ I wanted to create a re-usable child component to pass some data into, then edit
 parent component. Also I wanted the incoming value to be immutable so, before making changes to the data in the child
 component, I first wanted to make a copy of it.
 
-All worked perfectly smoothly while using static local data, but then I translated it to fetching data from the server
+All worked perfectly smoothly while using static local data, but then I refactored it to fetch data from the server
 using **Http** and suddenly it was a few hours later with my application bleeding red error messages all over my
 Chrome console.
 
@@ -23,7 +23,7 @@ without using ***ngIf** whilst still retaining an immutable object as a componen
 
 **Simple binding eh? What gives?** 
 
-It all started with what seemed like a completely innocent child component. 
+It all started with what seemed like a completely innocent child component:
 
 {% highlight javascript %}
 @Component({
@@ -49,8 +49,8 @@ export class ChildComponent implements OnInit {
 }
 {% endhighlight %}
 
-And the template for the component, where the properties of the incoming input were being displayed and edited in
-input fields.
+And the template for the component, where the properties of the incoming input were displayed and edited in
+input fields:
 
 {% highlight html %}
 <form (submit)="save()">
@@ -62,7 +62,7 @@ input fields.
 </form>
 {% endhighlight %}
 
-This all works very well until the incoming value is being fetched from an **Observable** stream.
+This all works very well until the incoming value is fetched from an **Observable** stream.
 
 Why?
 
@@ -80,17 +80,18 @@ The following snippet of HTML worked like a charm when binding to a locally defi
 <child-component [person]="selectedPerson" (onChange)="save($event)"></child-component>
 {% endhighlight %}
 
-But as soon as this the **selectedPerson** object gets populated as a result of subscribing to an observable, the undefined
-errors start appearing.
+But as soon as this the **selectedPerson** object was populated by subscribing to an observable, the undefined
+errors started to appear.
 
 There had to be a way to solve this without using ***ngIf** or sacrificing the immutable input. 
 
 The reason I do not like solving this with ***ngIf** is that overuse can cause some issues, from confusing assistive 
 technologies to problems with CSS animation. No, we should try to solve this using the shiny tools that Angular2 gives us.
 
-Yes, it gives us a very natural way to directly subscribe to an **Observable** stream by using the **Async pipe**. 
+And it indeed gives us a very natural way to directly subscribe to an **Observable** stream in your HTML 
+by using the **Async pipe**. 
 
-So in the parent component I would store the **Observable** in **selectedPerson**:
+So in the parent component we could store the **Observable** in **selectedPerson**:
 
 {% highlight javascript %}
 this.selectedPerson = this.someService.getPersonFromObservable();
@@ -140,7 +141,9 @@ export class ChildComponent implements OnChanges {
     ngOnChanges(changes:any):void {
       var personChange:IContact = changes.person.currentValue;
       if (personChange) {
-        this.internalItem = new Contact(personChange.id, personChange.firstname, personChange.lastname);
+        this.internalItem = new Contact(personChange.id, 
+                                        personChange.firstname, 
+                                        personChange.lastname);
       }
     }
   
