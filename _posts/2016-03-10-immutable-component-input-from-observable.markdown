@@ -50,7 +50,7 @@ export class ChildComponent implements OnInit {
                                        person.lastname);
   }
 
-  save():void {
+  onSave():void {
     this.onChange.emit(this.internalModel);
   }
 
@@ -61,12 +61,16 @@ Next, the template for the component, where the properties of the incoming input
 input fields:
 
 {% highlight html %}
-<form (submit)="save()">
+<form (ngSubmit)="onSave()" #personForm="ngForm">
   <div>
-      <input [(ngModel)]="internalModel.firstname">
-      <input [(ngModel)]="internalModel.lastname">
+      <input [(ngModel)]="internalModel.firstname"
+             ngControl="firstname" 
+             required>
+      <input [(ngModel)]="internalModel.lastname"
+             ngControl="lastname" 
+             required>
   </div>
-  <button type="submit">Save</button>
+  <button type="submit" [disabled]="!personForm.form.valid">Save</button>
 </form>
 {% endhighlight %}
 
@@ -180,7 +184,7 @@ export class ChildComponent implements OnChanges {
       }
     }
   
-    save():void {
+    onSave():void {
       this.onChange.emit(this.internalModel);
     }
 
