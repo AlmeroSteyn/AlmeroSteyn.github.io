@@ -40,6 +40,12 @@ to use.
 
 And we are going to use all of that to build this:
 
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-03-24-form-validation-zen/Component.jpg" alt="Form component with styled validation.">
+</figure>
+{:/}
+
 Excited yet? 
 
 **Pick your flavour**
@@ -104,7 +110,6 @@ And our component template:
       [(ngSubmit)="onSubmit()">
 
     <input class="form-control"
-           type="text"
            [ngFormControl]="someNumber">
 
     <button class="btn btn-primary" 
@@ -129,7 +134,6 @@ We could do this in our component template:
 {% highlight html %}
 <label class="control-label">Some number
     <input class="form-control"
-           type="text"
            [ngFormControl]="someNumber">
 </label>
 {% endhighlight %}
@@ -169,7 +173,6 @@ So let us use this!
 <extended-input [labelText]="'Some number'"
                 [isError]="!someNumber.valid">
     <input class="form-control"
-           type="text"
            [ngFormControl]="someNumber">
    
 </extended-input>
@@ -225,7 +228,6 @@ So now we can extent the **HTML** of our top level component as follows:
 <extended-input [labelText]="'Some number'"
                 [isError]="!someNumber.valid">
     <input class="form-control"
-           type="text"
            [ngFormControl]="someNumber">
     <input-errors>
         <input-error class="help-block" 
@@ -315,7 +317,6 @@ In this case we do not need the extra error wrapper component of the previous so
 <extended-input [labelText]="'Some number'"
                 [isError]="!someNumber.valid">
     <input class="form-control"
-           type="text"
            [ngFormControl]="someNumber">
     <input-errors>
         <span class="help-block" 
@@ -387,7 +388,6 @@ And with this solution our top level component template definition of the input 
                               divisibleByTen: 'The number should be divisible by 10',
                               minlength: 'The number should be at least 7 digits'}">
     <input class="form-control"
-           type="text"
            [ngFormControl]="someNumber">
 </extended-input>
 {% endhighlight %}
