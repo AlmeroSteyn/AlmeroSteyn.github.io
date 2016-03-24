@@ -372,4 +372,90 @@ trying to apply component styles to projected content you **HAVE** to use this t
 the projected content. Omitting this will apply the styles only to the component's template. This pseudo-class is 
 a **Shadow DOM** selector.
 
+**A configuration object salad**
 
+Taking some inspiration from **ngClass**, couldn't we provide out error definition object to our decorator directive and
+let it do all the hard work for us?
+
+The answer is a big **YES WE CAN**.
+
+And with this solution our top level component template definition of the input becomes:
+{% highlight html %}
+<extended-input [labelText]="'Some number'"
+                [inputErrors]="someNumber.errors"
+                [errorDefs]="{required: 'A number is required',
+                              divisibleByTen: 'The number should be divisible by 10',
+                              minlength: 'The number should be at least 7 digits'}">
+    <input class="form-control"
+           type="text"
+           [ngFormControl]="someNumber">
+</extended-input>
+{% endhighlight %}
+
+I would lie if I did not admit that I really, REALLY like how concise this is in the **HTML**. That is a lot less
+copy-and-paste when creating complex forms!
+
+So what does it take to make this work?
+
+A component definition like this:
+{% highlight javascript %}
+@Component({
+  selector: 'extended-input',
+  template: `<div class="form-group"
+                  [ngClass]="{'has-error':isError}"> 
+                        <label class="control-label">{% raw %}{{labelText}}{% endraw %}
+                            <ng-content></ng-content>
+                        </label>
+                        <span class="help-block" 
+                              *ngIf="errorMessage">
+                              {% raw %}{{errorMessage}}{% endraw %}
+                        </span>
+             </div>
+            `,
+  directives: [CORE_DIRECTIVES]
+})
+export class ExtendedInput {
+  @Input()
+  labelText:string = '';
+  @Input()
+  isError:boolean = false;
+  @Input()
+  errorDefs:any;
+  
+  errorMessage:string = '';
+  
+  ngOnChanges(changes:any):void {
+    var errors:any = changes.inputErrors.currentValue;
+    this.errorMessage = '';
+    if (errors) {
+      Object.keys(this.errorDefs).some(key => {
+        if (errors[key]) {
+          this.errorMessage = this.errorDefs[key];
+          return true;
+        }
+      });
+    }
+  }
+}
+{% endhighlight %}
+
+In this solution we bind the error object of the input form control to the component and then watch it for changes. When
+changes occur, we populate the error placeholder with the first error. Or completely remove it from the **DOM** if there
+are no errors.
+
+**NOTE:** In this case we used **Array.some** instead of **Array.foreach** as it stops iteration when your return a 
+true boolean value.
+
+**Taking a look back**
+
+WOW, **Angular2** rocks.
+
+I mean this is some seriously useful function! And written in minimal code. 
+
+Making this in **AngularJS**, with the same level of customization and validation took a whole lot more effort!
+
+But aside form what we made here, the point of this article is also to highlight how all the basic pieces you have already
+learnt in **Angular2** can be easily put together to build some serious functionality.
+
+And not only that, but the architecture of **Angular2** gives us the freedom to find a lot more different solutions 
+to the same problem.
