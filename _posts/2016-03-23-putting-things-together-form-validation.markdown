@@ -16,7 +16,7 @@ of form validation.
 If was pimped. No jokes. Adding custom validators in the HTML and controller code only, rendering the errors on the fly
 and lots more.
 
-So what better to try out in **Angulars** than to recreate one of the most complex **AngularJS** directives I ever wrote.
+So what better to try out in **Angular2** than to recreate one of the most complex **AngularJS** directives I ever wrote.
 
 **SAY WHAT???!!**
 
@@ -28,11 +28,12 @@ fit into making a more complex functional component:
 
 * Model forms
 * Custom validators
-* Contentchildren
+* @Contentchildren decorator
 * Displaying validation errors
 * Content projection (transclusion)
 * Component styles
 * Change detection
+* Lifecycle hooks
 
 We will also be using **Bootstrap** as styling framework. It can, of course, be translated to use any styling you prefer
 to use.
@@ -62,7 +63,8 @@ Our component:
 {% highlight javascript %}
 @Component({
   selector: 'some-form',
-  templateUrl: './some-form.component.html'
+  templateUrl: './some-form.component.html',
+  directives: [FORM_DIRECTIVES]
 })
 export class SomeForm implements OnInit {
 
@@ -133,23 +135,29 @@ We could do this in our component template:
 {% endhighlight %}
 
 And this will work perfectly. **BUT** why would we want to write this for every single input if we are using something
-as nice and shiny as **Angular2**? Well, you could argue that at this stage it is not a lot of **HTML** to write extra
-and you would be perfectly right, but we will be extending our boilerplating a lot more before this is done. So let's 
-use **Content Projection** to solve this. 
+as nice and shiny as **Angular2**? Why don't we use **Content Projection** to solve this? Well, you could argue that, 
+at this stage, it is not a lot of **HTML** to write extra and you would be perfectly right, so lets also add 
+some *Bootstrap** goodness to style our input and highlight error situations!
 
-So we need another component that does this and we will be putting our label into the template:
+For this we need another component: 
 
 {% highlight javascript %}
 @Component({
   selector: 'extended-input',
-  template: ` <label class="control-label">{% raw %}{{labelText}}{% endraw %}
-                <ng-content></ng-content>
-              </label>
-            `
+  template: `<div class="form-group"
+                  [ngClass]="{'has-error':isError}"> 
+                        <label class="control-label">{% raw %}{{labelText}}{% endraw %}
+                            <ng-content></ng-content>
+                        </label>
+             </div>
+            `,
+  directives: [CORE_DIRECTIVES]
 })
 export class ExtendedInput {
   @Input()
   labelText:string = '';
+  @Input()
+  isError:boolean = false;
 }
 {% endhighlight %}
 
@@ -158,7 +166,8 @@ By using the `<ng-content>` element, the content of your component will be proje
 So let us use this!
 
 {% highlight html %}
-<extended-input [labelText]="'Some number'">
+<extended-input [labelText]="'Some number'"
+                [isError]="!someNumber.valid">
     <input class="form-control"
            type="text"
            [ngFormControl]="someNumber">
@@ -166,5 +175,201 @@ So let us use this!
 </extended-input>
 {% endhighlight %}
 
-**BAZINGA**, a label gets rendered around our input.
+**BAZINGA!!!** Now we can decorate any input we want with a label and some magic!
+
+**Salad zen: Reflecting on what we are about to do**
+
+What I really love **ng-messages** in **AngularJS** is its ability to display only the first error message of 
+a hierarchy of defined error messages. This saves just so much code and complex logic. 
+
+So this is our real mission, fellow adventurer. Now that we have a component that decorates and input with a label and
+styles to show the validation state, lets add some validation messages and only show a max of one message at any time.
+
+Here our path splits in three. Which one will your choose? Or will you choose all three? 
+
+**A salad of ContentChildren**
+
+The basis of the solution we are about to implement is to make use of the **@ContentChildren** decorator of
+**Angular2** to get access our error messages and progrmatically switch them on an off.
+
+In order to do this we need to first create a component to put our errors in. And give it the functionality to
+add or remove itself to the DOM. **HEY** we are trying to recreate **ng-messages** here!
+
+And yes, we are going to use **Content Projection** in this component too!
+{% highlight javascript %}
+@Component({
+  selector: 'input-error',
+  template: `<span *ngIf="showErrorFlag" class="help-block">
+               <ng-content></ng-content>
+             </span>
+             `,
+  directives: [CORE_DIRECTIVES]
+})
+export class InputError {
+
+  showErrorFlag:boolean = true;
+
+  hideError():void {
+    this.showErrorFlag = false;
+  }
+
+  showError():void {
+    this.showErrorFlag = true;
+  }
+
+}
+{% endhighlight %}
+
+So now we can extent the **HTML** of our top level component as follows:
+{% highlight html %}
+<extended-input [labelText]="'Some number'"
+                [isError]="!someNumber.valid">
+    <input class="form-control"
+           type="text"
+           [ngFormControl]="someNumber">
+    <input-errors>
+        <input-error class="help-block" 
+                     *ngIf="someNumber.hasError('required')">
+            A number is required
+        </nput-error>
+        <input-error class="help-block" *
+                     *ngIf="someNumber.hasError('divisibleByTen')">
+            The number should be divisible by 10
+        </input-error>
+        <input-error class="help-block" 
+                     *ngIf="someNumber.hasError('minlength')">
+            The number should be at least 7 digits
+        </input-error>
+    </input-errors>
+</extended-input>
+{% endhighlight %}
+
+Three important things to note here:
+
+1. We are using our new `<input-error>` component and projecting the text into its template.
+2. We have created an `<input-errors>` in the template. It simply acts as a placeholder. We could have used a div but 
+for this example it is clearer.
+3. We are using ***ngIf** to display only error messages for failed validations.
+
+So now we still need to do two things in our decorator component. Firstly we need to project the error messages into
+another `<ng-content>` slot, and we need remove all but the first displayed error.
+
+And once again **Angular2** comes to our rescue! 
+
+We can complete our component:
+{% highlight javascript %}
+@Component({
+  selector: 'extended-input',
+  template: `<div class="form-group"
+                  [ngClass]="{'has-error':isError}"> 
+                        <label class="control-label">{% raw %}{{labelText}}{% endraw %}
+                            <ng-content select="input"></ng-content>
+                        </label>
+                        <ng-content select="input-errors"></ng-content>
+             </div>
+            `,
+  directives: [CORE_DIRECTIVES, InputError]
+})
+export class ExtendedInput {
+  @Input()
+  labelText:string = '';
+  @Input()
+  isError:boolean = false;
+  @ContentChildren(InputError)
+  errors:QueryList<InputError>;
+  
+  ngDoCheck():void {
+    if (this.errors) {
+      this.errors.toArray().forEach(
+        (error:QaInputError, i:number) => {
+          if (i == 0) {
+            error.showError();
+          } else {
+            error.hideError();
+          }
+        });
+    }
+  }
+}
+{% endhighlight %}
+
+Important here is seeing how the use of **@ContentChildren** give us access to the functions on those components. Making
+it a breeze to remove or show error messages.
+
+Two important things to note:
+1. Because we projecting content into more than one slot we need to use **CSS** selectors to select the content per
+`<ng-content>` slot
+2. We need to reset the display of the error messages on each change detection cycle. In this case it is best done
+using the **ngDoCheck** lifecycle hook.
+
+And here we have our first solution. It works, displaying only the highest priority defined error message. 
+
+**A salad of style**
+
+This is the simplest solution we will be looking at. And it is based on **Angular2** components accepting styling as
+well as part of their definition.
+
+In this case we do not need the extra error wrapper component of the previous solution and therefore our base component's
+**HTML** becomes:
+{% highlight html %}
+<extended-input [labelText]="'Some number'"
+                [isError]="!someNumber.valid">
+    <input class="form-control"
+           type="text"
+           [ngFormControl]="someNumber">
+    <input-errors>
+        <span class="help-block" 
+              *ngIf="someNumber.hasError('required')">
+            A number is required
+        </span>
+        <span class="help-block" *
+              *ngIf="someNumber.hasError('divisibleByTen')">
+            The number should be divisible by 10
+        </span
+        <span class="help-block" 
+              *ngIf="someNumber.hasError('minlength')">
+            The number should be at least 7 digits
+        </span>
+    </input-errors>
+</extended-input>
+{% endhighlight %}
+
+What we will do in this solution is to hide all but the first displayed error message with **CSS**. 
+
+{% highlight javascript %}
+@Component({
+  selector: 'extended-input',
+  template: `<div class="form-group"
+                  [ngClass]="{'has-error':isError}"> 
+                        <label class="control-label">{% raw %}{{labelText}}{% endraw %}
+                            <ng-content select="input"></ng-content>
+                        </label>
+                        <ng-content select="input-errors"></ng-content>
+             </div>
+            `,
+  styles: [`
+            :host qa-input-errors > :not(:first-child) {
+                display: none;
+            }     
+          `]
+  directives: [CORE_DIRECTIVES]
+})
+export class ExtendedInput {
+  @Input()
+  labelText:string = '';
+  @Input()
+  isError:boolean = false;
+}
+{% endhighlight %}
+
+And with that, it is done! It certainly has simplicity in its favour! If anything, the only issue is that some error
+messages are now removed from the **DOM** while the rest are hidden with styling. 
+
+But very light weight!
+
+**NOTE:** In case you have not spotted the `:host` pseudo-class selector in the **CSS**, it is very important. If you are
+trying to apply component styles to projected content you **HAVE** to use this to indicate that you are planning to style
+the projected content. Omitting this will apply the styles only to the component's template. This pseudo-class is 
+a **Shadow DOM** selector.
+
 
