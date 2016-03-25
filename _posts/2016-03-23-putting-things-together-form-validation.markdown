@@ -44,16 +44,10 @@ Which should produce this:
 </figure>
 {:/}
 
-And, while we are at it, why don't we 
+And, while we are at it, why don't we see just how flexible **Angular2** is, and look at more than one way to construct 
+this?
 
-There is more to this than meets the eye. 
-
-In short, today we will be building an **Angular2** form validation component. And to see just how flexible it is,
-we will be building the same component in three different ways. 
-
-Before we come out the end of this blog post we will have used the following concepts in **Angular2** to see how they
-fit into making a more complex functional component:
-
+Before we are done, we will have used the following key concepts inside **Angular2**
 * Model forms
 * Custom validators
 * @Contentchildren decorator
@@ -62,6 +56,8 @@ fit into making a more complex functional component:
 * Component styles
 * Change detection
 * Lifecycle hooks
+
+If you are not familiar with these, it may be a good idea to look at them first
 
 We will also be using **Bootstrap** as styling framework. It can, of course, be translated to use any styling you prefer
 to use.
