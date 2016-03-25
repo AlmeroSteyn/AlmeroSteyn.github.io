@@ -6,6 +6,23 @@ date:   2016-03-23 16:10:21 -0100
 categories: angular2 component form validation styles css content-projection transclude
 ---
 
+>*The weary traveler moved up the mountainside. For weeks he had travelled the land of Anghu-LAHR, facing many trials,
+>gathering many magical items. He felt the weight of them in his backpack as he approached the wise woman at the top.*
+>
+>*Laying down his enchanted items he saw what he had gained again. The Amulet of Component, the Sword of Validation,
+>the Wind of Changedetection...*
+>
+>*"Well done, brave warrior", she said.*
+>
+>*"But what is next? What is their purpose?"*
+>
+>*She looked up at him. "To become a Champion of Angul-LAHR, you need to learn how to wield their power together. By
+>themselves these items are magical, only by putting them together will they become functional.*
+>
+>*He understood.*
+
+
+
 One of the best things that ever happened to me in **AngularJS** was **ng-messages**. The projects I find myself on
 are all very form intensive, and when **ng-messages** hit release it was, well, simply awesome. 
 
