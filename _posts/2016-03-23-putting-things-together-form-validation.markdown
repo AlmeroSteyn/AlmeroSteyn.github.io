@@ -326,10 +326,11 @@ And here we have our first solution. It works, displaying only the highest prior
 >*He returned from the first path with the red gem. Night had fallen and the second path was bathed in a green glow. He
 >stepped onto the green sand remembering tales from his childhood about a wizard that could make you disappear.*
 
-This is the simplest solution we will be looking at. And it is based on **Angular2** components accepting styling as
-well as part of their definition.
+This is the simplest solution we will be looking at. In **Angular2** we can provide component specific *CSS*. The way
+the framework renders this into the final page DOM ensures that the style is only applied to the component and not
+the rest of the page.
 
-In this case we do not need the extra error wrapper component of the previous solution and therefore our base component's
+In this case we do not need the extra error component component of the previous solution and therefore our base component's
 **HTML** becomes:
 {% highlight html %}
 <extended-input [labelText]="'Some number'"
@@ -353,7 +354,7 @@ In this case we do not need the extra error wrapper component of the previous so
 </extended-input>
 {% endhighlight %}
 
-What we will do in this solution is to hide all but the first displayed error message with **CSS**. 
+In this solution we will hide all but the first error message using **CSS** only. 
 
 {% highlight javascript %}
 @Component({
@@ -381,10 +382,10 @@ export class ExtendedInput {
 }
 {% endhighlight %}
 
-And with that, it is done! It certainly has simplicity in its favour! If anything, the only issue is that some error
+And just like that, it is done! It certainly has simplicity in its favour! If anything, the only issue is that some error
 messages are now removed from the **DOM** while the rest are hidden with styling. 
 
-But very light weight!
+But a very light-weight solution!
 
 **NOTE:** In case you have not spotted the `:host` pseudo-class selector in the **CSS**, it is very important. If you are
 trying to apply component styles to projected content you **HAVE** to use this to indicate that you are planning to style
