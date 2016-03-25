@@ -21,7 +21,32 @@ categories: angular2 component form validation styles css content-projection tra
 >
 >*He understood.*
 
+Today, we will see how to put together many bits that **Angular2** gives us, to construct a component that can decorate
+any input with some cool form validation function. Not only that, but it will have the power of **ng-messages** from
+**AngularJS** as well.
 
+For those who have not used **ng-messages**, this is an **AngularJS 1.x** directive that makes the management of multiple
+input field validation messages a breeze by ensuring that, at any time, a maximum of one message is shown.
+
+So why don't we build a component that we can wrap any input in like this:
+{% highlight html %}
+<extended-input>
+  <input class="i_am_just_a_normal_input_bound_to_something">
+  <maybe-some-error-info></maybe-some-error-info>
+</extended-input>
+{% endhighlight %}
+
+Which should produce this:
+ 
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-03-24-form-validation-zen/Component.jpg" alt="Form component with styled validation.">
+</figure>
+{:/}
+
+And, while we are at it, why don't we 
+
+There is more to this than meets the eye. 
 
 In short, today we will be building an **Angular2** form validation component. And to see just how flexible it is,
 we will be building the same component in three different ways. 
