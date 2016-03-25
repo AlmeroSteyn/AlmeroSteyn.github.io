@@ -21,7 +21,7 @@ categories: angular2 component form validation styles css content-projection tra
 >
 >*He understood.*
 
-Today, we will see how to put together many bits that **Angular2** gives us, to construct a component that can decorate
+Today, we will see how to put together some of the many bits that **Angular2** gives us, to construct a component that can decorate
 any input with some cool form validation function. Not only that, but it will have the power of **ng-messages** from
 **AngularJS** as well.
 
@@ -48,46 +48,42 @@ And, while we are at it, why don't we see just how flexible **Angular2** is, and
 this?
 
 Before we are done, we will have used the following key concepts inside **Angular2**
-* Model forms
-* Custom validators
-* @Contentchildren decorator
+* Model driven forms
+* Form validation and custom validators
 * Displaying validation errors
-* Content projection (transclusion)
-* Component styles
+* Contentchildren decorator
+* Content projection (Angular2's own transclusion)
+* Component styling
 * Change detection
 * Lifecycle hooks
 
-If you are not familiar with these, it may be a good idea to look at them first
+If you are not familiar with these, it may be a good idea to look at them first. The **Angular2** documentation contains
+information about these points and a number of very good articles have been written on all of these topics.
 
-We will also be using **Bootstrap** as styling framework. It can, of course, be translated to use any styling you prefer
-to use.
+We will use **Bootstrap CSS** as styling framework. However this can be replaced with your framework of choice.
 
-And we are going to use all of that to build this:
+**The three paths**
 
-{::nomarkdown}
-<figure>
-    <img src="/css/images/2016-03-24-form-validation-zen/Component.jpg" alt="Form component with styled validation.">
-</figure>
-{:/}
+>*In front of him were three paths. He could choose one, but the words of the wise woman haunted him and he secretly knew
+>that his journey could only ever become complete if he explores them all.*
 
-Excited yet? 
+We will look at there ways to get to the same result. All three options will use **Content Projection** as basis but will
+differ in how the error messages are managed.
 
-**Pick your flavour**
+1. Using general change detection and communicating with the content children.
+2. Using component styles.
+3. Using component input change detection and an error definition object.
 
-* With content projection, ngDoCheck and contentchildren
-* With content projection and component styling
-* With content projection, ngOnChanges and full error template rendering
+**Preparing the journey: part 1**
 
-I do encourage you, brave traveler, to sample them all. 
+>*Being well prepared was crucial for his journey. He packed quick and light making sure that everything he needed
+>was there.*
 
-**The base of our salad: Content projection and validation**
+We need a basis to work from and already know how to create component in **Angular2** with form validation. 
+So let us build one quickly.
 
-We already know how to create component in **Angular2** with form validation. So let us build one quickly.
-
-Our component will consist of a form with one input as form element. The input will have three validations, two 
-standard validations that **Angular2** gives you, and then one custom validation we built to check if the 
-component input is divisible by 10. These validations are only a means to an end here, you can add any validations
-you want.
+Our component will consist of a form with one input as form element. This input will have a mix of standard and 
+custom validations. 
 
 Our component:
 {% highlight javascript %}
@@ -124,7 +120,6 @@ export class SomeForm implements OnInit {
     this.someNumber = this.someFormHandle.find('someNumber');
   }
   
-  
 }
 {% endhighlight %}
 
@@ -144,7 +139,12 @@ And our component template:
 </form>
 {% endhighlight %}
 
-**Now add some orange juice for flavour: Content projection**
+We now have a component that one input. This input is required, wants an input of minimal length seven, and the number
+value of the input should be divisible by ten.
+
+**Preparing for the journey: part 2**
+
+>*Having packed, he strapped on his armour. It was magical armour that shone with colour and power.*
 
 So now we have an input with some validation attached. But face it, going to a form with only empty inputs on it
 will make even the most sane person reach for the chainsaw so it really, really needs a label.
