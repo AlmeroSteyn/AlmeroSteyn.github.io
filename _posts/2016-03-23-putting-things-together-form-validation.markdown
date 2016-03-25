@@ -392,7 +392,7 @@ trying to apply component styles to projected content you **HAVE** to use this t
 the projected content. Omitting this will apply the styles only to the component's template. This pseudo-class is 
 a **Shadow DOM** selector.
 
-**A configuration object salad**
+**The third path: The **
 
 Taking some inspiration from **ngClass**, couldn't we provide out error definition object to our decorator directive and
 let it do all the hard work for us?
