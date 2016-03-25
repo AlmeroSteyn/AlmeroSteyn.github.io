@@ -267,8 +267,9 @@ Three important things to note here:
 for this example it is clearer.
 3. We are using ***ngIf** to display only error messages for failed validations.
 
-So now we still need to do two things in our decorator component. Firstly we need to project the error messages into
-another `<ng-content>` slot, and we need remove all but the first displayed error.
+So now we still need to do two things in our decorator component. Currently it will project all the content right into 
+the label! This is not handy, so we need to project the error messages into
+another `<ng-content>` slot. When that is done we need remove all but the first displayed error.
 
 And once again **Angular2** comes to our rescue! 
 
@@ -309,12 +310,12 @@ export class ExtendedInput {
 }
 {% endhighlight %}
 
-Important here is seeing how the use of **@ContentChildren** give us access to the functions on those components. Making
+Important tot note how we used **@ContentChildren** to give us access to the functions on the error component. Making
 it a breeze to remove or show error messages.
 
-Two important things to note:
+Two other important things to note:
 1. Because we projecting content into more than one slot we need to use **CSS** selectors to select the content per
-`<ng-content>` slot
+`<ng-content>` slot.
 2. We need to reset the display of the error messages on each change detection cycle. In this case it is best done
 using the **ngDoCheck** lifecycle hook.
 
