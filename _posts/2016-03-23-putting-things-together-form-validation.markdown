@@ -144,12 +144,12 @@ value of the input should be divisible by ten.
 
 **Preparing for the journey: part 2**
 
->*Having packed, he strapped on his armour. It was magical armour that shone with colour and power.*
+>*Having packed, he strapped on his armour made from Angu-LAHR steel. It was magical armour that shone with colour and power.*
 
-So now we have an input with some validation attached. But face it, going to a form with only empty inputs on it
-will make even the most sane person reach for the chainsaw so it really, really needs a label.
+We now have an input with some validation attached. But face it, come face to face with the Monster of UnkownInput
+will make even the most brave warrior tremble so it really, really needs a label.
 
-**NOTE:** *a11y also really really thinks a form needs a label, by the way. Not providing well formed labels for your
+**NOTE:** *a11y also really really thinks an input needs a label, by the way. Omitting well formed labels for your inputs
 will really impede some users from using your forms. This article will not focus very deeply on a11y to avoid making
 an already complex matter even more so. But look out for some articles on this in future.*
 
@@ -163,7 +163,7 @@ We could do this in our component template:
 {% endhighlight %}
 
 And this will work perfectly. **BUT** why would we want to write this for every single input if we are using something
-as nice and shiny as **Angular2**? Why don't we use **Content Projection** to solve this? Well, you could argue that, 
+as shiny as **Angular2**? Why don't we use **Content Projection** to solve this? Well, you could argue that, 
 at this stage, it is not a lot of **HTML** to write extra and you would be perfectly right, so lets also add 
 some *Bootstrap** goodness to style our input and highlight error situations!
 
