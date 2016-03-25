@@ -168,7 +168,6 @@ at this stage, it is not a lot of **HTML** to write extra and you would be perfe
 some *Bootstrap** goodness to style our input and highlight error situations!
 
 For this we need another component: 
-
 {% highlight javascript %}
 @Component({
   selector: 'extended-input',
@@ -189,38 +188,29 @@ export class ExtendedInput {
 }
 {% endhighlight %}
 
-By using the `<ng-content>` element, the content of your component will be projected into this slot of your **HTML**.
+By using the `<ng-content>` element, the *HTML* being wrapped by our component will be projected into this slot.
 
-So let us use this!
-
+Let us use this!
 {% highlight html %}
 <extended-input [labelText]="'Some number'"
                 [isError]="!someNumber.valid">
     <input class="form-control"
            [ngFormControl]="someNumber">
-   
 </extended-input>
 {% endhighlight %}
 
 **BAZINGA!!!** Now we can decorate any input we want with a label and some magic!
 
-**Salad zen: Reflecting on what we are about to do**
+**The first path: The children of Anhu-LAHR**
 
-What I really love **ng-messages** in **AngularJS** is its ability to display only the first error message of 
-a hierarchy of defined error messages. This saves just so much code and complex logic. 
+>*He was ready and he stood onto the burning red sand of the first path. In the distance he could hear voices.
+>He knew that for his journey to succeed he had to talk to them and convince them to help him.*
 
-So this is our real mission, fellow adventurer. Now that we have a component that decorates and input with a label and
-styles to show the validation state, lets add some validation messages and only show a max of one message at any time.
+For this solution we will make use of the **@ContentChildren** decorator of
+**Angular2** to access our error messages and switch them on an off in code.
 
-Here our path splits in three. Which one will your choose? Or will you choose all three? 
-
-**A salad of ContentChildren**
-
-The basis of the solution we are about to implement is to make use of the **@ContentChildren** decorator of
-**Angular2** to get access our error messages and progrmatically switch them on an off.
-
-In order to do this we need to first create a component to put our errors in. And give it the functionality to
-add or remove itself to the DOM. **HEY** we are trying to recreate **ng-messages** here!
+In order to do this we need to first create a container component for our errors. We will then give it the functionality to
+add or remove itself to or from the DOM. **HEY** we are trying to recreate **ng-messages** here, after all!
 
 And yes, we are going to use **Content Projection** in this component too!
 {% highlight javascript %}
@@ -273,7 +263,7 @@ So now we can extent the **HTML** of our top level component as follows:
 Three important things to note here:
 
 1. We are using our new `<input-error>` component and projecting the text into its template.
-2. We have created an `<input-errors>` in the template. It simply acts as a placeholder. We could have used a div but 
+2. We have written an `<input-errors>` tag in the template. It simply acts as a placeholder. We could have used a div but 
 for this example it is clearer.
 3. We are using ***ngIf** to display only error messages for failed validations.
 
