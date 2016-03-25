@@ -321,7 +321,10 @@ using the **ngDoCheck** lifecycle hook.
 
 And here we have our first solution. It works, displaying only the highest priority defined error message. 
 
-**A salad of style**
+**The second path: The wizard of Angu-LAHR**
+
+>*He returned from the first path with the red gem. Night had fallen and the second path was bathed in a green glow. He
+>stepped onto the green sand remembering tales from his childhood about a wizard that could make you disappear.*
 
 This is the simplest solution we will be looking at. And it is based on **Angular2** components accepting styling as
 well as part of their definition.
