@@ -16,26 +16,12 @@ categories: angular2 component form validation styles css content-projection tra
 >
 >*"But what is next? What is their purpose?"*
 >
->*She looked up at him. "To become a Champion of Angul-LAHR, you need to learn how to wield their power together. By
+>*She looked up at him. "To become a Champion of Angul-LAHR, you need to learn to wield their power together. By
 >themselves these items are magical, only by putting them together will they become functional.*
 >
 >*He understood.*
 
 
-
-One of the best things that ever happened to me in **AngularJS** was **ng-messages**. The projects I find myself on
-are all very form intensive, and when **ng-messages** hit release it was, well, simply awesome. 
-
-But I wanted more, I wanted a *transclude* directive that would wrap my input in some magical form-validation candy
-without me having to write the boilerplate on every single form for every single form. And I did it. The *holy grail*
-of form validation. 
-
-If was pimped. No jokes. Adding custom validators in the HTML and controller code only, rendering the errors on the fly
-and lots more.
-
-So what better to try out in **Angular2** than to recreate one of the most complex **AngularJS** directives I ever wrote.
-
-**SAY WHAT???!!**
 
 In short, today we will be building an **Angular2** form validation component. And to see just how flexible it is,
 we will be building the same component in three different ways. 
