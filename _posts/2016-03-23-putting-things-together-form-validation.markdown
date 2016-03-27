@@ -283,7 +283,7 @@ We can complete our component:
              </div>`,
   directives: [CORE_DIRECTIVES, InputError]
 })
-export class ExtendedInput {
+export class ExtendedInput implements DoCheck{
   @Input()
   labelText:string = '';
   @Input()
@@ -327,11 +327,11 @@ And here we have our first solution. It works, displaying only the highest prior
 >*He returned from the first path with the red gem. Night had fallen and the second path was bathed in a green glow. He
 >stepped onto the green sand remembering tales from his childhood about a wizard that could make you disappear.*
 
-This is the simplest solution we will be looking at. In **Angular2** we can provide component specific *CSS*. The way
-the framework renders this into the final page DOM ensures that the style is only applied to the component and not
+This is the simplest solution we will be looking at. In **Angular2** we can provide component specific **CSS**. The way
+the framework renders this into the **DOM** ensures that the style is only applied to the component and not
 the rest of the page.
 
-In this case we do not need the extra error component component of the previous solution and therefore our base component's
+In this case we do not need the extra error component of the previous solution and therefore our base component's
 **HTML** becomes:
 {% highlight html %}
 <extended-input [labelText]="'Some number'"
@@ -355,7 +355,7 @@ In this case we do not need the extra error component component of the previous 
 </extended-input>
 {% endhighlight %}
 
-In this solution we will hide all but the first error message using **CSS** only. 
+Now we simply need to hide all but the first error message using **CSS** only. 
 
 {% highlight javascript %}
 @Component({
@@ -366,13 +366,10 @@ In this solution we will hide all but the first error message using **CSS** only
                             <ng-content select="input"></ng-content>
                         </label>
                         <ng-content select="input-errors"></ng-content>
-             </div>
-            `,
-  styles: [`
-            :host input-errors > :not(:first-child) {
+             </div>`,
+  styles: [`:host input-errors > :not(:first-child) {
                 display: none;
-            }     
-          `]
+            }`]
   directives: [CORE_DIRECTIVES]
 })
 export class ExtendedInput {
@@ -388,24 +385,24 @@ messages are now removed from the **DOM** while the rest are hidden with styling
 
 But a very light-weight solution!
 
-{::nomarkdown}
-<iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/0HQQUfRvLdg50xMQ3GWS/" frameborder="0" allowfullscren="allowfullscren"></iframe>
-{:/}
-
-**NOTE:** In case you have not spotted the `:host` pseudo-class selector in the **CSS**, it is very important. If you are
+**NOTE:** In case you have not spotted the **:host** pseudo-class selector in the **CSS**, it is very important. If you are
 trying to apply component styles to projected content you **HAVE** to use this to indicate that you are planning to style
 the projected content. Omitting this will apply the styles only to the component's template. This pseudo-class is 
 a **Shadow DOM** selector.
 
+{::nomarkdown}
+<iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/0HQQUfRvLdg50xMQ3GWS/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+{:/}
+
 **The third path: The grail of Angu-LAHR**
 
 >*The sun rose red on the horizon when he returned with the green vial containing a potion of invisibility. Only one path
->remained. The blue sand shining the mornning sun. At the end of this path was the grail.*
+>remained. The blue sand shining in the morning sun. At the end of this path was the grail, an object of power.*
 
 Taking some inspiration from **ngClass**, wouldn't it be great if we could provide an error definition object to our 
 decorator directive and let it do all the hard work for us?
 
-The answer is a big **"YES WE CAN"**. But in order to do this we will need to also provide the error object of the form
+The answer is a big **"YES WE CAN"**. But in order to do this we will need to access the error object of the form
 element that **Angular2** gives us for every validated element.
 
 So now the **HTML** inside our base component's template becomes:
@@ -438,8 +435,7 @@ With the following component definition object:
                               *ngIf="errorMessage">
                               {% raw %}{{errorMessage}}{% endraw %}
                         </span>
-             </div>
-            `,
+             </div>`,
   directives: [CORE_DIRECTIVES]
 })
 export class ExtendedInput implements OnChanges {
@@ -474,8 +470,7 @@ are no errors.
 
 And with very little code we also get this version of our solution working.
 
-**NOTE:** Here we use **Array.some** instead of **Array.foreach** as it stops iteration when your return a 
-true boolean value.
+**NOTE:** Here we use **Array.some** instead of **Array.foreach** as it stops iteration when **true** is returned.
 
 {::nomarkdown}
 <iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/UehSlATuAmP4RzVbByXJ/" frameborder="0" allowfullscren="allowfullscren"></iframe>
@@ -495,7 +490,7 @@ With minimal code we have created something extremely useful.
 But more importantly, this highlights how all the basic pieces you have already
 know in **Angular2** can be easily put together to build some powerful functionality.
 
-And not only that, but the architecture of **Angular2** gives us the freedom to find a lot more different solutions 
-to the same problem.
+And not only that, but the architecture of **Angular2** gives us a lot of freedom in the options we have to solve 
+problems.
 
-So go forth warrior of Angu-LAHR and find your own treasure!
+Now go forth warrior of Angu-LAHR and find your own treasure!
