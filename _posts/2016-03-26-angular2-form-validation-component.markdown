@@ -172,14 +172,12 @@ And we create a decorator component to add our label and styles:
 {% highlight javascript %}
 @Component({
   selector: 'extended-input',
-  template: `
-             <div class="form-group"
+  template: `<div class="form-group"
                   [ngClass]="{'has-error':isError}"> 
                         <label class="control-label">{% raw %}{{labelText}}{% endraw %}
                             <ng-content></ng-content>
                         </label>
-             </div>
-             `,
+             </div>`,
   directives: [CORE_DIRECTIVES]
 })
 export class ExtendedInput {
