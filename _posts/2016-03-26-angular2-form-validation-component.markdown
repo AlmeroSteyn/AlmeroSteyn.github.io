@@ -2,7 +2,7 @@
 layout: post
 title:  "Angular 2: Creating powerful form validation components."
 description: "You know the basics, now see the power..."
-date:   2016-03-23 16:10:21 -0100
+date:   2016-03-26 16:10:21 -0100
 categories: angular2 angular component form validation styles css content-projection transclude ng-messages
 ---
 
@@ -40,7 +40,7 @@ Which should then produce this:
  
 {::nomarkdown}
 <figure>
-    <img src="/css/images/2016-03-24-form-validation-zen/Component.jpg" alt="Form component with styled validation.">
+    <img src="/css/images/2016-03-26-angular2-form-validation-component/Component.jpg" alt="Form component with styled validation.">
 </figure>
 {:/}
 
@@ -498,7 +498,7 @@ know in **Angular 2** can be easily put together to build some powerful function
 And not only that, but the architecture of **Angular 2** gives us a lot of freedom in the options we have to solve 
 problems.
 
-Now go forth warrior of Angu-LAHR and find your own treasure!
+Now go forth, warrior of Angu-LAHR, and find your own treasure!
 
 **References**
 
