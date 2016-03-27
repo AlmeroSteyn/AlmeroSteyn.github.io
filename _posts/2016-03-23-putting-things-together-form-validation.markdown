@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular2: Form validation salad."
+title:  "Angular 2: Form validation salad."
 description: "You know the basics, now see the power..."
 date:   2016-03-23 16:10:21 -0100
 categories: angular2 component form validation styles css content-projection transclude
@@ -21,7 +21,7 @@ categories: angular2 component form validation styles css content-projection tra
 >
 >*He understood.*
 
-Today, we will see how to put together some of the many bits that **Angular2** gives us, to construct a component that can decorate
+Today, we will see how to put together some of the many bits that **Angular 2** gives us, to construct a component that can decorate
 any input with some cool form validation function. Not only that, but it will have the power of **ng-messages** from
 **AngularJS** as well.
 
@@ -44,22 +44,22 @@ Which should then produce this:
 </figure>
 {:/}
 
-And, while we are at it, why don't we see just how flexible **Angular2** is, and look at more than one way to do 
+And, while we are at it, why don't we see just how flexible **Angular 2** is, and look at more than one way to do 
 this?
 
-Before we are done, we will have used the following key concepts inside **Angular2**:
+Before we are done, we will have used the following key concepts inside **Angular 2**:
 
 * Model driven forms
 * Form validation and custom validators
 * Displaying validation errors
 * The @Contentchildren decorator
-* Content projection (Angular2's own transclusion)
+* Content projection (Angular 2's own transclusion)
 * Component level styling
 * Change detection
 * Lifecycle hooks
 
 If you are not familiar with these concepts, it may be a good idea to look at them first. The 
- <a href="https://angular.io/docs/ts/latest/" target="_blank">Angular2 documentation</a> contains
+ <a href="https://angular.io/docs/ts/latest/" target="_blank">Angular 2 documentation</a> contains
 information about these points and a number of very good blog articles have been written on all of these topics (*see 
 the end of this post for a reference list*).
 
@@ -79,7 +79,7 @@ Then we will look at various ways to manage the display of our error messages.
 >*Being well prepared was crucial for his journey. He packed quick and light, making sure that he thought
 >of all the necessities.*
 
-We need a basis to work from and already know how to create a component in **Angular2** with form validation. 
+We need a basis to work from and already know how to create a component in **Angular 2** with form validation. 
 So let us build one quickly.
 
 Our component will consist of a form with one input as form element. This input will have a mix of standard and 
@@ -164,7 +164,7 @@ But, back to our label. We could add a label to our input like this:
 {% endhighlight %}
 
 And this will work perfectly, but why would we want to write this for every single input if we are using something
-as shiny as **Angular2**? Why don't we use **Content Projection** to solve this? Well, you could argue that, 
+as shiny as **Angular 2**? Why don't we use **Content Projection** to solve this? Well, you could argue that, 
 at this stage, it is not a lot of **HTML** to write and you would be perfectly right, so lets also add 
 some **Bootstrap** goodness to style our input and highlight error situations!
 
@@ -208,7 +208,7 @@ Let us use this!
 >For his journey to succeed, he had to talk to them and convince them to help him.*
 
 For this solution we will make use of the **@ContentChildren** decorator of
-**Angular2** to access our error messages and switch them on and off.
+**Angular 2** to access our error messages and switch them on and off.
 
 In order to do this we need to first create a container component for our errors. We will then give it the functionality to
 add or remove itself to or from the **DOM**. *HEY*, we are trying to recreate **ng-messages** here, after all!
@@ -271,7 +271,7 @@ So now we still need to do two things in our decorator component. Currently it w
 the label! This is not handy, so we need to project the error messages into
 another **ng-content** slot. When that is done we need to remove all but the first displayed error.
 
-And once again **Angular2** comes to our rescue! 
+And once again **Angular 2** comes to our rescue! 
 
 We can complete our component:
 {% highlight javascript %}
@@ -330,7 +330,7 @@ And here we have our first solution. It works, displaying only the error message
 >*He returned from the first path with the red gem. Night had fallen and the second path was bathed in a green glow. He
 >stepped onto the green sand remembering tales from his childhood about a wizard that could make you disappear.*
 
-This is the simplest solution we will be looking at. In **Angular2** we can provide component specific **CSS**. The way
+This is the simplest solution we will be looking at. In **Angular 2** we can provide component specific **CSS**. The way
 the framework renders this into the **DOM** ensures that the style is only applied to the component and not
 the rest of the page.
 
@@ -406,7 +406,7 @@ Taking some inspiration from **ngClass**, wouldn't it be great if we could provi
 decorator directive and let it do all the hard work for us?
 
 The answer is a big **"YES WE CAN"**. But in order to do this, we will need to access the error object of the form
-element that **Angular2** provides for us automatically.
+element that **Angular 2** provides for us automatically.
 
 So now the **HTML** inside our base component's template becomes:
 {% highlight html %}
@@ -486,14 +486,14 @@ And with very little code we also get this version of our solution working.
 >*He knew this was only the start of a great adventure to explore all of Angu-LAHR. He knew that even more powerful items
 >lay within its boundaries.*
 
-WOW, **Angular2** rocks.
+WOW, **Angular 2** rocks.
 
 With minimal code we have created something extremely useful. 
 
 But more importantly, this highlights how all the basic pieces you have already
-know in **Angular2** can be easily put together to build some powerful functionality.
+know in **Angular 2** can be easily put together to build some powerful functionality.
 
-And not only that, but the architecture of **Angular2** gives us a lot of freedom in the options we have to solve 
+And not only that, but the architecture of **Angular 2** gives us a lot of freedom in the options we have to solve 
 problems.
 
 Now go forth warrior of Angu-LAHR and find your own treasure!
