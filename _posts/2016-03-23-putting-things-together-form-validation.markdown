@@ -203,7 +203,7 @@ Let us use this!
 
 **The first path: The children of Anhu-LAHR**
 
->*He was ready and he stood onto the burning red sand of the first path. In the distance he could hear voices.
+>*He was ready and he stepped onto the burning red sand of the first path. In the distance he could hear voices.
 >He knew that for his journey to succeed he had to talk to them and convince them to help him.*
 
 For this solution we will make use of the **@ContentChildren** decorator of
@@ -247,7 +247,7 @@ So now we can extent the **HTML** of our top level component as follows:
         <input-error class="help-block" 
                      *ngIf="someNumber.hasError('required')">
             A number is required
-        </nput-error>
+        </input-error>
         <input-error class="help-block" *
                      *ngIf="someNumber.hasError('divisibleByTen')">
             The number should be divisible by 10
@@ -321,6 +321,10 @@ using the **ngDoCheck** lifecycle hook.
 
 And here we have our first solution. It works, displaying only the highest priority defined error message. 
 
+{::nomarkdown}
+<iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/uJP24baWv1OzPUR1ZKyQ/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+{:/}
+
 **The second path: The wizard of Angu-LAHR**
 
 >*He returned from the first path with the red gem. Night had fallen and the second path was bathed in a green glow. He
@@ -345,7 +349,7 @@ In this case we do not need the extra error component component of the previous 
         <span class="help-block" *
               *ngIf="someNumber.hasError('divisibleByTen')">
             The number should be divisible by 10
-        </span
+        </span>
         <span class="help-block" 
               *ngIf="someNumber.hasError('minlength')">
             The number should be at least 7 digits
@@ -368,7 +372,7 @@ In this solution we will hide all but the first error message using **CSS** only
              </div>
             `,
   styles: [`
-            :host qa-input-errors > :not(:first-child) {
+            :host input-errors > :not(:first-child) {
                 display: none;
             }     
           `]
@@ -386,6 +390,10 @@ And just like that, it is done! It certainly has simplicity in its favour! If an
 messages are now removed from the **DOM** while the rest are hidden with styling. 
 
 But a very light-weight solution!
+
+{::nomarkdown}
+<iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/0HQQUfRvLdg50xMQ3GWS/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+{:/}
 
 **NOTE:** In case you have not spotted the `:host` pseudo-class selector in the **CSS**, it is very important. If you are
 trying to apply component styles to projected content you **HAVE** to use this to indicate that you are planning to style
@@ -421,7 +429,7 @@ A component definition like this:
 @Component({
   selector: 'extended-input',
   template: `<div class="form-group"
-                  [ngClass]="{'has-error':isError}"> 
+                  [ngClass]="{'has-error':errorMessage}"> 
                         <label class="control-label">{% raw %}{{labelText}}{% endraw %}
                             <ng-content></ng-content>
                         </label>
@@ -433,11 +441,11 @@ A component definition like this:
             `,
   directives: [CORE_DIRECTIVES]
 })
-export class ExtendedInput {
+export class ExtendedInput implements OnChanges {
   @Input()
   labelText:string = '';
   @Input()
-  isError:boolean = false;
+  inputErrors:any;
   @Input()
   errorDefs:any;
   
@@ -461,6 +469,10 @@ export class ExtendedInput {
 In this solution we bind the error object of the input form control to the component and then watch it for changes. When
 changes occur, we populate the error placeholder with the first error. Or completely remove it from the **DOM** if there
 are no errors.
+
+{::nomarkdown}
+<iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/UehSlATuAmP4RzVbByXJ/" frameborder="0" allowfullscren="allowfullscren"></iframe>
+{:/}
 
 **NOTE:** In this case we used **Array.some** instead of **Array.foreach** as it stops iteration when your return a 
 true boolean value.
