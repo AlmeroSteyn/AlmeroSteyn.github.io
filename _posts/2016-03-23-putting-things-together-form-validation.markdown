@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular 2: Form validation salad."
+title:  "Angular 2: Form validation zen."
 description: "You know the basics, now see the power..."
 date:   2016-03-23 16:10:21 -0100
 categories: angular2 component form validation styles css content-projection transclude
@@ -202,10 +202,10 @@ Let us use this!
 
 *BAZINGA!!!* Now we can decorate any input we want with a label and some magic!
 
-**The first path: The children of Anhu-LAHR**
+**The first path: The children of Angu-LAHR**
 
 >*He was ready and he stepped onto the burning red sand of the first path. In the distance he could hear voices.
->For his journey to succeed, he had to talk to them and convince them to help him.*
+>For his journey to succeed, he had to talk to them and convince them to give him the magical key.*
 
 For this solution we will make use of the **@ContentChildren** decorator of
 **Angular 2** to access our error messages and switch them on and off.
@@ -327,7 +327,7 @@ And here we have our first solution. It works, displaying only the error message
 
 **The second path: The wizard of Angu-LAHR**
 
->*He returned from the first path with the red gem. Night had fallen and the second path was bathed in a green glow. He
+>*He returned from the first path with the red key. Night had fallen and the second path was bathed in a green glow. He
 >stepped onto the green sand remembering tales from his childhood about a wizard that could make you disappear.*
 
 This is the simplest solution we will be looking at. In **Angular 2** we can provide component specific **CSS**. The way
@@ -399,8 +399,8 @@ a **Shadow DOM** selector.
 
 **The third path: The grail of Angu-LAHR**
 
->*The sun rose red on the horizon when he returned with the green vial containing a potion of invisibility. Only one path
->remained. The blue sand shining in the morning sun. At the end of this path was the grail, an object of power.*
+>*The sun rose red on the horizon when he returned with a green vial containing a potion of invisibility. Only one path
+>remained. The blue sand shining in the morning sun. At the end of this path was the Grail of Configuration.*
 
 Taking some inspiration from **ngClass**, wouldn't it be great if we could provide an error definition object to our 
 decorator directive and let it do all the hard work for us?
@@ -481,6 +481,8 @@ And with very little code we also get this version of our solution working.
 
 **Taking a look back**
 
+>*The old woman looked at the three objects he had crafted on his journey.*
+>
 >*"You have done well. Now go back to your village and put what you have found to good use", said the wise woman.*
 >
 >*He knew this was only the start of a great adventure to explore all of Angu-LAHR. He knew that even more powerful items
