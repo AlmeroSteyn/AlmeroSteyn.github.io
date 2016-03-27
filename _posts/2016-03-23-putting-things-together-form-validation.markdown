@@ -70,13 +70,14 @@ We will use **Bootstrap CSS** as styling framework. However this can be replaced
 >*In front of him were three paths. He could choose only one, but the words of the wise woman haunted him and he secretly knew
 >that his journey could only ever become complete if he explored them all.*
 
-We will look at three ways to get to the same result. All three options will use **Content Projection** as basis but will
-differ in how the error messages are managed.
+We will look at three ways to build the same functionality. All three options will use **Content Projection** as basis.
+
+Then we will look at various ways to manage the display of our error messages.
 
 **Preparing for the journey: part 1**
 
->*Being well prepared was crucial for his journey. He packed quick and light making sure that everything he needed
->was there.*
+>*Being well prepared was crucial for his journey. He packed quick and light, making sure that he thought
+>of all the necessities.*
 
 We need a basis to work from and already know how to create a component in **Angular2** with form validation. 
 So let us build one quickly.
@@ -139,19 +140,19 @@ And our component template:
 {% endhighlight %}
 
 We now have a component with one input. This input is required, needs a value of at least seven characters/numbers, 
-and the number version of the of the input value should be divisible by ten.
+and the number version of the input value should be divisible by ten.
 
 **Preparing for the journey: part 2**
 
 >*Having packed, he strapped on his armour made from Angu-LAHR steel. It was magical armour that shone with colour and power.*
 
 We now have an input with some validation attached. But coming face to face with the *Monster of UnlabelledInput*
-will make even the most brave warrior tremble so it really, really needs a label.
+will make even the most brave warrior tremble, so it really, really needs a label.
 
 **NOTE:** *Web Accessibility (**a11y**) also really really thinks that an input needs a label, by the way. Omitting 
 well-formed labels for your inputs
 will really impede some users from using your forms. This article will not focus further on a11y, to avoid making
-an already complex matter even more so. You will need do more to make your input fully accessible, but look out for some 
+an already complex matter even more so. You will need to do more to make your input fully accessible, but look out for some 
 articles on this in future.*
 
 But, back to our label. We could add a label to our input like this:
@@ -167,7 +168,7 @@ as shiny as **Angular2**? Why don't we use **Content Projection** to solve this?
 at this stage, it is not a lot of **HTML** to write and you would be perfectly right, so lets also add 
 some **Bootstrap** goodness to style our input and highlight error situations!
 
-We will create a decorator component to add our label and styles: 
+And we create a decorator component to add our label and styles: 
 {% highlight javascript %}
 @Component({
   selector: 'extended-input',
@@ -199,12 +200,12 @@ Let us use this!
 </extended-input>
 {% endhighlight %}
 
-**BAZINGA!!!** Now we can decorate any input we want with a label and some magic!
+*BAZINGA!!!* Now we can decorate any input we want with a label and some magic!
 
 **The first path: The children of Anhu-LAHR**
 
 >*He was ready and he stepped onto the burning red sand of the first path. In the distance he could hear voices.
->He knew that for his journey to succeed, he had to talk to them and convince them to help him.*
+>For his journey to succeed, he had to talk to them and convince them to help him.*
 
 For this solution we will make use of the **@ContentChildren** decorator of
 **Angular2** to access our error messages and switch them on and off.
@@ -316,9 +317,9 @@ Two other important things to note:
 1. Because we are projecting content into more than one slot we need to use **CSS** selectors to select the content per
 **ng-content** slot.
 2. We need to reset the error messages on each change detection cycle. In this case it is best done
-using the **ngDoCheck** lifecycle hook as this is triggered for every change detection cycle.
+using the **ngDoCheck** lifecycle hook as this is triggered for every cycle.
 
-And here we have our first solution. It works, displaying only the highest priority defined error message. 
+And here we have our first solution. It works, displaying only the error message with highest priority. 
 
 {::nomarkdown}
 <iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/uJP24baWv1OzPUR1ZKyQ/" frameborder="0" allowfullscren="allowfullscren"></iframe>
@@ -404,8 +405,8 @@ a **Shadow DOM** selector.
 Taking some inspiration from **ngClass**, wouldn't it be great if we could provide an error definition object to our 
 decorator directive and let it do all the hard work for us?
 
-The answer is a big **"YES WE CAN"**. But in order to do this we will need to access the error object of the form
-element that **Angular2** gives us for every validated element.
+The answer is a big **"YES WE CAN"**. But in order to do this, we will need to access the error object of the form
+element that **Angular2** provides for us automatically.
 
 So now the **HTML** inside our base component's template becomes:
 {% highlight html %}
