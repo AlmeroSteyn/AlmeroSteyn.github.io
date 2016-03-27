@@ -26,7 +26,7 @@ any input with some cool form validation function. Not only that, but it will ha
 **AngularJS** as well.
 
 For those who have not used **ng-messages**, this is an **AngularJS 1.x** directive that makes the management of multiple
-input field validation messages a breeze by ensuring that, at any time, a maximum of one message is shown.
+input field validation messages a breeze by ensuring that at a maximum of one message is shown at any time.
 
 So why don't we build a component that we can wrap any input in like this:
 {% highlight html %}
@@ -44,10 +44,11 @@ Which should produce this:
 </figure>
 {:/}
 
-And, while we are at it, why don't we see just how flexible **Angular2** is, and look at more than one way to construct 
+And, while we are at it, why don't we see just how flexible **Angular2** is, and look at more than one way to do 
 this?
 
-Before we are done, we will have used the following key concepts inside **Angular2**
+Before we are done, we will have used the following key concepts inside **Angular2**:
+
 * Model driven forms
 * Form validation and custom validators
 * Displaying validation errors
@@ -57,29 +58,25 @@ Before we are done, we will have used the following key concepts inside **Angula
 * Change detection
 * Lifecycle hooks
 
-If you are not familiar with these, it may be a good idea to look at them first. The **Angular2** documentation contains
+If you are not familiar with these concepts, it may be a good idea to look at them first. The **Angular2** documentation contains
 information about these points and a number of very good articles have been written on all of these topics.
 
 We will use **Bootstrap CSS** as styling framework. However this can be replaced with your framework of choice.
 
 **The three paths**
 
->*In front of him were three paths. He could choose one, but the words of the wise woman haunted him and he secretly knew
->that his journey could only ever become complete if he explores them all.*
+>*In front of him were three paths. He could choose only one, but the words of the wise woman haunted him and he secretly knew
+>that his journey could only ever become complete if he explored them all.*
 
-We will look at there ways to get to the same result. All three options will use **Content Projection** as basis but will
+We will look at three ways to get to the same result. All three options will use **Content Projection** as basis but will
 differ in how the error messages are managed.
 
-1. Using general change detection and communicating with the content children.
-2. Using component styles.
-3. Using component input change detection and an error definition object.
-
-**Preparing the journey: part 1**
+**Preparing for the journey: part 1**
 
 >*Being well prepared was crucial for his journey. He packed quick and light making sure that everything he needed
 >was there.*
 
-We need a basis to work from and already know how to create component in **Angular2** with form validation. 
+We need a basis to work from and already know how to create a component in **Angular2** with form validation. 
 So let us build one quickly.
 
 Our component will consist of a form with one input as form element. This input will have a mix of standard and 
@@ -139,22 +136,23 @@ And our component template:
 </form>
 {% endhighlight %}
 
-We now have a component that one input. This input is required, wants an input of minimal length seven, and the number
-value of the input should be divisible by ten.
+We now have a component with one input. This input is required, needs a value of at least seven characters/numbers, 
+and the number version of the of the input value should be divisible by ten.
 
 **Preparing for the journey: part 2**
 
 >*Having packed, he strapped on his armour made from Angu-LAHR steel. It was magical armour that shone with colour and power.*
 
-We now have an input with some validation attached. But face it, come face to face with the Monster of UnkownInput
+We now have an input with some validation attached. But coming face to face with the *Monster of UnlabelledInput*
 will make even the most brave warrior tremble so it really, really needs a label.
 
-**NOTE:** *a11y also really really thinks an input needs a label, by the way. Omitting well formed labels for your inputs
-will really impede some users from using your forms. This article will not focus very deeply on a11y to avoid making
-an already complex matter even more so. But look out for some articles on this in future.*
+**NOTE:** *Web Accessibility (**a11y**) also really really thinks that an input needs a label, by the way. Omitting 
+well-formed labels for your inputs
+will really impede some users from using your forms. This article will not focus further on a11y, to avoid making
+an already complex matter even more so. You will need do more to make your input fully accessible, but look out for some 
+articles on this in future.*
 
-We could do this in our component template:
-
+But, back to our label. We could add a label to our input like this:
 {% highlight html %}
 <label class="control-label">Some number
     <input class="form-control"
@@ -162,12 +160,12 @@ We could do this in our component template:
 </label>
 {% endhighlight %}
 
-And this will work perfectly. **BUT** why would we want to write this for every single input if we are using something
+And this will work perfectly, but why would we want to write this for every single input if we are using something
 as shiny as **Angular2**? Why don't we use **Content Projection** to solve this? Well, you could argue that, 
-at this stage, it is not a lot of **HTML** to write extra and you would be perfectly right, so lets also add 
-some *Bootstrap** goodness to style our input and highlight error situations!
+at this stage, it is not a lot of **HTML** to write and you would be perfectly right, so lets also add 
+some **Bootstrap** goodness to style our input and highlight error situations!
 
-For this we need another component: 
+We will create a decorator component to add our label and styles: 
 {% highlight javascript %}
 @Component({
   selector: 'extended-input',
@@ -176,8 +174,7 @@ For this we need another component:
                         <label class="control-label">{% raw %}{{labelText}}{% endraw %}
                             <ng-content></ng-content>
                         </label>
-             </div>
-            `,
+             </div>`,
   directives: [CORE_DIRECTIVES]
 })
 export class ExtendedInput {
@@ -188,7 +185,8 @@ export class ExtendedInput {
 }
 {% endhighlight %}
 
-By using the `<ng-content>` element, the *HTML* being wrapped by our component will be projected into this slot.
+By using the **ng-content** element, the **HTML** contained inside our component's tags will be projected into this slot 
+inside the component's template.
 
 Let us use this!
 {% highlight html %}
@@ -204,13 +202,13 @@ Let us use this!
 **The first path: The children of Anhu-LAHR**
 
 >*He was ready and he stepped onto the burning red sand of the first path. In the distance he could hear voices.
->He knew that for his journey to succeed he had to talk to them and convince them to help him.*
+>He knew that for his journey to succeed, he had to talk to them and convince them to help him.*
 
 For this solution we will make use of the **@ContentChildren** decorator of
-**Angular2** to access our error messages and switch them on an off in code.
+**Angular2** to access our error messages and switch them on and off.
 
 In order to do this we need to first create a container component for our errors. We will then give it the functionality to
-add or remove itself to or from the DOM. **HEY** we are trying to recreate **ng-messages** here, after all!
+add or remove itself to or from the **DOM**. *HEY*, we are trying to recreate **ng-messages** here, after all!
 
 And yes, we are going to use **Content Projection** in this component too!
 {% highlight javascript %}
@@ -218,8 +216,7 @@ And yes, we are going to use **Content Projection** in this component too!
   selector: 'input-error',
   template: `<span *ngIf="showErrorFlag" class="help-block">
                <ng-content></ng-content>
-             </span>
-             `,
+             </span>`,
   directives: [CORE_DIRECTIVES]
 })
 export class InputError {
@@ -262,14 +259,14 @@ So now we can extent the **HTML** of our top level component as follows:
 
 Three important things to note here:
 
-1. We are using our new `<input-error>` component and projecting the text into its template.
-2. We have written an `<input-errors>` tag in the template. It simply acts as a placeholder. We could have used a div but 
-for this example it is clearer.
-3. We are using ***ngIf** to display only error messages for failed validations.
+1. We are using our new **input-error** component and projecting the text into its template.
+2. We have written an **input-errors** tag in the template. This does **NOT** refer to another component in our solution.
+It simply acts as a placeholder. We could have used a div but for this example it is clearer.
+3. We are using ***ngIf** to display only the error messages for failed validations.
 
 So now we still need to do two things in our decorator component. Currently it will project all the content right into 
 the label! This is not handy, so we need to project the error messages into
-another `<ng-content>` slot. When that is done we need remove all but the first displayed error.
+another **ng-content** slot. When that is done we need to remove all but the first displayed error.
 
 And once again **Angular2** comes to our rescue! 
 
@@ -283,8 +280,7 @@ We can complete our component:
                             <ng-content select="input"></ng-content>
                         </label>
                         <ng-content select="input-errors"></ng-content>
-             </div>
-            `,
+             </div>`,
   directives: [CORE_DIRECTIVES, InputError]
 })
 export class ExtendedInput {
@@ -310,14 +306,15 @@ export class ExtendedInput {
 }
 {% endhighlight %}
 
-Important tot note how we used **@ContentChildren** to give us access to the functions on the error component. Making
-it a breeze to remove or show error messages.
+It is important to note how we used **@ContentChildren** to give us access to the functions on the error component. This 
+makes it a breeze to remove or show error messages.
 
 Two other important things to note:
-1. Because we projecting content into more than one slot we need to use **CSS** selectors to select the content per
-`<ng-content>` slot.
-2. We need to reset the display of the error messages on each change detection cycle. In this case it is best done
-using the **ngDoCheck** lifecycle hook.
+
+1. Because we are projecting content into more than one slot we need to use **CSS** selectors to select the content per
+**ng-content** slot.
+2. We need to reset the error messages on each change detection cycle. In this case it is best done
+using the **ngDoCheck** lifecycle hook as this is triggered for every change detection cycle.
 
 And here we have our first solution. It works, displaying only the highest priority defined error message. 
 
