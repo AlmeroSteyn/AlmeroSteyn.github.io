@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular 2: Creating powerful form validation components."
+title:  "Angular 2: Creating a powerful form validation component."
 description: "You know the basics, now see the power..."
 date:   2016-03-26 16:10:21 -0100
 categories: angular2 angular component form validation styles css content-projection transclude ng-messages
