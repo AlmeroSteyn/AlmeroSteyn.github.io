@@ -10,7 +10,7 @@ categories: angular2 component form validation styles css content-projection tra
 >gathering many magical items. He felt the weight of them in his backpack as he approached the wise woman at the top.*
 >
 >*Laying down his enchanted items he saw again what he had found. The Amulet of Component, the Sword of Validation,
->the Wind of Changedetection...*
+>the Winds of Changedetection...*
 >
 >*"Well done, brave warrior", she said.*
 >
@@ -26,9 +26,9 @@ any input with some cool form validation function. Not only that, but it will ha
 **AngularJS** as well.
 
 For those who have not used **ng-messages**, this is an **AngularJS 1.x** directive that makes the management of multiple
-input field validation messages a breeze by ensuring that at a maximum of one message is shown at any time.
+input field validation messages a breeze by ensuring that a maximum of one message is shown at any time.
 
-So why don't we build a component that we can wrap any input in like this:
+So why don't we build a component that we can wrap any input in, like this:
 {% highlight html %}
 <extended-input>
   <input class="i_am_just_a_normal_input_bound_to_something">
@@ -36,7 +36,7 @@ So why don't we build a component that we can wrap any input in like this:
 </extended-input>
 {% endhighlight %}
 
-Which should produce this:
+Which should then produce this:
  
 {::nomarkdown}
 <figure>
@@ -52,14 +52,16 @@ Before we are done, we will have used the following key concepts inside **Angula
 * Model driven forms
 * Form validation and custom validators
 * Displaying validation errors
-* Contentchildren decorator
+* The @Contentchildren decorator
 * Content projection (Angular2's own transclusion)
-* Component styling
+* Component level styling
 * Change detection
 * Lifecycle hooks
 
-If you are not familiar with these concepts, it may be a good idea to look at them first. The **Angular2** documentation contains
-information about these points and a number of very good articles have been written on all of these topics.
+If you are not familiar with these concepts, it may be a good idea to look at them first. The 
+ <a href="https://angular.io/docs/ts/latest/" target="_blank">Angular2 documentation</a> contains
+information about these points and a number of very good blog articles have been written on all of these topics (*see 
+the end of this post for a reference list*).
 
 We will use **Bootstrap CSS** as styling framework. However this can be replaced with your framework of choice.
 
@@ -494,3 +496,11 @@ And not only that, but the architecture of **Angular2** gives us a lot of freedo
 problems.
 
 Now go forth warrior of Angu-LAHR and find your own treasure!
+
+**References**
+
+* <a href="http://blog.mgechev.com/2016/01/23/angular2-viewchildren-contentchildren-difference-viewproviders/" target="_blank">ViewChildren and ContentChildren in Angular 2</a> - Minko Gechev
+* <a href="http://blog.thoughtram.io/angular/2015/06/25/styling-angular-2-components.html" target="_blank">Styling Angular 2 components</a> - Pascal Precht
+* <a href="http://blog.thoughtram.io/angular/2016/03/14/custom-validators-in-angular-2.html" target="_blank">Custom Validators in Angular 2</a> - Pascal Precht
+* <a href="http://www.kirjai.com/validation-model-driven-forms-ng2" target="_blank">Validation for model-driven forms in Angular 2</a> - Kirils Ladovs
+* <a href="https://toddmotto.com/transclusion-in-angular-2-with-ng-content" target="_blank">Transclusion in Angular 2</a> - Todd Motto
