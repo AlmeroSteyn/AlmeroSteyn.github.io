@@ -9,7 +9,7 @@ categories: angular2 component form validation styles css content-projection tra
 >*The weary traveler moved up the mountainside. For weeks he had travelled the land of Anghu-LAHR, facing many trials,
 >gathering many magical items. He felt the weight of them in his backpack as he approached the wise woman at the top.*
 >
->*Laying down his enchanted items he saw what he had gained again. The Amulet of Component, the Sword of Validation,
+>*Laying down his enchanted items he saw again what he had found. The Amulet of Component, the Sword of Validation,
 >the Wind of Changedetection...*
 >
 >*"Well done, brave warrior", she said.*
@@ -400,14 +400,18 @@ trying to apply component styles to projected content you **HAVE** to use this t
 the projected content. Omitting this will apply the styles only to the component's template. This pseudo-class is 
 a **Shadow DOM** selector.
 
-**The third path: The **
+**The third path: The grail of Angu-LAHR**
 
-Taking some inspiration from **ngClass**, couldn't we provide out error definition object to our decorator directive and
-let it do all the hard work for us?
+>*The sun rose red on the horizon when he returned with the green vial containing a potion of invisibility. Only one path
+>remained. The blue sand shining the mornning sun. At the end of this path was the grail.*
 
-The answer is a big **YES WE CAN**.
+Taking some inspiration from **ngClass**, wouldn't it be great if we could provide an error definition object to our 
+decorator directive and let it do all the hard work for us?
 
-And with this solution our top level component template definition of the input becomes:
+The answer is a big **"YES WE CAN"**. But in order to do this we will need to also provide the error object of the form
+element that **Angular2** gives us for every validated element.
+
+So now the **HTML** inside our base component's template becomes:
 {% highlight html %}
 <extended-input [labelText]="'Some number'"
                 [inputErrors]="someNumber.errors"
@@ -419,12 +423,12 @@ And with this solution our top level component template definition of the input 
 </extended-input>
 {% endhighlight %}
 
-I would lie if I did not admit that I really, REALLY like how concise this is in the **HTML**. That is a lot less
-copy-and-paste when creating complex forms!
+This seems to be a very concise way to write our decorator component inside the **HTML**. That would be a lot less
+repeated boilerplating when creating complex forms!
 
-So what does it take to make this work?
+So how can we make this work?
 
-A component definition like this:
+With the following component definition object:
 {% highlight javascript %}
 @Component({
   selector: 'extended-input',
@@ -466,27 +470,35 @@ export class ExtendedInput implements OnChanges {
 }
 {% endhighlight %}
 
-In this solution we bind the error object of the input form control to the component and then watch it for changes. When
+After we bind the error object of the input form control to the component, we watch it for changes using the
+**ngOnChanges** lifecycle hook. When
 changes occur, we populate the error placeholder with the first error. Or completely remove it from the **DOM** if there
 are no errors.
+
+And with very little code we also get this version of our solution working.
+
+**NOTE:** Here we use **Array.some** instead of **Array.foreach** as it stops iteration when your return a 
+true boolean value.
 
 {::nomarkdown}
 <iframe style="width: 100%; height: 300px" src="https://embed.plnkr.co/UehSlATuAmP4RzVbByXJ/" frameborder="0" allowfullscren="allowfullscren"></iframe>
 {:/}
 
-**NOTE:** In this case we used **Array.some** instead of **Array.foreach** as it stops iteration when your return a 
-true boolean value.
-
 **Taking a look back**
+
+>*"You have done well. Now go back to your village and put what you have found to good use", said the wise woman.*
+>
+>*He knew this was only the start of a great adventure to explore all of Angu-LAHR. He knew that even more powerful items
+>lay within its boundaries.*
 
 WOW, **Angular2** rocks.
 
-I mean this is some seriously useful function! And written in minimal code. 
+With minimal code we have created something extremely useful. 
 
-Making this in **AngularJS**, with the same level of customization and validation took a whole lot more effort!
-
-But aside form what we made here, the point of this article is also to highlight how all the basic pieces you have already
-learnt in **Angular2** can be easily put together to build some serious functionality.
+But more importantly, this highlights how all the basic pieces you have already
+know in **Angular2** can be easily put together to build some powerful functionality.
 
 And not only that, but the architecture of **Angular2** gives us the freedom to find a lot more different solutions 
 to the same problem.
+
+So go forth warrior of Angu-LAHR and find your own treasure!
