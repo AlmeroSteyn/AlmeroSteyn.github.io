@@ -82,7 +82,7 @@ The template:
 
 {% highlight html %}
 <div>
-    {% raw %}<h1>{{::$ctrl.headerText}}</h1>{% endraw %}
+    {% raw %}<h1>{{::$ctrl.textBinding}}</h1>{% endraw %}
     {% raw %}<span>You have clicked the button {{$ctrl.dataBinding}} times.</span>{% endraw %}
     <button ng-click="$ctrl.add()">Add Click</button>
 </div>
@@ -111,7 +111,7 @@ to create the component:
         var vm = this;
  
         vm.add = function (){
-            vm. functionBinding();
+            vm.functionBinding();
         };
     }
 })();
