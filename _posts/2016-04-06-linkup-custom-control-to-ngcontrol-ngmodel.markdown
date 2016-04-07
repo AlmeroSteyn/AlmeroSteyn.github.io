@@ -7,11 +7,11 @@ categories: angular2 angular component ngModel ngControl ControlValueAccessor, N
 ---
 
 So you are starting to flex your new **Angular 2** muscles and have built the mother of all custom form controls. I
-mean that thing can do everything except make coffee when the moment comes to extract and use it as a separate
+mean that thing can do everything except make coffee... And then the moment comes to extract and use it as a separate
 component in your application.
 
-You plug it into your HTML form, thinking your work is done and as your browser refreshes your start seeing all sorts of 
-errors appear on the console. Attaching it to **ngModel** produces similar errors. 
+You plug it into your HTML form with **ngControl**, thinking your work is done and as your browser refreshes you 
+start seeing all sorts of errors appearing on the console. Attaching it to **ngModel** produces similar errors. 
 
 As it turns out, your journey is far from over and today we will take a look at what **Angular2** expects from you if
 you want to build components that can talk to directives like **ngControl** and **ngModel**.
@@ -22,8 +22,8 @@ For the example we will use a basic **input** component. You may argue that this
 simply using the native **HTML input** element, and you would be right!
 
 But we are trying to clearly see how to expose the component to the required interfaces and to avoid making the example
-overly complex we will be using this example. We will also not be looking at `a11y` in this post. But be aware that 
-when writing custom controls you have to ensure that they are accessible.
+overly complex we will be using this example. We will also not be looking at **a11y** in this post, also for simplicity. 
+But be aware that when writing custom controls you have to ensure that they are accessible.
 
 So without further ado, here is our component:
 {% highlight javascript %}
@@ -53,40 +53,45 @@ const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = new Provider(
 })
 export class CustomInput implements ControlValueAccessor{
 
-   private _value: any = '';
-    
-   private _onTouchedCallback: (_: any) => void = noop;
-     
-   private _onChangeCallback: (_: any) => void = noop;
-    
-   get value(): any { return this._value; };
-    
-   set value(v: any) {
-     if (v !== this._value) {
-       this._value = v;
-       this._onChangeCallback(v);
-     }
-   }
-      
-   onTouched(){
-     this._onTouchedCallback();
-   }
+    //The internal data model
+    private _value: any = '';
+  
+    //Placeholders for the callbacks
+    private _onTouchedCallback: (_:any) => void = noop;
    
-   //From ControlValueAccessor interface
-   writeValue(value: any) {
-     this._value = value;
-   }
-   
-   //From ControlValueAccessor interface 
-   registerOnChange(fn: any) {
-     this._onChangeCallback = fn;
-   }
+    private _onChangeCallback: (_:any) => void = noop;
+  
+    //get accessor
+    get value(): any { return this._value; };
+  
+    //set accessor including call the onchange callback
+    set value(v: any) {
+      if (v !== this._value) {
+        this._value = v;
+        this._onChangeCallback(v);
+      }
+    }
     
-   //From ControlValueAccessor interface 
-   registerOnTouched(fn: any) {
-     this._onTouchedCallback = fn;
-   }
-
+    //Set touched on blur
+    onTouched(){
+      this._onTouchedCallback();
+    }
+  
+    //From ControlValueAccessor interface
+    writeValue(value: any) {
+      this._value = value;
+    }
+  
+    //From ControlValueAccessor interface
+    registerOnChange(fn: any) {
+      this._onChangeCallback = fn;
+    }
+  
+    //From ControlValueAccessor interface
+    registerOnTouched(fn: any) {
+      this._onTouchedCallback = fn;
+    }
+    
 }
 {% endhighlight %}
 
@@ -140,7 +145,7 @@ it so it can wait for the class to be defined.
 
 And once we have created this provider we need to tell our component to use it:
 {% highlight javascript %}
-providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 {% endhighlight %}
 
 Now **Angular 2** know about our class, but we are not done yet.
@@ -153,39 +158,44 @@ implement the **ControlValueAccessor** interface that **Angular 2** gives us.
 Let us implement this interface and hook it into our data model.
 
 {% highlight javascript %}
- private _value: any = '';
+    //The internal data model
+    private _value: any = '';
   
- private _onTouchedCallback: (_: any) => void = noop;
+    //Placeholders for the callbacks
+    private _onTouchedCallback: (_:any) => void = noop;
    
- private _onChangeCallback: (_: any) => void = noop;
+    private _onChangeCallback: (_:any) => void = noop;
   
- get value(): any { return this._value; };
+    //get accessor
+    get value(): any { return this._value; };
   
- set value(v: any) {
-   if (v !== this._value) {
-     this._value = v;
-     this._onChangeCallback(v);
-   }
- }
- 
- onTouched(){
-       this._onTouchedCallback();
- }
- 
- //From ControlValueAccessor interface 
- writeValue(value: any) {
-   this._value = value;
- }
- 
- //From ControlValueAccessor interface
- registerOnChange(fn: any) {
-   this._onChangeCallback = fn;
- }
+    //set accessor including call the onchange callback
+    set value(v: any) {
+      if (v !== this._value) {
+        this._value = v;
+        this._onChangeCallback(v);
+      }
+    }
+    
+    //Set touched on blur
+    onTouched(){
+      this._onTouchedCallback();
+    }
   
- //From ControlValueAccessor interface 
- registerOnTouched(fn: any) {
-   this._onTouchedCallback = fn;
- }
+    //From ControlValueAccessor interface
+    writeValue(value: any) {
+      this._value = value;
+    }
+  
+    //From ControlValueAccessor interface
+    registerOnChange(fn: any) {
+      this._onChangeCallback = fn;
+    }
+  
+    //From ControlValueAccessor interface
+    registerOnTouched(fn: any) {
+      this._onTouchedCallback = fn;
+    }
 {% endhighlight %}
 
 Let us first focus on the last three functions. These are functions we have to implement due to the **ControlValueAccessor**
@@ -199,4 +209,12 @@ world that the data model has changed. Note that you call it with the changed da
 
 The **registerOnTouched** function provides you with a function you can call when you want to set your control to 
 **touched**. This is then reflected by **Angular 2** by adding the correct touched state and classes to your control.
+
+The rest of the code are all internal component stuff! Providing function placeholders for the callbacks before they are
+registered, getter and setter for the data and a function to capture the blur event to mark the component as touched. 
+No rocket science there.
+
+And there you have it! Now you can fully integrate your shiny new control with directives like **ngControl** and **ngModel**! 
+
+Go forth and conquer!
 
