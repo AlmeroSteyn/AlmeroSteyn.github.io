@@ -18,17 +18,18 @@ you want to build components that can talk to directives like **ngControl** and 
 
 **TL;DR: Here's the code**
 
-For the example we will use a basic **input** component. You may argue that this component could be easily replaced by 
+For the example we will use a basic **input** component. You may argue that this component could easily by replaced by 
 simply using the native **HTML input** element, and you would be right!
 
-But we are trying to clearly see how to expose the component to the required interfaces and to avoid making the example
-overly complex we will be using this example. We will also not be looking at **a11y** in this post, also for simplicity. 
+But we are trying to clearly show how to expose the component to the required interfaces and to avoid making the example
+overly complex we will be sticking to this example. Once you understand how this works you can easily build on it to 
+for complex controls as well. We will also not be looking at **a11y** in this post, also for simplicity. 
 But be aware that when writing custom controls you have to ensure that they are accessible.
 
 So without further ado, here is our component:
 {% highlight javascript %}
 import {Component, Provider, forwardRef} from "angular2/core";
-import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "angular2/common";
+import {ControlValueAccessor, NG_VALUE_ACCESSOR, CORE_DIRECTIVES} from "angular2/common";
 
 const noop = () => {};
 
@@ -49,6 +50,7 @@ const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = new Provider(
         </label>
       </div>
   `,
+  directives: [CORE_DIRECTIVES],
   providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 })
 export class CustomInput implements ControlValueAccessor{
@@ -107,7 +109,7 @@ We are then able to use this custom control as follows:
   </form>
 {% endhighlight %}
 
-And that gives is this working example:
+And here it is in action:
 
 {::nomarkdown}
 <iframe style="width: 100%; height: 180px" src="https://embed.plnkr.co/nqKUSPWb6w5QXr8a0wEu/" frameborder="0" allowfullscren="allowfullscren"></iframe>
@@ -115,19 +117,19 @@ And that gives is this working example:
 
 **What did I just see, man? My eyes are bleeding!**
 
-Don't panic! We will have a brief look at what just happened. But first it is perhaps interesting to state the following:
+Don't panic! We will have a brief look at what just happened. But first it is perhaps important to state the following:
 
-1. By using native `HTML` form elements in your code, you are avoiding having to write this code. Always consider this
-first.
-2. For the cases where you need more power and want to create your own custom form control, **Angular 2** gives you all
+1. By using native **HTML** form elements in your code, you are avoiding having to write this code. Always consider 
+using them first.
+2. For the cases where you dor need more power and want to create your own custom form control, **Angular 2** gives you all
 you need to make it work!
 
 So let us dive into the code...
 
-**NG_VALUE_ACCESSOR and multi-provider: The glue**
+**NG_VALUE_ACCESSOR and the multi-provider: The glue**
 
 As you know, we can register multi-providers in **Angular 2**. In short, it is possible to extend existing providers to
-avoid the duplicate provider issues. And for the communication to work we need to tell the **NG_VALUE-ACCESSOR** token
+avoid duplicate providers from clashing. And for this communication to work we need to tell the **NG_VALUE_ACCESSOR** token
 inside **Angular 2** that our class exists and has got something to say to the data bindings.
 
 That we do with:
@@ -148,7 +150,7 @@ And once we have created this provider we need to tell our component to use it:
     providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 {% endhighlight %}
 
-Now **Angular 2** know about our class, but we are not done yet.
+Now **Angular 2** knows about our form control component class, but we are not done yet.
 
 **Implementing ControlValueAccessor: The machinery**
 
@@ -198,23 +200,28 @@ Let us implement this interface and hook it into our data model.
     }
 {% endhighlight %}
 
-Let us first focus on the last three functions. These are functions we have to implement due to the **ControlValueAccessor**
+Let us first focus on the last three functions. These are functions we have to implement from the **ControlValueAccessor**
 interface and these are the functions we need to use internally to communicate with the outside world.
 
 The **writeValue** function allows you to update your internal model with incoming values, for example if you use
 **ngModel** to bind your control to data.
 
-The **registerOnChange** function provides you with a function you can call when changes happen to notify the outside 
+The **registerOnChange** function receives another function which you can call when changes happen so that you can notify the outside 
 world that the data model has changed. Note that you call it with the changed data model value.
 
-The **registerOnTouched** function provides you with a function you can call when you want to set your control to 
-**touched**. This is then reflected by **Angular 2** by adding the correct touched state and classes to your control.
+The **registerOnTouched** function receives another function which you can call when you want to set your control to 
+**touched**. This is then reflected by **Angular 2** by adding the correct touched state and classes to the actual 
+element tag in the **DOM**.
 
 The rest of the code are all internal component stuff! Providing function placeholders for the callbacks before they are
-registered, getter and setter for the data and a function to capture the blur event to mark the component as touched. 
-No rocket science there.
+registered, a getter and setter for the data and a function to capture the blur event of the internal input to mark 
+the entire component as touched. No rocket science there.
 
 And there you have it! Now you can fully integrate your shiny new control with directives like **ngControl** and **ngModel**! 
 
 Go forth and conquer!
+
+If you want to know more about how to build extremely powerful form controls in **Angular 2**, the
+<a href="https://github.com/angular/material2" target="_blank">Angular Material 2</a> repository is a veritable
+treasure trove of information on the subject. If you are willing to dive into the code.
 
