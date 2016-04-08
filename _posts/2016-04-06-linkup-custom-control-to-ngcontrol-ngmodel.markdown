@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular 2: Connect your custom control to ngModel and ngControl with ControlValueAccessor."
+title:  "Angular 2: Connect your custom control to ngModel and ngControl with Control Value Accessor."
 description: "How to expose your component data to forms and bindings... "
 date:   2016-04-06 16:10:21 -0100
 categories: angular2 angular component ngModel ngControl ControlValueAccessor, NG_VALUE_ACCESSOR
