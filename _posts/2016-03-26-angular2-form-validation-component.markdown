@@ -204,6 +204,11 @@ Let us use this!
 
 **The first path: The children of Angu-LAHR**
 
+{:.alert}
+**NOTE:** Since this article was written the change detection order in Angular 2 has been adjusted causing this solution
+to break and sometimes display two messages. It continues to illustrate some interesting concepts in Angular 2, but should
+not be used as a replacement for ng-messages. Rather use one of the other two options shown later in this article.
+
 >*He was ready and he stepped onto the burning red sand of the first path. In the distance he could hear voices.
 >For his journey to succeed, he had to talk to them and convince them to give him the magical key.*
 

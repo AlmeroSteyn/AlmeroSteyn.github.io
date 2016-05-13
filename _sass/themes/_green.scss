@@ -4,16 +4,28 @@
 
 .t-green {
 
+
+
   .c-navigation,
   .c-header {
     background: $c__dark-green;
   }
 
-  .c-article__main a:not(.c-btn) {
+  .c-article__main a:not(.c-btn) p:not(.alert) {
     color: $c__dark-green;
   }
 
   .c-footer a {
     color: $c__dark-green;
   }
+
+  .alert {
+    color: #a94442!important;
+    background-color: #f2dede;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
 }
