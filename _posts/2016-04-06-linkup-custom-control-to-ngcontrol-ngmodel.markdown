@@ -28,8 +28,8 @@ But be aware that when writing custom controls you have to ensure that they are 
 
 So without further ado, here is our component:
 {% highlight javascript %}
-import {Component, Provider, forwardRef} from "angular2/core";
-import {ControlValueAccessor, NG_VALUE_ACCESSOR, CORE_DIRECTIVES} from "angular2/common";
+import {Component, Provider, forwardRef} from "@angular/core";
+import {ControlValueAccessor, NG_VALUE_ACCESSOR, CORE_DIRECTIVES} from "@angular/common";
 
 const noop = () => {};
 
