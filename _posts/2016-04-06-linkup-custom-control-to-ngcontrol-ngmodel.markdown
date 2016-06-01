@@ -59,7 +59,7 @@ export class CustomInput implements ControlValueAccessor{
     private _value: any = '';
   
     //Placeholders for the callbacks
-    private _onTouchedCallback: (_:any) => void = noop;
+    private _onTouchedCallback: () => void = noop;
    
     private _onChangeCallback: (_:any) => void = noop;
   
@@ -164,7 +164,7 @@ Let us implement this interface and hook it into our data model.
     private _value: any = '';
   
     //Placeholders for the callbacks
-    private _onTouchedCallback: (_:any) => void = noop;
+    private _onTouchedCallback: () => void = noop;
    
     private _onChangeCallback: (_:any) => void = noop;
   
