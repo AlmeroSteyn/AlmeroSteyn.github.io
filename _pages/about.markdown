@@ -14,5 +14,5 @@ I am also wild about <a href="https://en.wikipedia.org/wiki/Accessibility" targe
 help people build accessible websites in Angular.
 
 When not busy working on awesome projects at a great company in the Netherlands, called <a href="http://www.qdelft.nl" target="_blank">QDelft</a>, 
-I can be found working on the Angular 2 Docs, writing articles for this blog, looking at great new technologies or spending my time on one of various other geeky pastimes.
+I can be found writing articles for this blog, looking at great new technologies or spending my time on one of various other geeky pastimes.
 </article>
