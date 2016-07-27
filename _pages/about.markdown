@@ -8,8 +8,7 @@ permalink: /about/
 ![Author Photo](/css/images/avatar.jpg){: .author-photo}
 {: refdef}
 
-I am Almero Steyn and I am crazy about Angular. Let's get that straight. Hey, I am an Angular Engineer, Angular Trainer and am part of the 
-Angular 2 Docs Authoring team. That's a lot of Angular every day!
+I am Almero Steyn and I am crazy about Angular. Let's get that straight. Hey, I am an Angular Engineer and Angular Trainer. That's a lot of Angular every day!
 
 I am also wild about <a href="https://en.wikipedia.org/wiki/Accessibility" target="_blank">a11y</a> and my specific mission is to
 help people build accessible websites in Angular.
