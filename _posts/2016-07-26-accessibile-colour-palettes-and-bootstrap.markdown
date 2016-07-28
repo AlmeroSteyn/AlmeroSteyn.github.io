@@ -59,4 +59,13 @@ The problem can be made far less challenging by doing two things:
 
 **Pre-calculate an accessible colour combinations matrix.**
 
-Our goal here is to, even before we start, select a range of colours that we want to us in our
+Our goal here is to, even before we start, select a range of colours that we want to us in our project and then
+calculate the colour pairs we can use as front- and background colours to conform to the minimum contrast specified by
+the WCAG](https://www.w3.org/WAI/intro/wcag).
+
+So take a set of, say seven colours, and go and calculate the colour contrast between all the other colours in the set
+and make a list of those that pass. And if we change any colour, go and redo that calculation...
+
+This sounds about as much fun as hitting your head against a wall, it only feels good when you stop.
+
+Wouldn't it be nice if the computer could do it for us?
