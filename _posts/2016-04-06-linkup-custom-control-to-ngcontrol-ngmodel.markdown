@@ -124,14 +124,14 @@ Don't panic! We will have a brief look at what just happened. But first it is pe
 
 1. By using native **HTML** form elements in your code, you are avoiding having to write this code. Always consider 
 using them first.
-2. For the cases where you dor need more power and want to create your own custom form control, **Angular 2** gives you all
+2. For the cases where you do need more power and want to create your own custom form control, **Angular 2** gives you all
 you need to make it work!
 
 So let us dive into the code...
 
 **Bootstrap: Getting things started**
 
-This code in this article uses the **new forms API** inside Angular 2 and will not work with the deprecated forms. In order to
+The code in this article uses the **new forms API** inside Angular 2 and will not work with the deprecated forms. In order to
 use it you will need to activate it during your application bootstrap phase:
 
 {% highlight javascript %}
