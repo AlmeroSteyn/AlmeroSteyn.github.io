@@ -50,7 +50,7 @@ and read than the second.
 
 Adding to that, many users face difficulties that hamper their vision. Whether it is an actual visual disability, like colour blindness,
 or simply sitting outside on a sunny day with your smart-phone, text of low contrast can be extremely difficult
-to read for many users under different conditions.
+to read for many users under some conditions.
 
 By using a browser plugin we can simulate a number of these cases.
 
@@ -76,20 +76,21 @@ while the second option becomes pretty much useless.
 People can only use your websites if they can read and understand them and by taking the effect of colour contrast into
 account we are opening up doors for far more people to use and enjoy what we have made.
 
-We build our applications for people to use, so if doing this can open up our user base further there can be only one
-remaining reason that some may have not to do it. The difficulty of managing this, especially in a complex styling
+We build our applications for people to use, so if doing this can increase our user base further, there can be only one
+remaining reason that some may have not to do it. And that is the difficulty of managing this, especially in a complex styling
 framework like **Bootstrap CSS**.
 
 **The colour contrast implementation challenge.**
 
-In the **WCAG** quote above, we get given the contrast ratios our colour combinations should conform to. But, as you may
-have guessed, this involves some formula around *colour luminance*. Even if this is automated, checking all possible
+In the **WCAG** quote above, we get given the contrast ratios which our colour combinations should conform to. But, as you may
+have guessed, this involves some mathematical formula that looks at *colour luminance*. This has been automated, thankfully, and
+you can find some tools for that at the end of the article. However, even if this is automated, checking all possible
 colour combinations is a lengthy process.
 
-Then combine this challenges with using a complex CSS framework like **Bootstrap CSS** and you can quickly end up with
+Then we combine this challenge with using a complex CSS framework like **Bootstrap CSS** and we can quickly end up with
 an unmanageable mess.
 
-I have personally seen the likes of the following in many a project:
+I have seen the likes of the following in many a project:
 
 {% highlight html %}
   <link rel="stylesheet" href="bootstrap.css">
@@ -104,8 +105,8 @@ How can we make this easier?
 
 The problem can be made far less challenging by doing two things:
 
-- Pre-calculate your accessible colour combinations
-- Use LESS or SASS
+- Pre-calculate your accessible colour combinations.
+- Use LESS or SASS to compile all our changes and overrides in to one CSS file.
 
 **Pre-calculate an accessible colour combinations matrix.**
 
@@ -113,7 +114,7 @@ Even before we start applying colours to our styles, it is a good idea to pre-ca
 (according to the [WCAG](https://www.w3.org/WAI/intro/wcag) ratio)
 from all the colours in our selected colour palette.
 
-So take a set of, say seven colours, and go and calculate the colour contrast between all the other colours in the set
+So take a set of say, seven colours, and go and calculate the colour contrast between all the other colours in the set
 and make a list of those that pass. And if we change any colour, go and redo that calculation...
 
 This sounds about as much fun as hitting your head against a wall, it only feels good when you stop.
@@ -144,7 +145,7 @@ So let's go and fetch **Colorable** from **npm**.
 We can now use this package within any **npm** application. For simplicity we will run the task inside a **gulp** task.
 If you do not yet know, **gulp** is an **npm** task runner.
 
-If you want to follow, install **gulp**.
+If you want to follow along, install **gulp**.
 
 {% highlight javascript %}
   npm install gulp
@@ -177,12 +178,12 @@ can run it with **npm**):
           black: '#000000'
       };
 
-      //Calculate the accessible colours based on a ration of 4.5:1 as
+      //Calculate the accessible colours based on a ratio of 4.5:1 as
       //specified by the WCAG. This returns a JSON object with the
       //accessible colour combinations
       var result = colorable(colorPalette, {compact: true, threshold: 4.5});
 
-      //Write the JSON and CSV matrix versions to files.
+      //Write the JSON and formatted CSV matrices to files.
       var resultstring = 'Contrast Demo:\r\n';
       resultstring = resultstring + calcColours(result);
       fs.writeFileSync('contrast-demo.json', JSON.stringify(result));
@@ -217,7 +218,7 @@ We then run this with:
 gulp contrast-demo
 {% endhighlight %}
 
-Frpm that we get a result in **JSON** format like this:
+**Colorable** directly gives us a result in **JSON** format, like this:
 
 {% highlight javascript %}
 [
@@ -263,10 +264,11 @@ Frpm that we get a result in **JSON** format like this:
   ...
 {% endhighlight %}
 
-Each colour in our palette is presented with all its accessible partners. We can see this even clearer in our
+Each colour in our palette is presented together with all its accessible partners. We can see this even clearer in our
 **CSV** file (also created in our gulp task above):
 
-- Contrast Demo:
+*Contrast Demo:*
+
 - Brown(#4E3D29), Lime(#C6DD45), Olive(#EEF8B1), white(#FFFFFF)
 - Mustard(#8F7C2F), black(#000000)
 - Green(#558D20), black(#000000)
@@ -275,19 +277,21 @@ Each colour in our palette is presented with all its accessible partners. We can
 - white(#FFFFFF), Brown(#4E3D29), black(#000000)
 - black(#000000), Mustard(#8F7C2F), Green(#558D20), Lime(#C6DD45), Olive(#EEF8B1), white(#FFFFFF)
 
-This starts of with a colour in each line, followed by the colours that could be its background.
+This starts off with a colour in each line, followed by each colour that could be used as its background.
 
 Once this is set up, it is lightning fast to recalculate the combinations should a colour change or if we are adding or
-removing colours. We can the use this to provide a reference for colours to use when we set up our styling.
+removing colours.
 
-**Using what we have learnt to customise Bootstrap CSS v3**
+Now we have an accessible palette that can be used as reference to apply the colours to our styles!
 
-Whereas we can use what we have just learnt in any other styling framework, even those we have created ourselves, we will
-now look at using it in **Bootstrap CSS v3**.
+**Using what we have learnt to customise Bootstrap CSS**
+
+Although we can use what we have just learnt in any other styling framework, even those we have created ourselves, we will
+now look at using it in **Bootstrap CSS**.
 
 In order to really make this shine you will need to understand either [LESS](http://lesscss.org/) or
-[SASS](http://sass-lang.com/). As **Bootstrap CSS v3** immediately comes with **LESS** source files, we will use this, but
-the concepts can easily be extended to use **SASS**. *NOTE:Bootstrap 4 will come with SASS source.*
+[SASS](http://sass-lang.com/). As the basic **npm** install of **Bootstrap CSS** comes with **LESS** source files, we will use this, but
+the concepts can easily be extended to use **SASS**. *NOTE: Bootstrap 4 will come with SASS source.*
 
 So without further ado let's flex our **npm** muscles again and go fetch **Bootstrap** with **npm**:
 
@@ -305,7 +309,7 @@ easy to find the **LESS** source files:
 {:/}
 
 The entry file is **bootstrap.less**, if we want to have a fully functional **Bootstrap CSS** file. With this method
-it is also possible to cherry pick only, say, the bootstrap grid system, but that falls outside the scope of this
+it is also possible to cherry pick only the components we want to use, like the bootstrap grid system, but that falls outside the scope of this
 article.
 
 OK, let's go and define our colour palette in **LESS**. We create a file and call it **palette.less**:
@@ -322,12 +326,13 @@ OK, let's go and define our colour palette in **LESS**. We create a file and cal
 
 Now we are ready to apply the colours we have defined to **Bootstrap CSS** in an accessible way.
 
-In order to do this, we need to know how the **LESS** API of Bootstrap. This we can find my looking at the
+In order to do this, we need to know the **LESS** API of Bootstrap. This we can find by looking at the
 [Customise Bootstrap CSS](http://getbootstrap.com/customize/#less-variables) page. Here we find all the variables we
-can override. We will only override a select few to keep it simple, you can, of course customise the framework as much
+can override. We will only override a select few to keep it simple. You can, of course, customise the framework as much
 or as little as you need to.
 
-We can simply re-assign colours to these variables in another less file, which we will call **overrides.less**:
+Let's create an **override.less** file which we will import later. In this file we will override the **Bootstrap LESS
+Variables**:
 
 {% highlight css %}
 //Import the palette LESS file
@@ -351,8 +356,9 @@ We can simply re-assign colours to these variables in another less file, which w
 @btn-default-bg: @gray-base;
 {% endhighlight %}
 
-Aside from changing the variables, we can also place overriding styles here. These will be compiled into the resultant
-CSS. Let's go and add some button *hover* and *focus* styles and set all labels to *full width*:
+Aside from changing the variables, we can also place overriding CSS styles here. These will be compiled into the resultant
+CSS. To show this, let's go and add some button *hover* and *focus* styles and set all labels to *full width*. We just append
+this to the file we just created:
 
 {% highlight css %}
 //Appended to the above overrides.less file.
@@ -380,7 +386,10 @@ together with the **LESS** source files of **Bootstrap CSS**. Look at the conten
 @import './overrides.less';
 {% endhighlight %}
 
-Let's go and compile our **LESS**!
+Note that, in order to override the Bootstrap default values, we have to place the import of our overrides file **AFTER** the
+import statement of **bootstrap.less**
+
+Let's now go and compile our **LESS**!
 
 Once again we need something from **npm** and that is a **LESS compiler**. And as we are using **gulp** we do:
 
@@ -388,7 +397,7 @@ Once again we need something from **npm** and that is a **LESS compiler**. And a
 npm install gulp-less
 {% endhighlight %}
 
-And now we are ready for our final **gulp** task:
+Now we are ready for our final **gulp** task:
 
 {% highlight javascript %}
 gulp.task("contrast-less", function () {
@@ -414,18 +423,19 @@ And when all is said and done our folder structure looks like this:
 </figure>
 {:/}
 
-See one file there that we did not add manually? Yeah, it is **demo.css**!
+But what is that **demo.css** file doing there? We did not add it?
 
-When we open this file we see it is unmistakably **Bootstrap CSS**, **BUT** with our colours baked right into its
-core and our style overrides appended to the CSS at the end.
+This is our compiled CSS file. When we open it, we see it is unmistakably **Bootstrap CSS** *BUT* with our colours baked right into its
+core and our CSS style overrides appended at the end.
 
 This means one stylesheet on your page, no more difficult overrides and extremely simplified maintenance of not only
-your stylesheets but of your accessible colour contrasts!
+your stylesheets, but of your accessible colour contrasts!
 
 Sounds like a win-win to me...
 
 **Some colour contrast tools**
-It will be a lot more clear now why we need contrast rich interfaces and how to create them more easily. But nothing
+
+It should be a lot clearer now why we need contrast rich interfaces and how to simplify their creation and maintenance, but nothing
 beats tooling we can use to test out work with. Three tools with super cool colour contrast testing functionality are:
 
 - [aXe](http://www.deque.com/products/axe/) from Deque.
