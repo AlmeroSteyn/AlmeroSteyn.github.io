@@ -21,15 +21,56 @@ applications. The **Web Content Accessibility Guideline (WCAG) Success Criterion
 OK, English please!
 
 Quite simply this means that any text on your website should really form a good contrast with the background it is written
-on. And translated even more simply: Use a text colour that shoes off clearly on the colour of the background.
+on. And translated even more simply: Use a text colour that shows off clearly on the colour of the background.
 
-Why is this so important?
+**Why is this so important?**
 
-Well, many users face difficulties that hamper their vision. Whether it is an actual visual disability, like colour blindness,
-or or simply sitting outside on a sunny day with your smart-phone, text of low contrast can be extremely difficult
+Let's Have a look at the following two options. We'll start with **Good Idea**:
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-07-26-accessible-colour-palettes-and-bootstrap/good-idea.png" alt="High colour contrast example.">
+</figure>
+{:/}
+
+The we follow it with **Bad Idea**:
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-07-26-accessible-colour-palettes-and-bootstrap/bad-idea.png" alt="Low colour contrast example.">
+</figure>
+{:/}
+
+I think that, before we even look at any visual disabilities, we can agree that the first example is easier to look at
+and read than the second.
+
+Adding to that, many users face difficulties that hamper their vision. Whether it is an actual visual disability, like colour blindness,
+or simply sitting outside on a sunny day with your smart-phone, text of low contrast can be extremely difficult
 to read for many users under different conditions.
 
-Point is, your site is to be read to be understood.
+By using a browser plugin we can simulate a number of these cases.
+
+If *ANY* person were to look at this website in high glare conditions, how would it look?
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-07-26-accessible-colour-palettes-and-bootstrap/glare.png" alt="High glare simulation.">
+</figure>
+{:/}
+
+Or what if someone with cataracts visit our crucial website?
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-07-26-accessible-colour-palettes-and-bootstrap/cataracts.png" alt="Cataracts simulation.">
+</figure>
+{:/}
+
+In both cases, although both options present difficulties, it becomes quite clear that th first option is always much
+more usable than the second.
+
+People can only use your websites if they can read and understand them and by taking the effect of colour contrast into
+account we are opening up doors for far more people to use and enjoy what we have made.
 
 **The colour contrast implementation challenge.**
 
