@@ -8,7 +8,7 @@ categories: colorable bootstrap less color contrast colour accessibility a11y
 *NOTE: This refers to Bootstrap CSS v3*
 
 One of the more subtle aspects of **Accessibility** is the need for good colour contrast when designing your web
-applications. The **Web Content Accessibility Guideline (WCAG) Success Criterion 1.4.3** states the following:
+applications. The **Web Content Accessibility Guideline (WCAG) Success Criterion 1.4.3** state the following:
 
 >**Contrast (Minimum)**: The visual presentation of text and images of text has a contrast ratio of at least 4.5:1,
 >except for the following: (Level AA)
