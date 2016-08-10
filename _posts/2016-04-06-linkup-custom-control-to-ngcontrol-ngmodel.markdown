@@ -5,7 +5,7 @@ description: "How to expose your component data to forms and bindings... "
 date:   2016-04-06 16:10:21 -0100
 categories: angular2 angular component ngModel ControlValueAccessor, NG_VALUE_ACCESSOR
 ---
-***UPDATE** 2016/07-27:Now supports Angular v2.0.0-RC4 with the new forms API*
+* **UPDATE** 2016/08-10:Now supports **Angular v2.0.0-RC5** with **Angular Modules** and the current **Template Driven Forms** module*.
 
 So you are starting to flex your new **Angular 2** muscles and have built the mother of all custom form controls. I
 mean that thing can do everything except make coffee... And then the moment comes to extract and use it as a separate
@@ -18,6 +18,10 @@ As it turns out, your journey is far from over and today we will take a look at 
 you want to build components that can talk to **ngModel**.
 
 **TL;DR: Here's the code**
+
+{:.alert}
+**NOTE:** As of RC5 of Angular 2.0 you need to import either the *Template Driven Forms* or *Reactive Forms* modules in order to use
+**ngModel** in your templates. You can see how to do this later in this article.
 
 For the example we will use a basic **input** component. You may argue that this component could easily by replaced by 
 simply using the native **HTML input** element, and you would be right!
@@ -131,19 +135,46 @@ So let us dive into the code...
 
 **Bootstrap: Getting things started**
 
-The code in this article uses the **new forms API** inside Angular 2 and will not work with the deprecated forms. In order to
-use it you will need to activate it during your application bootstrap phase:
+As we will use **ngModel** and other goodies from the Angular 2 forms goodiebag, we need to import either of the
+two **forms modules** provided by Angular 2. In this article we will use **Template Driven Forms**
+
+First we create our own **Application Module**:
 
 {% highlight javascript %}
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { disableDeprecatedForms, provideForms } from '@angular/forms';
+//Creating our Application Module
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-bootstrap(App, [
-  disableDeprecatedForms(),
-  provideForms()
-  ])
-  .catch(err => console.error(err));
+import { AppComponent } from './app.component';
+import { CustomInputComponent } from './custom-input.component';
+
+@NgModule({
+    imports: [BrowserModule, FormsModule],
+    declarations: [AppComponent, CustomInputComponent],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
 {% endhighlight %}
+
+Note that we import **BrowserModule** as this is required by all browser applications and we import **FormsModule** as
+this contains the forms goodies we need, such as **ngModel**.
+
+We declare our **AppComponent** and set it as the **Bootstrap Component** for our application and we also declare
+our **CustomInputComponent** here so we can use it everywhere in our application. **We assume here that this component has
+already been created, but you can always add the declaration later if needed**.
+
+Once we have our correctly configured our **Application Module** we can bootstrap our Angular application:
+
+{% highlight javascript %}
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule);
+{% endhighlight %}
+
+*If this seems like seriously dark magic to you, please head to the official Angular documentation and read about
+[Angular Modules](https://angular.io/docs/ts/latest/guide/ngmodule.html)*.
 
 **NG_VALUE_ACCESSOR and the multi-provider: The glue**
 
