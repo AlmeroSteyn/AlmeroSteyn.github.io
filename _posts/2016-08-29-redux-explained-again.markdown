@@ -32,4 +32,33 @@ So meet Mr. Component:
 
 **TODO** Component image
 
+Mr. Component lives in *Web Town*. Web Town's wants a bright and shiny new beachfront and all citizens are working
+together to realize this.
+
+Web Town fully believes in the principal of a self organizing team and the telephone was deemed the only way of
+communication required. If one of the citizens decided to make, say, a bench for the beachfront, he would do it, then
+he may either install it himself or pass it onto someone to go and do it. He would then share the news with some
+other citizens in the hopes that the entire town would come to hear that the bench was already made.
+
+Of course, left up to no form of coordination, despite the best most enthusiastic efforts of the citizens the communication
+lines soon looked like this:
+
+**TODO** Squiggled line comms
+
+Which of course means that Web Town's beachfront soon came to look like this:
+
+**TODO** Messy beach front
+
+By now, hopefully, it should be clear that the new beachfront being built represents our application state. Components
+are continually reacting on it and also making changes to it. Even if we are only talking about keeping tabs on an
+**IsSaving** flag to show a spinner. No matter how small we try and keep the state, every enterprise application end
+up a to a greater or lesser degree like Web Town, with serious crossed lines in communications.
+
+**Redux to the rescue**
+
+So how could we solve this mess?
+
+Well, what Web Town needs is some serious coordination. And to that end they decided to set up the *Redux Beachfront Store*.
+
+
 
