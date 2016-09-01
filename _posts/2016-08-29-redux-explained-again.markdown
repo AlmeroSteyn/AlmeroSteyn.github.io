@@ -32,9 +32,13 @@ so we will also look at the problem from this perspective.
 
 So meet Mr. Component:
 
-**TODO** Component image
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/component-man.png" alt="Mr Component">
+</figure>
+{:/}
 
-Mr. Component lives in *Web Town*. Web Town recently decided that it wants a bright and shiny new beachfront and all citizens are working
+Mr. Component lives in *Web Town*. Web Town recently decided that it wanted a bright and shiny new beachfront and all citizens are working
 very hard to realize this.
 
 Web Town fully believes in the principal of a self organizing team and the telephone was deemed the only way of
@@ -46,7 +50,11 @@ News of the changes to the beachfront trickles through the community through the
 Of course, left up to no form of coordination or proper communication and despite the best most enthusiastic efforts of the citizens, the communication
 lines soon looked like this:
 
-**TODO** Squiggled line comms
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/comms-lines.png" alt="Garbled communications lines between citizens">
+</figure>
+{:/}
 
 Which of course meant that Web Town's beachfront soon came to look like this:
 
