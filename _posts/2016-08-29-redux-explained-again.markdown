@@ -50,15 +50,58 @@ Which of course means that Web Town's beachfront soon came to look like this:
 **TODO** Messy beach front
 
 By now, hopefully, it should be clear that the new beachfront being built represents our application state. Components
-are continually reacting on it and also making changes to it. Even if we are only talking about keeping tabs on an
+are continually reading from it and also making changes to it. With every component trying to alter te state to serve
+its own needs it is no wonder that we soon have the spaghetti mess shown above.
+
+Even if we are only talking about keeping tabs on an
 **IsSaving** flag to show a spinner. No matter how small we try and keep the state, every enterprise application end
 up a to a greater or lesser degree like Web Town, with serious crossed lines in communications.
 
 **Redux to the rescue**
 
-So how could we solve this mess?
+So how could we solve this?
 
-Well, what Web Town needs is some serious coordination. And to that end they decided to set up the *Redux Beachfront Store*.
+Well, what Web Town needs is some serious coordination. And to that end they decided to set up the *Redux Beachfront Manufacturing Store*.
+
+**TODO** Image of the store.
+
+*NOTE: Although the term **store** in Redux refers to storage, in this article we will also use the shop meaning of store,
+as the Redux store also provides us with some services...and its fun!*
+
+Web Town realised that in order to ensure that it recieved the beachfront it wanted, the construction had to be managed
+in one place. And while the citizens were pretty good in creating the parts needed for the beachfront, the assembly
+of the various parts into one whole needed to be handled by the experts.
+
+And that is where the *Redux Beachfront Manufacturing Store* came in.
+
+They had a few rules:
+
+- Whenever someone made something to be incorporated in the beachfront, it had to be shipped to the store and not
+directly installed. The store would handle installing the items in the correct location.
+- All communication were to be done via the store. Whilst Web Town still allowed casual chats and parties, all conversations
+around the beach front needed to go through the store's communication department. This meant that every time a change
+was made to the beachfront the communications department would contact every citizen and inform them that the beachfront
+has changed.
+- All conversations were to be recorded.
+- And finally, as the CEO of the store was a student at *Hogwarts* university, he introduced a but of magic. Instead of
+only changing the actual beachfront every time a change was made, a magical copy was made of the beachfront before the
+change so that they could very easily go back to any version in time should it appear that things were not going the way as planned.
+
+**TODO** Image of new flow
+
+The rules meant that:
+
+- By having the store doing the actual installations it meant no more problems with some citizens trying to install
+the same thing twice or installing two things in the same place.
+- With the store handling the communications, it meant that all instructions to make a change to the beachfront went through
+one central location and in sequence and that all citizens were informed every time the progress changed so they could
+all adjust their own plans instantly and cut out problems later.
+- Because all calls were recorded and magical copies were made of all changes it meant that, should anything go wrong,
+the store could instantly go back to any version of the beachfront and apply all changes but the faulty one to it.
+
+
+
+
 
 
 
