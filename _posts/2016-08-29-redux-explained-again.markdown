@@ -81,7 +81,6 @@ some serious coordination. And that was how the *Redux Beachfront Manufacturing 
 </figure>
 {:/}
 
-{:.info}
 *NOTE: Although the term **store** in Redux refers to storage, in this article we will also use the shop meaning of store,
 as the Redux store also provides us with some services... It also makes for more fun drawings!*
 
