@@ -58,7 +58,11 @@ lines soon looked like this:
 
 Which of course meant that Web Town's beachfront soon came to look like this:
 
-**TODO** Messy beach front
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/messy.png" alt="Messy beachfront with not planning in the arrangement">
+</figure>
+{:/}
 
 **The Redux Beachfront Manufacturing Store to the rescue**
 
@@ -68,7 +72,11 @@ where the merry-go-round should go. Money was being wasted and more than one pun
 So after an emergency meeting of the town council it was decided to call in professional help. What Web Town needed was
 some serious coordination. And so the *Redux Beachfront Manufacturing Store* was born.
 
-**TODO** Image of the store.
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/store.png" alt="The redux store shown as a building">
+</figure>
+{:/}
 
 *NOTE: Although the term **store** in Redux refers to storage, in this article we will also use the shop meaning of store,
 as the Redux store also provides us with some services... It also makes for more fun drawings!*
@@ -84,24 +92,36 @@ They had a few rules:
 - Whenever someone made something to be incorporated in the beachfront, it had to be shipped to the store and not
 directly installed. The store would handle installing the items in the correct location.
 
-**TODO** Image of person shipping something to the store and the store installing it
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/store-install.png" alt="Showing a citizen bringing an addition to the beachfront to the store">
+</figure>
+{:/}
 
 - All communication were to be done via the store. Whilst Web Town still allowed casual chats and parties, all conversations
 around the beach front needed to go through the store's communication department. This meant that every time a change
 was made to the beachfront the communications department would contact every citizen and inform them that the beachfront
 has changed.
 
-**TODO** Image of communication back to the people
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/store-comms.png" alt="The store notifying all citizens that a change has been made">
+</figure>
+{:/}
 
 - All conversations were to be recorded.
 
 **TODO** Show timetravelling
 
-- And finally, as the CEO of the store was a student at *Hogwarts* university, he introduced a but of magic. Instead of
+- And finally, as the CEO of the store was a student at *Hogwarts* university, he introduced a bit of magic. Instead of
 only changing the actual beachfront every time a change was made, a magical copy was made of the beachfront before the
 change so that they could very easily go back to any version in time should it appear that things were not going the way as planned.
 
-**TODO** Image of dude making copies
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/magical-copies.png" alt="Magical copies of the beachfront being made with every addition">
+</figure>
+{:/}
 
 The rules meant that:
 
@@ -115,6 +135,12 @@ the store could instantly go back to any version of the beachfront and apply all
 
 For Web Town, the outcome was a resounding success! The new store not only ensure the creation of a lovely beachfront,
 it also saved time and money for each and every citizen!
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2016-08-29-redux-explained-again/final-result.png" alt="Final nice beachfront that was created">
+</figure>
+{:/}
 
 **Your application state**
 
