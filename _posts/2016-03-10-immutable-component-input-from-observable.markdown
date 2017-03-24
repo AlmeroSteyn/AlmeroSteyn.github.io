@@ -6,6 +6,10 @@ date:   2016-03-10 16:10:21 -0100
 categories: angular2 component observable @input immutable ngOnChanges async pipe
 ---
 
+{:.alert}
+**NOTE:** Please note that this article refers to an old version of **Angular**. Core concepts and ideas may still be
+useful but not all examples will work with current **Angular** without changes.
+
 Sometimes it is the simple things that can cost you hours when looking at new technology. For me it was creating an asynchronous
 binding in **Angular2**.
 

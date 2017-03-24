@@ -6,6 +6,10 @@ date:   2016-03-26 16:10:21 -0100
 categories: angular2 angular component form validation styles css content-projection transclude ng-messages
 ---
 
+{:.alert}
+**NOTE:** Please note that this article refers to an old version of **Angular**. Core concepts and ideas may still be
+useful but not all examples will work with current **Angular** without changes.
+
 >*The weary traveler moved up the mountainside. For weeks he had travelled the land of Anghu-LAHR, facing many trials,
 >gathering many magical items. He felt the weight of them in his backpack as he approached the wise woman at the top.*
 >

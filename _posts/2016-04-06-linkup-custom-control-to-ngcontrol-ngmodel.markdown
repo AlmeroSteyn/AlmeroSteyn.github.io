@@ -5,7 +5,9 @@ description: "How to expose your component data to forms and bindings... "
 date:   2016-04-06 16:10:21 -0100
 categories: angular2 angular component ngModel ControlValueAccessor, NG_VALUE_ACCESSOR
 ---
-***UPDATE** 2016/08/10:Now supports **Angular v2.0.0-RC5** with **Angular Modules** and the current **Template Driven Forms** module*.
+{:.alert}
+**NOTE:** Please note that this article refers to an old version of **Angular**. Core concepts and ideas may still be
+useful but not all examples will work with current **Angular** without changes.
 
 So you are starting to flex your new **Angular 2** muscles and have built the mother of all custom form controls. I
 mean that thing can do everything except make coffee... And then the moment comes to extract and use it as a separate
