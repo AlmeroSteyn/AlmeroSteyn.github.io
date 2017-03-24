@@ -71,6 +71,72 @@ This is nowhere near good enough. Not if we want everyone to be able to use our 
 will open the doors for millions more potential users to use our application. We are also looking for an easy solution, because
 making websites for everyone is easier that you think!
 
-**Giving the silent a voice**
+We find our solution in the beautiful marriage between **React**, **Redux** and **React Router**.
 
-We find our solution in the
+{:.info}
+*NOTE: This problem is not unique to using routing in **React** and as the solution comes from using HTML itself, it will also work in the
+framework or library of your choice after adapting it.*
+
+**Setting up our application**
+
+Lets set up a React and Redux application with React Router 4:
+
+{% highlight javascript %}
+import React  from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './Header';
+import Overview from './Overview';
+import Contact from './Contact';
+import Orders from './Orders';
+import rootReducer from './reducers';
+import  '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+//The Redux store is created as usual, but we add
+//extra configuration to enable the use of the Redux browser dev tools.
+//This extra configuration is entirely optional.
+const store = createStore(rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ &&
+    window.__REDUX_DEVTOOLS_EXTENSION__());
+
+const App = () => (
+    <Provider store={store}>
+        <div>
+            <Router>
+                <div>
+                    <Header/>
+                    <main className="container">
+                        <Route exact={true} path="/" component={Overview}/>
+                        <Route path="/orders" component={Orders}/>
+                        <Route path="/contact" component={Contact}/>
+                    </main>
+                </div>
+            </Router>
+        </div>
+    </Provider>
+);
+
+export default App;
+{% endhighlight %}
+
+So, now we have an application that can navigate to three routes, is properly connected to **Redux** and
+uses **Bootstrap CSS** for some style.
+
+So, how can we get our application to tell screen readers when a new page has been loaded by the router. And as it turns out,
+we find our solution in HTML.
+
+**The magic of ARIA live regions**
+
+As it turns out, making accessible web pages is far from new. Much thought has gone into it by the folks who write the specifications
+and those who build the browsers we use. And therefore the **Web Accessibility Initiative - Accessible Rich Internet Applications** or
+**WAI-ARIA** recommendation was created by the WC3. You can read about it on the
+<a href="https://www.w3.org/TR/wai-aria/" target="_blank">WAI-ARIA recommendation page</a>. To go through the entire thing falls
+way way WAY WAY WAY beyond the scope of this article. But we will make use of
+<a href="https://www.w3.org/TR/wai-aria/states_and_properties#attrs_liveregions" target="_blank">ARIA live regions</a>.
+
+Basically, these HTML attributes allow us to communicate directly with screen readers. Neat, hey?
+
+An **ARIA live region** is a part of your HTML that will notify screen readers of changes in the content of the HTML.
+
+**Giving the silent a voice**
