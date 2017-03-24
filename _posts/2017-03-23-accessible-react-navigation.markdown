@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Accessible React Router navigation.
+title:  Accessible React Router navigation with ARIA Live Regions and Redux.
 description: "Make your router transitions visible to everyone"
 date:   2017-03-23 16:10:21 -0100
-categories: Redux React Javascript A11y Accessibility
+categories: Redux React Javascript A11y Accessibility ARIA aria-live
 ---
 
 *This article uses **React 15** with **React Router 4** and **Redux 3** and assumes knowledge of all three. However the concepts explained here
@@ -139,4 +139,83 @@ Basically, these HTML attributes allow us to communicate directly with screen re
 
 An **ARIA live region** is a part of your HTML that will notify screen readers of changes in the content of the HTML.
 
+In short, we need put the following HTML somewhere on our page:
+{% highlight javascript %}
+ <div role="status"
+      aria-live="polite"
+      aria-atomic="true">
+   **Notification messages goes here**
+ </div>
+{% endhighlight %}
+
+The **role** attribute tells the screen reader that this element is used to indicate some important **status** updates. Subsequently
+the **aria-live** attribute is used with **polite** setting. Both are used to ensure maximum compatibility with the
+screen readers out there. Finally the **aria-atomic** attribute is set to **true** to indicate to screen readers to read out the
+entire content of the wrapping **div**. Other values are possible for these attributes but that can be found in the **ARIA** specification
+mentioned above.
+
+{:.info}
+*NOTE: Using **role="status"** or **aria-live="polite"** will tell the screen reader that these messages are not warnings that
+should interrupt anything else the screen reader may be reading out. Once the current reading task of the screen reader completes,
+these changes will be read out. This provides a better experience if you are not dealing with high priority messages.*
+
 **Giving the silent a voice**
+
+Now that we know how to solve the problem, we will look at how to implement it in our **React** applicaiton. The ideal situation
+would be to have only one **ARIA Live** container in our application where other components can inject messages into.
+
+The clear best way to do this in any application of reasonable size and complexity is to use something like **Redux**. This allows
+easily setting the message from anywhere in the application while we can have one **Redux connected** component that will
+communicate our messages to the screen readers.
+
+This means we need an action that will set the message:
+{% highlight javascript %}
+export const SET_A11Y_MESSAGE = 'SET_A11Y_MESSAGE';
+
+export const setA11yMessage = (message) => ({
+    type: SET_A11Y_MESSAGE,
+    message
+});
+{% endhighlight %}
+
+And a reducer to store, amongst other things, the message in the Redux store state:
+{% highlight javascript %}
+const a11yData = (state={}, action) => {
+    switch(action.type){
+        case actions.SET_A11Y_MESSAGE:
+            return Object.assign({}, state, {a11yMessage: action.message});
+        default:
+            return state;
+    }
+};
+{% endhighlight %}
+
+Now we are all set to update the message from anywhere in the application. We will update the message after each router
+navigation, therefore when each routed component is mounted.
+
+The **Orders** component serves as example. The other components handle it in exactly the same way:
+And a reducer to store, amongst other things, the message in the Redux store state:
+{% highlight javascript %}
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from './actions';
+
+class Orders extends Component {
+
+    componentDidMount() {
+        this.props.setA11yMessage('Navigated to orders page.')
+    }
+
+    render() {
+        return (
+            <section>
+                <h1 className="page-header">Orders</h1>
+            </section>
+        );
+    }
+}
+
+export default connect(null, actions)(Orders);
+{% endhighlight %}
+
+As the main routed component often implement lifecycle hooks anyways, this is a very quick addition.
