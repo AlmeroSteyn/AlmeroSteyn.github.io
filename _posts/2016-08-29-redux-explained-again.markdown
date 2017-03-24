@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Still don't understand why you need Redux? Read this...
-description: "Redux explain really really really simply"
+description: "Redux explained really really really simply"
 date:   2016-08-29 16:10:21 -0100
 categories: Redux React Javascript
 ---
