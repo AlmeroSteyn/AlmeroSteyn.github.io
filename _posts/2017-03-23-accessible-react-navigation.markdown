@@ -13,12 +13,12 @@ Go to my Github profile for <a href="https://github.com/AlmeroSteyn/a11yrouter" 
 will explore this example app further in this article.
 
 As a developer of *Single Page Applications* or *SPA's*, no one needs to tell you how important the **router** of the
-application is. It translate the **browser address** into pages and also responds to user input to navigate to various
+application is. It translate the **browser address** into related pages and also allows the user to navigate to various
 *pages* or *views* in our application. In a sense, the router can be seen as the heart of our applications.
 
-But, did you know, that quite a few users out there can't see that a navigation from one page to another has taken place?
+But, did you know, that quite a large number users out there often can't see that navigation from one page to another has taken place?
 
-Surprised? I can't blame you, I mean what can be more clear change in an application than a navigation from one page to the next??!!
+Surprised? I can't blame you, I mean what can be a more clear change in an application's state than a navigation from one page to the next??!!
 
 So let's look at a very basic routed application created in **React** with the latest current version of **React Router**, namely *v4.0*.
 
@@ -28,29 +28,32 @@ So let's look at a very basic routed application created in **React** with the l
 </figure>
 {:/}
 
-And before we dive into the code let's meet a group of users who will have a lot of trouble using this application. And those are
+And before we dive into the code let's meet a group of users who will have a lot of trouble using this specific application. These are
 users with visual disabilities.
 
-Users who cannot see well enough to use browsers the way the rest of us do, make use of **Assistive Technologies** called **Screen Readers**.
+Users who cannot see well enough to use browsers the way the rest of us do make use of **Assistive Technologies** called **Screen Readers**.
 These are pieces of software that can read back what we normally see on the screen with synthesized voices. This large group of users
 depend on the audible version of the websites we make to enjoy the same benefit that other users do.
 
-**Screen readers** are clever enough to read a lot of information that the browser expose, but if no information exists to read out,
+**Screen readers** are clever enough to read a lot of information that the browser expose naturally, but if no information exists to read out,
 the screen reader will remain ominously silent, even if something very important has happened on screen.
 
-Unfortunately, this is the case with many **routers** used in **SPA's** today. **Screen readers** are able to recognise actual
+Unfortunately, this is the case with many **routed SPA applications** today. **Screen readers** are able to recognise actual
 browser navigation very easily as the browser will tell the screen reader that it has navigated to another web page. In the case
-of **SPA's**, like those built with **React** or **Angular** the **router** software will take over some of the navigation actions
+of **SPA's**, like those built with **React** or **Angular**, the **router** software will take over some of the navigation actions
 from the browser in order to control the application without constantly reloading the host **HTML** page.
 
 The result: A totally silent page transition leading to a very confusing experience for these users. Imagine trying to
 navigate a web application if you could not even see that the navigation was successful!
 
-You can try this yourself as screen reader software is readily and freely available. If you are viewing this page on a **Mac**,
+You can try this yourself as many screen readers are readily and even freely available. If you are viewing this page on a **Mac**,
 you already have a screen reader called **VoiceOver** installed. Head over to *Deque University* to see
 <a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts" target="_blank">how to use the VoiceOver screen reader</a>.
 For those on **Windows**, go grab <a href="https://www.nvaccess.org/" target="_blank">the NVDA screen reader</a> and then head over to *Deque University* to see
 <a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts" target="_blank">how to use the NVDA screen reader</a>.
+
+{:.info}
+*In the example app you can simulate the standard behaviour by removing the **A11yMessage** component from the main app component.*
 
 **The silence of the screen readers**
 
@@ -69,13 +72,15 @@ trigger any response from our screen reader.
 
 This is nowhere near good enough. Not if we want everyone to be able to use our applications. We are looking for a solution that
 will open the doors for millions more potential users to use our application. We are also looking for an easy solution, because
-making websites for everyone is easier that you think!
+making websites that everyone can use is easier than you may think!
 
 We find our solution in the beautiful marriage between **React**, **Redux** and **React Router**.
 
 {:.info}
-*NOTE: This problem is not unique to using routing in **React** and as the solution comes from using HTML itself, it will also work in the
-framework or library of your choice after adapting it.*
+*NOTE: This is not unique to using routing in **React** and as the solution comes from using HTML itself, it will also work in the
+framework or library of your choice after adapting it. It is also important to mention that this is not an issue with React Router
+itself, as our technology stack gives us all the tools we need to implement a solution. The router can't, for example, automagically figure
+out the exact text we would want to show for each transition.*
 
 **Setting up our application**
 
@@ -121,25 +126,26 @@ export default App;
 {% endhighlight %}
 
 So, now we have an application that can navigate to three routes, is properly connected to **Redux** and
-uses **Bootstrap CSS** for some style.
+uses **Bootstrap CSS** for some style. *The use of Bootstrap is entirely optional and not required for this
+solution to work*
 
-So, how can we get our application to tell screen readers when a new page has been loaded by the router. And as it turns out,
-we find our solution in HTML.
+How can we get our application to tell screen readers when a new page has been loaded by the router? As it turns out,
+we find our solution in HTML itself.
 
 **The magic of ARIA live regions**
 
-As it turns out, making accessible web pages is far from new. Much thought has gone into it by the folks who write the specifications
+As it turns out, making accessible web pages is far from new. Much thought has gone into it by the folks who write the HTML specifications
 and those who build the browsers we use. And therefore the **Web Accessibility Initiative - Accessible Rich Internet Applications** or
 **WAI-ARIA** recommendation was created by the WC3. You can read about it on the
-<a href="https://www.w3.org/TR/wai-aria/" target="_blank">WAI-ARIA recommendation page</a>. To go through the entire thing falls
+<a href="https://www.w3.org/TR/wai-aria/" target="_blank">WAI-ARIA recommendation page</a>. To go through the entire document falls
 way way WAY WAY WAY beyond the scope of this article. But we will make use of
 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#attrs_liveregions" target="_blank">ARIA live regions</a>.
 
-Basically, these HTML attributes allow us to communicate directly with screen readers. Neat, hey?
+Basically, these HTML attributes allow us to communicate directly with screen readers. Pretty cool, don't your think?
 
 An **ARIA live region** is a part of your HTML that will notify screen readers of changes in the content of the HTML.
 
-In short, we need put the following HTML somewhere on our page:
+In short, to solve our problem we need put the following HTML somewhere on our page:
 {% highlight javascript %}
  <div role="status"
       aria-live="polite"
@@ -149,23 +155,24 @@ In short, we need put the following HTML somewhere on our page:
 {% endhighlight %}
 
 The **role** attribute tells the screen reader that this element is used to indicate some important **status** updates. Subsequently
-the **aria-live** attribute is used with **polite** setting. Both are used to ensure maximum compatibility with the
-screen readers out there. Finally the **aria-atomic** attribute is set to **true** to indicate to screen readers to read out the
-entire content of the wrapping **div**. Other values are possible for these attributes but that can be found in the **ARIA** specification
+the **aria-live** attribute is used with **polite** setting. We need both to ensure maximum compatibility with the
+screen readers out there. Finally the **aria-atomic** attribute is set to **true** to indicate to screen readers that they have to read out the
+entire content of the wrapping **div**. These attributes also accept other values but these can be found in the **ARIA** documentation
 mentioned above.
 
 {:.info}
 *NOTE: Using **role="status"** or **aria-live="polite"** will tell the screen reader that these messages are not warnings that
-should interrupt anything else the screen reader may be reading out. Once the current reading task of the screen reader completes,
-these changes will be read out. This provides a better experience if you are not dealing with high priority messages.*
+should interrupt everything else that the screen reader may be reading out at that moment. Once the current reading task of the screen reader completes,
+these changes will be read out and that is perfectly fine for our navigation notifications. This provides a way better experience if you are not dealing with high priority messages.*
 
 **Giving the silent a voice**
 
-Now that we know how to solve the problem, we will look at how to implement it in our **React** applicaiton. The ideal situation
-would be to have only one **ARIA Live** container in our application where other components can inject messages into.
+Now that we know how to solve the problem, we will look at how we implement it in our **React** application. The ideal situation
+would be to have only one **ARIA Live** notifications container in our entire application where other components can inject messages
+like these into.
 
 The clear best way to do this in any application of reasonable size and complexity is to use something like **Redux**. This allows
-easily setting the message from anywhere in the application while we can have one **Redux connected** component that will
+us to easily set the message from anywhere in the application while we can have one **Redux connected** component that will
 communicate our messages to the screen readers.
 
 This means we need an action that will set the message:
@@ -178,7 +185,7 @@ export const setA11yMessage = (message) => ({
 });
 {% endhighlight %}
 
-And a reducer to store, amongst other things, the message in the Redux store state:
+And a reducer to add the accessibility (*or a11y*) message to the Redux store state.:
 {% highlight javascript %}
 const a11yData = (state={}, action) => {
     switch(action.type){
@@ -194,7 +201,6 @@ Now we are all set to update the message from anywhere in the application. We wi
 navigation, therefore when each routed component is mounted.
 
 The **Orders** component serves as example. The other components handle it in exactly the same way:
-And a reducer to store, amongst other things, the message in the Redux store state:
 {% highlight javascript %}
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -218,4 +224,134 @@ class Orders extends Component {
 export default connect(null, actions)(Orders);
 {% endhighlight %}
 
-As the main routed component often implement lifecycle hooks anyways, this is a very quick addition.
+As the main routed component often needs lifecycle hooks anyways, this is a very quick and easy addition.
+
+Now we have our transitions all set up and ready to tell the screen readers all about what happened. So we implement a component that we can drop
+into our app:
+{% highlight javascript %}
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { getA11yMessage } from './reducers';
+import * as actions from './actions';
+
+class A11yMessage extends Component {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            currentA11yMessage: ''
+        }
+    }
+
+    componentWillReceiveProps(nextProps){
+        //We delay the setting and clearing of the accessible route transition
+        //text to ensure that the screen readers don't miss it.
+        if(nextProps.a11yMessage){
+            setTimeout(()=>{this.setState({
+                currentA11yMessage: nextProps.a11yMessage
+            })}, 50);
+            setTimeout(()=>{this.setState({
+                currentA11yMessage: ''
+            })}, 500)
+        }
+    }
+
+    render() {
+        const { currentA11yMessage } = this.state;
+        return (
+            <div className="sr-only"
+                 role="status"
+                 aria-live="polite"
+                 aria-atomic="true">
+                {currentA11yMessage ? <span>{currentA11yMessage}</span> : ''}
+            </div>
+        );
+    }
+}
+
+const mapStateToA11yProps = (state) => ({
+    a11yMessage: getA11yMessage(state)
+});
+
+export default connect(mapStateToA11yProps, actions)(A11yMessage);
+{% endhighlight %}
+
+And **hey bingo**, our component reacts to any changes to the accessible message in the Redux store.
+
+So why all the **timeouts**? If we implement this component by directly displaying the change from Redux, we will see that in some of the
+most important **browser-screen reader** combinations this message is still not read out. It seems to get 'lost' in all the
+other updates happening during such a transition. Hey a lot of HTML needs to be updated! But if we put a slight delay on the setting of the message in the component,
+and subsequently clearing it again, it works as expected.
+
+We are not done yet!
+
+We also only want screen readers to see this text and we do not want unnecessary text noise visible on the pages
+for sighted users. So, in this component, we add the **sr-only** class from **Bootstrap** to the **div** in question.
+
+This class is implemented in **Bootstrap** as follows:
+{% highlight css %}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+{% endhighlight %}
+
+This is one of the ways in which you can use **CSS** to visually hide content without totally removing it from the page. If
+we had used **display: "none"** on our element, if would also have been invisible to screen readers. This feature
+is not unique to **Bootstrap**, so you can either use this CSS directly in applications without Bootstrap or implement your own solution. Have a look at
+<a href="http://webaim.org/techniques/css/invisiblecontent/" target="_blank">how to create invisible page content</a> at
+WebAim for more information.
+
+All we still need to do is drop this into our application. We only need to do that once, and I recommend doing that
+outside your router and pretty high up in your application, to ensure that this element always stays rendered
+in your application's lifecycle:
+{% highlight javascript %}
+const App = () => (
+    <Provider store={store}>
+        <div>
+            <A11yMessage/>
+            <Router>
+                <div>
+                    <Header/>
+                    <main className="container">
+                        <Route exact={true} path="/" component={Overview}/>
+                        <Route path="/orders" component={Orders}/>
+                        <Route path="/contact" component={Contact}/>
+                    </main>
+                </div>
+            </Router>
+        </div>
+    </Provider>
+);
+{% endhighlight %}
+
+And there we have it! Now we can very easily provide accessible information on each and every page transition. But not only
+that, this container can now be used for any extra accessible notification we want to tell the screen readers about!
+
+But before we wrap this up, let's have another look at the text-to-speech transcript of NVDA with our newly implemented
+accessible message:
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2017-03-23-accessible-react-navigation/navigationwithspeech.png" alt="Image of NVDA text to speech screen clearly showing navigation information">
+</figure>
+{:/}
+
+We now have an application that will no longer leave many of our potential users with no clear idea of what has just happened
+when they use the oh-so-important main application navigation links! And that is something to be very happy about!
+
+As a final note it is worth mentioning that, although this is a very simple application, the technique can be used in an application of any
+size. Typically you will also want to do some work to tell the screen reader which navigation link is currently selected.
+The actual page title set in the HTML should also clearly reflect what has just happened. However, these
+features were not added to our demo application for the sake of simplicity.
+
+*You may also want to tweak the timeout settings or implementation thereof if you are sending a lot of concurrent message updates. However
+when we keep in mind that the screen readers will be reading it all out, it is usually a good idea to keep these messages short and
+to the point, in which case you should not have a problem. Test any changes you make with multiple screen readers first.*
