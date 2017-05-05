@@ -6,7 +6,8 @@ title: Binary Horizons Blog
 > **Atwood's Law**: *any application that can be written in JavaScript, will eventually be written in JavaScript.*
 </article>
 
-{% for post in site.posts | limit:3   %}
+{% assign blog_posts = site.posts | where:"layout","post" %}
+{% for post in blog_posts limit:3  %}
 {% if forloop.first %}
 <section>
 <h2 class="c-archives__main" id="{{ this_year }}-ref">Latest articles</h2>

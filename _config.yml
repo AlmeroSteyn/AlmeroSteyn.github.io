@@ -2,7 +2,7 @@
 title: Binary Horizons Blog
 email: almero.steyn@qdelft.nl
 description: >
-  A blog from a diehard Angular and a11y fan.
+  A blog from a diehard frontend and a11y fan.
 baseurl: ""
 url: "http://almerosteyn.github.io"
 fixedNav: 'true' # true or false
