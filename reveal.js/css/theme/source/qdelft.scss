@@ -1,0 +1,207 @@
+/**
+ * Sky theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Theme specific colors
+$QGreen: #8DC63F;
+$QGreenLightBackground: #afc18f;
+$QBackGround: #363F44;
+$OffWhite: #f7fbfc;
+$SlateText: #212121;
+//
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Proxima Nova', sans-serif;
+$mainColor: $SlateText;
+$headingFont: 'Proxima Nova', sans-serif;
+$headingColor: $SlateText;
+$headingLetterSpacing: -0.08em;
+$headingTextShadow: none;
+$backgroundColor: $OffWhite;
+$linkColor: $QGreen;
+$linkColorHover: lighten($linkColor, 20%);
+$selectionBackgroundColor: $QBackGround;
+
+// Fix links so they are not cut off
+.reveal a {
+  line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+  @include vertical-gradient($OffWhite, $OffWhite);
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+//Custom styles
+
+.reveal {
+
+  section {
+
+    .q-box {
+      position: absolute;
+
+      img {
+        width: 78%;
+      }
+    }
+
+    .q-col-50 {
+      width: 50%;
+      text-align: left;
+
+      ul {
+        margin: 0;
+      }
+
+      li {
+        text-align: left;
+      }
+    }
+
+    .q-col-50-right {
+      left: 50%;
+      text-align: right;
+
+      li {
+        text-align: right;
+      }
+    }
+
+    .q-col-33 {
+      width: 33.33%;
+    }
+
+    .q-col-33-middle {
+      left: 33.33%;
+    }
+
+    .q-col-33-right {
+      left: 66.66%
+    }
+
+    hr {
+      height: 2px;
+      background: $QGreen;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: normal;
+    }
+
+    &.q-section-slide a {
+      text-decoration: none;
+      text-shadow: 0.05em 0 0 $QGreen, -0.05em 0 0 $QGreen,
+      0 0.05em 0 $QGreen, 0 -0.05em 0 $QGreen,
+      0.1em 0 0 $QGreen, -0.1em 0 0 $QGreen,
+      0 0.1em 0 $QGreen, 0 -0.1em 0 $QGreen;
+      background-image: linear-gradient(to right, blue
+      0%, blue 100%);
+      background-repeat: repeat-x;
+      background-position: bottom 0.04em center;
+      background-size: 100% 0.07em;
+
+      &:hover {
+        background-image: linear-gradient(to right, darkblue
+        0%, darkblue 100%);
+      }
+    }
+
+    &.q-info-slide a {
+      text-decoration: none;
+      text-shadow: 0.05em 0 0 $OffWhite, -0.05em 0 0 $OffWhite,
+      0 0.05em 0 $OffWhite, 0 -0.05em 0 $OffWhite,
+      0.1em 0 0 $OffWhite, -0.1em 0 0 $OffWhite,
+      0 0.1em 0 $OffWhite, 0 -0.1em 0 $OffWhite;
+      background-image: linear-gradient(to right, blue
+      0%, blue 100%);
+      background-repeat: repeat-x;
+      background-position: bottom 0.04em center;
+      background-size: 100% 0.07em;
+
+      &:hover {
+        background-image: linear-gradient(to right, darkblue
+        0%, darkblue 100%);
+      }
+    }
+
+    a {
+      color: blue;
+      //text-decoration: underline;
+
+      &:hover {
+        color: darkblue;
+      }
+    }
+
+    img {
+      background-color: $OffWhite;
+      border-radius: 25px;
+      padding: 10px;
+      border-width: 2px;
+    }
+
+    &.q-main-slide {
+
+      h2 {
+        color: $OffWhite;
+      }
+
+      color: $OffWhite;
+    }
+
+    &.q-section-slide {
+      font-weight: bold;
+
+      h2 {
+        font-weight: bold;
+      }
+    }
+
+    img {
+
+      &.q-image {
+        margin: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+
+      &.q-main-logo {
+        max-width: 40%;
+      }
+
+      &.q-sub-logo {
+        max-width: 10%;
+      }
+
+      //&.q-main-logo-pad {
+      //  margin-bottom: 1em;
+      //}
+
+    }
+
+    ul.q-address {
+      list-style: none;
+      font-size: 0.5em;
+    }
+
+  }
+
+}
