@@ -3,34 +3,34 @@ layout: slide
 title: Accessibility in React
 description: Building accessible React apps
 theme: present
-transition: convex
+highlight: tomorrow
+transition: fade
 ---
 
-<section id="main" data-markdown>
-# Accessibility in React
----
-## Creating accessible applications
-
-- Almero Steyn
-- QDelft B.V.
-- almerosteyn.com
-- twitter.com/kryptos_rsa
-
+<section id="main">
+<h1>Accessibility in React</h1>
+<hr>
+<h2>Creating accessible applications</h2>
+<ul>
+    <li>Almero Steyn</li>
+    <li>QDelft B.V.</li>
+    <li>almerosteyn.com</li>
+    <li>twitter.com/kryptos_rsa</li>
+</ul>
 </section>
-<section data-markdown>
-# JS-Zilla destroys a11y!!
-![Image depicting JavaScript as a destructive monster](/css/images/2017-05-11-accessible-react/godzilla.jpg)
+<section>
+<h1>JS-Zilla destroys a11y!!</h1>
+<img src="/css/images/2017-05-11-accessible-react/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
 </section>
-<section data-markdown>
-# It can be a friendly monster...
-![Image depicting JavaScript as cute monster](/css/images/2017-05-11-accessible-react/friendly-monster2.jpg)
+<section>
+<h1>JS-Zilla destroys a11y!!</h1>
+<img src="/css/images/2017-05-11-accessible-react/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
 </section>
-<section data-markdown>
-react virtual dom / dom
-aria in react - attributes valid
-react-axe
-eslint-plugin-jsx-a11y
-some accessible widgets
-progressive apps
-dynamic module loading
-</section
+<section>
+    <pre><code class="javascript" data-trim>
+        if (process.env.NODE_ENV !== 'production') {
+            const axe = require('react-axe');
+            axe(React, ReactDOM, 1000);
+        }
+    </code></pre>
+</section>
