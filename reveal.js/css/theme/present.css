@@ -304,9 +304,18 @@ body {
   max-width: 70%;
   max-height: 70%; }
 
+.reveal ul {
+  font-size: 0.7em; }
+
 #main ul {
   text-align: center;
   list-style: none;
   margin: 0;
   font-size: 0.7em;
   font-weight: bold; }
+
+.reveal blockquote {
+  box-shadow: none; }
+
+.reveal h1.no-capitalize, .reveal h2.no-capitalize, .reveal h3.no-capitalize, .reveal h4.no-capitalize, .reveal h5.no-capitalize, .reveal h6.no-capitalize {
+  text-transform: none; }

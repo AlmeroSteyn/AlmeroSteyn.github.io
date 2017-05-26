@@ -45,10 +45,26 @@ $selectionBackgroundColor: #26351C;
   max-height: 70%;
 }
 
+.reveal ul {
+  font-size: 0.7em;
+}
+
 #main ul {
   text-align: center;
   list-style: none;
   margin: 0;
   font-size: 0.7em;
   font-weight: bold;
+}
+
+.reveal blockquote {
+  box-shadow: none;
+}
+
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    &.no-capitalize {
+      text-transform: none;
+    }
+  }
 }
