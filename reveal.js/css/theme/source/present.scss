@@ -11,12 +11,12 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Verdana', 'Helvetica', sans-serif;
-$mainColor: #000;
+$mainColor: #222222;
 $headingFont: 'Verdana', 'Helvetica', sans-serif;
-$headingColor: #383D3D;
+$headingColor: #222222;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #F0F1EB;
+$backgroundColor: #EEEEEE;
 $linkColor: #51483D;
 $linkColorHover: lighten($linkColor, 20%);
 $selectionBackgroundColor: #26351C;
@@ -29,12 +29,26 @@ $selectionBackgroundColor: #26351C;
 @import "../template/theme";
 // ---------------------------------------------
 
-.reveal h2 {
+.reveal h1 {
   font-size: 1.2em;
   font-weight: bold;
+  text-transform: capitalize;
+}
+
+.reveal h2 {
+  font-size: 1.0em;
+  text-transform: capitalize;
 }
 
 .reveal img {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#main ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: bold;
 }
