@@ -7,7 +7,7 @@ highlight: tomorrow
 transition: fade
 ---
 
-<section id="main">
+<section class="main">
 <h1>Accessibility in React</h1>
 <hr>
 <h2>Creating accessible applications</h2>
@@ -135,7 +135,7 @@ yarn start
          }
        }
     </code></pre>
-<p>create-react-app</p>
+<p>Extending create-react-app default config</p>
  <pre><code class="json" data-trim>
         {
           "extends": ["react-app", "plugin:jsx-a11y/recommended"],
@@ -181,4 +181,38 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 <h1 class="no-capitalize">react-axe</h1>
 <p>Feedback written directly to browser console</p>
 <img class="nomax" src="/css/images/2017-05-11-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
+</section>
+<section>
+<h1>Lazy loading components</h1>
+<pre><code class="javascript" data-trim>
+class App extends Component {
+    state = { LazyBlock: null };
+
+    async componentDidMount() {
+        const { default: LazyBlock } = await import('./LazyBlock');
+        this.setState({ LazyBlock: &lt;LazyBlock/> });
+    }
+
+    render() {
+        return ( <main aria-busy={!this.state.LazyBlock}>
+                    {this.state.LazyBlock || <p>Loading...</p>}
+                 </main> );
+    }
+}
+</code></pre>
+</section>
+<section>
+<h1>Lazy loading components</h1>
+<p>Code split into chunks</p>
+<img src="/css/images/2017-05-11-accessible-react/codesplitting.png" alt="JavaScript code bundles after webpack async-await import and build"/>
+</section>
+<section class="main">
+<h1>Questions</h1>
+<hr>
+<ul>
+    <li>Almero Steyn</li>
+    <li>QDelft B.V.</li>
+    <li>almerosteyn.com</li>
+    <li>twitter.com/kryptos_rsa</li>
+</ul>
 </section>

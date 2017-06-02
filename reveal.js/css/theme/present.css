@@ -302,6 +302,9 @@ body {
   font-size: 1.0em;
   text-transform: capitalize; }
 
+.reveal section img {
+  border: none; }
+
 .reveal img:not(.nomax) {
   max-width: 70%;
   max-height: 70%; }
@@ -309,7 +312,7 @@ body {
 .reveal ul {
   font-size: 0.7em; }
 
-#main ul {
+.main ul {
   text-align: center;
   list-style: none;
   margin: 0;
