@@ -154,10 +154,31 @@ yarn start
 <img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
 </section>
 <section>
-    <pre><code class="javascript" data-trim>
-        if (process.env.NODE_ENV !== 'production') {
-            const axe = require('react-axe');
-            axe(React, ReactDOM, 1000);
-        }
-    </code></pre>
+<h1 class="no-capitalize">react-axe</h1>
+<blockquote>
+"Accessibility auditing for React.js applications."
+</blockquote>
+<img class="nomax" src="/css/images/2017-05-11-accessible-react/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
+<a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<p>Setting up react-axe</p>
+<pre><code class="javascript" data-trim>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+if (process.env.NODE_ENV !== 'production') {
+    const axe = require('react-axe');
+    axe(React, ReactDOM, 1000);
+}
+
+ReactDOM.render(&lt;App />, document.getElementById('root'));
+</code></pre>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<p>Feedback written directly to browser console</p>
+<img class="nomax" src="/css/images/2017-05-11-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
 </section>
