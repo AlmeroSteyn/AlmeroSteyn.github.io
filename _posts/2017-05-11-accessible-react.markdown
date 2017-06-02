@@ -183,6 +183,44 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 <img class="nomax" src="/css/images/2017-05-11-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
 </section>
 <section>
+<h1>Focus control</h1>
+<p>Setting focus with refs</p>
+<pre><code class="javascript" data-trim>
+componentDidMount(){
+    this.nameInput.focus();
+}
+
+render(){
+    return(
+        <div>
+            <label htmlFor="demoId">Name</label>
+            <input id="demoId" type="text"
+            ref={(input) => {this.nameInput = input;}}/>
+        </div>
+    );
+}
+</code></pre>
+</section>
+<section>
+<h1>Focus control</h1>
+<p>Setting focus with ReactDOM</p>
+<pre><code class="javascript" data-trim>
+componentDidMount(){
+    const componentNode = ReactDOM.findDOMNode(this);
+    componentNode.querySelector('input').focus();
+}
+
+render(){
+    return(
+        <div>
+            <label htmlFor="demoId">Name</label>
+            <input id="demoId" type="text"/>
+        </div>
+    );
+}
+</code></pre>
+</section>
+<section>
 <h1>Lazy loading components</h1>
 <pre><code class="javascript" data-trim>
 class App extends Component {
