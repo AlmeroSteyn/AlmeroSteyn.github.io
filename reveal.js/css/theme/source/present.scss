@@ -17,12 +17,14 @@ $headingColor: #222222;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #EEEEEE;
-$linkColor: #51483D;
+$linkColor: #0000EE;
 $linkColorHover: lighten($linkColor, 20%);
 $selectionBackgroundColor: #26351C;
 
 .reveal a {
   line-height: 1.3em;
+  font-size: 0.7em;
+  text-decoration: underline;
 }
 
 // Theme template ------------------------------
@@ -40,7 +42,7 @@ $selectionBackgroundColor: #26351C;
   text-transform: capitalize;
 }
 
-.reveal img {
+.reveal img:not(.nomax) {
   max-width: 70%;
   max-height: 70%;
 }
@@ -68,3 +70,4 @@ $selectionBackgroundColor: #26351C;
     }
   }
 }
+

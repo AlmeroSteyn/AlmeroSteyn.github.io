@@ -26,36 +26,6 @@ transition: fade
 </blockquote>
 </section>
 <section>
-<h1>JS-Zilla destroys a11y!!</h1>
-<img src="/css/images/2017-05-11-accessible-react/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
-</section>
-<section>
-<h1>It can be a friendly monster...</h1>
-<img src="/css/images/2017-05-11-accessible-react/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
-</section>
-<section>
-    <h1>JSX</h1>
-    <p>HTML-like syntactic JavaScript sugar.</p>
-    <pre><code class="html" data-trim>
-        <label htmlFor={nameId}>{nameLabelText}</label>
-        <input id={nameId} type="text" />
-    </code></pre>
-    Renders to HTML in the DOM.
-    <pre><code class="html" data-trim>
-         <label for="name">Darth Vader</label>
-         <input id="name" type="text" />
-    </code></pre>
-</section>
-<section>
-    <h1>JSX and ARIA</h1>
-    <p>All ARIA attributes are valid JSX props!</p>
-    <pre><code class="html" data-trim>
-            <input id={nameId} aria-label={accessibleLabel} type="text" />
-    </code></pre>
-    <p>IntelliSense in supported IDEs.</p>
-    <img src="/css/images/2017-05-11-accessible-react/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
-</section>
-<section>
 <h1>React component class</h1>
 <pre><code class="javascript" data-trim>
 import React, { Component } from 'react';
@@ -98,6 +68,36 @@ export default Root;
 </code></pre>
 </section>
 <section>
+<h1>JS-Zilla destroys a11y!!</h1>
+<img src="/css/images/2017-05-11-accessible-react/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
+</section>
+<section>
+<h1>It can be a friendly monster...</h1>
+<img src="/css/images/2017-05-11-accessible-react/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
+</section>
+<section>
+    <h1>JSX</h1>
+    <p>HTML-like syntactic JavaScript sugar.</p>
+    <pre><code class="html" data-trim>
+        <label htmlFor={nameId}>{nameLabelText}</label>
+        <input id={nameId} type="text" />
+    </code></pre>
+    Renders to HTML in the DOM.
+    <pre><code class="html" data-trim>
+         <label for="name">Darth Vader</label>
+         <input id="name" type="text" />
+    </code></pre>
+</section>
+<section>
+    <h1>JSX and ARIA</h1>
+    <p>All ARIA attributes are valid JSX props!</p>
+    <pre><code class="html" data-trim>
+            <input id={nameId} aria-label={accessibleLabel} type="text" />
+    </code></pre>
+    <p>IntelliSense in supported IDEs.</p>
+    <img src="/css/images/2017-05-11-accessible-react/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
+</section>
+<section>
 <h1 class="no-capitalize">create-react-app</h1>
 <pre><code class="javascript" data-trim>
 yarn global add create-react-app
@@ -118,10 +118,40 @@ yarn start
 <blockquote>
 "Static AST checker for a11y rules on JSX elements."
 </blockquote>
+<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">https://github.com/evcohen/eslint-plugin-jsx-a11y</a>
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>
+<p>More than 30 ESLINT a11y checks.</p>
+<img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>Rules are configurable</p>
+    <pre><code class="json" data-trim>
+       {
+         "rules": {
+           "jsx-a11y/rule-name": "warn"
+         }
+       }
+    </code></pre>
+<p>create-react-app</p>
+ <pre><code class="json" data-trim>
+        {
+          "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+          "plugins": ["jsx-a11y"]
+        }
+    </code></pre>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>Report on a11y issues during build</p>
+<img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>Display a11y issues directly in IDE</p>
+<img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
 </section>
 <section>
     <pre><code class="javascript" data-trim>
