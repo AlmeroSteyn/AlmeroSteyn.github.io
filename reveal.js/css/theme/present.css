@@ -4,10 +4,25 @@
  *
  * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
  */
-.reveal a {
+.reveal section a {
   line-height: 1.3em;
   font-size: 0.7em;
-  text-decoration: underline; }
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #EEEEEE, -0.05em 0 0 #EEEEEE, 0 0.05em 0 #EEEEEE, 0 -0.05em 0 #EEEEEE, 0.1em 0 0 #EEEEEE, -0.1em 0 0 #EEEEEE, 0 0.1em 0 #EEEEEE, 0 -0.1em 0 #EEEEEE;
+  background-image: linear-gradient(to right, #0000EE 0%, #0000EE 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.04em center;
+  background-size: 100% 0.07em; }
+
+.reveal section a:hover {
+  line-height: 1.3em;
+  font-size: 0.7em;
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #EEEEEE, -0.05em 0 0 #EEEEEE, 0 0.05em 0 #EEEEEE, 0 -0.05em 0 #EEEEEE, 0.1em 0 0 #EEEEEE, -0.1em 0 0 #EEEEEE, 0 0.1em 0 #EEEEEE, 0 -0.1em 0 #EEEEEE;
+  background-image: linear-gradient(to right, #000088 0%, #000088 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.04em center;
+  background-size: 100% 0.07em; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -219,7 +234,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #5555ff;
+  color: #000088;
   text-shadow: none;
   border: none; }
 
@@ -270,16 +285,16 @@ body {
   border-top-color: #0000EE; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #5555ff; }
+  border-right-color: #000088; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #5555ff; }
+  border-left-color: #000088; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #5555ff; }
+  border-bottom-color: #000088; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #5555ff; }
+  border-top-color: #000088; }
 
 /*********************************************
  * PROGRESS BAR

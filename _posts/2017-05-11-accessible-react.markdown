@@ -8,9 +8,9 @@ transition: fade
 ---
 
 <section class="main">
-<h1>Accessibility in React</h1>
+<h1>React Accessibility</h1>
 <hr>
-<h2>Creating accessible applications</h2>
+<h2>Creating accessible applications with ease</h2>
 <ul>
     <li>Almero Steyn</li>
     <li>QDelft B.V.</li>
@@ -22,7 +22,7 @@ transition: fade
 <h1>React</h1>
 <img src="/css/images/2017-05-11-accessible-react/react-logo.svg" alt="React logo" style="max-width: 20%"/>
 <blockquote>
-"A JavaScript library for building user interfaces" - React docs
+"A JavaScript library for building user interfaces." - React docs
 </blockquote>
 </section>
 <section>
@@ -106,11 +106,11 @@ cd my-react-app
 yarn start
 </code></pre>
 <ul>
-    <li>Webpack production build</li>
-    <li>ESLint with some a11y rules</li>
-    <li>Progressive app by default</li>
-    <li>Supports code splitting</li>
-    <li>Unit tests + coverage with JSDOM</li>
+    <li>Webpack development and production build.</li>
+    <li>ESLint with some a11y rules.</li>
+    <li>Progressive app by default.</li>
+    <li>Supports code splitting.</li>
+    <li>Unit tests + coverage with JSDOM.</li>
 </ul>
 </section>
 <section>
@@ -127,7 +127,7 @@ yarn start
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>Rules are configurable</p>
+<p>Rules are configurable.</p>
     <pre><code class="json" data-trim>
        {
          "rules": {
@@ -135,7 +135,7 @@ yarn start
          }
        }
     </code></pre>
-<p>Extending create-react-app default config</p>
+<p>Extending config in create-react-app.</p>
  <pre><code class="json" data-trim>
         {
           "extends": ["react-app", "plugin:jsx-a11y/recommended"],
@@ -145,12 +145,12 @@ yarn start
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>Report on a11y issues during build</p>
+<p>A11y issues become build warnings.</p>
 <img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>Display a11y issues directly in IDE</p>
+<p>IDE integration.</p>
 <img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
 </section>
 <section>
@@ -163,7 +163,7 @@ yarn start
 </section>
 <section>
 <h1 class="no-capitalize">react-axe</h1>
-<p>Setting up react-axe</p>
+<p>Setting up react-axe.</p>
 <pre><code class="javascript" data-trim>
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -179,12 +179,12 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 </section>
 <section>
 <h1 class="no-capitalize">react-axe</h1>
-<p>Feedback written directly to browser console</p>
+<p>Browser console feedback.</p>
 <img class="nomax" src="/css/images/2017-05-11-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
 </section>
 <section>
 <h1>Focus control</h1>
-<p>Setting focus with refs</p>
+<p>Setting focus with refs.</p>
 <pre><code class="javascript" data-trim>
 componentDidMount(){
     this.nameInput.focus();
@@ -203,7 +203,7 @@ render(){
 </section>
 <section>
 <h1>Focus control</h1>
-<p>Setting focus with ReactDOM</p>
+<p>Setting focus with ReactDOM.</p>
 <pre><code class="javascript" data-trim>
 componentDidMount(){
     const componentNode = ReactDOM.findDOMNode(this);
@@ -241,7 +241,7 @@ class App extends Component {
 </section>
 <section>
 <h1>Lazy loading components</h1>
-<p>Code split into chunks</p>
+<p>Splitting code files.</p>
 <img src="/css/images/2017-05-11-accessible-react/codesplitting.png" alt="JavaScript code bundles after webpack async-await import and build"/>
 </section>
 <section class="main">
