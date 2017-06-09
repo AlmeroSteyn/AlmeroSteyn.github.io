@@ -20,7 +20,7 @@ transition: fade
 </section>
 <section>
 <h1>React</h1>
-<img src="/css/images/2017-05-11-accessible-react/react-logo.svg" alt="React logo" style="max-width: 20%"/>
+<img src="/css/images/2017-06-08-accessible-react/react-logo.svg" alt="React logo" style="max-width: 20%"/>
 <blockquote>
 "A JavaScript library for building user interfaces." - React docs
 </blockquote>
@@ -97,15 +97,15 @@ export default Root;
 </section>
 <section>
 <h1>Everything in JavaScript?</h1>
-<img src="/css/images/2017-05-11-accessible-react/shock.jpg" alt="Image of koala expressing shock at React being all JavaScript" style="max-width:40%"/>
+<img src="/css/images/2017-06-08-accessible-react/shock.jpg" alt="Image of koala expressing shock at React being all JavaScript" style="max-width:40%"/>
 </section>
 <section>
 <h1>JS-Zilla destroys a11y!!</h1>
-<img src="/css/images/2017-05-11-accessible-react/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
+<img src="/css/images/2017-06-08-accessible-react/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
 </section>
 <section>
 <h1>It can be a friendly monster...</h1>
-<img src="/css/images/2017-05-11-accessible-react/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
+<img src="/css/images/2017-06-08-accessible-react/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
 </section>
 <section>
     <h1>JSX</h1>
@@ -134,7 +134,7 @@ export default Root;
             <input id={nameId} aria-label={accessibleLabel} type="text" />
     </code></pre>
     <p>IntelliSense in supported IDEs.</p>
-    <img src="/css/images/2017-05-11-accessible-react/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
+    <img src="/css/images/2017-06-08-accessible-react/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
 <aside class="notes">
 <ul>
 <li>JSX supports ARIA in the same way as HTML</li>
@@ -183,7 +183,7 @@ yarn start
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <p>More than 30 ESLINT a11y checks.</p>
-<img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
+<img class="nomax" src="/css/images/2017-06-08-accessible-react/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
 <aside class="notes">
 <ul>
 <li>More than 30 accessibility checks</li>
@@ -219,7 +219,7 @@ yarn start
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <p>A11y issues become build warnings.</p>
-<img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
+<img class="nomax" src="/css/images/2017-06-08-accessible-react/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
 <aside class="notes">
 <ul>
 <li>Can be hooked into WebPack build like in create-react-app</li>
@@ -229,7 +229,7 @@ yarn start
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <p>IDE integration.</p>
-<img class="nomax" src="/css/images/2017-05-11-accessible-react/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
+<img class="nomax" src="/css/images/2017-06-08-accessible-react/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
 <aside class="notes">
 <ul>
 <li>Can be integrated with IDE's to provide instant feedback</li>
@@ -241,7 +241,7 @@ yarn start
 <blockquote>
 "Accessibility auditing for React.js applications."
 </blockquote>
-<img class="nomax" src="/css/images/2017-05-11-accessible-react/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
+<img class="nomax" src="/css/images/2017-06-08-accessible-react/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
 <a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
 <aside class="notes">
 <ul>
@@ -275,7 +275,7 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 <section>
 <h1 class="no-capitalize">react-axe</h1>
 <p>Browser console feedback.</p>
-<img class="nomax" src="/css/images/2017-05-11-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
+<img class="nomax" src="/css/images/2017-06-08-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
 <aside class="notes">
 <ul>
 <li>Display errors in browser console.</li>
@@ -363,7 +363,7 @@ class App extends Component {
 <section>
 <h1>Lazy loading components</h1>
 <p>Splitting code files.</p>
-<img src="/css/images/2017-05-11-accessible-react/codesplitting.png" alt="JavaScript code bundles after webpack async-await import and build"/>
+<img src="/css/images/2017-06-08-accessible-react/codesplitting.png" alt="JavaScript code bundles after webpack async-await import and build"/>
 <aside class="notes">
 <ul>
 <li>Files are chunked and loaded when required</li>
@@ -371,7 +371,7 @@ class App extends Component {
 </aside>
 </section>
 <section>
-<img src="/css/images/2017-05-11-accessible-react/its-logical.jpg" alt="Image of captain kirk showing thumbs up to Spock. Accessibility is logical."/>
+<img src="/css/images/2017-06-08-accessible-react/its-logical.jpg" alt="Image of captain kirk showing thumbs up to Spock. Accessibility is logical."/>
 </section>
 <section class="main">
 <h1>Questions</h1>
