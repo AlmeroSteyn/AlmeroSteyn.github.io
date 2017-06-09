@@ -10,7 +10,7 @@ transition: fade
 <section class="main">
 <h1>React Accessibility</h1>
 <hr>
-<h2>Creating accessible applications with ease</h2>
+<h2>Tooling and techniques</h2>
 <ul>
     <li>Almero Steyn</li>
     <li>QDelft B.V.</li>
