@@ -1,7 +1,7 @@
 ---
 layout: slide
-title: Accessibility in React
-description: Building accessible React apps
+title: React Accessibility
+description: Tooling and techniques
 theme: present
 highlight: tomorrow
 transition: fade
