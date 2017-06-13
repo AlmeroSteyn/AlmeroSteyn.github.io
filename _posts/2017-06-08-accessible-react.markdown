@@ -8,6 +8,7 @@ transition: fade
 ---
 
 <section class="main">
+<img src="/css/images/2017-06-08-accessible-react/QLogo.png" alt="Log of QDelft" style="max-width: 20%"/>
 <h1>React Accessibility</h1>
 <hr>
 <h2>Tooling and techniques</h2>
@@ -17,6 +18,7 @@ transition: fade
     <li>almerosteyn.com</li>
     <li>twitter.com/kryptos_rsa</li>
 </ul>
+
 </section>
 <section>
 <h1>React</h1>
