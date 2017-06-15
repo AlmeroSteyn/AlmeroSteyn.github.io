@@ -8,7 +8,8 @@
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt"
+    "build": "grunt",
+    "build-sass": "node-sass --include-path css/theme/source css/theme/source/qdelft.scss css/theme/qdelft.css && node-sass --include-path css/theme/source css/theme/source/present.scss css/theme/present.css"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -23,22 +24,10 @@
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "express": "~4.14.0",
-    "grunt": "~1.0.1",
-    "grunt-autoprefixer": "~3.0.3",
-    "grunt-cli": "~1.2.0",
-    "grunt-contrib-connect": "~0.11.2",
-    "grunt-contrib-cssmin": "~0.14.0",
-    "grunt-contrib-jshint": "~0.11.3",
-    "grunt-contrib-qunit": "~1.2.0",
-    "grunt-contrib-uglify": "~0.9.2",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-sass": "~1.2.0",
-    "grunt-retire": "~0.3.10",
-    "grunt-zip": "~0.17.1",
-    "mustache": "~2.2.1",
-    "node-sass": "~3.13.0",
-    "socket.io": "^1.4.8"
+    "node-sass": "^4.5.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "global": "^4.3.2"
+  }
 }

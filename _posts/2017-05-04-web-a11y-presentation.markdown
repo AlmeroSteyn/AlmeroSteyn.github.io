@@ -3,6 +3,7 @@ layout: slide
 title: Web Accessibility
 description: Building websites for everyone.
 theme: qdelft
+highlight: zenburn
 transition: slide
 ---
 <section data-markdown class="q-main-slide" data-background-color="#363F44">
