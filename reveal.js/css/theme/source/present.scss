@@ -75,11 +75,13 @@ $selectionBackgroundColor: #26351C;
   max-height: 70%;
 }
 
-.reveal ul {
+.reveal ul,
+.reveal ol{
   font-size: 0.7em;
 }
 
-.main ul {
+.main ul,
+.main ol{
   text-align: center;
   list-style: none;
   margin: 0;

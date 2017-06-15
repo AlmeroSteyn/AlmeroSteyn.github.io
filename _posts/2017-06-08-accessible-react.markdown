@@ -36,56 +36,17 @@ transition: fade
 </aside>
 </section>
 <section>
-<h1>React component class</h1>
-<pre><code class="javascript" data-trim>
-import React, { Component } from 'react';
-
-class Demo extends Component {
-    render() {
-        return (
-            <span>{this.props.displayText}</span>
-        );
-    }
-}
-
-export default Demo;
-
-</code></pre>
-<aside class="notes">
-<ul>
-<li>Two methods to create a component</li>
-<li>First method is with a component class</li>
-<li>Can contain state and lifecycle hooks</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1>React component function</h1>
+<h1>React syntax</h1>
 <pre><code class="javascript" data-trim>
 import React from 'react';
+import Content from './Content';
 
-const Demo = ({ displayText }) => (
-    <span>{displayText}</span>
+const Root = ({headerText, onLogout}) => (
+     <main>
+        <h1>{ headerText }</h1>
+        &lt;Content onLogout={ onLogout }/>
+     </main>
 );
-
-export default Demo;
-</code></pre>
-<aside class="notes">
-<ul>
-<li>Second method with stateless functions</li>
-<li>Purely meant to render display</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1>Using a component</h1>
-<pre><code class="javascript" data-trim>
-import React from 'react';
-import Demo from './Demo';
-
-const Root = () => {(
-     &lt;Demo displayText="Show this text"/>
-)};
 
 export default Root;
 </code></pre>
@@ -108,6 +69,29 @@ export default Root;
 <section>
 <h1>It can be a friendly monster...</h1>
 <img src="/css/images/2017-06-08-accessible-react/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
+</section>
+<section>
+<h1 class="no-capitalize">create-react-app</h1>
+<pre><code class="javascript" data-trim>
+yarn global add create-react-app
+create-react-app my-react-app
+cd my-react-app
+yarn start
+</code></pre>
+<ol>
+    <li>Webpack development and production build.</li>
+    <li>ESLint with some a11y rules.</li>
+    <li>Progressive app by default.</li>
+    <li>Supports code splitting.</li>
+    <li>Unit tests + coverage with JSDOM.</li>
+</ol>
+<aside class="notes">
+<ul>
+<li>I recommended this CLI maintained by React team members</li>
+<li>Solid app development ecosystem ready for a11y</li>
+<li>Contains some a11y linter rules by default</li>
+</ul>
+</aside>
 </section>
 <section>
     <h1>JSX</h1>
@@ -142,30 +126,6 @@ export default Root;
 <li>JSX supports ARIA in the same way as HTML</li>
 <li>Added ability to change aria-props programmatically</li>
 <li>Allows for IDE support</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">create-react-app</h1>
-<pre><code class="javascript" data-trim>
-yarn global add create-react-app
-create-react-app my-react-app
-cd my-react-app
-yarn start
-</code></pre>
-<ul>
-    <li>Webpack development and production build.</li>
-    <li>ESLint with some a11y rules.</li>
-    <li>Progressive app by default.</li>
-    <li>Supports code splitting.</li>
-    <li>Unit tests + coverage with JSDOM.</li>
-</ul>
-<aside class="notes">
-<ul>
-<li>A recommended CLI maintained by React team members</li>
-<li>Fully functional app ecosystem</li>
-<li>Contains some a11y linter rules by default</li>
-<li>Config can be extended</li>
 </ul>
 </aside>
 </section>
