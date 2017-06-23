@@ -300,30 +300,6 @@ render(){
 </aside>
 </section>
 <section>
-<h1>Focus control</h1>
-<p>Setting focus with ReactDOM.</p>
-<pre><code class="javascript" data-trim>
-componentDidMount(){
-    const componentNode = ReactDOM.findDOMNode(this);
-    componentNode.querySelector('input').focus();
-}
-
-render(){
-    return(
-        <div>
-            <label htmlFor="demoId">Name</label>
-            <input id="demoId" type="text"/>
-        </div>
-    );
-}
-</code></pre>
-<aside class="notes">
-<ul>
-<li>Can also be done with ReactDOM</li>
-</ul>
-</aside>
-</section>
-<section>
 <h1>Lazy loading components</h1>
 <pre><code class="javascript" data-trim>
 class App extends Component {
