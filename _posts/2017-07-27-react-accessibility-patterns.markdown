@@ -99,3 +99,12 @@ transition: fade
         </div>
     </code></pre>
 </section>
+<section>
+<h1>There has to be a better way?</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/confused.jpg" alt="Confusion about how bad the web is"/>
+</section>
+<section>
+ <video controls class="stretch" src="/css/videos/2017-07-27-react-accessibility-patterns/a11yappwalkthrough.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+</video>
+</section>
