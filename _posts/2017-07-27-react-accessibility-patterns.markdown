@@ -94,7 +94,8 @@ transition: fade
 <section>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
     <pre><code class="html" data-trim>
-        <div className="looks-like-a-button" onClick={this.onClickHandler}>
+        <div className="looks-like-a-button"
+             onClick={this.onClickHandler}>
                Press me please
         </div>
     </code></pre>
@@ -107,4 +108,22 @@ transition: fade
  <video controls class="stretch" src="/css/videos/2017-07-27-react-accessibility-patterns/a11yappwalkthrough.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
+</section>
+<section>
+<h1>Good HTML means good JSX</h1>
+</section>
+<section>
+<h1>Components and unique id's</h1>
+</section>
+<section>
+<h1>Managing focus with refs</h1>
+</section>
+<section>
+<h1>Remember the document title</h1>
+</section>
+<section>
+<h1>ARIA live announcer</h1>
+</section>
+<section>
+<h1>React a11y docs</h1>
 </section>
