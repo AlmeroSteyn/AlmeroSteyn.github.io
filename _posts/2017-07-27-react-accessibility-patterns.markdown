@@ -53,14 +53,34 @@ transition: fade
 <img src="/css/images/2017-07-27-react-accessibility-patterns/tenon.png" alt="Tenon logo" style="max-width: 20%"/>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/wehkamp.jpg" alt="Wehkamp logo" style="max-width: 20%"/>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/bbc.png" alt="BBC logo" style="max-width: 20%"/>
-<aside class="notes">
-<ul>
-<li>Created by Jordan Walke at Facebook</li>
-<li>Opensourced in 2013</li>
-<li>A library instead of a framework</li>
-<li>Build applications with components</li>
-</ul>
-</aside>
+</section>
+<section>
+<h1>How do React websites fare?</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/goodbadugly.jpg" alt="Movie poster of The Good, the Bad and the Ugly"/>
+</section>
+<section>
+<h1>The Good-a11y</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/good.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+</section>
+<section>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
+</section>
+<section>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/airbnbcap.png" alt="Image capture and Axe scan of airbnb"/>
+</section>
+<section>
+<h1>The other two</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/bad.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/ugly.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+</section>
+<section>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/wehkampcap.png" alt="Image capture and Axe scan of wehkamp"/>
+</section>
+<section>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/dockercap.png" alt="Image capture and Axe scan of docker"/>
+</section>
+<section>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
 </section>
 <section>
 <h1>React component tree</h1>
