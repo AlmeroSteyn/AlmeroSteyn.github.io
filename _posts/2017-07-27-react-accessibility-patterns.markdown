@@ -44,6 +44,14 @@ transition: fade
 </aside>
 </section>
 <section>
+<h1>React component tree</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/react-components.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+</section>
+<section>
+<h1>React virtual DOM + Reconciler</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+</section>
+<section>
 <h1>Who uses React?</h1>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/facebook.png" alt="Facebook logo" style="max-width: 20%"/>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/Netflix.jpg" alt="Netflix logo" style="max-width: 20%"/>
@@ -80,13 +88,14 @@ transition: fade
 <img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/dockercap.png" alt="Image capture and Axe scan of docker"/>
 </section>
 <section>
+<h1>But why?</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
+</section>
+<section>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
-</section>
-<section>
-<h1>React component tree</h1>
-<img src="/css/images/2017-07-27-react-accessibility-patterns/react-components.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
-</section>
-<section>
-<h1>React virtual DOM + Reconciler</h1>
-<img src="/css/images/2017-07-27-react-accessibility-patterns/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+    <pre><code class="html" data-trim>
+        <div className="looks-like-a-button" onClick={this.onClickHandler}>
+               Press me please
+        </div>
+    </code></pre>
 </section>

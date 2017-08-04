@@ -6,7 +6,7 @@ description: >
 baseurl: ""
 url: "http://almerosteyn.github.io"
 fixedNav: 'true' # true or false
-theme: minima # green, blue, orange, purple, grey
+#theme: minima # green, blue, orange, purple, grey
 twitterUsername: kryptos_rsa
 githubUsername: AlmeroSteyn
 dribbbleUsername:
@@ -17,8 +17,8 @@ permalink: /:year/:month/:title
 markdown: kramdown
 include: [_pages]
 comments: true
-# highlighter: pygments
-# port: 8889
+highlighter: rouge
+port: 8889
 exclude: [_site, CHANGELOG.md, LICENSE, README.md]
 sass:
   style: compressed
