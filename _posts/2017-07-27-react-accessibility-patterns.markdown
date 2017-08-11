@@ -177,6 +177,16 @@ const AppNavigation = () =>
 </code></pre>
 </section>
 <section>
+<h1>Intact header symantics</h1>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/headers.png" alt="Diagram of HTML headers"/>
+<pre><code class="html" data-trim>
+const HeaderWithLevel = ({ headerText, level }) => {
+  const HeaderLevel = `h${level}`;
+  return &lt;HeaderLevel>{headerText}&lt;/HeaderLevel>;
+};
+</code></pre>
+</section>
+<section>
 <h1>First rule of ARIA</h1>
     <p>Bad idea:</p>
      <pre><code class="html" data-trim>
@@ -196,7 +206,7 @@ const AppNavigation = () =>
 <h1>Components and unique id's</h1>
  <pre><code class="html" data-trim>
  import uuid from 'uuid';
- ...
+ //...
  this.inputId = uuid.v4();
  //...
  render() {
