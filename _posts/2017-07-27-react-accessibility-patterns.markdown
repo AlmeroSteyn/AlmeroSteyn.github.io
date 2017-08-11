@@ -63,7 +63,7 @@ transition: fade
 <img src="/css/images/2017-07-27-react-accessibility-patterns/bbc.png" alt="BBC logo" style="max-width: 20%"/>
 </section>
 <section>
-<h1>How do React websites fare?</h1>
+<h1>How accessible are they?</h1>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/goodbadugly.jpg" alt="Movie poster of The Good, the Bad and the Ugly"/>
 </section>
 <section>
@@ -222,7 +222,17 @@ class PageFocusSection extends Component {
 </code></pre>
 </section>
 <section>
-<h1>Remember the document title</h1>
+<h1>Changing the document title</h1>
+<pre><code class="html" data-trim>
+//...
+import DocumentTitle from 'react-document-title';
+//...
+const SetDocTitle = ({ docTitle }) =>
+  <DocumentTitle title={docTitle}>
+    {children}
+  </DocumentTitle>;
+</code></pre>
+<a href="https://github.com/gaearon/react-document-title">https://github.com/gaearon/react-document-title</a>
 </section>
 <section>
 <h1>ARIA live announcer</h1>
