@@ -11,7 +11,7 @@ transition: fade
 <img src="/css/images/2017-07-27-react-accessibility-patterns/QLogo.png" alt="Log of QDelft" style="max-width: 20%"/>
 <h1>React Accessibility Patterns</h1>
 <hr>
-<h2>Addressing commong a11y issues</h2>
+<h2>Addressing common a11y issues</h2>
 <ul>
     <li>Almero Steyn</li>
     <li>QDelft B.V.</li>
@@ -236,7 +236,37 @@ const SetDocTitle = ({ docTitle }) =>
 </section>
 <section>
 <h1>ARIA live announcer</h1>
+<pre><code class="html" data-trim>
+//...
+import { LiveAnnouncer, LiveMessage } from 'react-aria-live';
+//...
+render() {
+return (
+  &lt;LiveAnnouncer>
+    &lt;LiveMessage message={this.state.a11yMessage}
+                 aria-live="polite" />
+    {this.props.children}
+  &lt;/LiveAnnouncer>
+);
+}
+//..
+</code></pre>
+<a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
 </section>
 <section>
 <h1>React a11y docs</h1>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/reactdocs.png" alt="Screenshot of the React accessibility docs"/>
+</section>
+<section class="main">
+<h1>Questions</h1>
+<hr>
+<p>Presentation online at:</p>
+<a href="http://almerosteyn.com/slides/">http://almerosteyn.com/slides/</a>
+<hr>
+<ul>
+    <li>Almero Steyn</li>
+    <li>QDelft B.V.</li>
+    <li>almerosteyn.com</li>
+    <li>twitter.com/kryptos_rsa</li>
+</ul>
 </section>
