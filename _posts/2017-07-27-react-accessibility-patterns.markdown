@@ -43,14 +43,7 @@ transition: fade
 </ul>
 </aside>
 </section>
-<section>
-<h1>React component tree</h1>
-<img src="/css/images/2017-07-27-react-accessibility-patterns/react-components.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
-</section>
-<section>
-<h1>React virtual DOM + Reconciler</h1>
-<img src="/css/images/2017-07-27-react-accessibility-patterns/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
-</section>
+
 <section>
 <h1>Who uses React?</h1>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/facebook.png" alt="Facebook logo" style="max-width: 20%"/>
@@ -112,6 +105,84 @@ transition: fade
 <section>
 <h1>Example application</h1>
 <a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
+</section>
+<section>
+<h1>React component tree</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/react-components.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+</section>
+<section>
+<h1>React virtual DOM + Reconciler</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+</section>
+<section>
+<h1>React virtual DOM in browser</h1>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/reactdominbrowser.png" alt="A debug view of the React DOM in React dev tools"/>
+</section>
+<section>
+<h1>React actual DOM in browser</h1>
+<img class="nomax"  src="/css/images/2017-07-27-react-accessibility-patterns/realdominbrowser.png" alt="A debug view of the DOM to compare to that of the React DOM of the previous slide"/>
+</section>
+<section>
+<h1>React component class</h1>
+<pre><code class="javascript" data-trim>
+import React, { Component } from 'react';
+
+class Demo extends Component {
+    render() {
+        return (
+            <span>{this.props.displayText}</span>
+        );
+    }
+}
+
+export default Demo;
+
+</code></pre>
+<aside class="notes">
+<ul>
+<li>Two methods to create a component</li>
+<li>First method is with a component class</li>
+<li>Can contain state and lifecycle hooks</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1>React component function</h1>
+<pre><code class="javascript" data-trim>
+import React from 'react';
+
+const Demo = ({ displayText }) => (
+    <span>{displayText}</span>
+);
+
+export default Demo;
+</code></pre>
+<aside class="notes">
+<ul>
+<li>Second method with stateless functions</li>
+<li>Purely meant to render display</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1>Using a component</h1>
+<pre><code class="javascript" data-trim>
+import React from 'react';
+import Demo from './Demo';
+
+const Root = () => {(
+     &lt;Demo displayText="Show this text"/>
+)};
+
+export default Root;
+</code></pre>
+<aside class="notes">
+<ul>
+<li>Compose components into a tree</li>
+<li>This creates the React DOM</li>
+<li>React reconciler renders this to HTML DOM</li>
+</ul>
+</aside>
 </section>
 <section>
     <h1>JSX</h1>
@@ -187,6 +258,7 @@ const AppNavigation = () =>
     //...
  }
  </code></pre>
+ <a href="https://github.com/kelektiv/node-uuid">https://github.com/kelektiv/node-uuid</a>
 </section>
 <section>
 <h1>Routing is a11y silent</h1>
