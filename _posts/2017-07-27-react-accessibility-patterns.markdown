@@ -110,6 +110,10 @@ transition: fade
 </video>
 </section>
 <section>
+<h1>Example application</h1>
+<a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
+</section>
+<section>
     <h1>JSX</h1>
     <p>HTML-like syntactic JavaScript sugar.</p>
     <pre><code class="html" data-trim>
@@ -185,7 +189,37 @@ const AppNavigation = () =>
  </code></pre>
 </section>
 <section>
-<h1>Managing focus with refs</h1>
+<h1>Routing is a11y silent</h1>
+<pre><code class="html" data-trim>
+const AppMain = () =>
+  <main>
+    &lt;Switch>
+      <Route path="/todos" component={Todos} />
+      <Route path="/todo" component={Todo} />
+      <Route path="/contact" component={Contact} />
+      &lt;Redirect to="/todos" />
+    &lt;/Switch>
+  </main>;
+</code></pre>
+</section>
+<section>
+<h1>Set focus after navigation</h1>
+<pre><code class="html" data-trim>
+class PageFocusSection extends Component {
+  componentDidMount() {
+    this.header.focus();
+  }
+  render() {
+    const { children, headingText } = this.props;
+    return (&lt;section>
+        <h2 tabIndex="-1" ref={header => (this.header = header)}>
+          {headingText}
+        </h2>
+        {children}
+      &lt;/section>);
+  }
+}
+</code></pre>
 </section>
 <section>
 <h1>Remember the document title</h1>
