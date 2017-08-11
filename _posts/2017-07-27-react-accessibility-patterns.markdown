@@ -297,6 +297,112 @@ return (
 <h1>React a11y docs</h1>
 <img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/reactdocs.png" alt="Screenshot of the React accessibility docs"/>
 </section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<blockquote>
+"Static AST checker for a11y rules on JSX elements."
+</blockquote>
+<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">https://github.com/evcohen/eslint-plugin-jsx-a11y</a>
+<aside class="notes">
+<ul>
+<li>Plugin for ESLINT</li>
+<li>Checks JSX for a11y issues</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>More than 30 ESLINT a11y checks.</p>
+<img class="nomax" src="/css/images/2017-06-14-accessible-react/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
+<aside class="notes">
+<ul>
+<li>More than 30 accessibility checks</li>
+<li>Growing and evolving</li>
+<li>Actively maintained</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>A11y issues become build warnings.</p>
+<img class="nomax" src="/css/images/2017-06-14-accessible-react/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
+<aside class="notes">
+<ul>
+<li>Can be hooked into WebPack build like in create-react-app</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>IDE integration.</p>
+<img class="nomax" src="/css/images/2017-06-14-accessible-react/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
+<aside class="notes">
+<ul>
+<li>Can be integrated with IDE's to provide instant feedback</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<blockquote>
+"Accessibility auditing for React.js applications."
+</blockquote>
+<img class="nomax" src="/css/images/2017-06-14-accessible-react/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
+<br/>
+<a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
+<aside class="notes">
+<ul>
+<li>Brings axe-core to React at development time</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<p>Setting up react-axe.</p>
+<pre><code class="javascript" data-trim>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+if (process.env.NODE_ENV !== 'production') {
+    const axe = require('react-axe');
+    axe(React, ReactDOM, 1000);
+}
+
+ReactDOM.render(&lt;App />, document.getElementById('root'));
+</code></pre>
+<aside class="notes">
+<ul>
+<li>Hooks into ReactDOM</li>
+<li>Run only in development</li>
+<li>Note delay in execution</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<p>Browser console feedback.</p>
+<img class="nomax" src="/css/images/2017-06-14-accessible-react/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
+<aside class="notes">
+<ul>
+<li>Display errors in browser console.</li>
+<li>Errors indicate issue and related element</li>
+<li>Can click through to actual DOM element</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1 class="no-capitalize">Combining the tools</h1>
+<img class="nomax" src="/css/images/2017-06-14-accessible-react/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe"/>
+<aside class="notes">
+<ul>
+<li>Combining the tools are powerful</li>
+<li>Error from React itself</li>
+<li>Errors from ESLINT in create-react-app</li>
+<li>Errors from react-axe</li>
+</ul>
+</aside>
+</section>
 <section class="main">
 <h1>Questions</h1>
 <hr>
