@@ -218,6 +218,7 @@ yarn start
 "Accessibility auditing for React.js applications."
 </blockquote>
 <img class="nomax" src="/css/images/2017-06-14-accessible-react/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
+<br/>
 <a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
 <aside class="notes">
 <ul>

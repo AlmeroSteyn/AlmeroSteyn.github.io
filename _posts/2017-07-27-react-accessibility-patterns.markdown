@@ -18,15 +18,6 @@ transition: fade
     <li>almerosteyn.com</li>
     <li>twitter.com/kryptos_rsa</li>
 </ul>
-<aside class="notes">
-<ul>
-<li>I'm Almero Steyn</li>
-<li>South african - Netherlands for 5 years</li>
-<li>Work at QDelft as Senior Developer</li>
-<li>Projects for the government: Accessibility</li>
-<li>R&D about web tech and accessibility in these techs</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>React</h1>
@@ -34,14 +25,6 @@ transition: fade
 <blockquote>
 "A JavaScript library for building user interfaces." - React docs
 </blockquote>
-<aside class="notes">
-<ul>
-<li>Created by Jordan Walke at Facebook</li>
-<li>Opensourced in 2013</li>
-<li>A library instead of a framework</li>
-<li>Build applications with components</li>
-</ul>
-</aside>
 </section>
 
 <section>
@@ -97,11 +80,7 @@ transition: fade
 <h1>There has to be a better way?</h1>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/confused.jpg" alt="Confusion about how bad the web is"/>
 </section>
-<section>
- <video controls class="stretch" src="/css/videos/2017-07-27-react-accessibility-patterns/a11yappwalkthrough.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-</video>
-</section>
+
 <section>
 <h1>Example application</h1>
 <a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
@@ -109,18 +88,6 @@ transition: fade
 <section>
 <h1>React component tree</h1>
 <img src="/css/images/2017-07-27-react-accessibility-patterns/react-components.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
-</section>
-<section>
-<h1>React virtual DOM + Reconciler</h1>
-<img src="/css/images/2017-07-27-react-accessibility-patterns/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
-</section>
-<section>
-<h1>React virtual DOM in browser</h1>
-<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/reactdominbrowser.png" alt="A debug view of the React DOM in React dev tools"/>
-</section>
-<section>
-<h1>React actual DOM in browser</h1>
-<img class="nomax"  src="/css/images/2017-07-27-react-accessibility-patterns/realdominbrowser.png" alt="A debug view of the DOM to compare to that of the React DOM of the previous slide"/>
 </section>
 <section>
 <h1>React component class</h1>
@@ -138,13 +105,6 @@ class Demo extends Component {
 export default Demo;
 
 </code></pre>
-<aside class="notes">
-<ul>
-<li>Two methods to create a component</li>
-<li>First method is with a component class</li>
-<li>Can contain state and lifecycle hooks</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>React component function</h1>
@@ -157,12 +117,6 @@ const Demo = ({ displayText }) => (
 
 export default Demo;
 </code></pre>
-<aside class="notes">
-<ul>
-<li>Second method with stateless functions</li>
-<li>Purely meant to render display</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>Using a component</h1>
@@ -170,20 +124,26 @@ export default Demo;
 import React from 'react';
 import Demo from './Demo';
 
-const Root = () => {(
+const Root = () => (
      &lt;Demo displayText="Show this text"/>
-)};
+);
 
 export default Root;
 </code></pre>
-<aside class="notes">
-<ul>
-<li>Compose components into a tree</li>
-<li>This creates the React DOM</li>
-<li>React reconciler renders this to HTML DOM</li>
-</ul>
-</aside>
 </section>
+<section>
+<h1>React virtual DOM + Reconciler</h1>
+<img src="/css/images/2017-07-27-react-accessibility-patterns/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+</section>
+<section>
+<h1>React virtual DOM in browser</h1>
+<img class="nomax" src="/css/images/2017-07-27-react-accessibility-patterns/reactdominbrowser.png" alt="A debug view of the React DOM in React dev tools"/>
+</section>
+<section>
+<h1>React actual DOM in browser</h1>
+<img class="nomax"  src="/css/images/2017-07-27-react-accessibility-patterns/realdominbrowser.png" alt="A debug view of the DOM to compare to that of the React DOM of the previous slide"/>
+</section>
+
 <section>
     <h1>JSX</h1>
     <p>HTML-like syntactic JavaScript sugar.</p>
@@ -196,13 +156,6 @@ export default Root;
          <label for="name">Darth Vader</label>
          <input id="name" type="text" />
     </code></pre>
-<aside class="notes">
-<ul>
-<li>JSX is syntactic sugar</li>
-<li>Only looks like HTML</li>
-<li>Renders to clean HTML DOM without custom elements</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>Good HTML makes good JSX</h1>
@@ -324,6 +277,11 @@ return (
 //..
 </code></pre>
 <a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
+</section>
+<section>
+ <video controls class="stretch" src="/css/videos/2017-07-27-react-accessibility-patterns/a11yappwalkthrough.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+</video>
 </section>
 <section>
 <h1>React a11y docs</h1>
