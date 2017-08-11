@@ -11,7 +11,7 @@ transition: fade
 <img src="/css/images/2017-07-27-react-accessibility-patterns/QLogo.png" alt="Log of QDelft" style="max-width: 20%"/>
 <h1>React Accessibility Patterns</h1>
 <hr>
-<h2>Tooling and techniques</h2>
+<h2>Addressing commong a11y issues</h2>
 <ul>
     <li>Almero Steyn</li>
     <li>QDelft B.V.</li>
@@ -110,10 +110,79 @@ transition: fade
 </video>
 </section>
 <section>
-<h1>Good HTML means good JSX</h1>
+    <h1>JSX</h1>
+    <p>HTML-like syntactic JavaScript sugar.</p>
+    <pre><code class="html" data-trim>
+        <label htmlFor={nameId}>{nameLabelText}</label>
+        <input id={nameId} type="text" />
+    </code></pre>
+    Renders to HTML in the DOM.
+    <pre><code class="html" data-trim>
+         <label for="name">Darth Vader</label>
+         <input id="name" type="text" />
+    </code></pre>
+<aside class="notes">
+<ul>
+<li>JSX is syntactic sugar</li>
+<li>Only looks like HTML</li>
+<li>Renders to clean HTML DOM without custom elements</li>
+</ul>
+</aside>
+</section>
+<section>
+<h1>Good HTML makes good JSX</h1>
+<pre><code class="html" data-trim>
+const AppNavigation = () =>
+  <aside>
+    <nav>
+      <ul className="nav nav-pills nav-stacked">
+        <li>
+          <NavLink
+            to={pathname}
+            activeClassName="active">
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  </aside>;
+</code></pre>
+</section>
+<section>
+<h1>First rule of ARIA</h1>
+    <p>Bad idea:</p>
+     <pre><code class="html" data-trim>
+       <div className="looks-like-button"
+            onClick={this.onClickHandler}>
+         Press me
+       </div>
+     </code></pre>
+    <p>Good idea:</p>
+     <pre><code class="html" data-trim>
+         <button onClick={this.onClickHandler}>
+            Press
+         </button>
+     </code></pre>
 </section>
 <section>
 <h1>Components and unique id's</h1>
+ <pre><code class="html" data-trim>
+ import uuid from 'uuid';
+ ...
+ this.inputId = uuid.v4();
+ //...
+ render() {
+    //...
+    <label htmlFor={this.inputId}>
+      {labelText}
+    </label>
+    <input id={this.inputId}
+      onChange={this.onChangeHandler}
+      value={value}
+    />
+    //...
+ }
+ </code></pre>
 </section>
 <section>
 <h1>Managing focus with refs</h1>
