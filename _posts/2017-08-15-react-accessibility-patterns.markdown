@@ -259,7 +259,7 @@ class PageFocusSection extends Component {
 //...
 import DocumentTitle from 'react-document-title';
 //...
-const SetDocTitle = ({ docTitle }) =>
+const SetDocTitle = ({ docTitle, children }) =>
   <DocumentTitle title={docTitle}>
     {children}
   </DocumentTitle>;
