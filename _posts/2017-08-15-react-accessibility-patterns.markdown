@@ -1,7 +1,7 @@
 ---
 layout: slide
 title: React Accessibility Patterns
-description: Tooling and techniques
+description: Solving specific a11y issues.
 theme: present
 highlight: tomorrow
 transition: fade

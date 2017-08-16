@@ -1,7 +1,7 @@
 ---
 layout: slide
 title: React Accessibility
-description: Tooling and techniques
+description: Tooling and techniques.
 theme: present
 highlight: tomorrow
 transition: fade
