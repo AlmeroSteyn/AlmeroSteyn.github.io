@@ -6,7 +6,7 @@ date:   2017-09-07 16:10:21 -0100
 categories: React Javascript A11y Accessibility ARIA aria-live
 ---
 
-*This article is compatible with **React 15** and above.*
+*This article is compatible with **React 15.6** and above.*
 
 ## TLDR;
 
