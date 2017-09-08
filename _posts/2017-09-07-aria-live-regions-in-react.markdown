@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ARIA live in React
+title: ARIA live regions in React
 description: "Easily add ARIA live regions to your React app"
 date:   2017-09-07 16:10:21 -0100
 categories: React Javascript A11y Accessibility ARIA aria-live
