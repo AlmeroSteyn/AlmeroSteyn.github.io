@@ -8,7 +8,7 @@ categories: React Javascript A11y Accessibility ARIA aria-live
 
 *This article is compatible with **React 15** and above.*
 
-**TLDR;**
+## TLDR;
 
 Ever since my previous article on adding screen reader friendly transition notification to a **React** application using **React Router 4**,
 I have been looking for was to simplify the solution. What bothered me most was that the solution depended on introducing **Redux** into
@@ -20,7 +20,7 @@ up with a solution that I felt was pretty good.
 
 The functionality described in this article has been published as  <a href="https://www.npmjs.com/package/react-aria-live" target="_blank">react-aria-live</a>.
 
-**Why do I need this?**
+## Why do I need this?
 
 Perhaps we should quickly revisit the reason for adding <a href="https://www.w3.org/TR/wai-aria/states_and_properties#attrs_liveregions" target="_blank">ARIA live regions</a>
 to your applications.
@@ -56,3 +56,28 @@ entire content of the wrapping **div** on every change.
 
 The purpose of the article is not to teach about ARIA live regions, but rather on how to implement it in your React applications, so if you are
 super confused at this stage, please backtrack and read the reference at the start of this section before proceeding.
+
+## Making ARIA live regions play nice with React
+
+One of the most important things to keep in mind when making use of an **ARIA live region** is that changes to the content will only be read out by
+screen readers if the screen readers already know it exists and if, subsequently, there has been any changes.
+
+This means I cannot render the live region in the DOM for the first time at the moment I want it to dispatch a message to the screen reader. No,
+on the initial render in the DOM the inside text is typically ignored by screen readers.
+
+And here comes the caveat in a React application; we need to ensure that the live region is already rendered when we send out first message and that it stays rendered
+until we no longer require it.
+
+In a React application it means that the live region needs to exist as high up in the component tree as possible.
+
+{::nomarkdown}
+<figure>
+    <img src="/css/images/2017-09-07-aria-live-regions-in-react/componenttreeposition.png" alt="Showing a graphical representation of the React component tree from root to children with a lady indicating she pressed a button in the lost child and a man expressing surprise that the ARIA live region should go close to the root.">
+</figure>
+{:/}
+
+As we can see in the above image, communicating from a child component far down in the tree to the top parent presents challenges in React. And for this reason I chose
+**Redux** as solution in my previous article. But we can use the very same *api*  that the **react-redux** implementation uses to solve our problem and that
+is the <a href="https://facebook.github.io/react/docs/context.html" target="_blank">React Context</a> api.
+
+We quickly see that the documentation strongly discourages the use of this api and that is true, this is not something you want to implement for
