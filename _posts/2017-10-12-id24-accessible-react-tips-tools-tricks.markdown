@@ -206,21 +206,59 @@ export default Root;
 </section>
 <section>
 <h1>Good HTML makes good JSX</h1>
-<pre><code class="html" data-trim>
+<pre><code class="html" data-trim data-noescape>
 const AppNavigation = () =>
-  <aside>
-    <nav>
-      <ul className="nav nav-pills nav-stacked">
-        <li>
-          <NavLink
+  <mark class="transparent">&lt;aside></mark>
+    &lt;nav>
+      <mark class="transparent">&lt;ul className="nav"></mark>
+        &lt;li>
+          <mark class="transparent"><NavLink</mark>
             to={pathname}
             activeClassName="active">
             Contact
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
-  </aside>;
+          <mark class="transparent"></NavLink></mark>
+        &lt;/li>
+      <mark class="transparent">&lt;/ul></mark>
+    &lt;/nav>
+  <mark class="transparent">&lt;/aside></mark>;
+</code></pre>
+</section>
+<section>
+<h1>Good HTML makes good JSX</h1>
+<pre><code class="html" data-trim data-noescape>
+const AppNavigation = () =>
+  <mark>&lt;aside></mark>
+    &lt;nav>
+      <mark>&lt;ul className="nav"></mark>
+        &lt;li>
+          <mark class="transparent"><NavLink</mark>
+            to={pathname}
+            activeClassName="active">
+            Contact
+          <mark class="transparent"></NavLink></mark>
+        &lt;/li>
+      <mark>&lt;/ul></mark>
+    &lt;/nav>
+  <mark>&lt;/aside></mark>;
+</code></pre>
+</section>
+<section>
+<h1>Good HTML makes good JSX</h1>
+<pre><code class="html" data-trim data-noescape>
+const AppNavigation = () =>
+  <mark>&lt;aside></mark>
+    &lt;nav>
+      <mark>&lt;ul className="nav"></mark>
+        &lt;li>
+          <mark><NavLink</mark>
+            to={pathname}
+            activeClassName="active">
+            Contact
+          <mark></NavLink></mark>
+        &lt;/li>
+      <mark>&lt;/ul></mark>
+    &lt;/nav>
+  <mark>&lt;/aside></mark>;
 </code></pre>
 </section>
 <section>
@@ -238,6 +276,22 @@ const AppNavigation = () =>
             Press
          </button>
      </code></pre>
+</section>
+<section>
+    <h1>JSX and ARIA</h1>
+    <p>All ARIA attributes are valid JSX props!</p>
+    <pre><code class="html" data-trim>
+            <input id={nameId} aria-label={accessibleLabel} type="text" />
+    </code></pre>
+    <p>IntelliSense in supported IDEs.</p>
+    <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
+<aside class="notes">
+<ul>
+<li>JSX supports ARIA in the same way as HTML</li>
+<li>Added ability to change aria-props programmatically</li>
+<li>Allows for IDE support</li>
+</ul>
+</aside>
 </section>
 <section>
 <h1>Intact header symantics</h1>
@@ -286,16 +340,16 @@ const AppMain = () =>
 </section>
 <section>
 <h1>Set focus after navigation</h1>
-<pre><code class="html" data-trim>
+<pre><code class="html" data-trim data-noescape>
 class PageFocusSection extends Component {
   componentDidMount() {
-    this.header.focus();
+    <mark>this.header.focus()</mark>;
   }
   render() {
     const { children, headingText } = this.props;
     return (&lt;section>
         <h2 tabIndex="-1"
-            ref={header => (this.header = header)}>
+            <mark>ref={header => (this.header = header)}</mark>>
           {headingText}
         </h2>
         {children}
@@ -370,22 +424,7 @@ yarn start
 </aside>
 </section>
 
-<section>
-    <h1>JSX and ARIA</h1>
-    <p>All ARIA attributes are valid JSX props!</p>
-    <pre><code class="html" data-trim>
-            <input id={nameId} aria-label={accessibleLabel} type="text" />
-    </code></pre>
-    <p>IntelliSense in supported IDEs.</p>
-    <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
-<aside class="notes">
-<ul>
-<li>JSX supports ARIA in the same way as HTML</li>
-<li>Added ability to change aria-props programmatically</li>
-<li>Allows for IDE support</li>
-</ul>
-</aside>
-</section>
+
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <blockquote>
@@ -513,33 +552,6 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 <li>Error from React itself</li>
 <li>Errors from ESLINT in create-react-app</li>
 <li>Errors from react-axe</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1>Focus control</h1>
-<p>Setting focus with refs.</p>
-<pre><code class="javascript" data-trim>
-componentDidMount(){
-    this.nameInput.focus();
-}
-
-render(){
-    return(
-        <div>
-            <label htmlFor="demoId">Name</label>
-            <input id="demoId" type="text"
-            ref={(input) => {this.nameInput = input;}}/>
-        </div>
-    );
-}
-</code></pre>
-<aside class="notes">
-<ul>
-<li>Focus management important in JS frameworks/libraries</li>
-<li>React changing HTML DOM can impact current keyboard focus</li>
-<li>One way to set focus is with Refs</li>
-<li>To be used judiciously</li>
 </ul>
 </aside>
 </section>
