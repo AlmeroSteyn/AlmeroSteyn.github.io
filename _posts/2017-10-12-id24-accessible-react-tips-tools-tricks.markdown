@@ -2,7 +2,7 @@
 layout: slide
 title: Tips, tricks and tools for building accessible React web apps
 description: Inclusive Design 24 Presentation
-theme: present
+theme: id24
 highlight: tomorrow
 transition: fade
 ---
@@ -61,10 +61,7 @@ transition: fade
 "The number of errors found has increased 60% over the last 5 years – from an average of 25 errors in 2011 to 40 errors in 2017." - WebAIM
 </blockquote>
 </section>
-<section>
-<h1>But why?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
-</section>
+
 <section>
 <h1>React syntax</h1>
 <pre><code class="javascript" data-trim>
@@ -98,13 +95,8 @@ export default Root;
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
 </section>
 <section>
-<h1>It can be a friendly monster...</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
-<aside class="notes">
-<ul>
-<li>BREATHE!!!!!!</li>
-</ul>
-</aside>
+<h1>But why?</h1>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
 </section>
 <section>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
@@ -116,10 +108,14 @@ export default Root;
     </code></pre>
 </section>
 <section>
-<h1>There has to be a better way?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/confused.jpg" alt="Confusion about how bad the web is"/>
+<h1>It can be a friendly monster...</h1>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
+<aside class="notes">
+<ul>
+<li>BREATHE!!!!!!</li>
+</ul>
+</aside>
 </section>
-
 <section>
 <h1>Example application</h1>
 <a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
@@ -242,17 +238,17 @@ const HeaderWithLevel = ({ headerText, level }) => {
 </section>
 <section>
 <h1>Components and unique id's</h1>
- <pre><code class="html" data-trim>
+ <pre><code class="html" data-trim data-noescape>
  import uuid from 'uuid';
  //...
- this.inputId = uuid.v4();
+ <mark>this.inputId = uuid.v4();</mark>
  //...
  render() {
     //...
-    <label htmlFor={this.inputId}>
+    <label <mark>htmlFor={this.inputId}</mark>>
       {labelText}
     </label>
-    <input id={this.inputId}
+    <input <mark>id={this.inputId}</mark>
       onChange={this.onChangeHandler}
       value={value}
     />
@@ -285,7 +281,8 @@ class PageFocusSection extends Component {
   render() {
     const { children, headingText } = this.props;
     return (&lt;section>
-        <h2 tabIndex="-1" ref={header => (this.header = header)}>
+        <h2 tabIndex="-1"
+            ref={header => (this.header = header)}>
           {headingText}
         </h2>
         {children}
@@ -559,7 +556,8 @@ class App extends Component {
     state = { LazyBlock: null };
 
     async componentDidMount() {
-        const { default: LazyBlock } = await import('./LazyBlock');
+        const { default: LazyBlock } =
+                    await import('./LazyBlock');
         this.setState({ LazyBlock: &lt;LazyBlock/> });
     }
 

@@ -391,3 +391,9 @@ body {
 .reveal section ul.q-address {
   list-style: none;
   font-size: 0.5em; }
+
+.reveal mark {
+  background-color: transparent;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #1119ff; }
