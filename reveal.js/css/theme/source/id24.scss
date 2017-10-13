@@ -108,6 +108,13 @@ $selectionBackgroundColor: #26351C;
   border-color: #1119ff;
 }
 
+.reveal mark.transparent {
+  background-color: transparent;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: transparent;
+}
+
 .reveal code {
   font-weight: bold;
 }

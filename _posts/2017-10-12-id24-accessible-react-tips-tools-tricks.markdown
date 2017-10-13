@@ -4,7 +4,7 @@ title: Tips, tricks and tools for building accessible React web apps
 description: Inclusive Design 24 Presentation
 theme: id24
 highlight: tomorrow
-transition: fade
+transition: none
 ---
 
 <section class="main">
@@ -126,14 +126,27 @@ export default Root;
 </section>
 <section>
 <h1>React component class</h1>
-<pre><code class="javascript" data-trim>
+<pre><code class="javascript" data-trim data-noescape>
 import React, { Component } from 'react';
 
 class Demo extends Component {
     render() {
-        return (
-            <span>{this.props.displayText}</span>
-        );
+        <mark class="transparent">return ( &lt;span>{this.props.displayText}&lt;/span> );</mark>
+    }
+}
+
+export default Demo;
+
+</code></pre>
+</section>
+<section>
+<h1>React component class</h1>
+<pre><code class="javascript" data-trim data-noescape>
+import React, { Component } from 'react';
+
+class Demo extends Component {
+    render() {
+        <mark>return ( &lt;span>{this.props.displayText}&lt;/span> );</mark>
     }
 }
 
@@ -155,12 +168,12 @@ export default Demo;
 </section>
 <section>
 <h1>Using a component</h1>
-<pre><code class="javascript" data-trim>
+<pre><code class="javascript" data-trim data-noescape>
 import React from 'react';
-import Demo from './Demo';
+<mark>import Demo from './Demo';</mark>
 
 const Root = () => (
-     &lt;Demo displayText="Show this text"/>
+     <mark>&lt;Demo displayText="Show this text"/></mark>
 );
 
 export default Root;
@@ -356,26 +369,7 @@ yarn start
 </ul>
 </aside>
 </section>
-<section>
-    <h1>JSX</h1>
-    <p>HTML-like syntactic JavaScript sugar.</p>
-    <pre><code class="html" data-trim>
-        <label htmlFor={nameId}>{nameLabelText}</label>
-        <input id={nameId} type="text" />
-    </code></pre>
-    Renders to HTML in the DOM.
-    <pre><code class="html" data-trim>
-         <label for="name">Darth Vader</label>
-         <input id="name" type="text" />
-    </code></pre>
-<aside class="notes">
-<ul>
-<li>JSX is syntactic sugar</li>
-<li>Only looks like HTML</li>
-<li>Renders to clean HTML DOM without custom elements</li>
-</ul>
-</aside>
-</section>
+
 <section>
     <h1>JSX and ARIA</h1>
     <p>All ARIA attributes are valid JSX props!</p>
