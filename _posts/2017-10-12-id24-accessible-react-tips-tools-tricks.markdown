@@ -270,8 +270,8 @@ const Fragments1 = () =>
   values.map((item, index) => <li key={index}>{item}</li>);
 
 const Fragments2 = () => [
-  &lt;tr key="1"><td>a11y</td></tr>,
-  &lt;tr key="2"><td>rocks</td></tr>
+  &lt;tr key="1">&lt;td>a11y</td></tr>,
+  &lt;tr key="2">&lt;td>rocks</td></tr>
 ];
 </code></pre>
 </section>
@@ -409,6 +409,25 @@ class WillFocus extends Component {
 </code></pre>
 </section>
 <section>
+<h1>What about HOCs?</h1>
+<pre><code class="html" data-trim>
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+</code></pre>
+<p>React Router withRouter HOC:</p>
+<pre><code class="html" data-trim>
+const WrappedInReactRouter = withRouter(WrappedComponent);
+</code></pre>
+<p>React Redux connect HOC:</p>
+<pre><code class="html" data-trim>
+const WrappedWithReduxConnect =
+                    connect(mapStateToProps)(WrappedComponent);
+</code></pre>
+</section>
+<section>
+<h1>Refs and HOCs</h1>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/HOC.png" alt="Showing that a HOC wraps the wrapped component and therefore disallows ref access to this component."/>
+</section>
+<section>
 <h1>Changing the document title</h1>
 <pre><code class="html" data-trim>
 //...
@@ -440,16 +459,6 @@ return (
 </code></pre>
 <a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
 </section>
-<section>
- <video controls class="stretch" src="/css/videos/2017-10-12-id24-accessible-react-tips-tools-tricks/a11yappwalkthrough.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-</video>
-</section>
-<section>
-<h1>React a11y docs</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactdocs.png" alt="Screenshot of the React accessibility docs"/>
-</section>
-
 <section>
 <h1 class="no-capitalize">create-react-app</h1>
 <pre><code class="javascript" data-trim>
