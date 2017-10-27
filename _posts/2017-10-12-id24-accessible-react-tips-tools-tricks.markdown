@@ -206,7 +206,7 @@ export default Root;
 </section>
 <section>
 <h1>Good HTML makes good JSX</h1>
-<pre><code class="html" data-trim data-noescape>
+<pre><code class="javascript" data-trim data-noescape>
 const AppNavigation = () =>
   <mark class="transparent">&lt;aside></mark>
     &lt;nav>
@@ -225,7 +225,7 @@ const AppNavigation = () =>
 </section>
 <section>
 <h1>Good HTML makes good JSX</h1>
-<pre><code class="html" data-trim data-noescape>
+<pre><code class="javascript" data-trim data-noescape>
 const AppNavigation = () =>
   <mark>&lt;aside></mark>
     &lt;nav>
@@ -244,7 +244,7 @@ const AppNavigation = () =>
 </section>
 <section>
 <h1>Good HTML makes good JSX</h1>
-<pre><code class="html" data-trim data-noescape>
+<pre><code class="javascript" data-trim data-noescape>
 const AppNavigation = () =>
   <mark>&lt;aside></mark>
     &lt;nav>
@@ -263,7 +263,7 @@ const AppNavigation = () =>
 </section>
 <section>
 <h1>Fragments in React 16</h1>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 const values = ['a', 'b', 'c'];
 
 const Fragments1 = () =>
@@ -310,7 +310,7 @@ const Fragments2 = () => [
 <section>
 <h1>Intact header symantics</h1>
 <img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/headers.png" alt="Diagram of HTML headers"/>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 const HeaderWithLevel = ({ headerText, level }) => {
   const HeaderLevel = `h${level}`;
   return &lt;HeaderLevel>{headerText}&lt;/HeaderLevel>;
@@ -319,7 +319,7 @@ const HeaderWithLevel = ({ headerText, level }) => {
 </section>
 <section>
 <h1>Components and unique id's</h1>
- <pre><code class="html" data-trim data-noescape>
+ <pre><code class="javascript" data-trim data-noescape>
  import uuid from 'uuid';
  //...
  <mark>this.inputId = uuid.v4();</mark>
@@ -340,7 +340,7 @@ const HeaderWithLevel = ({ headerText, level }) => {
 </section>
 <section>
 <h1>Routing is a11y silent</h1>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 const AppMain = () =>
   <main>
     &lt;Switch>
@@ -354,7 +354,7 @@ const AppMain = () =>
 </section>
 <section>
 <h1>Set focus after navigation</h1>
-<pre><code class="html" data-trim data-noescape>
+<pre><code class="javascript" data-trim data-noescape>
 class PageFocusSection extends Component {
   componentDidMount() {
     <mark>this.header.focus()</mark>;
@@ -374,7 +374,7 @@ class PageFocusSection extends Component {
 </section>
 <section>
 <h1>Classes and refs</h1>
-<pre><code class="html" data-trim data-noescape>
+<pre><code class="javascript" data-trim data-noescape>
 class ToFocus extends Component {
 
   <mark>focus() { this.input.focus(); }</mark>
@@ -394,7 +394,7 @@ class ToFocus extends Component {
 </section>
 <section>
 <h1>Focussing a component</h1>
-<pre><code class="html" data-trim data-noescape>
+<pre><code class="javascript" data-trim data-noescape>
 class WillFocus extends Component {
   someHandler() {
     //...
@@ -410,15 +410,15 @@ class WillFocus extends Component {
 </section>
 <section>
 <h1>What about HOCs?</h1>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 const EnhancedComponent = higherOrderComponent(WrappedComponent);
 </code></pre>
 <p>React Router withRouter HOC:</p>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 const WrappedInReactRouter = withRouter(WrappedComponent);
 </code></pre>
 <p>React Redux connect HOC:</p>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 const WrappedWithReduxConnect =
                     connect(mapStateToProps)(WrappedComponent);
 </code></pre>
@@ -428,8 +428,24 @@ const WrappedWithReduxConnect =
 <img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/HOC.png" alt="Showing that a HOC wraps the wrapped component and therefore disallows ref access to this component."/>
 </section>
 <section>
+<h1>Bypass HOC with a callback prop!</h1>
+<pre><code class="javascript" data-trim data-noescape>
+function Field({ inputRef, ...rest }) {
+  return <input <mark>ref={inputRef}</mark> {...rest} />;
+}
+
+const EnhancedField = enhance(Field);
+
+<EnhancedField
+  <mark>inputRef={(inputEl) => {this.inputEl = inputEl}}</mark>
+  />
+
+this.inputEl.focus();
+</code></pre>
+</section>
+<section>
 <h1>Changing the document title</h1>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 //...
 import DocumentTitle from 'react-document-title';
 //...
@@ -442,7 +458,7 @@ const SetDocTitle = ({ docTitle, children }) =>
 </section>
 <section>
 <h1>ARIA live announcer</h1>
-<pre><code class="html" data-trim>
+<pre><code class="javascript" data-trim>
 //...
 import { LiveAnnouncer, LiveMessage } from 'react-aria-live';
 //...
