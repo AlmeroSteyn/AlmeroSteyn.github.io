@@ -40,18 +40,9 @@ transition: none
 <h1>How accessible are they?</h1>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/goodbadugly.jpg" alt="Movie poster of The Good, the Bad and the Ugly"/>
 </section>
+
 <section>
-<h1>The Good-a11y</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/good.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
-</section>
-<section>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
-</section>
-<section>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/airbnbcap.png" alt="Image capture and Axe scan of airbnb"/>
-</section>
-<section>
-<h1>The other two</h1>
+<h1>The Bad and the Ugly</h1>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/bad.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/ugly.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
 </section>
@@ -77,14 +68,6 @@ const Root = ({headerText, onLogout}) => (
 
 export default Root;
 </code></pre>
-<aside class="notes">
-<ul>
-<li>React component are pure JavaScript</li>
-<li>Returns view from JavaScript</li>
-<li>Create a tree of components by passing properties and events</li>
-<li>Renders to JavaScript enhanced HTML in the browser via the reconciler</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>Everything in JavaScript?</h1>
@@ -110,11 +93,16 @@ export default Root;
 <section>
 <h1>It can be a friendly monster...</h1>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
-<aside class="notes">
-<ul>
-<li>BREATHE!!!!!!</li>
-</ul>
-</aside>
+</section>
+<section>
+<h1>The Good-a11y</h1>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/good.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+</section>
+<section>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
+</section>
+<section>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/airbnbcap.png" alt="Image capture and Axe scan of airbnb"/>
 </section>
 <section>
 <h1>Example application</h1>
@@ -299,13 +287,6 @@ const Fragments2 = () => [
     </code></pre>
     <p>IntelliSense in supported IDEs.</p>
     <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
-<aside class="notes">
-<ul>
-<li>JSX supports ARIA in the same way as HTML</li>
-<li>Added ability to change aria-props programmatically</li>
-<li>Allows for IDE support</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>Intact header symantics</h1>
@@ -476,161 +457,6 @@ return (
 <a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
 </section>
 <section>
-<h1 class="no-capitalize">create-react-app</h1>
-<pre><code class="javascript" data-trim>
-yarn global add create-react-app
-create-react-app my-react-app
-cd my-react-app
-yarn start
-</code></pre>
-<ol>
-    <li>Webpack development and production build.</li>
-    <li>ESLint with some a11y rules.</li>
-    <li>Progressive app by default.</li>
-    <li>Supports code splitting.</li>
-    <li>Unit tests + coverage with JSDOM.</li>
-</ol>
-<aside class="notes">
-<ul>
-<li>I recommended this CLI maintained by React team members</li>
-<li>Solid app development ecosystem ready for a11y</li>
-<li>Contains some a11y linter rules by default</li>
-</ul>
-</aside>
-</section>
-
-
-<section>
-<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<blockquote>
-"Static AST checker for a11y rules on JSX elements."
-</blockquote>
-<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">https://github.com/evcohen/eslint-plugin-jsx-a11y</a>
-<aside class="notes">
-<ul>
-<li>Plugin for ESLINT</li>
-<li>Checks JSX for a11y issues</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>More than 30 ESLINT a11y checks.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
-<aside class="notes">
-<ul>
-<li>More than 30 accessibility checks</li>
-<li>Growing and evolving</li>
-<li>Actively maintained</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>Rules are configurable.</p>
-    <pre><code class="json" data-trim>
-       {
-         "rules": {
-           "jsx-a11y/rule-name": "warn"
-         }
-       }
-    </code></pre>
-<p>Extending config in create-react-app.</p>
- <pre><code class="json" data-trim>
-        {
-          "extends": ["react-app", "plugin:jsx-a11y/recommended"],
-          "plugins": ["jsx-a11y"]
-        }
-    </code></pre>
-<aside class="notes">
-<ul>
-<li>Configurable both plugin and rule level</li>
-<li>Create-react-app config can be extended by ejecting or to display in IDE</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>A11y issues become build warnings.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
-<aside class="notes">
-<ul>
-<li>Can be hooked into WebPack build like in create-react-app</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
-<p>IDE integration.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
-<aside class="notes">
-<ul>
-<li>Can be integrated with IDE's to provide instant feedback</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">react-axe</h1>
-<blockquote>
-"Accessibility auditing for React.js applications."
-</blockquote>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
-<br/>
-<a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
-<aside class="notes">
-<ul>
-<li>Brings axe-core to React at development time</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">react-axe</h1>
-<p>Setting up react-axe.</p>
-<pre><code class="javascript" data-trim>
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-
-if (process.env.NODE_ENV !== 'production') {
-    const axe = require('react-axe');
-    axe(React, ReactDOM, 1000);
-}
-
-ReactDOM.render(&lt;App />, document.getElementById('root'));
-</code></pre>
-<aside class="notes">
-<ul>
-<li>Hooks into ReactDOM</li>
-<li>Run only in development</li>
-<li>Note delay in execution</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">react-axe</h1>
-<p>Browser console feedback.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
-<aside class="notes">
-<ul>
-<li>Display errors in browser console.</li>
-<li>Errors indicate issue and related element</li>
-<li>Can click through to actual DOM element</li>
-</ul>
-</aside>
-</section>
-<section>
-<h1 class="no-capitalize">Combining the tools</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe"/>
-<aside class="notes">
-<ul>
-<li>Combining the tools are powerful</li>
-<li>Error from React itself</li>
-<li>Errors from ESLINT in create-react-app</li>
-<li>Errors from react-axe</li>
-</ul>
-</aside>
-</section>
-<section>
 <h1>Lazy loading components</h1>
 <pre><code class="javascript" data-trim>
 class App extends Component {
@@ -649,22 +475,101 @@ class App extends Component {
     }
 }
 </code></pre>
-<aside class="notes">
-<ul>
-<li>Way to support progressive enhancement</li>
-<li>Start app as quickly as possible</li>
-</ul>
-</aside>
 </section>
 <section>
 <h1>Lazy loading components</h1>
 <p>Splitting code files.</p>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/codesplitting.png" alt="JavaScript code bundles after webpack async-await import and build"/>
-<aside class="notes">
-<ul>
-<li>Files are chunked and loaded when required</li>
-</ul>
-</aside>
+</section>
+<section>
+<h1 class="no-capitalize">create-react-app</h1>
+<pre><code class="javascript" data-trim>
+yarn global add create-react-app
+create-react-app my-react-app
+cd my-react-app
+yarn start
+</code></pre>
+<ol>
+    <li>Webpack development and production build.</li>
+    <li>ESLint with some a11y rules.</li>
+    <li>Progressive app by default.</li>
+    <li>Supports code splitting.</li>
+    <li>Unit tests + coverage with JSDOM.</li>
+</ol>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<blockquote>
+"Static AST checker for a11y rules on JSX elements."
+</blockquote>
+<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">https://github.com/evcohen/eslint-plugin-jsx-a11y</a>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>More than 30 ESLINT a11y checks.</p>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>Rules are configurable.</p>
+    <pre><code class="json" data-trim>
+       {
+         "rules": {
+           "jsx-a11y/rule-name": "warn"
+         }
+       }
+    </code></pre>
+<p>Extending config in create-react-app.</p>
+ <pre><code class="json" data-trim>
+        {
+          "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+          "plugins": ["jsx-a11y"]
+        }
+    </code></pre>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>A11y issues become build warnings.</p>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
+</section>
+<section>
+<h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
+<p>IDE integration.</p>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<blockquote>
+"Accessibility auditing for React.js applications."
+</blockquote>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
+<br/>
+<a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<p>Setting up react-axe.</p>
+<pre><code class="javascript" data-trim>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+if (process.env.NODE_ENV !== 'production') {
+    const axe = require('react-axe');
+    axe(React, ReactDOM, 1000);
+}
+
+ReactDOM.render(&lt;App />, document.getElementById('root'));
+</code></pre>
+</section>
+<section>
+<h1 class="no-capitalize">react-axe</h1>
+<p>Browser console feedback.</p>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
+</section>
+<section>
+<h1 class="no-capitalize">Combining the tools</h1>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe"/>
 </section>
 <section>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/its-logical.jpg" alt="Image of captain kirk showing thumbs up to Spock. Accessibility is logical."/>
