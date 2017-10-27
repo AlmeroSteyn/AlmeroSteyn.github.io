@@ -262,6 +262,20 @@ const AppNavigation = () =>
 </code></pre>
 </section>
 <section>
+<h1>Fragments in React 16</h1>
+<pre><code class="html" data-trim>
+const values = ['a', 'b', 'c'];
+
+const Fragments1 = () =>
+  values.map((item, index) => <li key={index}>{item}</li>);
+
+const Fragments2 = () => [
+  &lt;tr key="1"><td>a11y</td></tr>,
+  &lt;tr key="2"><td>rocks</td></tr>
+];
+</code></pre>
+</section>
+<section>
 <h1>First rule of ARIA</h1>
     <p>Bad idea:</p>
      <pre><code class="html" data-trim>
@@ -354,6 +368,42 @@ class PageFocusSection extends Component {
         </h2>
         {children}
       &lt;/section>);
+  }
+}
+</code></pre>
+</section>
+<section>
+<h1>Classes and refs</h1>
+<pre><code class="html" data-trim data-noescape>
+class ToFocus extends Component {
+
+  <mark>focus() { this.input.focus(); }</mark>
+
+  render() {
+    return (
+      //...
+        &lt;label htmlFor="nameInput">Name:</label>
+        &lt;input id="nameInput"
+               type="text"
+               <mark>ref={input => (this.input = input)}</mark> />
+      //...
+    );
+  }
+}
+</code></pre>
+</section>
+<section>
+<h1>Focussing a component</h1>
+<pre><code class="html" data-trim data-noescape>
+class WillFocus extends Component {
+  someHandler() {
+    //...
+    <mark>this.toFocus.focus();</mark>
+    //..
+  }
+
+  render() {
+    return <mark><ToFocus ref={toFocus => (this.toFocus = toFocus)} /></mark>;
   }
 }
 </code></pre>
