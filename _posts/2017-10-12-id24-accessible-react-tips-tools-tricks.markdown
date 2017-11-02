@@ -8,7 +8,7 @@ transition: none
 ---
 
 <section class="main">
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/QDelft_logo.svg" alt="Log of QDelft" style="max-width: 40%"/>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/QDelft_logo.svg" alt="Log of QDelft" style="max-width: 40%; box-shadow: none; "/>
 <h1>Tips, tricks and tools for building accessible React web apps</h1>
 <hr>
 <ul>
