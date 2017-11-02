@@ -56,15 +56,15 @@ transition: none
 
 <section>
 <h1>React syntax</h1>
-<pre><code class="javascript" data-trim>
+<pre><code class="javascript" data-trim data-noescape>
 import React from 'react';
 import Content from './Content';
 
 const Root = ({headerText, onLogout}) => (
-     <main>
-        <h1>{ headerText }</h1>
-        &lt;Content onLogout={ onLogout }/>
-     </main>
+     &lt;main>
+        &lt;h1>{ headerText }</h1>
+        &lt;Content onLogout={onLogout}/>
+     &lt;/main>
 );
 
 export default Root;
@@ -301,17 +301,17 @@ const HeaderWithLevel = ({ headerText, level }) => {
 </section>
 <section>
 <h1>Components and unique id's</h1>
- <pre><code class="javascript" data-trim data-noescape>
+ <pre><code class="html" data-trim data-noescape>
  import uuid from 'uuid';
  //...
  <mark>this.inputId = uuid.v4();</mark>
  //...
  render() {
     //...
-    <label <mark>htmlFor={this.inputId}</mark>>
+    &lt;label htmlFor={this.inputId}>
       {labelText}
-    </label>
-    <input <mark>id={this.inputId}</mark>
+    &lt;/label>
+    &lt;input <mark>id={this.inputId}</mark>
       onChange={this.onChangeHandler}
       value={value}
     />
@@ -451,7 +451,7 @@ return (
                  aria-live="polite" />
     {this.props.children}
   &lt;/LiveAnnouncer>
-);
+  );
 }
 //..
 </code></pre>
