@@ -375,7 +375,7 @@ class ToFocus extends Component {
 </code></pre>
 </section>
 <section>
-<h1>Focussing a component</h1>
+<h1>Focusing a component</h1>
 <pre><code class="javascript" data-trim data-noescape>
 class WillFocus extends Component {
   someHandler() {
