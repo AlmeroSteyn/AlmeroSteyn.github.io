@@ -8,7 +8,7 @@ transition: none
 ---
 
 <section class="main">
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/QLogo.png" alt="Log of QDelft" style="max-width: 20%"/>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/QDelft_logo.svg" alt="Log of QDelft" style="max-width: 40%"/>
 <h1>Tips, tricks and tools for building accessible React web apps</h1>
 <hr>
 <ul>
@@ -110,7 +110,7 @@ export default Root;
 </section>
 <section>
 <h1>React component tree</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/react-components.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/React-components.png" alt="Shows the React component tree with parent child relationships with data flowing down the tree and events bubbling up."/>
 </section>
 <section>
 <h1>React component class</h1>
@@ -169,7 +169,7 @@ export default Root;
 </section>
 <section>
 <h1>React virtual DOM + Reconciler</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactdom.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/React-DOM.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
 </section>
 <section>
 <h1>React virtual DOM in browser</h1>
@@ -290,7 +290,7 @@ const Fragments2 = () => [
 </section>
 <section>
 <h1>Intact header symantics</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/headers.png" alt="Diagram of HTML headers"/>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Headings-structure.png" alt="Diagram of HTML headers semantics. H1 to H3 hierachy depicted." style="max-width: 50%;"/>
 <pre><code class="javascript" data-trim>
 const HeaderWithLevel = ({ headerText, level }) => {
   const HeaderLevel = `h${level}`;
