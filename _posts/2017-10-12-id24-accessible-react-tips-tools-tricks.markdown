@@ -16,6 +16,7 @@ transition: none
     <li>QDelft B.V.</li>
     <li>almerosteyn.com</li>
     <li>twitter.com/kryptos_rsa</li>
+    <li style="font-size: large; margin-top: 20px;">Custom images: Kalina Hristova</li>
 </ul>
 </section>
 <section>
@@ -585,5 +586,6 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
     <li>QDelft B.V.</li>
     <li>almerosteyn.com</li>
     <li>twitter.com/kryptos_rsa</li>
+    <li style="font-size: large; margin-top: 20px;">Custom images: Kalina Hristova</li>
 </ul>
 </section>
