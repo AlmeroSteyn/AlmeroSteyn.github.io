@@ -103,9 +103,6 @@ export default Root;
 <img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
 </section>
 <section>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/airbnbcap.png" alt="Image capture and Axe scan of airbnb"/>
-</section>
-<section>
 <h1>Example application</h1>
 <a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
 </section>
