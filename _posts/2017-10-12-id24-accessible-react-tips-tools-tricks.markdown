@@ -53,7 +53,10 @@ transition: none
 "The number of errors found has increased 60% over the last 5 years – from an average of 25 errors in 2011 to 40 errors in 2017." - WebAIM
 </blockquote>
 </section>
-
+<section>
+<h1>But why?</h1>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
+</section>
 <section>
 <h1>React syntax</h1>
 <pre><code class="javascript" data-trim data-noescape>
@@ -75,14 +78,6 @@ export default Root;
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/shock.jpg" alt="Image of koala expressing shock at React being all JavaScript" style="max-width:40%"/>
 </section>
 <section>
-<h1>JS-Zilla destroys a11y!!</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
-</section>
-<section>
-<h1>But why?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
-</section>
-<section>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
     <pre><code class="html" data-trim>
         <div className="looks-like-a-button"
@@ -91,6 +86,12 @@ export default Root;
         </div>
     </code></pre>
 </section>
+<section>
+<h1>JS-Zilla destroys a11y!!</h1>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
+</section>
+
+
 <section>
 <h1>It can be a friendly monster...</h1>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
@@ -191,7 +192,32 @@ export default Root;
     </code></pre>
 </section>
 <section>
-<h1>Good HTML makes good JSX</h1>
+<h1>First rule of ARIA</h1>
+    <p>Bad idea:</p>
+     <pre><code class="html" data-trim>
+       <div className="looks-like-button"
+            onClick={this.onClickHandler}>
+         Press me
+       </div>
+     </code></pre>
+    <p>Good idea:</p>
+     <pre><code class="html" data-trim>
+         <button onClick={this.onClickHandler}>
+            Press
+         </button>
+     </code></pre>
+</section>
+<section>
+    <h1>JSX and ARIA</h1>
+    <p>All ARIA attributes are valid JSX props!</p>
+    <pre><code class="html" data-trim>
+            <input id={nameId} aria-label={accessibleLabel} type="text" />
+    </code></pre>
+    <p>IntelliSense in supported IDEs.</p>
+    <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
+</section>
+<section>
+<h1>Good JSX makes good HTML</h1>
 <pre><code class="javascript" data-trim data-noescape>
 const AppNavigation = () =>
   <mark class="transparent">&lt;aside></mark>
@@ -210,7 +236,7 @@ const AppNavigation = () =>
 </code></pre>
 </section>
 <section>
-<h1>Good HTML makes good JSX</h1>
+<h1>Good JSX makes good HTML</h1>
 <pre><code class="javascript" data-trim data-noescape>
 const AppNavigation = () =>
   <mark>&lt;aside></mark>
@@ -229,7 +255,7 @@ const AppNavigation = () =>
 </code></pre>
 </section>
 <section>
-<h1>Good HTML makes good JSX</h1>
+<h1>Good JSX makes good HTML</h1>
 <pre><code class="javascript" data-trim data-noescape>
 const AppNavigation = () =>
   <mark>&lt;aside></mark>
@@ -261,31 +287,7 @@ const Fragments2 = () => [
 ];
 </code></pre>
 </section>
-<section>
-<h1>First rule of ARIA</h1>
-    <p>Bad idea:</p>
-     <pre><code class="html" data-trim>
-       <div className="looks-like-button"
-            onClick={this.onClickHandler}>
-         Press me
-       </div>
-     </code></pre>
-    <p>Good idea:</p>
-     <pre><code class="html" data-trim>
-         <button onClick={this.onClickHandler}>
-            Press
-         </button>
-     </code></pre>
-</section>
-<section>
-    <h1>JSX and ARIA</h1>
-    <p>All ARIA attributes are valid JSX props!</p>
-    <pre><code class="html" data-trim>
-            <input id={nameId} aria-label={accessibleLabel} type="text" />
-    </code></pre>
-    <p>IntelliSense in supported IDEs.</p>
-    <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
-</section>
+
 <section>
 <h1>Intact header symantics</h1>
 <img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Headings-structure.png" alt="Diagram of HTML headers semantics. H1 to H3 hierachy depicted." style="max-width: 50%;"/>
@@ -434,6 +436,21 @@ const SetDocTitle = ({ docTitle, children }) =>
   </DocumentTitle>;
 </code></pre>
 <a href="https://github.com/gaearon/react-document-title">https://github.com/gaearon/react-document-title</a>
+</section>
+<section>
+<h1>ARIA live</h1>
+<pre><code class="javascript" data-trim data-noescape>
+const Announcer = ({ message }) =>
+  &lt;div aria-live="polite"
+       aria-atomic="true"
+       aria-relevant="additions">
+    {message}
+  &lt;/div>;
+</code></pre>
+</section>
+<section>
+<h1>ARIA live and the component tree</h1>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/arialive.png" alt="Illustrates that the aria live region is more stable when rendered in the root component."/>
 </section>
 <section>
 <h1>ARIA live announcer</h1>
