@@ -584,7 +584,11 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 </section>
 <section>
 <h1 class="no-capitalize">Combining the tools</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe"/>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe" style="max-width: 50%"/>
+</section>
+<section>
+<h1>React a11y docs</h1>
+<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactdocs.png" alt="Screenshot of the React accessibility docs"/>
 </section>
 <section>
 <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/its-logical.jpg" alt="Image of captain kirk showing thumbs up to Spock. Accessibility is logical."/>
