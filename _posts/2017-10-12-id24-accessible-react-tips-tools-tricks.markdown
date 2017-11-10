@@ -344,7 +344,7 @@ class PageFocusSection extends Component {
     const { children, headingText } = this.props;
     return (&lt;section>
         <h2 tabIndex="-1"
-            <mark>ref={header => (this.header = header)}</mark>>
+            <mark>ref={header => {this.header = header;}}</mark>>
           {headingText}
         </h2>
         {children}
@@ -366,7 +366,7 @@ class ToFocus extends Component {
         &lt;label htmlFor="nameInput">Name:</label>
         &lt;input id="nameInput"
                type="text"
-               <mark>ref={input => (this.input = input)}</mark> />
+               <mark>ref={input => {this.input = input;}}</mark> />
       //...
     );
   }
@@ -384,7 +384,7 @@ class WillFocus extends Component {
   }
 
   render() {
-    return <mark><ToFocus ref={toFocus => (this.toFocus = toFocus)} /></mark>;
+    return <mark><ToFocus ref={toFocus => {this.toFocus = toFocus;}} /></mark>;
   }
 }
 </code></pre>
@@ -418,7 +418,7 @@ function Field({ inputRef, ...rest }) {
 const EnhancedField = enhance(Field);
 
 <EnhancedField
-  <mark>inputRef={(inputEl) => {this.inputEl = inputEl}}</mark>
+  <mark>inputRef={(inputEl) => {this.inputEl = inputEl;}}</mark>
   />
 
 this.inputEl.focus();
