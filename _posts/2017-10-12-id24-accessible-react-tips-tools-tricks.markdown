@@ -104,6 +104,9 @@ export default Root;
 <img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
 </section>
 <section>
+<h1>Tips and tricks</h1>
+</section>
+<section>
 <h1>Example application</h1>
 <a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
 </section>
@@ -472,29 +475,7 @@ return (
 <a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
 </section>
 <section>
-<h1>Lazy loading components</h1>
-<pre><code class="javascript" data-trim>
-class App extends Component {
-    state = { LazyBlock: null };
-
-    async componentDidMount() {
-        const { default: LazyBlock } =
-                    await import('./LazyBlock');
-        this.setState({ LazyBlock: &lt;LazyBlock/> });
-    }
-
-    render() {
-        return ( <main aria-busy={!this.state.LazyBlock}>
-                    {this.state.LazyBlock || <p>Loading...</p>}
-                 </main> );
-    }
-}
-</code></pre>
-</section>
-<section>
-<h1>Lazy loading components</h1>
-<p>Splitting code files.</p>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/codesplitting.png" alt="JavaScript code bundles after webpack async-await import and build"/>
+<h1>Tools</h1>
 </section>
 <section>
 <h1 class="no-capitalize">create-react-app</h1>
@@ -504,13 +485,13 @@ create-react-app my-react-app
 cd my-react-app
 yarn start
 </code></pre>
-<ol>
+<ul>
     <li>Webpack development and production build.</li>
     <li>ESLint with some a11y rules.</li>
     <li>Progressive app by default.</li>
     <li>Supports code splitting.</li>
     <li>Unit tests + coverage with JSDOM.</li>
-</ol>
+</ul>
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
