@@ -104,6 +104,7 @@ export default Root;
 <img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
 </section>
 <section>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Tips & Tricks.svg" alt="Tips and tricks header image" style="max-width: 20%; box-shadow: none;"/>
 <h1>Tips and tricks</h1>
 </section>
 <section>
@@ -475,6 +476,7 @@ return (
 <a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
 </section>
 <section>
+<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Tools.svg" alt="Tools header image" style="max-width: 20%; box-shadow: none;"/>
 <h1>Tools</h1>
 </section>
 <section>
