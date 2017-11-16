@@ -8,44 +8,43 @@ transition: none
 ---
 
 <section class="main">
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/QDelft_logo.svg" alt="Log of QDelft" style="max-width: 40%; box-shadow: none; "/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/QDelft_logo.svg" alt="Log of QDelft" style="max-width: 40%; box-shadow: none; "/>
 <h1>Tips, tricks and tools for building accessible React web apps</h1>
 <hr>
 <ul>
-    <li>Almero Steyn</li>
-    <li>QDelft B.V.</li>
-    <li>almerosteyn.com</li>
-    <li>twitter.com/kryptos_rsa</li>
+    <li style="font-size: 47px; margin-bottom: 25px;">Almero Steyn</li>
+    <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100;">almerosteyn.com</a></li>
+    <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
     <li style="font-size: large; margin-top: 20px;">Custom images: Kalina Hristova</li>
 </ul>
 </section>
 <section>
 <h1>React</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/react-logo.svg" alt="React logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/react-logo.svg" alt="React logo" style="max-width: 20%"/>
 <blockquote>
 "A JavaScript library for building user interfaces." - React docs
 </blockquote>
 </section>
 <section>
 <h1>Who uses React?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/facebook.png" alt="Facebook logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Netflix.jpg" alt="Netflix logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/airbnb.png" alt="Airbnb logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/instagram.jpg" alt="Instagram logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/whatsapp.png" alt="Whatsapp logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenon.png" alt="Tenon logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/wehkamp.jpg" alt="Wehkamp logo" style="max-width: 20%"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/bbc.png" alt="BBC logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/facebook.png" alt="Facebook logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/Netflix.jpg" alt="Netflix logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/airbnb.png" alt="Airbnb logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/instagram.jpg" alt="Instagram logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/whatsapp.png" alt="Whatsapp logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/tenon.png" alt="Tenon logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/wehkamp.jpg" alt="Wehkamp logo" style="max-width: 20%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/bbc.png" alt="BBC logo" style="max-width: 20%"/>
 </section>
 <section>
 <h1>How accessible are they?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/goodbadugly.jpg" alt="Movie poster of The Good, the Bad and the Ugly"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/goodbadugly.jpg" alt="Movie poster of The Good, the Bad and the Ugly"/>
 </section>
 
 <section>
 <h1>The Bad and the Ugly</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/bad.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/ugly.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/bad.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/ugly.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
 </section>
 <section>
 <h1>WebAIM Alexa Top 100 scan </h1>
@@ -55,7 +54,7 @@ transition: none
 </section>
 <section>
 <h1>But why?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/grumpy-confused-cat.png" alt="Cat confused about the accessible state of React websites"/>
 </section>
 <section>
 <h1>React syntax</h1>
@@ -75,10 +74,10 @@ export default Root;
 </section>
 <section>
 <h1>Everything in JavaScript?</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/shock.jpg" alt="Image of koala expressing shock at React being all JavaScript" style="max-width:40%"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/shock.jpg" alt="Image of koala expressing shock at React being all JavaScript" style="max-width:40%"/>
 </section>
 <section>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/divtobutton.jpg" alt="Image of Harry Potter turning a div into a button"/>
     <pre><code class="html" data-trim>
         <div className="looks-like-a-button"
              onClick={this.onClickHandler}>
@@ -88,32 +87,32 @@ export default Root;
 </section>
 <section>
 <h1>JS-Zilla destroys a11y!!</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/godzilla.jpg" alt="Image depicting JavaScript as a destructive monster"/>
 </section>
 
 
 <section>
 <h1>It can be a friendly monster...</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/friendly-monster2.jpg" alt="Image depicting JavaScript as cute monster"/>
 </section>
 <section>
 <h1>The Good-a11y</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/good.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/good.png" alt="The Good from the movie the Good, the Bad and the Ugly"/>
 </section>
 <section>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/tenoncap.png" alt="Image capture and Axe scan of tenon.io"/>
 </section>
 <section>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Tips & Tricks.svg" alt="Tips and tricks header image" style="max-width: 20%; box-shadow: none;"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/Tips & Tricks.svg" alt="Tips and tricks header image" style="max-width: 20%; box-shadow: none;"/>
 <h1>Tips and tricks</h1>
 </section>
 <section>
 <h1>Example application</h1>
-<a href="https://github.com/AlmeroSteyn/react-a11y-patterns">https://github.com/AlmeroSteyn/react-a11y-patterns</a>
+<a href="https://github.com/AlmeroSteyn/react-a11y-patterns">github.com/AlmeroSteyn/react-a11y-patterns</a>
 </section>
 <section>
 <h1>React component tree</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/React-components.png" alt="Shows the React component tree with parent child relationships with data flowing down the tree and events bubbling up."/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/React-components.png" alt="Shows the React component tree with parent child relationships with data flowing down the tree and events bubbling up."/>
 </section>
 <section>
 <h1>React component class</h1>
@@ -172,15 +171,15 @@ export default Root;
 </section>
 <section>
 <h1>React virtual DOM + Reconciler</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/React-DOM.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/React-DOM.png" alt="Depicts the React virtual DOM and how it relates to the real DOM"/>
 </section>
 <section>
 <h1>React virtual DOM in browser</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactdominbrowser.png" alt="A debug view of the React DOM in React dev tools"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/reactdominbrowser.png" alt="A debug view of the React DOM in React dev tools"/>
 </section>
 <section>
 <h1>React actual DOM in browser</h1>
-<img class="nomax"  src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/realdominbrowser.png" alt="A debug view of the DOM to compare to that of the React DOM of the previous slide"/>
+<img class="nomax"  src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/realdominbrowser.png" alt="A debug view of the DOM to compare to that of the React DOM of the previous slide"/>
 </section>
 <section>
     <h1>JSX</h1>
@@ -218,7 +217,7 @@ export default Root;
             <input id={nameId} aria-label={accessibleLabel} type="text" />
     </code></pre>
     <p>IntelliSense in supported IDEs.</p>
-    <img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
+    <img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/IDE-intellisense.png" alt="ARIA attribute IntelliSense in JSX with WebStorm"/>
 </section>
 <section>
 <h1>Good JSX makes good HTML</h1>
@@ -294,7 +293,7 @@ const Fragments2 = () => [
 
 <section>
 <h1>Intact header symantics</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Headings-structure.png" alt="Diagram of HTML headers semantics. H1 to H3 hierachy depicted." style="max-width: 50%;"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/Headings-structure.png" alt="Diagram of HTML headers semantics. H1 to H3 hierachy depicted." style="max-width: 50%;"/>
 <pre><code class="javascript" data-trim>
 const HeaderWithLevel = ({ headerText, level }) => {
   const HeaderLevel = `h${level}`;
@@ -321,7 +320,7 @@ const HeaderWithLevel = ({ headerText, level }) => {
     //...
  }
  </code></pre>
- <a href="https://github.com/kelektiv/node-uuid">https://github.com/kelektiv/node-uuid</a>
+ <a href="https://github.com/kelektiv/node-uuid">github.com/kelektiv/node-uuid</a>
 </section>
 <section>
 <h1>Routing is a11y silent</h1>
@@ -360,26 +359,6 @@ class PageFocusSection extends Component {
 <section>
 <h1>Classes and refs</h1>
 <pre><code class="javascript" data-trim data-noescape>
-class ToFocus extends Component {
-
-  <mark>focus() { this.input.focus(); }</mark>
-
-  render() {
-    return (
-      //...
-        &lt;label htmlFor="nameInput">Name:</label>
-        &lt;input id="nameInput"
-               type="text"
-               <mark>ref={input => {this.input = input;}}</mark> />
-      //...
-    );
-  }
-}
-</code></pre>
-</section>
-<section>
-<h1>Focusing a component</h1>
-<pre><code class="javascript" data-trim data-noescape>
 class WillFocus extends Component {
   someHandler() {
     //...
@@ -410,7 +389,7 @@ const WrappedWithReduxConnect =
 </section>
 <section>
 <h1>Refs and HOCs</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/HOC.png" alt="Showing that a HOC wraps the wrapped component and therefore disallows ref access to this component."/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/HOC.png" alt="Showing that a HOC wraps the wrapped component and therefore disallows ref access to this component."/>
 </section>
 <section>
 <h1>Bypass HOC with a callback prop!</h1>
@@ -439,7 +418,7 @@ const SetDocTitle = ({ docTitle, children }) =>
     {children}
   </DocumentTitle>;
 </code></pre>
-<a href="https://github.com/gaearon/react-document-title">https://github.com/gaearon/react-document-title</a>
+<a href="https://github.com/gaearon/react-document-title">github.com/gaearon/react-document-title</a>
 </section>
 <section>
 <h1>ARIA live</h1>
@@ -454,7 +433,7 @@ const Announcer = ({ message }) =>
 </section>
 <section>
 <h1>ARIA live and the component tree</h1>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/arialive.png" alt="Illustrates that the aria live region is more stable when rendered in the root component."/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/arialive.png" alt="Illustrates that the aria live region is more stable when rendered in the root component."/>
 </section>
 <section>
 <h1>ARIA live announcer</h1>
@@ -473,10 +452,10 @@ return (
 }
 //..
 </code></pre>
-<a href="https://github.com/AlmeroSteyn/react-aria-live">https://github.com/AlmeroSteyn/react-aria-live</a>
+<a href="https://github.com/AlmeroSteyn/react-aria-live">github.com/AlmeroSteyn/react-aria-live</a>
 </section>
 <section>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/Tools.svg" alt="Tools header image" style="max-width: 20%; box-shadow: none;"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/Tools.svg" alt="Tools header image" style="max-width: 20%; box-shadow: none;"/>
 <h1>Tools</h1>
 </section>
 <section>
@@ -500,12 +479,12 @@ yarn start
 <blockquote>
 "Static AST checker for a11y rules on JSX elements."
 </blockquote>
-<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">https://github.com/evcohen/eslint-plugin-jsx-a11y</a>
+<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">github.com/evcohen/eslint-plugin-jsx-a11y</a>
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <p>More than 30 ESLINT a11y checks.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/jsxa11y.png" alt="Image of some rules in the eslint-jsx-a11y plugin"/>
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
@@ -528,21 +507,21 @@ yarn start
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <p>A11y issues become build warnings.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/jsxa11ywebpack.png" alt="Shows eslint-jsx-a11y error feedback in create-react-app build"/>
 </section>
 <section>
 <h1 class="no-capitalize">eslint-plugin-jsx-a11y</h1>
 <p>IDE integration.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/jsxa11yIDE.png" alt="Shows eslint-jsx-a11y error feedback in an IDE"/>
 </section>
 <section>
 <h1 class="no-capitalize">react-axe</h1>
 <blockquote>
 "Accessibility auditing for React.js applications."
 </blockquote>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/axe-core.png" alt="React-axe uses axe-core. Shows axe-core logo." style="max-width: 50%;"/>
 <br/>
-<a href="https://github.com/dequelabs/react-axe">https://github.com/dequelabs/react-axe</a>
+<a href="https://github.com/dequelabs/react-axe">github.com/dequelabs/react-axe</a>
 </section>
 <section>
 <h1 class="no-capitalize">react-axe</h1>
@@ -563,30 +542,30 @@ ReactDOM.render(&lt;App />, document.getElementById('root'));
 <section>
 <h1 class="no-capitalize">react-axe</h1>
 <p>Browser console feedback.</p>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/reactaxeconsole.png" alt="Shows the react-axe console feedback for accessibility errors in Chrome"/>
 </section>
 <section>
 <h1 class="no-capitalize">Combining the tools</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe" style="max-width: 50%"/>
+<img class="nomax" src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/consolesummary.png" alt="Summary of console errors for React, aslint-jsx-a11y and react-axe" style="max-width: 50%"/>
 </section>
 <section>
 <h1>React a11y docs</h1>
-<img class="nomax" src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/reactdocs.png" alt="Screenshot of the React accessibility docs"/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/reactdocs.png" alt="Screenshot of the React accessibility docs" style="max-width: 85%;"/>
+<a href="https://reactjs.org/docs/accessibility.html">reactjs.org/docs/accessibility.html</a>
 </section>
 <section>
-<img src="/css/images/2017-10-12-id24-accessible-react-tips-tools-tricks/its-logical.jpg" alt="Image of captain kirk showing thumbs up to Spock. Accessibility is logical."/>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/its-logical.jpg" alt="Image of captain kirk showing thumbs up to Spock. Accessibility is logical."/>
 </section>
 <section class="main">
 <h1>Questions</h1>
 <hr>
 <p>Presentation online at:</p>
-<a href="http://almerosteyn.com/slides/">http://almerosteyn.com/slides/</a>
+<a href="http://almerosteyn.com/slides/">almerosteyn.com/slides/</a>
 <hr>
 <ul>
-    <li>Almero Steyn</li>
-    <li>QDelft B.V.</li>
-    <li>almerosteyn.com</li>
-    <li>twitter.com/kryptos_rsa</li>
+    <li style="font-size: 47px; margin-bottom: 25px;">Almero Steyn</li>
+    <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100;">almerosteyn.com</a></li>
+    <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
     <li style="font-size: large; margin-top: 20px;">Custom images: Kalina Hristova</li>
 </ul>
 </section>
