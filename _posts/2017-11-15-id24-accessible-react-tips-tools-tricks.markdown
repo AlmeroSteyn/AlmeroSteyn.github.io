@@ -37,6 +37,10 @@ transition: none
 <img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/bbc.png" alt="BBC logo" style="max-width: 20%"/>
 </section>
 <section>
+<h1>Westworld?</h1>
+<img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/westworld.png" alt="Jokingly showing the television series Westworld using React as well."/>
+</section>
+<section>
 <h1>How accessible are they?</h1>
 <img src="/css/images/2017-11-15-id24-accessible-react-tips-tools-tricks/goodbadugly.jpg" alt="Movie poster of The Good, the Bad and the Ugly"/>
 </section>
