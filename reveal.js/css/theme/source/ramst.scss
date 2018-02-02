@@ -22,33 +22,35 @@ $linkColorHover: darken($linkColor, 20%);
 $selectionBackgroundColor: #26351C;
 
 .reveal section a {
-  line-height: 1.3em;
-  font-size: 0.7em;
-  text-decoration: none;
-  text-shadow: 0.05em 0 0 $backgroundColor, -0.05em 0 0 $backgroundColor,
-  0 0.05em 0 $backgroundColor, 0 -0.05em 0 $backgroundColor,
-  0.1em 0 0 $backgroundColor, -0.1em 0 0 $backgroundColor,
-  0 0.1em 0 $backgroundColor, 0 -0.1em 0 $backgroundColor;
-  background-image: linear-gradient(to right, $linkColor
-  0%, $linkColor 100%);
-  background-repeat: repeat-x;
-  background-position: bottom 0.04em center;
-  background-size: 100% 0.07em;
+  //line-height: 1.3em;
+  //font-size: 0.7em;
+  //text-decoration: none;
+  //text-shadow: 0.05em 0 0 $backgroundColor, -0.05em 0 0 $backgroundColor,
+  //0 0.05em 0 $backgroundColor, 0 -0.05em 0 $backgroundColor,
+  //0.1em 0 0 $backgroundColor, -0.1em 0 0 $backgroundColor,
+  //0 0.1em 0 $backgroundColor, 0 -0.1em 0 $backgroundColor;
+  //background-image: linear-gradient(to right, $linkColor
+  //0%, $linkColor 100%);
+  //background-repeat: repeat-x;
+  //background-position: bottom 0.04em center;
+  //background-size: 100% 0.07em;
 }
 
 .reveal section a:hover {
-  line-height: 1.3em;
-  font-size: 0.7em;
-  text-decoration: none;
-  text-shadow: 0.05em 0 0 $backgroundColor, -0.05em 0 0 $backgroundColor,
-  0 0.05em 0 $backgroundColor, 0 -0.05em 0 $backgroundColor,
-  0.1em 0 0 $backgroundColor, -0.1em 0 0 $backgroundColor,
-  0 0.1em 0 $backgroundColor, 0 -0.1em 0 $backgroundColor;
-  background-image: linear-gradient(to right, $linkColorHover
-  0%, $linkColorHover 100%);
-  background-repeat: repeat-x;
-  background-position: bottom 0.04em center;
-  background-size: 100% 0.07em;
+  text-decoration: underline;
+  text-underline-position: under;
+  //line-height: 1.3em;
+  //font-size: 0.7em;
+  //text-decoration: none;
+  //text-shadow: 0.05em 0 0 $backgroundColor, -0.05em 0 0 $backgroundColor,
+  //0 0.05em 0 $backgroundColor, 0 -0.05em 0 $backgroundColor,
+  //0.1em 0 0 $backgroundColor, -0.1em 0 0 $backgroundColor,
+  //0 0.1em 0 $backgroundColor, 0 -0.1em 0 $backgroundColor;
+  //background-image: linear-gradient(to right, $linkColorHover
+  //0%, $linkColorHover 100%);
+  //background-repeat: repeat-x;
+  //background-position: bottom 0.04em center;
+  //background-size: 100% 0.07em;
 }
 
 // Theme template ------------------------------

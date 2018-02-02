@@ -16,8 +16,11 @@ transition: none
     <li style="font-size: 47px; margin-bottom: 25px;">Almero Steyn</li>
     <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100;">almerosteyn.com</a></li>
     <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
-    <li style="font-size: large; margin-top: 20px;">Custom images: Kalina Hristova</li>
 </ul>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<h1>The dark room</h1>
+<img src="/css/images/2018-01-25-breaking-the-silence/torch.jpg" alt="Screenshot of the React accessibility docs" style="max-width: 85%;"/>
 </section>
 <section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
 <h1>React a11y docs</h1>
@@ -25,6 +28,7 @@ transition: none
 <a href="https://reactjs.org/docs/accessibility.html">reactjs.org/docs/accessibility.html</a>
 </section>
 <section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<h1>Accessible Application HTML</h1>
  <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/WithoutAriaAndFocus.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
@@ -44,11 +48,12 @@ const AppMain = () =>
 </code></pre>
 </section>
 <section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<h1>Adding Focus Control</h1>
  <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/WithoutAriaWithFocus.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
 <h1>ARIA live</h1>
 <pre><code class="javascript" data-trim data-noescape>
 const Announcer = ({ message }) =>
@@ -59,11 +64,11 @@ const Announcer = ({ message }) =>
   &lt;/div>;
 </code></pre>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
 <h1>ARIA live and the component tree</h1>
 <img src="/css/images/2018-01-25-breaking-the-silence/arialive.png" alt="Illustrates that the aria live region is more stable when rendered in the root component."/>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
 <h1>ARIA live announcer</h1>
 <pre><code class="javascript" data-trim>
 //...
@@ -82,22 +87,22 @@ return (
 </code></pre>
 <a href="https://github.com/AlmeroSteyn/react-aria-live">github.com/AlmeroSteyn/react-aria-live</a>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>Adding ARIA Live</h1>
  <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/WithAria.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
 </section>
 
-<section class="main" data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
-<h1>Questions</h1>
+<section class="main" data-background-image="/css/images/2018-01-25-breaking-the-silence/brightroom.jpg" style="color:#000000;">
+<h1 style="color:#000000;">Questions</h1>
 <hr>
 <p>Presentation online at:</p>
-<a href="http://almerosteyn.com/slides/">almerosteyn.com/slides/</a>
+<a href="http://almerosteyn.com/slides/" style="color:#000000;">almerosteyn.com/slides/</a>
 <hr>
 <ul>
     <li style="font-size: 47px; margin-bottom: 25px;">Almero Steyn</li>
-    <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100;">almerosteyn.com</a></li>
+    <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100; color:#000000;">almerosteyn.com</a></li>
     <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
-    <li style="font-size: large; margin-top: 20px;">Custom images: Kalina Hristova</li>
 </ul>
 </section>
