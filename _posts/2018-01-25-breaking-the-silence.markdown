@@ -72,21 +72,74 @@ const AppMain = () =>
 <h1>Dearest user, you're not welcome!</h1>
 <img src="/css/images/2018-01-25-breaking-the-silence/unwelcome.jpg" alt="Unwelcome looking gate in arid landscape with barbed wire saying keep gate closed and locked" style="max-width: 85%;"/>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroom.jpg">
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>Set focus after navigation</h1>
+<pre><code class="javascript" data-trim data-noescape>
+class PageFocusSection extends Component {
+  componentDidMount() {
+    <mark>this.header.focus()</mark>;
+  }
+  render() {
+    const { children, headingText } = this.props;
+    return (&lt;section>
+        <h2 tabIndex="-1"
+            <mark>ref={header => {this.header = header;}}</mark>>
+          {headingText}
+        </h2>
+        {children}
+      &lt;/section>);
+  }
+}
+</code></pre>
+<a href="https://reactjs.org/docs/refs-and-the-dom.html">reactjs.org/docs/refs-and-the-dom.html</a>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
 <h1>Adding Focus Control</h1>
  <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/WithoutAriaWithFocus.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
 </section>
 <section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>ARIA live regions to the rescue!</h1>
+<img src="/css/images/2018-01-25-breaking-the-silence/important.jpg" alt="Person shouting an important message through a loudspeaker" style="max-width: 85%;"/>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" style="font-size:24px;">developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions</a>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
 <h1>ARIA live</h1>
 <pre><code class="javascript" data-trim data-noescape>
 const Announcer = ({ message }) =>
-  &lt;div aria-live="polite"
-       aria-atomic="true"
-       aria-relevant="additions">
+  &lt;div role="log" 
+       aria-live="polite" 
+       aria-relevant="additions" 
+       aria-atomic="true"> 
     {message}
   &lt;/div>;
+  
+  //Possible values
+  //role:          log | status | alert 
+  //aria-live:     polite | assertive | off
+  //aria-relevant: additions | removals | text | all
+  //aria-atomic:   true | false
+</code></pre>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>Error announcer!</h1>
+<pre><code class="html" data-trim data-noescape>
+    <label htmlFor={inputId}>{labelText}</label>
+    <input
+      id={inputId}
+      aria-invalid={showErrors}
+      aria-describedby={showErrors ? describedById : null}
+      onChange={onChangeHandler}
+      value={value} />
+    {showErrors ?
+      &lt;div
+        id={describedById}
+        aria-live="polite"
+        aria-atomic="true">
+          {errorText}
+      &lt;/div> 
+     : null}
 </code></pre>
 </section>
 <section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
