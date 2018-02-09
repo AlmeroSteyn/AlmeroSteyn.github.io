@@ -143,11 +143,51 @@ const Announcer = ({ message }) =>
 </code></pre>
 </section>
 <section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>Our live region in JAWS</h1>
+ <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/ErrorAriaJAWS.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+</video>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>So we are done right?</h1>
+<h2>Right?!</h2>
+<h3>Why are you building the tension??!!</h3>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>Our live region in NVDA</h1>
+ <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/ErrorAriaNVDA.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+</video>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
+<h1>Stable error announcer!</h1>
+<pre><code class="html" data-trim data-noescape>
+ <label htmlFor={inputId}>{labelText}</label>
+ <input
+   id={inputId}
+   aria-invalid={!showErrors}
+   aria-describedby={showErrors ? this.describedById : null}
+   onChange={onChangeHandler}
+   value={value} />
+ &lt;div
+   aria-live="polite"
+   aria-atomic="true">
+   {showErrors ? 
+     <span id={describedById}>{errorText}</span> 
+   : null}
+ &lt;/div>
+</code></pre>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
 <h1>ARIA live and the component tree</h1>
 <img src="/css/images/2018-01-25-breaking-the-silence/arialive.png" alt="Illustrates that the aria live region is more stable when rendered in the root component."/>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
-<h1>ARIA live announcer</h1>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/brightroom.jpg">
+<h1 style="color: #15191C;">Let's light up that dark room!</h1>
+<img src="/css/images/2018-01-25-breaking-the-silence/lightup.png" alt="Light bulb plugging itself in to give more light."/>
+</section>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/brightroom.jpg">
+<h1 style="color: #15191C;">ARIA live announcer</h1>
 <pre><code class="javascript" data-trim>
 //...
 import { LiveAnnouncer, LiveMessage } from 'react-aria-live';
@@ -163,24 +203,26 @@ return (
 }
 //..
 </code></pre>
-<a href="https://github.com/AlmeroSteyn/react-aria-live">github.com/AlmeroSteyn/react-aria-live</a>
+<a href="https://github.com/AlmeroSteyn/react-aria-live" style="color: #15191C;">github.com/AlmeroSteyn/react-aria-live</a>
 </section>
-<section data-background-image="/css/images/2018-01-25-breaking-the-silence/darkroomdouble.jpg">
-<h1>Adding ARIA Live</h1>
+<section data-background-image="/css/images/2018-01-25-breaking-the-silence/brightroom.jpg">
+<h1 style="color: #15191C;">Full screen reader a11y!</h1>
  <video controls class="stretch" src="/css/videos/2018-01-25-breaking-the-silence/WithAria.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
 </section>
 
-<section class="main" data-background-image="/css/images/2018-01-25-breaking-the-silence/brightroom.jpg" style="color:#000000;">
-<h1 style="color:#000000;">Questions</h1>
+<section class="main" data-background-image="/css/images/2018-01-25-breaking-the-silence/brightroom.jpg" style=" background-color:rgba(0,0,0,0.8);">
+<h1>Questions</h1>
 <hr>
 <p>Presentation online at:</p>
-<a href="http://almerosteyn.com/slides/" style="color:#000000;">almerosteyn.com/slides/</a>
+<a href="http://almerosteyn.com/slides/" >almerosteyn.com/slides/</a>
+<p style="font-size: 24px; margin-bottom: -10px; margin-top: 40px;">Example app at:</p>
+<a href="https://github.com/AlmeroSteyn/react-a11y-patterns/tree/react-amsterdam-talk" style="font-size: 24px;" >github.com/AlmeroSteyn/react-a11y-patterns/tree/react-amsterdam-talk</a>
 <hr>
 <ul>
     <li style="font-size: 47px; margin-bottom: 25px;">Almero Steyn</li>
-    <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100; color:#000000;">almerosteyn.com</a></li>
+    <li><a href="http://almerosteyn.com/" style="font-size: 30px; font-weight: 100;">almerosteyn.com</a></li>
     <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
 </ul>
 </section>
