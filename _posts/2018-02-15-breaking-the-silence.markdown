@@ -146,8 +146,11 @@ const Announcer = ({ message }) =>
 </section>
 <section data-background-image="/css/images/2018-02-15-breaking-the-silence/darkroomdoublewide.jpg">
 <h1>Our live region in JAWS</h1>
- <video controls class="stretch" src="/css/videos/2018-02-15-breaking-the-silence/ErrorAriaJAWS.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+<video controls class="stretch">
+  <source data-src="/css/videos/2018-02-15-breaking-the-silence/ErrorAriaJAWS.mp4" type="video/mp4">
+  <source data-src="/css/videos/2018-02-15-breaking-the-silence/ErrorAriaJAWS.ogg" type="video/ogg">
+  <source data-src="/css/videos/2018-02-15-breaking-the-silence/ErrorAriaJAWS.webm" type="video/webm">
+    Your browser does not support the video tag.
 </video>
 </section>
 <section data-background-image="/css/images/2018-02-15-breaking-the-silence/darkroomdoublewide.jpg">
