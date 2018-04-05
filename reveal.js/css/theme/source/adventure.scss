@@ -1,0 +1,142 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ */
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@font-face {
+  font-family: Adventure;
+  src: url(/reveal.js/css/fonts/Adventure.otf)
+}
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Verdana', 'Helvetica', sans-serif;
+$mainColor: #282828;
+$headingFont: 'Adventure','Verdana', 'Helvetica', sans-serif;
+$headingColor: #282828;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: white;
+$linkColor: #282828;
+$linkColorHover: darken($linkColor, 20%);
+$selectionBackgroundColor: #26351C;
+
+.reveal section a {
+  //line-height: 1.3em;
+  //font-size: 0.7em;
+  //text-decoration: none;
+  //text-shadow: 0.05em 0 0 $backgroundColor, -0.05em 0 0 $backgroundColor,
+  //0 0.05em 0 $backgroundColor, 0 -0.05em 0 $backgroundColor,
+  //0.1em 0 0 $backgroundColor, -0.1em 0 0 $backgroundColor,
+  //0 0.1em 0 $backgroundColor, 0 -0.1em 0 $backgroundColor;
+  //background-image: linear-gradient(to right, $linkColor
+  //0%, $linkColor 100%);
+  //background-repeat: repeat-x;
+  //background-position: bottom 0.04em center;
+  //background-size: 100% 0.07em;
+}
+
+.reveal section a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  //line-height: 1.3em;
+  //font-size: 0.7em;
+  //text-decoration: none;
+  //text-shadow: 0.05em 0 0 $backgroundColor, -0.05em 0 0 $backgroundColor,
+  //0 0.05em 0 $backgroundColor, 0 -0.05em 0 $backgroundColor,
+  //0.1em 0 0 $backgroundColor, -0.1em 0 0 $backgroundColor,
+  //0 0.1em 0 $backgroundColor, 0 -0.1em 0 $backgroundColor;
+  //background-image: linear-gradient(to right, $linkColorHover
+  //0%, $linkColorHover 100%);
+  //background-repeat: repeat-x;
+  //background-position: bottom 0.04em center;
+  //background-size: 100% 0.07em;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal section:not(.no-background) {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.reveal h1 {
+  font-size: 1.5em;
+  letter-spacing: 7px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.reveal h2 {
+  font-size: 1.0em;
+  text-transform: capitalize;
+}
+
+.reveal section img {
+  border: none;
+}
+
+.reveal img:not(.nomax) {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.reveal img.shadow {
+  box-shadow: -2px -2px 29px black;
+  -webkit-box-shadow: -2px -2px 29px black;
+  -moz-box-shadow: -2px -2px 29px black;
+}
+
+.reveal ul,
+.reveal ol{
+  font-size: 0.7em;
+}
+
+.main ul,
+.main ol{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.reveal blockquote {
+  box-shadow: none;
+}
+
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    &.no-capitalize {
+      text-transform: none;
+    }
+  }
+}
+
+.reveal mark {
+  background-color: transparent;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #1119ff;
+}
+
+.reveal mark.transparent {
+  background-color: transparent;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: transparent;
+}
+
+.reveal code {
+  font-weight: bold;
+}
+
+.hljs-string {
+  color: black;
+}
