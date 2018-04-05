@@ -66,6 +66,24 @@ $selectionBackgroundColor: #26351C;
   background-color: rgba(255,255,255,0.9);
 }
 
+.reveal .flex-grid {
+  display: flex;
+  margin: 0 5px 0 5px;
+}
+
+.reveal .flex-col {
+  flex: 1;
+  margin: 0 5px 10px 5px;
+  padding: 10px;
+  background: white;
+}
+
+.reveal .code-shadow {
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
 .reveal h1 {
   font-size: 1.5em;
   letter-spacing: 7px;
