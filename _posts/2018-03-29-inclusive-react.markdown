@@ -14,7 +14,7 @@ transition: none
 <img class="nomax" src="/css/images/2018-03-29-inclusive-react/nametextbanner.svg" style="background-color:transparent;" alt="Adventure style text saying Almero Steyn with a twitter handle of @Kryptos_RSA and his blog address of almerosteyn.com."/>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
-<h1>Get your QR-code scanner apps ready!!</h1>
+<h1>Get your QR-code scanner apps ready!</h1>
 <img class="shadow" src="/css/images/2018-03-29-inclusive-react/qrscanner.jpg" alt="Telephone used as QR code scanner."/>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
@@ -98,6 +98,10 @@ transition: none
 <img src="/css/images/2018-03-29-inclusive-react/goodcontrastbutton.png" alt="A button with dark blue text on a light blue background showing good contrast." style="box-shadow: none;"/>
 </div>
 </div>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>We need a Swiss Army Knife</h1>
+<img class="shadow" src="/css/images/2018-03-29-inclusive-react/knife.jpg" alt="Swift army knife with blades and tools open."/>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
 <h1>The React Accessibility Doc</h1>
