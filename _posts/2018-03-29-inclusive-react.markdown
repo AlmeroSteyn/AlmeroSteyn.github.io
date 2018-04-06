@@ -112,19 +112,18 @@ transition: none
 <section class="no-background" data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
 <div style="display:flex;">
 <div style="flex:5;">
-<img class="nomax fragment" src="/css/images/2018-03-29-inclusive-react/wcag.svg" style="background-color:transparent;  transform: rotate(20deg);" alt="Text image spelling WCAG."/>
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; " alt="Text image spelling A11Y."/>
 </div>
 <div style="flex:10;">
-<img class="nomax fragment" src="/css/images/2018-03-29-inclusive-react/wai.svg" style="background-color:transparent; transform: rotate(-20deg);" alt="Text image spelling WAI-ARIA."/>
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/wai.svg" style="background-color:transparent;" alt="Text image spelling WAI-ARIA."/>
 </div>
 </div>
-<img src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; height: 20%; width: 20%" alt="Text image spelling A11Y"/>
 <div style="display:flex;">
 <div style="flex:12;">
-<img class="nomax fragment" src="/css/images/2018-03-29-inclusive-react/focus.svg" style="background-color:transparent; transform: rotate(10deg);" alt="Text image spelling Focus Control."/>
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/wcag.svg" style="background-color:transparent;  " alt="Text image spelling WCAG."/>
 </div>
 <div style="flex:7;">
-<img class="nomax fragment" src="/css/images/2018-03-29-inclusive-react/axe.svg" style="background-color:transparent; transform: rotate(-20deg);" alt="Text image spelling AXE."/>
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/axe.svg" style="background-color:transparent; " alt="Text image spelling AXE."/>
 </div>
 </div>
 </section>
