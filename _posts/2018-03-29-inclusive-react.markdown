@@ -212,3 +212,14 @@ transition: none
 <br />
 <a href="https://github.com/dequelabs/react-axe">github.com/dequelabs/react-axe</a>
 </section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>Test with screen readers</h1>
+<img class="shadow" src="/css/images/2018-03-29-inclusive-react/reader.jpg" style="width:80%; margin-left: 20px;" alt="Computer with headphones to listen to text speech."/>
+<img src="/css/images/2018-03-29-inclusive-react/screenreaderqr.svg" alt="QR code for url reactjs.org/docs/accessibility.html#screen-readers" style="width:5em;height: 5em; margin-left: 15px;"/>
+<br />
+<a href="https://reactjs.org/docs/accessibility.html#screen-readers" style="font-size: 0.8em;">reactjs.org/docs/accessibility.html#screen-readers</a>
+</section>
+<section class="no-background" data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<img class="nomax" src="/css/images/2018-03-29-inclusive-react/trailingtext.svg" style="background-color:transparent;" alt="Adventure style text saying Inclusive React a survival guide over a forest backdrop. Also has a QR code to url almerosteyn.com/slides"/>
+<a href="http://almerosteyn.com/slides/" style="color:white;">almerosteyn.com/slides/</a>
+</section>
