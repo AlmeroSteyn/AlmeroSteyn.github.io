@@ -9,8 +9,7 @@
   src: url(/reveal.js/css/fonts/Adventure.otf); }
 
 .reveal section a:hover {
-  text-decoration: underline;
-  text-underline-position: under; }
+  text-decoration: underline; }
 
 /*********************************************
  * GLOBAL STYLES

@@ -128,3 +128,72 @@ transition: none
 </div>
 </div>
 </section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>WCAG</h1>
+<h2 style="font-size: 1.4em; margin: 15px;">Web Content Accessibility Guidelines</h2>
+<blockquote style="font-size: 0.8em;">Defines how to make Web content more accessible to all people.</blockquote>
+<img src="/css/images/2018-03-29-inclusive-react/webaimwcagqr.svg" alt="QR code for url webaim.org/standards/wcag/checklist" style="width:5em;height: 5em;"/>
+<br />
+<a href="https://webaim.org/standards/wcag/checklist">webaim.org/standards/wcag/checklist</a>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>WAI - ARIA</h1>
+<h2 style="font-size: 1.4em; margin: 15px;">Web Accessibility Initiative – Accessible Rich Internet Applications</h2>
+<blockquote style="font-size: 0.8em;">Specifies how to increase the accessibility of web applications.</blockquote>
+<img src="/css/images/2018-03-29-inclusive-react/waiariaqr.svg" alt="QR code for url https://www.w3.org/TR/wai-aria-practices-1.1/" style="width:5em;height: 5em;"/>
+<br />
+<a href="https://www.w3.org/TR/wai-aria-practices-1.1/">www.w3.org/TR/wai-aria-practices-1.1/</a>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>Semantic JSX and HTML</h1>
+<div class="flex-grid">
+<pre class="flex-col"><code class="html" data-trim>
+<div>
+    &lt;Navigation />
+</div>
+<div>
+    &lt;SideMenu />
+</div>
+<div>
+    &lt;MainContent />
+    <div class="like-button"
+         onClick={onClickHandler}>
+         Save selection
+    </div>
+</div>
+</code></pre>
+<pre class="flex-col"><code class="html" data-trim>
+<nav>
+    &lt;Navigation />
+</nav>
+<aside>
+    &lt;SideMenu />
+</aside>
+<main>
+    &lt;MainContent />
+    <button type="button"
+            onClick={onClickHandler}>
+         Save selection
+    </button>
+</main>
+</code></pre>
+</div>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>HTML !== &lt;div></h1>
+<img class="nomax" src="/css/images/2018-03-29-inclusive-react/chest.png" style="background-color:transparent; box-shadow: none; width: 50%;" alt="Treasure chest spilling gold."/>
+<img src="/css/images/2018-03-29-inclusive-react/semanticqr.svg" alt="QR code for url https://developer.mozilla.org/en-US/docs/Web/HTML/Element" style="width:5em;height: 5em;"/>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" style="font-size: 0.8em;">developer.mozilla.org/en-US/docs/Web/HTML/Element</a>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>Test with your keyboard</h1>
+<blockquote>Use TAB, SHIFT + TAB, ENTER and the arrow keys.</blockquote>
+<img class="shadow" src="/css/images/2018-03-29-inclusive-react/keyboard.jpg" style="width:50%;" alt="Keyboard with blue backlighting."/>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>aXe and axe-core</h1>
+<img class="shadow" src="/css/images/2018-03-29-inclusive-react/axe.png" style="width:50%;" alt="Screen capture of aXe audit in browser."/>
+<img src="/css/images/2018-03-29-inclusive-react/axeqr.svg" alt="QR code for url www.deque.com/axe/" style="width:5em;height: 5em; margin-left: 60px;"/>
+<br />
+<a href="https://www.deque.com/axe/">www.deque.com/axe/</a>
+</section>
