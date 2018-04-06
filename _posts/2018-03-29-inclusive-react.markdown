@@ -191,9 +191,24 @@ transition: none
 <img class="shadow" src="/css/images/2018-03-29-inclusive-react/keyboard.jpg" style="width:50%;" alt="Keyboard with blue backlighting."/>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>eslint-plugin-jsx-a11y</h1>
+<img class="shadow nomax" src="/css/images/2018-03-29-inclusive-react/jsxa11yIDE.png" style="margin-left:15px" alt="Screen capture of eslint-plugin-jsx-a11y IDE integration."/>
+<br />
+<img src="/css/images/2018-03-29-inclusive-react/jsxa11yqr.svg" alt="QR code for url github.com/evcohen/eslint-plugin-jsx-a11y" style="width:5em;height: 5em; margin-left: 60px;"/>
+<br />
+<a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">github.com/evcohen/eslint-plugin-jsx-a11y</a>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
 <h1>aXe and axe-core</h1>
 <img class="shadow" src="/css/images/2018-03-29-inclusive-react/axe.png" style="width:50%;" alt="Screen capture of aXe audit in browser."/>
 <img src="/css/images/2018-03-29-inclusive-react/axeqr.svg" alt="QR code for url www.deque.com/axe/" style="width:5em;height: 5em; margin-left: 60px;"/>
 <br />
 <a href="https://www.deque.com/axe/">www.deque.com/axe/</a>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<h1>react-axe</h1>
+<img class="shadow" src="/css/images/2018-03-29-inclusive-react/react-axe.png" style="width:80%; margin-left: 20px;" alt="Screen capture of aXe audit in browser."/>
+<img src="/css/images/2018-03-29-inclusive-react/react-axeqr.svg" alt="QR code for url github.com/dequelabs/react-axe" style="width:5em;height: 5em; margin-left: 15px;"/>
+<br />
+<a href="https://github.com/dequelabs/react-axe">github.com/dequelabs/react-axe</a>
 </section>
