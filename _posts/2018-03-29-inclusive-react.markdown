@@ -116,7 +116,7 @@ transition: none
 </div>
 
 <div style="flex:7;">
-<img class="nomax " src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; margin-top: 116px; transform: rotate(-20deg); " alt="Text image spelling A11Y."/>
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; margin-top: 100px; transform: rotate(-20deg); " alt="Text image spelling A11Y."/>
 </div>
 </div>
 <div style="display:flex;">
