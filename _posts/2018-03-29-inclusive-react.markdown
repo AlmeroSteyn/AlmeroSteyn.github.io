@@ -111,20 +111,23 @@ transition: none
 </section>
 <section class="no-background" data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
 <div style="display:flex;">
-<div style="flex:5;">
-<img class="nomax " src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; " alt="Text image spelling A11Y."/>
-</div>
 <div style="flex:10;">
 <img class="nomax " src="/css/images/2018-03-29-inclusive-react/wai.svg" style="background-color:transparent;" alt="Text image spelling WAI-ARIA."/>
+</div>
+
+<div style="flex:7;">
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; margin-top: 116px; transform: rotate(-20deg); " alt="Text image spelling A11Y."/>
 </div>
 </div>
 <div style="display:flex;">
 <div style="flex:12;">
 <img class="nomax " src="/css/images/2018-03-29-inclusive-react/wcag.svg" style="background-color:transparent;  " alt="Text image spelling WCAG."/>
+
 </div>
-<div style="flex:7;">
-<img class="nomax " src="/css/images/2018-03-29-inclusive-react/axe.svg" style="background-color:transparent; " alt="Text image spelling AXE."/>
+<div style="flex:8;">
+<img class="nomax " src="/css/images/2018-03-29-inclusive-react/confused.png" style="background-color:transparent;" alt="Text image spelling WAI-ARIA."/>
 </div>
+
 </div>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
@@ -221,4 +224,5 @@ transition: none
 <section class="no-background" data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
 <img class="nomax" src="/css/images/2018-03-29-inclusive-react/trailingtext.svg" style="background-color:transparent;" alt="Adventure style text saying Inclusive React a survival guide over a forest backdrop. Also has a QR code to url almerosteyn.com/slides"/>
 <a href="http://almerosteyn.com/slides/" style="color:white;">almerosteyn.com/slides/</a>
+<p style="color: white; font-size: 0.3em;">Images CC0 - Pixabay</p>
 </section>
