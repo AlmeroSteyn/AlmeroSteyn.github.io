@@ -60,7 +60,7 @@ transition: none
 </div>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
-<h1>Blocking errors fixed!</h1>
+<h1>Blocking errors and fixed!</h1>
 <div class="flex-grid">
             <pre class="flex-col"><code class="css" data-trim>
 :focus {
@@ -114,7 +114,6 @@ transition: none
 <div style="flex:10;">
 <img class="nomax " src="/css/images/2018-03-29-inclusive-react/wai.svg" style="background-color:transparent;" alt="Text image spelling WAI-ARIA."/>
 </div>
-
 <div style="flex:7;">
 <img class="nomax " src="/css/images/2018-03-29-inclusive-react/a11y.svg" style="background-color:transparent; margin-top: 100px; transform: rotate(-20deg); " alt="Text image spelling A11Y."/>
 </div>
@@ -122,7 +121,6 @@ transition: none
 <div style="display:flex;">
 <div style="flex:12;">
 <img class="nomax " src="/css/images/2018-03-29-inclusive-react/wcag.svg" style="background-color:transparent;  " alt="Text image spelling WCAG."/>
-
 </div>
 <div style="flex:8;">
 <img class="nomax " src="/css/images/2018-03-29-inclusive-react/confused.png" style="background-color:transparent;" alt="Text image spelling WAI-ARIA."/>
@@ -149,7 +147,9 @@ transition: none
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
 <h1>Semantic JSX and HTML</h1>
 <div class="flex-grid">
-<pre class="flex-col"><code class="html" data-trim>
+<pre class="flex-col">
+<h2 style="font-family: Verdana; text-align: center; margin: 0; font-weight: bold; border-bottom-color: black; border-bottom-width: 2px; border-bottom-style: solid; padding-bottom: 10px;">Non semantic</h2>
+<code class="html" data-trim>
 <div>
     &lt;Navigation />
 </div>
@@ -164,7 +164,9 @@ transition: none
     </div>
 </div>
 </code></pre>
-<pre class="flex-col"><code class="html" data-trim>
+<pre class="flex-col">
+<h2 style="font-family: Verdana; text-align: center; margin: 0; font-weight: bold; border-bottom-color: black; border-bottom-width: 2px; border-bottom-style: solid; padding-bottom: 10px;">Semantic</h2>
+<code class="html" data-trim>
 <nav>
     &lt;Navigation />
 </nav>
