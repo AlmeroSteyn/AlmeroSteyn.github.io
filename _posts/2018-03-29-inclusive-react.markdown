@@ -22,19 +22,25 @@ transition: none
 <img class="shadow" src="/css/images/2018-03-29-inclusive-react/lockedgate.jpg" alt="Rusted old lock and chain in a wooden door so unused it has spider webs."/>
 </section>
 <section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
-<h1>Blocking errors</h1>
+<div class="flex-grid">
+<div class="flex-col" style="background: transparent;" >
+<h1 style="text-align: center; margin: 0;">Inaccessible</h1>
+</div>
+<div class="flex-col" style="background: transparent;" >
+<h1 style="text-align: center; margin: 0;">Accessible</h1>
+</div>
+</div>
 <div class="flex-grid">
             <pre class="flex-col"><code class="css" data-trim>
 :focus {
     outline: 0; //Or none
 }
             </code></pre>
-        <pre class="flex-col" ><code class="html" data-trim>
-<div class="like-button"
-     onClick={onClickHandler}>
-     Press Me
-</div>
-       </code></pre>
+       <pre class="flex-col"><code class="css" data-trim>
+       :focus {
+          // Some visual style
+       }
+                   </code></pre>
 </div>
 <div class="flex-grid">
 <pre class="flex-col"><code class="html" data-trim>
@@ -43,57 +49,65 @@ transition: none
 <input type="text" />
 </code></pre>
 <pre class="flex-col"><code class="html" data-trim>
-<a onClick={onClickHandler}>
-    Click me
-</a>
-</code></pre>
-</div>
-<div class="flex-grid">
-<pre class="flex-col"><code class="html" data-trim>
-<button>
-    &lt;i class="save-icon"></i>
-</button>
-</code></pre>
-<div class="flex-col code-shadow" >
-<img src="/css/images/2018-03-29-inclusive-react/badcontrastbutton.png" alt="A button with dark blue text on a darker blue background showing bad contrast." style="box-shadow: none;"/>
-</div>
-</div>
-</section>
-<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
-<h1>Blocking errors and fixed!</h1>
-<div class="flex-grid">
-            <pre class="flex-col"><code class="css" data-trim>
-:focus {
-   // Some visual style
-}
-            </code></pre>
-        <pre class="flex-col" ><code class="html" data-trim>
-<button onClick={onClickHandler}>
-     Press Me
-</button>
-       </code></pre>
-</div>
-<div class="flex-grid">
-<pre class="flex-col"><code class="html" data-trim>
 &lt;label htmlFor="nameInput">
     Name:
 </label>
 
 <input id="nameInput" type="text" />
 </code></pre>
+</div>
+<div class="flex-grid">
+<pre class="flex-col"><code class="html" data-trim>
+<button>
+    &lt;i className="save-icon" />
+</button>
+</code></pre>
+<pre class="flex-col"><code class="html" data-trim>
+<button aria-label="Save">
+    &lt;i className="save-icon"
+       aria-hidden="true" />
+</button>
+</code></pre>
+</div>
+</section>
+<section data-background-image="/css/images/2018-03-29-inclusive-react/backgroundcolor2.jpg">
+<div class="flex-grid">
+<div class="flex-col" style="background: transparent;" >
+<h1 style="text-align: center; margin: 0;">Inaccessible</h1>
+</div>
+<div class="flex-col" style="background: transparent;" >
+<h1 style="text-align: center; margin: 0;">Accessible</h1>
+</div>
+</div>
+<div class="flex-grid">
+             <pre class="flex-col" ><code class="html" data-trim>
+            <div className="looks-like-button"
+                 onClick={onClickHandler}>
+                 Press Me
+            </div>
+                   </code></pre>
+        <pre class="flex-col" ><code class="html" data-trim>
+        <button onClick={onClickHandler}>
+             Press Me
+        </button>
+               </code></pre>
+</div>
+<div class="flex-grid">
+<pre class="flex-col"><code class="html" data-trim>
+<a onClick={onClickHandler}>
+    Click me
+</a>
+</code></pre>
 <pre class="flex-col"><code class="html" data-trim>
 <a href="/some/application/url">
-    Click me
+    Navigate somewhere
 </a>
 </code></pre>
 </div>
 <div class="flex-grid">
-<pre class="flex-col"><code class="html" data-trim>
-<button aria-label="Save">
-    &lt;i class="save-icon"
-       aria-hidden="true" />
-</button>
-</code></pre>
+<div class="flex-col code-shadow" >
+<img src="/css/images/2018-03-29-inclusive-react/badcontrastbutton.png" alt="A button with dark blue text on a darker blue background showing bad contrast." style="box-shadow: none;"/>
+</div>
 <div class="flex-col code-shadow" >
 <img src="/css/images/2018-03-29-inclusive-react/goodcontrastbutton.png" alt="A button with dark blue text on a light blue background showing good contrast." style="box-shadow: none;"/>
 </div>
@@ -148,7 +162,7 @@ transition: none
 <h1>Semantic JSX and HTML</h1>
 <div class="flex-grid">
 <pre class="flex-col">
-<h2 style="font-family: Verdana; text-align: center; margin: 0; font-weight: bold; border-bottom-color: black; border-bottom-width: 2px; border-bottom-style: solid; padding-bottom: 10px;">Non semantic</h2>
+<h2 style="font-family: Verdana; text-align: center; margin: 0; font-weight: bold; border-bottom-color: black; border-bottom-width: 2px; border-bottom-style: solid; padding-bottom: 10px;">Non-semantic</h2>
 <code class="html" data-trim>
 <div>
     &lt;Navigation />
