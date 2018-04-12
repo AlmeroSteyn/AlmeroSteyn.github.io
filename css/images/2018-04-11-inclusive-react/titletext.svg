@@ -187,7 +187,7 @@
      id="namedview60"
      showgrid="false"
      inkscape:zoom="0.45254834"
-     inkscape:cx="1172.5989"
+     inkscape:cx="813.52124"
      inkscape:cy="897.70106"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -348,16 +348,66 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
        height="152.46988"
        x="268.47961"
        y="754.60876" />
-    <text
-       xml:space="preserve"
+    <g
+       aria-label="A SURVIVAL GUIDE "
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;line-height:1.25;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       x="321.52902"
-       y="874.2002"
-       id="text2705"><tspan
-         sodipodi:role="line"
-         id="tspan2703"
-         x="321.52902"
-         y="874.2002"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal">A SURVIVAL GUIDE </tspan></text>
+       id="text2705">
+      <path
+         d="m 390.03488,789.61036 q 10.4248,0 10.4248,10.12695 V 875.3916 H 385.5671 v -35.74218 h -50.63476 v 35.74218 h -14.89258 v -75.65429 q 0,-10.12695 10.42481,-10.12695 z m -4.46778,35.74218 v -19.6582 q 0,-1.78711 -1.48925,-1.78711 H 336.4216 q -1.48926,0 -1.48926,1.78711 v 19.6582 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1978" />
+      <path
+         d="m 561.52064,825.35254 q 10.4248,0 10.4248,10.12695 v 29.78516 q 0,10.12695 -10.4248,10.12695 h -69.99511 v -14.29687 h 64.03808 q 1.48926,0 1.48926,-1.78711 v -17.87109 q 0,-1.78711 -1.48926,-1.78711 h -53.61328 q -10.4248,0 -10.4248,-10.12696 v -29.78515 q 0,-10.12695 10.4248,-10.12695 h 69.99511 v 14.29687 h -64.03808 q -1.48925,0 -1.48925,1.78711 v 17.87109 q 0,1.78711 1.54882,1.78711 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1980" />
+      <path
+         d="m 657.68832,789.61036 h 14.89258 v 75.65429 q 0,10.12695 -10.42481,10.12695 h -59.57031 q -10.4248,0 -10.4248,-10.12695 v -75.65429 h 14.89258 v 69.69726 q 0,1.78711 1.48926,1.78711 h 47.65624 q 1.48926,0 1.48926,-1.78711 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1982" />
+      <path
+         d="m 750.8775,803.90723 h -43.18847 v 21.44531 h 43.18847 q 1.48926,0 1.48926,-1.78711 v -17.87109 q 0,-1.78711 -1.48926,-1.78711 z m -28.8916,35.74219 h -14.29687 v 35.74218 h -14.89258 v -85.78124 h 64.03808 q 10.4248,0 10.4248,10.12695 v 29.78515 q 0,10.12696 -10.4248,10.12696 h -16.44141 l 28.05762,35.74218 h -18.40723 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1984" />
+      <path
+         d="m 819.16629,875.3916 -35.20605,-85.78124 h 17.99023 l 25.73437,62.66796 25.73438,-62.66796 h 17.99023 L 836.2034,875.3916 Z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1986" />
+      <path
+         d="m 897.04587,875.3916 h -14.89258 v -85.78124 h 14.89258 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1988" />
+      <path
+         d="M 948.95285,875.3916 913.7468,789.61036 h 17.99023 l 25.73437,62.66796 25.73438,-62.66796 h 17.99022 l -35.20604,85.78124 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1990" />
+      <path
+         d="m 1081.935,789.61036 q 10.4248,0 10.4248,10.12695 v 75.65429 h -14.8926 v -35.74218 h -50.6348 v 35.74218 h -14.8926 v -75.65429 q 0,-10.12695 10.4249,-10.12695 z m -4.4678,35.74218 v -19.6582 q 0,-1.78711 -1.4893,-1.78711 h -47.6562 q -1.4893,0 -1.4893,1.78711 v 19.6582 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1992" />
+      <path
+         d="m 1172.1457,875.3916 h -59.5704 v -85.78124 h 14.8926 v 71.48437 h 44.6778 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1994" />
+      <path
+         d="m 1273.7554,875.3916 q -10.4248,0 -10.4248,-10.12695 v -65.52734 q 0,-10.12695 10.4248,-10.12695 h 69.9951 v 14.29687 h -64.0381 q -1.4892,0 -1.4892,1.78711 v 53.61328 q 0,1.78711 1.5488,1.78711 h 47.5967 q 1.4892,0 1.4892,-1.78711 v -17.87109 q 0,-1.78711 -1.4892,-1.78711 h -28.2959 v -14.29688 h 34.2529 q 10.4248,0 10.4248,10.12695 v 29.78516 q 0,10.12695 -10.4248,10.12695 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1996" />
+      <path
+         d="m 1429.4934,789.61036 h 14.8926 v 75.65429 q 0,10.12695 -10.4249,10.12695 h -59.5703 q -10.4248,0 -10.4248,-10.12695 v -75.65429 h 14.8926 v 69.69726 q 0,1.78711 1.4893,1.78711 h 47.6562 q 1.4893,0 1.4893,-1.78711 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path1998" />
+      <path
+         d="m 1479.4941,875.3916 h -14.8926 v -85.78124 h 14.8926 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path2000" />
+      <path
+         d="m 1557.7907,803.90723 h -43.1884 v 57.1875 h 43.1884 q 1.4893,0 1.4893,-1.78711 v -53.61328 q 0,-1.78711 -1.4893,-1.78711 z m -58.081,71.48437 v -85.78124 h 64.0381 q 10.4248,0 10.4248,10.12695 v 65.52734 q 0,10.12695 -10.4248,10.12695 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path2002" />
+      <path
+         d="m 1656.9369,875.3916 h -52.1241 q -10.4248,0 -10.4248,-10.12695 v -65.52734 q 0,-10.12695 10.4248,-10.12695 h 52.1241 v 14.29687 h -46.167 q -1.4893,0 -1.4893,1.78711 v 19.6582 h 47.6563 v 14.29688 h -47.6563 v 19.6582 q 0,1.78711 1.5488,1.78711 h 46.1075 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:121.99999237px;font-family:'Adventure Subtitles';-inkscape-font-specification:'Adventure Subtitles Bold';letter-spacing:11.27999878px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path2004" />
+    </g>
   </g>
 </svg>
