@@ -14,6 +14,11 @@
   src: url(/reveal.js/css/fonts/Adventure.otf)
 }
 
+@font-face {
+  font-family: Adventure Subtitles;
+  src: url(/reveal.js/css/fonts/AdventureSubtitles.otf)
+}
+
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Verdana', 'Helvetica', sans-serif;
 $mainColor: #282828;

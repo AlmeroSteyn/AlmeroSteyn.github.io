@@ -8,6 +8,10 @@
   font-family: Adventure;
   src: url(/reveal.js/css/fonts/Adventure.otf); }
 
+@font-face {
+  font-family: Adventure Subtitles;
+  src: url(/reveal.js/css/fonts/AdventureSubtitles.otf); }
+
 .reveal section a:hover {
   text-decoration: underline; }
 
