@@ -53,7 +53,8 @@ transition: none
     Name:
 </label>
 
-<input id="nameInput" type="text" />
+&lt;input id="nameInput"
+       type="text" />
 </code></pre>
 </div>
 <div class="flex-grid">
@@ -81,7 +82,7 @@ transition: none
 </div>
 <div class="flex-grid">
              <pre class="flex-col" ><code class="html" data-trim>
-            <div className="looks-like-button"
+            <div className="button-style"
                  onClick={onClickHandler}>
                  Press Me
             </div>
@@ -172,8 +173,8 @@ transition: none
 </div>
 <div>
     &lt;MainContent />
-    <div className="like-button"
-         onClick={onClickHandler}>
+    <div className="button-style"
+         onClick={handler}>
          Save selection
     </div>
 </div>
@@ -190,7 +191,7 @@ transition: none
 <main>
     &lt;MainContent />
     <button type="button"
-            onClick={onClickHandler}>
+            onClick={handler}>
          Save selection
     </button>
 </main>
@@ -238,7 +239,7 @@ transition: none
 <a href="https://reactjs.org/docs/accessibility.html#screen-readers" style="font-size: 0.8em;">reactjs.org/docs/accessibility.html#screen-readers</a>
 </section>
 <section class="no-background" data-background-image="/css/images/2018-04-11-inclusive-react/backgroundcolor2.jpg">
-<img class="nomax" src="/css/images/2018-04-11-inclusive-react/trailingtext.svg" style="background-color:transparent;" alt="Adventure style text saying Inclusive React a survival guide over a forest backdrop. Also has a QR code to url almerosteyn.com/slides"/>
-<a href="http://almerosteyn.com/slides/" style="color:white;">almerosteyn.com/slides/</a>
+<img class="nomax" src="/css/images/2018-04-11-inclusive-react/trailingtext.svg" style="background-color:transparent;" alt="Adventure style text saying Inclusive React a survival guide over a forest backdrop. Also has a QR code to url almerosteyn.com/2018/04/inclusive-react"/>
+<a href="http://almerosteyn.com/2018/04/inclusive-react" style="color:white;">almerosteyn.com/2018/04/inclusive-react</a>
 <p style="color: white; font-size: 0.3em;">Images CC0 - Pixabay</p>
 </section>
