@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="adventure.css" />
+</head>
+<body class="reveal">
+<div class="container text-center">
+ <h1 style="font-size: 120px;">Ransom Note</h1>
+    <h2 style="font-size: 60px;">Dear Anthea...</h2>
+
+    <p>We currently hold hostage a group of furry hamsters from a remote forest in Patagonia.</p>
+
+    <img src="hamster.jpg" alt="Hamster lying down" />
+
+    <p>They are being very well treated at the moment...</p>
+
+    <p>We are sure that you would like this to remain the case and there is a way that you can ensure their speedy and safe return to their homes built from leaves and mud in the forest.</p>
+
+    <p>Before the end of Friday 27 September 2017 you are to place a call to Almero Steyn and inform him of a spa treatment you would like to enjoy in the near future. He will then ensure that it is booked and that you arrive there on time and get picked up after again.</p>
+
+    <img src="spa.jpg" alt="Image of an asian spa" />
+
+    <p>Failure to do so will mean no spa treatment for you and an uncertain future for the hamsters.</p>
+
+    <p>To assist you with your choice here is a countdown to the deadline. We hope you make the right choice.</p>
+
+    <p>The hamsters ... ahem ... your choice expires in:</p>
+ <span style="color:red; font-size: 80px;" id="demo"></span>
+
+    <p>Happy Birthday by the way!!!</p>
+
+    <img src="happy.jpg" alt="Meerkat band playing Happy Birthday" />
+</div>
+
+ <script>
+   // Set the date we're counting down to
+   var countDownDate = new Date("Apr 27, 2018 23:59:59").getTime();
+
+   // Update the count down every 1 second
+   var x = setInterval(function() {
+
+     // Get todays date and time
+     var now = new Date().getTime();
+
+     // Find the distance between now an the count down date
+     var distance = countDownDate - now;
+
+     // Time calculations for days, hours, minutes and seconds
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+     // Display the result in the element with id="demo"
+     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+       + minutes + "m " + seconds + "s ";
+
+     // If the count down is finished, write some text
+     if (distance < 0) {
+       clearInterval(x);
+       document.getElementById("demo").innerHTML = "EXPIRED";
+     }
+   }, 1000);
+ </script>
+</body>
+
+</html>
