@@ -61,7 +61,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #ff22cf;
+  color: #ff7518;
   font-family: "Adventure", "Verdana", "Helvetica", sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -226,14 +226,13 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #282828;
-  text-decoration: none;
+  color: #fbfff0;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: black;
+  color: #ff7518;
   text-shadow: none;
   border: none; }
 
@@ -264,6 +263,10 @@ body {
   border-color: #282828;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
+
+.reveal .last-image {
+  margin-bottom: 50px;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -382,3 +385,8 @@ body {
 
 .hljs-string {
   color: black; }
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="adventure.css" />
+</head>
+<body class="reveal">
+<main class="text-center">
+ <h1 style="font-size: 120px;">Een Nieuwe Avontuur</h1>
+    <h2 style="font-size: 60px;">Beste QDelfters...</h2>
+
+    <p>Zoals jullie misschien al gehoord hebben, ga ik binnenkort weg bij QDelft om een nieuwe uitdaging aan te durven.</p>
+
+    <img src="adventure.gif" alt="Een hobbit rende weg vanuit Hobitton een schreeuwe 'Ik ga op een nieuwe avontuur!'." />
+
+    <p>Ik ga werk doen voor <a href="https://tenon.io/">Tenon.io</a>, een bedrijf die zich toespitsen op webtoegankelijkheid.</p>
+
+    <img src="a11y.gif" alt="Een toegankelijke bord met voorstellingen van een lopende man en een man in een rolstoel." style="max-width: 20%;"/>
+
+    <p>Bij QDelft heb ik samen met super mensen aan vele leuke projecten gewerkt. En daarvoor wil ik jullie allemaal bedanken!</p>
+
+    <img src="lovingit.gif" alt="Moss van The IT Crowd zegt: 'I am loving it'." />
+
+    <p>Mijn laatste dag bij QDelft is vrijdag 13 juli. Jaaaaa... vrijdag de 13de! Dun dun dun....</p>
+
+    <img src="friday.gif" alt="Scene van Friday the 13th film met 3D tekst die Friday the 13th schrijft." />
+
+    <p>Wanneer is dat precies? Hier is mijn "Final QDelft Countdown": </p>
+
+ <span style="color:red; font-size: 80px;" id="demo"></span>
+
+    <p>Jullie zijn allemaal super collega's!!!</p>
+
+    <img src="teamwork.gif" alt="Hondjes die tesamen vanuit een bak eten door daarom heen te lopen en elkaar niet in de weg te zitten met de tekst 'Teamwork works'." />
+
+    <p>En dan kan ik natuurlijk niet weggaan zonder om minstens nog één keer een honeybadger te laten zien!</p>
+
+    <img class="last-image" src="honeybadger.gif" alt="Dansende honeybadger." />
+</main>
+
+ <script>
+   // Set the date we're counting down to
+   var countDownDate = new Date("Jul 13, 2018 23:59:59").getTime();
+
+   // Update the count down every 1 second
+   var x = setInterval(function() {
+
+     // Get todays date and time
+     var now = new Date().getTime();
+
+     // Find the distance between now an the count down date
+     var distance = countDownDate - now;
+
+     // Time calculations for days, hours, minutes and seconds
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+     // Display the result in the element with id="demo"
+     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+       + minutes + "m " + seconds + "s ";
+
+     // If the count down is finished, write some text
+     if (distance < 0) {
+       clearInterval(x);
+       document.getElementById("demo").innerHTML = "TOTSIENS!";
+     }
+   }, 1000);
+ </script>
+</body>
+
+</html>
