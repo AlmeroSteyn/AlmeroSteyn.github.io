@@ -1,10 +1,10 @@
 # Site settings
 title: Binary Horizons Blog
-email: almero.steyn@qdelft.nl
+email: binaryhorizonsdev@gmail.com
 description: >
   A blog from a diehard frontend and a11y fan.
 baseurl: ""
-url: "http://almerosteyn.github.io"
+url: "https://almerosteyn.com"
 fixedNav: 'true' # true or false
 # theme: minima # green, blue, orange, purple, grey
 twitterUsername: kryptos_rsa
