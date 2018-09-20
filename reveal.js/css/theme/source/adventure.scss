@@ -19,6 +19,16 @@
   src: url(/reveal.js/css/fonts/AdventureSubtitles.otf)
 }
 
+@font-face {
+  font-family: Scary Halloween Font;
+  src: url(/reveal.js/css/fonts/ScaryHalloweenFont.ttf)  format('truetype')
+}
+
+@font-face {
+  font-family: Smythe;
+  src: url(/reveal.js/css/fonts/Smythe-Regular.ttf)  format('truetype')
+}
+
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Verdana', 'Helvetica', sans-serif;
 $mainColor: #282828;
@@ -30,6 +40,12 @@ $backgroundColor: white;
 $linkColor: #282828;
 $linkColorHover: darken($linkColor, 20%);
 $selectionBackgroundColor: #26351C;
+
+.reveal .smythe {
+  font-family: Smythe;
+  color:white;
+  font-size: 5rem !important;
+}
 
 .reveal section a {
   //line-height: 1.3em;

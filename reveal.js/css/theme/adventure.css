@@ -12,6 +12,19 @@
   font-family: Adventure Subtitles;
   src: url(/reveal.js/css/fonts/AdventureSubtitles.otf); }
 
+@font-face {
+  font-family: Scary Halloween Font;
+  src: url(/reveal.js/css/fonts/ScaryHalloweenFont.ttf) format("truetype"); }
+
+@font-face {
+  font-family: Smythe;
+  src: url(/reveal.js/css/fonts/Smythe-Regular.ttf) format("truetype"); }
+
+.reveal .smythe {
+  font-family: Smythe;
+  color: white;
+  font-size: 5rem !important; }
+
 .reveal section a:hover {
   text-decoration: underline; }
 
