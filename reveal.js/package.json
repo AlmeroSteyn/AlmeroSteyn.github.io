@@ -10,7 +10,7 @@
     "start": "grunt serve",
     "build": "grunt",
     "build-sass": "node-sass --include-path css/theme/source css/theme/source/qdelft.scss css/theme/qdelft.css && node-sass --include-path css/theme/source css/theme/source/present.scss css/theme/present.css && node-sass --include-path css/theme/source css/theme/source/id24.scss css/theme/id24.css && node-sass --include-path css/theme/source css/theme/source/ramst.scss css/theme/ramst.css",
-    "build-sass2": "node-sass --include-path css/theme/source css/theme/source/adventure.scss css/theme/adventure.css"
+    "build-sass2": "node-sass --include-path css/theme/source css/theme/source/adventure.scss css/theme/adventure.css && node-sass --include-path css/theme/source css/theme/source/goth.scss css/theme/goth.css"
   },
   "author": {
     "name": "Hakim El Hattab",

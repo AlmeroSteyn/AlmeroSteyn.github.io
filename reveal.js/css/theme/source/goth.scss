@@ -10,26 +10,38 @@
 // ---------------------------------------------
 
 @font-face {
-  font-family: Adventure;
-  src: url(/reveal.js/css/fonts/Adventure.otf)
+  font-family: Scary Halloween Font;
+  src: url(/reveal.js/css/fonts/ScaryHalloweenFont.ttf)  format('truetype')
 }
 
 @font-face {
-  font-family: Adventure Subtitles;
-  src: url(/reveal.js/css/fonts/AdventureSubtitles.otf)
+  font-family: Smythe;
+  src: url(/reveal.js/css/fonts/Smythe-Regular.ttf)  format('truetype')
 }
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Verdana', 'Helvetica', sans-serif;
 $mainColor: #282828;
-$headingFont: 'Adventure','Verdana', 'Helvetica', sans-serif;
+$headingFont: 'Smythe','Verdana', 'Helvetica', sans-serif;
 $headingColor: #282828;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: white;
+$backgroundColor: black;
 $linkColor: #282828;
 $linkColorHover: darken($linkColor, 20%);
 $selectionBackgroundColor: #26351C;
+
+.reveal .smythe {
+  font-family: Smythe;
+  color:white;
+  font-size: 5rem !important;
+}
+
+.reveal .smythe-dark {
+  font-family: Smythe;
+  color:black;
+  font-size: 5rem !important;
+}
 
 .reveal section a {
   //line-height: 1.3em;
@@ -90,15 +102,17 @@ $selectionBackgroundColor: #26351C;
 }
 
 .reveal h1 {
-  font-size: 1.5em;
+  font-size: 1.0em;
   letter-spacing: 7px;
   font-weight: bold;
-  text-transform: capitalize;
 }
 
 .reveal h2 {
-  font-size: 1.0em;
-  text-transform: capitalize;
+  font-size: 0.7em;
+}
+
+.reveal section table {
+  font-size: 2.5rem;
 }
 
 .reveal section img {
