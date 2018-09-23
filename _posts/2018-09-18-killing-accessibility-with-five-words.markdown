@@ -62,7 +62,7 @@ transition: none
 <p>"Only on a site of The Great Static HTML is accessibility to be found"</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>"Thou framework is not accessible! Thine quest is doomed to fail!"</p>
+<p>"Thy framework is not accessible! Thine quest is doomed to fail!"</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>Our hero is crushed. This cannot be!</p>
@@ -87,6 +87,28 @@ transition: none
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>... FIN ...</p>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>Tecnology inclusion.</h1>
+</section>
+<section class="no-background" data-background="white">
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/stoibq.png" style="background-color:transparent; max-height:36rem;" alt="Image of Tweet by Max Stoiber showing only 43% of more than 14000 respondents answered a simple CSS question correctly."/>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<p>"You cannot call yourself a web developer if you don't know CSS!" - <b>The CSS crowd</b></p>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<p>"Oh really? I don't even want to learn your archaic knowledge anyway, we work with real technologies! - <b>The JS crowd</b>"</p>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<p>"How can you say that my knowledge does not matter?"- <b>The CSS crowd</b></p>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<p>"How can you say that my knowledge does not matter?" - <b>The JS crowd</b></p>
+</section>
+<section class="no-background" data-background="white">
+<h1>And then...</h1>
+<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/battle.jpg" style="background-color:transparent; max-height:36rem;" alt="Image of Tweet by Max Stoiber showing only 43% of more than 14000 respondents answered a simple CSS question correctly."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>Reality check!</h1>
@@ -133,14 +155,32 @@ transition: none
 <section class="no-background" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/npmdownloads.png">
 <div style="opacity:0;">
 <h1>Downloads per month</h1>
-<p>There has been a steady increas in downloads for the front-end frameworks over the past two years.</p>
+<p>There has been a steady increase in downloads for the front-end frameworks over the past two years.</p>
 </div>
 </section>
 <section data-background="white" class="no-background smythe-dark">
-<h1>React</h1>
+<h1>Who uses React?</h1>
+<p>Facebook, NPM, AirBNB, IMDb, Instagram, Netflix, Paypal, Pinterest, Reddit, Twitter Mobile, Udemy, Vevo, Walmart, Wix, Workpress Gutenberg, Yahoo and many, many more!</p>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Who uses Vue</h1>
+<p>Facebook, Netflix, Adobe, Alibaba, EuroNews, Grammarly, GitLab and growing fast!</p>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Who uses Angular</h1>
+<p>GMail, Google Ads, Google Cloud, PayPal, Google Pay, FitBit, LEGO, ABC News, SanDisk, American Red Cross, UPS, The Guardian and lots more!</p>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>This will only increase...</h1>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>How can we make a difference?</h1>
 <ul>
-<li>React</li>
-<li>Vue</li>
-<li>Angular</li>
+<li>Be inclusive of technologies</li>
+<li>Help framework and documentation writers</li>
+<li>Provide clear example online</li>
+<li>Build tools form frameworks</li>
 </ul>
 </section>
+
+
