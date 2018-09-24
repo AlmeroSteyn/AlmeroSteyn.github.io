@@ -9,6 +9,12 @@ transition: none
 <section class="no-background" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/screen.jpg">
 <img class="nomax" src="/css/images/2018-09-18-killing-accessibility-with-five-words/killing.svg" style="background-color:transparent; -webkit-transform: scale(1.2);transform: scale(1.2);" alt="Halloween type text saying Killing Accessibility With Five Words on a grayscale movie theatre background."/>
 </section>
+<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png" >
+<p style="font-size: 3.5rem;">A tragedy by:</p>
+<p>Almero Steyn</p>
+<p style="font-size: 3.5rem;">Who goes by the Tweet name of:</p>
+<p>@kryptos_rsa</p>
+</section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>Gather close, all ye with courage.</p>
 <p>For today's tale is fraught with misadventure.</p>
@@ -23,7 +29,7 @@ transition: none
 <p>...who, on a warm sunny day, finds the wonderful world of coding...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitysun.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure with a big toothy smile."/>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitysun.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure smiing in the sun."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>...where droves of good tooling abound.</p>
@@ -32,13 +38,16 @@ transition: none
 <p>From this treasure our hero selects &lt;Fancy Tags>...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitychoice.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure with a big toothy smile."/>
+<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitychoice.svg" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Gender neutral figure making a choice for the Fancy Tags framework."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>One so powerful, that an abundance of websites appear in no time at all!</p>
+<p>...a tool so powerful, that an abundance of websites appear in no time at all!</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>Until the day they hear a rumour that many cannot use their sites!</p>
+</section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityshock.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing shock."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>Our hero is not hindered, they shall learn about this accessibility magic!</p>
@@ -46,8 +55,14 @@ transition: none
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>So they scour the digitial lands from east to west...</p>
 </section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/compass.png" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Open golden handheld compass."/>
+</section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>...but there is little to find...</p>
+</section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitydisappointed.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing disappointment."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>...particularly, information relating to &lt;FancyTags />.</p>
@@ -55,11 +70,17 @@ transition: none
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>So they turn to the great Oracle of Tweet...</p>
 </section>
+<section data-background="black" class="no-background" >
+<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitytweet.svg" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Gender neutral figure thinking about tweeting."/>
+</section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>...and ask. "How can I make accessible magic with &lt;FancyTags />?"</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>Then the Oracle speaks, with great condemnation...</p>
+</section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/oracle.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Outline of female with megaphone."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>"Thou should already knowest this!"</p>
@@ -73,23 +94,35 @@ transition: none
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>Our hero is crushed. This cannot be!</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>"All my training is not for nothing!"</p>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitycrying.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure crying."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>"All my peers do not speak false!"</p>
+<p>"All my training cannot be for nothing!"</p>
+</section>
+<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<p>"All my peers cannot be speaking false!"</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>"No! It is this accessibility magic that is false!"</p>
 </section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityangry.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing anger."/>
+</section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>"I shall not be thwarted, I shall continue on the path I know!"</p>
+</section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityhappy.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing happiness."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>And so our hero returns to the beginning of this misadventure...</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>with accessibility doomed to die.</p>
+</section>
+<section data-background="black" class="no-background" >
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/rip.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Grave stone with RIP written on it."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>... FIN ...</p>
@@ -114,14 +147,14 @@ transition: none
 </section>
 <section class="no-background" data-background="white">
 <h1>And then...</h1>
-<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/battle.jpg" style="background-color:transparent; max-height:36rem;" alt="Image of Tweet by Max Stoiber showing only 43% of more than 14000 respondents answered a simple CSS question correctly."/>
+<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/battle.jpg" style="background-color:transparent; max-height:36rem;" alt="Medieval battle re-enactment showing four participants in mock battle."/>
 </section>
 <section class="no-background" data-background="white">
 <h1>Knowledge transfer pie chart.</h1>
 <img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/knowledge.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Joke pie chart showing that now knowledge was transfered."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>No one likes to hear the that their knowledge is not relevant.</p>
+<p>No one likes to hear the that their knowledge is irrelevant.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <p>When you are sidelined you no longer participate in the solution.</p>
