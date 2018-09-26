@@ -50,7 +50,7 @@ transition: none
 <img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityshock.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing shock."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>Our hero is not hindered, they shall learn about this accessibility magic!</p>
+<p>Our hero is not hindered, they will learn about this accessibility magic!</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>So they scour the digitial lands from east to west...</p>
@@ -128,16 +128,43 @@ transition: none
 <p>... FIN ...</p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<h1>Tecnology inclusion.</h1>
+<h1>My story...</h1>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>I come from a science background.</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/chem.jpg" style="background-color:transparent; box-shadow:none; width:30rem;" alt="Various colourful and interconnected chemistry flasks."/>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>"Found" a11y after more than 15 years.</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/surprise.jpg" style="background-color:transparent; box-shadow:none; width:30rem;" alt="Three baboons, two of which is expressing surprise."/>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>Development meant hard work to stay relevant.</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/sisyph.jpg" style="background-color:transparent; box-shadow:none; width:20rem;" alt="Painting of sisyphys."/>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>Fought hard for accessibility.</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/kangaroo.jpg" style="background-color:transparent; box-shadow:none; width:20rem;" alt="Two kangaroos boxing."/>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>Unexpected "attacks" from a11y folk.</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/catattack.jpg" style="background-color:transparent; box-shadow:none; " alt="Dog unexpectedly attacked by a cat."/>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>Inclusivity also means...</h1>
+<p>...technology inclusion.</p>
+</section>
+<section data-background="white" class="no-background smythe-dark" >
+<h1>A real-world example...</h1>
 </section>
 <section class="no-background" data-background="white">
 <img src="/css/images/2018-09-18-killing-accessibility-with-five-words/stoibq.png" style="background-color:transparent; max-height:36rem;" alt="Image of Tweet by Max Stoiber showing only 43% of more than 14000 respondents answered a simple CSS question correctly."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>"You cannot call yourself a web developer if you don't know CSS!" - <b>The CSS crowd</b></p>
+<p>"You cannot call yourself a web developer if you only do CSS-in-JS and don't know the CSS cascade!" - <b>The CSS crowd</b></p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>"Oh really? I don't even want to learn your archaic knowledge anyway, we work with real technologies!" - <b>The JS crowd</b></p>
+<p>"Oh really? I don't even want to learn your archaic knowledge anyway, we work with the real web technologies!" - <b>The JS crowd</b></p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <p>"How can you say that my knowledge does not matter?"- <b>The CSS crowd</b></p>
@@ -154,18 +181,19 @@ transition: none
 <img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/knowledge.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Joke pie chart showing that now knowledge was transfered."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>No one likes to hear the that their knowledge is irrelevant.</p>
+<p>No one likes to hear that their knowledge is irrelevant.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>When you are sidelined you no longer participate in the solution.</p>
+<p>When in defence mode people stop working towards a mutually beneficial solution.</p>
 </section>
 <section class="no-background" data-background="white">
 <h1>But how do we fix this without stepping on too many toes?</h1>
 <img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/sarahd.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Image of tweet by Sarah Drassner suggesting a better approach is needed for education, offering to help make the resources required."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>Developers need real solutions for real problems. Don't criticise, help create those solutions if it is in your ability to do so.</p>
+<p>Developers need real solutions for real problems. Constructive criticism means to also help create those solutions if it is in your ability to do so.</p>
 </section>
+
 <section data-background="white" class="no-background smythe-dark" >
 <h1>Reality check!</h1>
 </section>
@@ -230,10 +258,13 @@ transition: none
 <h1>This will only increase...</h1>
 </section>
 <section data-background="white" class="no-background smythe-dark">
+<h1>Imagine if we could inspire developers to build accessible sites with these!</h1>
+</section>
+<section data-background="white" class="no-background smythe-dark">
 <h1>What are the current challenges?</h1>
 <ul>
 <li>Inaccessible docs examples</li>
-<li>Lack of articles on accessibility in Frameworks</li>
+<li>Lack of how-to a11y guides for frameworks</li>
 <li>Lack of accessible UI components</li>
 <li>Accessibility gets hard in real world apps</li>
 <li>Careless comments from those who reach many</li>
@@ -241,22 +272,22 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Inaccessible docs examples</h1>
-<p>If you can say that an example is inaccessible you have already spent enough time to know why. Create a PR instead of tweet.</p>
+<p>If you can say that a doc example is inaccessible you have already know why. Don't just tweet, create a PR too.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Lack of articles on accessibility in Frameworks</h1>
-<p>Instead of writing a post on how something is broken, say how it can be fixed.</p>
+<p>When you write a post about something being broken, also show how it can be fixed.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Lack of accessible UI components</h1>
 <p>Build accessible examples or help library builders.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
-<h1>Accessibility gets hard in real world apps</h1>
+<h1>Accessibility easily gets hard in JS apps</h1>
 <p>Are we too quickly saying that "Accessibility is easy"?</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Careless comments from those who reach many</h1>
-<p>We can only control our own words.</p>
+<p>Alas, we can only control our own words.</p>
 </section>
 
