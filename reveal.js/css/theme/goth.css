@@ -381,7 +381,9 @@ body {
   border-color: transparent; }
 
 .reveal code {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: xx-large;
+  line-height: initial; }
 
 .hljs-string {
   color: black; }

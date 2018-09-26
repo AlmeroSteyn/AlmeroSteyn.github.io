@@ -290,4 +290,61 @@ transition: none
 <h1>Careless comments from those who reach many</h1>
 <p>Alas, we can only control our own words.</p>
 </section>
-
+<section data-background="white" class="no-background smythe-dark">
+<h1>Put my money where my mouth is</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/money-eating.jpg" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Image of money on a plate and in a wineglass ready to be consumed."/>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Tenon UI</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/tenon.png" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Logo of Tenon.io"/>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Frameworks work because they:</h1>
+<ul>
+<li>Boost productivity</li>
+<li>Allow easy re-use</li>
+<li>Make testing easy</li>
+<li>They are fun to work with</li>
+</ul>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>This means they should:</h1>
+<ul>
+<li>Boost accessibilty levels</li>
+<li>Allow re-use of accessible elements</li>
+<li>Make accessibility testing easier</li>
+<li>Make accessibility fun to work with</li>
+</ul>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Accessible building blocks must increase the chance of achieving accessibility</h1>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Example: A WAI-ARIA tabbed interface</h1>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>What makes an accessible tabbed interface?</h1>
+<ul>
+<li>It tells people that it is one</li>
+<li>It announces that a tab is selected</li>
+<li>Only the selected tab exists in the focus order</li>
+<li>It allows for arrow key navigation</li>
+<li>It should be easy to reach the content</li>
+</ul>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>The abstraction</h1>
+<pre><code class="html" data-trim data-noescape>
+&lt;Tabs>
+    &lt;Tabs.Tab title="Panel 1">
+        &lt;p>You are on panel 1.</p>
+    &lt;/Tabs.Tab>
+    &lt;Tabs.Tab title="Panel 2">
+        &lt;p>You are one panel 2.</p>
+    &lt;/Tabs.Tab>
+    &lt;Tabs.Tab title="Panel 3">
+        &lt;p>You are on panel 3.</p>
+    &lt;/Tabs.Tab>
+&lt;/Tabs>
+</code></pre>
+</section>
