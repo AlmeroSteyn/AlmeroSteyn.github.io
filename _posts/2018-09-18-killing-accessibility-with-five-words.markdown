@@ -32,7 +32,7 @@ transition: none
 <img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitysun.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure smiing in the sun."/>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>...where droves of good tooling abound.</p>
+<p>...a world where droves of good tooling abound.</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>From this treasure our hero selects &lt;Fancy Tags>...</p>
@@ -398,8 +398,10 @@ alert('Soooo deprecated!');
 <a href="https://blog.tenon.io/">https://blog.tenon.io/</a>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png" >
-<p style="font-size: 3.5rem;">Brought to you by:</p>
-<p>Almero Steyn</p>
-<p style="font-size: 3.5rem;">Who goes by the Tweet name of:</p>
-<p>@kryptos_rsa</p>
+<p style="font-size: 2.0rem;">Brought to you by:</p>
+<p style="font-size: 3.5rem;">Almero Steyn</p>
+<p style="font-size: 2.0rem;">Who goes by the Tweet name of:</p>
+<p style="font-size: 3.5rem;">@kryptos_rsa</p>
+<p style="font-size: 2.0rem;">And shares this visual magic on:</p>
+<p style="font-size: 3.5rem;">almerosteyn.com/slides</p>
 </section>
