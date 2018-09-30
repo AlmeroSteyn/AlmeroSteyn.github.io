@@ -1,7 +1,7 @@
 ---
 layout: slide
 title: Killing accessibility with five words
-description: Or how community inclusivity can improve accessibility
+description: Or how community inclusiveness can improve accessibility
 theme: goth
 highlight: tomorrow
 transition: none
@@ -101,7 +101,7 @@ transition: none
 <p>"All my training cannot be for nothing!"</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>"All my peers cannot be speaking false!"</p>
+<p>"All my peers do not speak false!"</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
 <p>"No! It is this accessibility magic that is false!"</p>
@@ -184,14 +184,14 @@ transition: none
 <p>No one likes to hear that their knowledge is irrelevant.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>When in defence mode people stop working towards a mutually beneficial solution.</p>
+<p>When in defend-mode people stop working towards a mutually beneficial solution.</p>
 </section>
 <section class="no-background" data-background="white">
 <h1>But how do we fix this without stepping on too many toes?</h1>
 <img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/sarahd.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Image of tweet by Sarah Drassner suggesting a better approach is needed for education, offering to help make the resources required."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
-<p>Developers need real solutions for real problems. Constructive criticism means to also help create those solutions if it is in your ability to do so.</p>
+<p>Developers need real solutions for real problems. Constructive criticism means to also assisting to create those solutions if it is in our ability to do so.</p>
 </section>
 
 <section data-background="white" class="no-background smythe-dark" >
@@ -272,11 +272,11 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Inaccessible docs examples</h1>
-<p>If you can say that a doc example is inaccessible you have already know why. Don't just tweet, create a PR too.</p>
+<p>If we can say that a doc example is inaccessible we already know why. Don't just tweet, let's create a PR too.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Lack of articles on accessibility in Frameworks</h1>
-<p>When you write a post about something being broken, also show how it can be fixed.</p>
+<p>When we write a post about something being broken, let's show how it can be fixed.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Lack of accessible UI components</h1>
@@ -291,13 +291,10 @@ transition: none
 <p>Alas, we can only control our own words.</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
-<h1>Put my money where my mouth is</h1>
+<h1>Putting my money where my mouth is</h1>
 <img src="/css/images/2018-09-18-killing-accessibility-with-five-words/money-eating.jpg" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Image of money on a plate and in a wineglass ready to be consumed."/>
 </section>
-<section data-background="white" class="no-background smythe-dark">
-<h1>Tenon UI</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/tenon.png" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Logo of Tenon.io"/>
-</section>
+
 <section data-background="white" class="no-background smythe-dark">
 <h1>Frameworks work because they:</h1>
 <ul>
@@ -310,14 +307,18 @@ transition: none
 <section data-background="white" class="no-background smythe-dark">
 <h1>This means they should:</h1>
 <ul>
-<li>Boost accessibilty levels</li>
-<li>Allow re-use of accessible elements</li>
+<li>Boost accessibilty productivity</li>
+<li>Allow easy re-use of accessible elements</li>
 <li>Make accessibility testing easier</li>
 <li>Make accessibility fun to work with</li>
 </ul>
 </section>
 <section data-background="white" class="no-background smythe-dark">
-<h1>Accessible building blocks must increase the chance of achieving accessibility</h1>
+<h1>Using accessible building blocks simply has to increase the chance of achieving accessibility</h1>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Tenon UI</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/tenon.png" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Logo of Tenon.io"/>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Example: A WAI-ARIA tabbed interface</h1>
@@ -325,15 +326,58 @@ transition: none
 <section data-background="white" class="no-background smythe-dark">
 <h1>What makes an accessible tabbed interface?</h1>
 <ul>
-<li>It tells people that it is one</li>
-<li>It announces that a tab is selected</li>
+<li>It tells people that it is a tabbed interface</li>
+<li>It lets people know that a tab is selected</li>
 <li>Only the selected tab exists in the focus order</li>
-<li>It allows for arrow key navigation</li>
+<li>It accepts arrow key navigation</li>
 <li>It should be easy to reach the content</li>
 </ul>
 </section>
 <section data-background="white" class="no-background smythe-dark">
-<h1>The abstraction</h1>
+<h1>Ok lets go to the official stuff</h1>
+<h2><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel">https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel</a></h2>
+<pre><code class="javascript" data-trim data-noescape>
+1    (function () {
+2    var tablist = 
+3        document.querySelectorAll('[role="tablist"]')[0];
+4    var tabs;
+5    var panels;
+6    var delay = determineDelay();
+     //Lots more code
+251     if (target === focused) {
+252         activateTab(target, false);
+253     };
+254  };
+255 }());
+</code></pre>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>How about re-usability?</h1>
+<h2><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel">https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel</a></h2>
+<pre><code class="javascript" data-trim data-noescape>
+document.querySelectorAll('[role="tablist"]')[0];
+alert('NOPE!');
+//...
+function generateArrays () {
+  tabs = document.querySelectorAll('[role="tab"]');
+  panels = document.querySelectorAll('[role="tabpanel"]');
+};
+alert('NEGATORY!');
+//...
+var key = event.keyCode;
+alert('Soooo deprecated!');
+</code></pre>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Lets use some React magic!</h1>
+<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/magic.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Magician's hat and wand."/>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>The working goods.</h1>
+<iframe title="Demonstration of Tenon-ui Tabs control" data-src="http://proud-vegetable.surge.sh/" style="width:28rem; height:13rem;"></iframe>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>The resulting abstraction</h1>
 <pre><code class="html" data-trim data-noescape>
 &lt;Tabs>
     &lt;Tabs.Tab title="Panel 1">
@@ -347,4 +391,15 @@ transition: none
     &lt;/Tabs.Tab>
 &lt;/Tabs>
 </code></pre>
+</section>
+<section data-background="white" class="no-background smythe-dark">
+<h1>Want to know what makes it tick?</h1>
+<h2>Keep your eye on the Tenon.io blog!</h2>
+<a href="https://blog.tenon.io/">https://blog.tenon.io/</a>
+</section>
+<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png" >
+<p style="font-size: 3.5rem;">Brought to you by:</p>
+<p>Almero Steyn</p>
+<p style="font-size: 3.5rem;">Who goes by the Tweet name of:</p>
+<p>@kryptos_rsa</p>
 </section>
