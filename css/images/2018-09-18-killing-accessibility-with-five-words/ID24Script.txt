@@ -262,7 +262,7 @@ Let's look at a real word example.
 
 Slide 47
 
-Very recently something happened on Twitter. As I tell the story, or maybe even by seeing the conversation on this slide, ir may already be familiar to you. Well, it started with a tweet by Max Stoiber, a well known figure in the React comunity and creator of the Styled Components library. He posted a simple CSS question. Given a CSS class called red that applies the color red and a CSS class called blue that applies the color blue, what would the resultant colour be for two HTML divs. The HTML divs each had the classes applied in the opposite order. The correct answer, of course, was blue, due to the CSS cascade. However, out of almost 15 000 responses to the poll, only 43% answered correctly.
+Very recently something happened on Twitter. As I tell the story, or maybe even by seeing the conversation on this slide, ir may already be familiar to you. Well, it started with a tweet by Max Stoiber, a well known figure in the React comunity and creator of the Styled Components library. He posted a simple CSS question. Given a CSS class called red that applies the color red and a CSS class called blue that applies the color blue defined further down, what would the resultant colour be for two HTML divs. The HTML divs each had the classes applied in the opposite order. The correct answer, of course, was blue, due to the CSS cascade. However, out of almost 15 000 responses to the poll, only 43% answered correctly.
 
 Responding to such a result has to be done with great care. However, this being social media, it wasn't. The opinion of the CSS-in-JS proponents was that this was a perfect advertisement of why CSS-in-JS was necessary as it abstracts the complexity away for the developer while the pure CSS proponents felt that this was a perfect example of how CSS-in-JS fails as it keeps people from learning CSS and people should understand it.
 
@@ -411,7 +411,7 @@ There is also a serious lack of accessible UI components out there for the frame
 
 Accessibility can get very hard in real world applications. And I mean rediculously hard sometimes. Recently I spend a number of days with some colleagues just trying to find a semi durable solution to accessibly link an error message to a group of radio buttons or checkboxes. This is a common use case but the accessible examples accept static HTML with preselected radio buttons, for example.
 
-Careless comments from those who reach many. A while ago a spoke at a React conference about accessibility. Amongst other things I mentioned the need for semantic HTML. Almost the next day one of the major speakers tweeted that no one could convince him not to build everything with div's and spans. If only those with the reach will talk about inclusive design.
+Careless comments from those who reach many. A while ago a spoke at a React conference about accessibility. Amongst other things I mentioned the need for semantic HTML. Almost the next day one of the major speakers tweeted that no one could convince them not to build everything with div's and spans. If only those with the reach will talk about inclusive design.
 
 How can we address these?
 
