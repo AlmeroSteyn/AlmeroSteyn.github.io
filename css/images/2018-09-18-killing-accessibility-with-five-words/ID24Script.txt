@@ -212,7 +212,7 @@ But I digress, the point is that I did not start out my professional life as a c
 
 Slide 41
 
-How did take my first steps into development? Well, when my boss heard that I had some computer science training I was instantly handed the laboratory database and I had to wing my way in writing applications to analyse some sample data. I loved it so much that eventually I made a career switch into programming. For years I coded on various platforms and the silent truth is that it took me almost 15 years to even hear that the concept of accessibility even existed!
+How did I take my first steps into development? Well, when my boss heard that I had some computer science training I was instantly handed the laboratory database and I had to wing my way in writing applications to analyse some sample data. I loved it so much that eventually I made a career switch into programming. For years I coded on various platforms and the silent truth is that it took me almost 15 years to even hear that the concept of accessibility even existed!
 
 Yes, here I sense some of you looking as shocked as the monkeys on the screen but it is it true.
 
