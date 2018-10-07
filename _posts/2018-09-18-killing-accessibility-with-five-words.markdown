@@ -53,7 +53,7 @@ transition: none
 <p>Our hero is not hindered,<br/>they will learn about<br/>this accessibility magic!</p>
 </section>
 <section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
-<p>So they scour the digitial lands<br/>from east to west...</p>
+<p>So they scour the digital lands<br/>from east to west...</p>
 </section>
 <section data-background="black" class="no-background" >
 <img src="/css/images/2018-09-18-killing-accessibility-with-five-words/compass.png" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Open golden handheld compass."/>
