@@ -220,9 +220,9 @@ I simply did not know it existed and because of that I did not know to look for 
 
 Slide 42
 
-As a developer one has to work so hard to remain relevant. The whole topic if "JavaScript fatigue" has become such a buzzword in the community that there are entire conference talks dedicated to it. So it is only reasonable to expect that a developer will invest the time they have on topics they find important for their jobs. I know I did.
+As a developer one has to work so hard to remain relevant. The whole topic of "JavaScript fatigue" has become such a buzzword in the community that there are entire conference talks dedicated to it. So it is only reasonable to expect that a developer will invest the time they have on topics they find important for their jobs. I know I did.
 
-Only when the accessibility penny did drop for me, so to speak, it became important enough for me to get the the priority it deserves.
+Only when the accessibility penny did drop for me, so to speak, it became important enough for me to give it the the priority it deserved.
 
 Slide 43
 I first got introduced to the concept of accessibility on a project where it was taken very seriously. Education was provided to team members about the importance of it and real world examples were given. I cannot stress enough how important this was. This was what made it real for me. I realised that it was actually related to a real world problem. Not simply a set of rules to follow or a stick to avoid. No, this affected real people. It made all the difference.
@@ -239,7 +239,7 @@ But one of my biggest surprises in this new world of accessibility was, that as 
 
 Were they meant as attacks? I cannot truly imagine that they were intended as such. Just like I have oftened strong armed people about accessibility when I meant it well.
 
-But it did make me doubt. I mean was I part of the accessibility crowd now? Were we are all working together? That was hard to imagine sometimes when entire conversations ended up me in defending the technology I am using. I was hungry for accessibility information but in these conversations I found little of that.
+But it did make me doubt. I mean was I part of the accessibility crowd now? Were we are all working together? That was hard to imagine sometimes when entire conversations ended up with me defending the technology I was using. I was hungry for accessibility information but in these conversations I found little of that.
 
 And even to this day when I hear something like "That website is inaccessible because of React", or any other framework, I still get reminded of those days and how it made me feel.
 
@@ -291,7 +291,7 @@ Slide 51
 Slide 52
 Can you guess what happened then?
 
-On the screen there is a picture of four men. This is clearly a re-enactment, but they are all dressed in medieval battle gear and they are really getting into the spirit of ancient warfare. Guy one is storming towards guy two who has is pike ready, meanwhile guy three is hacking at guy one's leg with his axe while guy four is bringing up the rear leaving an obviously dead guy five behind on the battle field.
+On the screen there is a picture of four men. This is clearly a re-enactment, but they are all dressed in medieval battle gear and they are really getting into the spirit of ancient warfare. Guy one is storming towards guy two who has his pike ready, meanwhile guy three is hacking at guy one's leg with his axe while guy four is bringing up the rear leaving an obviously dead guy five behind on the battle field.
 
 And in the background, tons of spectators.
 
