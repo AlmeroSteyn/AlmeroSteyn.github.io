@@ -204,9 +204,9 @@ To put this into persepctive I'd like to share a bit about my history with you.
 
 Slide 40
 
-What feels like a long time ago now, I was a professonal scientist. In fact, I was a laboratory chemist, a career far removed from front end developer. Although I also have an education in computer science, I ended up in a lab.
+What feels like a long time ago now, I was a professional scientist. In fact, I was a laboratory chemist, a career far removed from front end development. Although I also have an education in computer science, I ended up in a lab.
 
-So before moving on, I first need to bust the long held myth. On the picture we see a lot of highly coloured flasks connected with intricate glassware, kind of what we always see in movies when depicting a chemistry lab. But in real life, this rarely happens. Some of my most complex reactions happened in a flask no bigger than my thumb in which a vile yellow liquid stirred. Not at all so glamorous!
+A laboratory that looked not at all like the picture you see on screen now! In movies we always see the scientists walking around such highly coloured flasks, boiling profusely just before shouting "Igor! The plans!" But in real life, this rarely happens. Some of my most complex reactions happened in a flask no bigger than my thumb in which a vile yellow liquid stirred. And if there was any planfetching required, I had to do it myself.
 
 But I digress, the point is that I did not start out my professional life as a coder. We can never assume anything about someone's background and knowledge. Some of us of started coding early, some of us later. Some of us found accessibility early and some later and many are still to find it.
 
@@ -214,18 +214,18 @@ Slide 41
 
 How did take my first steps into development? Well, when my boss heard that I had some computer science training I was instantly handed the laboratory database and I had to wing my way in writing applications to analyse some sample data. I loved it so much that eventually I made a career switch into programming. For years I coded on various platforms and the silent truth is that it took me almost 15 years to even hear that the concept of accessibility even existed!
 
-Yes I sense some of you looking as shocked as the monkeys on the screen but it is it true.
+Yes, here I sense some of you looking as shocked as the monkeys on the screen but it is it true.
 
-I simply did not know it existed and because of that I did not know to look for it either. Sometimes I think about the tweets we write along the lines of "Do accessibility, it is your job!" and I have to wonder how it would have made me feel before I found it. Should I feel guilty for all those years when I made inaccessible software? How is someone expected to know about a subject when it is so often hidden in the dark corners of documentation?
+I simply did not know it existed and because of that I did not know to look for it either. Sometimes I think about the tweets we write along the lines of "Do accessibility, it is your job!" and I have to wonder how it would have made me feel back then. Also, should I now feel guilty for all those years when I made inaccessible software? How is someone expected to know about a subject when it is so often hidden in the dark corners of documentation? 
 
 Slide 42
 
-As a developer one has to work so hard to remain relevant. The whole topic if "JavaScript fatigue" has not been elevated so hight that there are conference talks dedicated to it for nothing. So it is only reasonable to expect that a developer will invest time they have on topics they find important for their jobs. I know I did.
+As a developer one has to work so hard to remain relevant. The whole topic if "JavaScript fatigue" has become such a buzzword in the community that there are entire conference talks dedicated to it. So it is only reasonable to expect that a developer will invest the time they have on topics they find important for their jobs. I know I did.
 
-But, when the accessibility penny did drop for me, so to speak, it became very important and then did I invest the time it deserved.
+Only when the accessibility penny did drop for me, so to speak, it became important enough for me to get the the priority it deserves.
 
 Slide 43
-I first got introduced to the concept of accessibility on a project where it was taken very seriously. Education was provided to team members about the importance of it and reald world examples were given. That was what made it real for me. This was actually related to a real world problem. Not simply a set of rules to follow or a stick to avoid. No, this affected real people. This made all the difference.
+I first got introduced to the concept of accessibility on a project where it was taken very seriously. Education was provided to team members about the importance of it and real world examples were given. I cannot stress enough how important this was. This was what made it real for me. I realised that it was actually related to a real world problem. Not simply a set of rules to follow or a stick to avoid. No, this affected real people. It made all the difference.
 
 When that became apparent I DID invest serious time and soon I was fighting hard for accessibility to happen. And when my time on the project ended I kept on fighting on the next, and the next. Even though this can be very hard in teams where inclusive design is not yet appreciated.
 
@@ -235,11 +235,11 @@ This is something I am still working on.
 
 Slide 44
 
-But one of my biggest surprises in this new world of accessibility was, that as a coder who loved working in modern front end technology, I sometimes had to deal with what seeming "attacks" from accessibility folk.
+But one of my biggest surprises in this new world of accessibility was, that as a coder who loved working in modern front end technology, I sometimes had to deal with what seemed like "attacks" from accessibility folk.
 
-Were they meant as attacks? They were surely not intended as such. Just like I have oftened strong armed people about accessibility when I meant it well.
+Were they meant as attacks? I cannot truly imagine that they were intended as such. Just like I have oftened strong armed people about accessibility when I meant it well.
 
-But it did make me doubt. I mean was I part of the accessibility crowd now? Were we are all working together? That was hard to imagine sometimes when entire conversations ended up in defending the technology I am using. I was hungry for accessibility information but in these conversations I found little of that.
+But it did make me doubt. I mean was I part of the accessibility crowd now? Were we are all working together? That was hard to imagine sometimes when entire conversations ended up me in defending the technology I am using. I was hungry for accessibility information but in these conversations I found little of that.
 
 And even to this day when I hear something like "That website is inaccessible because of React", or any other framework, I still get reminded of those days and how it made me feel.
 
@@ -251,7 +251,7 @@ technology inclusion.
 
 When I found accessibility I was already quite proficient in front end framework technologies. Unfortunately I often got the idea that in order for a site to be accessible it had to be built in static HTML and maybe only a sprinkle of vanilla JavaScript.
 
-Now, it is 100% correct that such built with these two are often easier to make accessible and will work on a wider range of devices out there, for example on devices that do not support JavaScript, but perhaps we could be more inclusive of other technologies and recognise the niche that they fill.
+Now, it is 100% correct that sites built with these two are often easier to make accessible and will often work on a wider range of devices out there, for example on devices that do not support JavaScript, but perhaps we could be more inclusive of other technologies and recognise the niche that they fill.
 
 Excluding others' technology choices off the batt can have negative consequenses.
 
@@ -261,26 +261,23 @@ Let's look at a real word example.
 
 Slide 47
 
-Very recently something happened on Twitter. As I tell the story, or maybe even when you look at the slide, it may already be familiar to you. Well, it all started with a tweet by Max Stoiber, a well known figure in the React comunity and creator of the Styled Components library. He posted a simple CSS question. Given a CSS class called red that applies the color red and a CSS class called blue that applies the color blue defined thereafter in a style sheet, what would the resultant colour be for two HTML divs. These HTML divs each had the classes applied in the opposite order. The correct answer, of course, was blue, due to the CSS cascade as the order of declaration in the HTML has no impact. However, out of almost 15 000 responses to the poll, only 43% answered correctly.
+Very recently something happened on Twitter. As I tell the story, or maybe even when you look at the slide, it may already be familiar to you. Well, it all started with a tweet by Max Stoiber, a well known figure in the React community and creator of the Styled Components library. He posted a simple CSS question. Given a CSS class called red that applies the color red and a CSS class called blue that applies the color blue defined thereafter in a style sheet, what would the resultant colour be for two HTML divs. These HTML divs each had the classes applied in the opposite order. The correct answer, of course, was blue, due to the CSS cascade as the order of declaration in the HTML has no impact. However, out of almost 15 000 responses to the poll, only 43% answered correctly.
 
 There are many gracefull and educational ways to respond to a post like that. However, this being social media, that did not happen. Instead the opinion of the CSS-in-JS proponents was that this was a perfect advertisement of why CSS-in-JS was necessary because CSS is complex and therefore fails, while the pure CSS proponents felt that this was a perfect example of how CSS-in-JS fails as it keeps people from learning CSS and people should understand it.
 
-Both groups had an element of truth, I believe. Front end developers should know the cascade if you are going to use CSS, even in styled components, as it will make you much more effective and not totally out at sea when you venture out of that stack. While boosting your productivity with a tool is always something to consider. Just because you understand something does not mean you need to code it over and over and over again.
+Both groups views had an element of truth, I believe. Front end developers should know the cascade if you are going to use CSS, even in styled components, as it will make you much more effective and not totally out at sea when you venture out of that stack. While boosting your productivity with a tool is always something to consider. Just because you understand something does not mean you need to code it over and over and over again.
 
 But the conversation went something along these lines:
 
 Slide 48
 
-Now here is a diclaimer: These are totally paraphrased quotes and even though it seems here that the CSS crowd started the fight it wasn't really the case.  These kind of social media arguments usually erupts like a carpet bomb but I have to start somewhere so....
+Firstly, a disclaimer: These are totally paraphrased quotes and even though it seems here that the CSS crowd started the fight it wasn't really the case.  These kind of social media arguments usually erupts like a carpet bomb but I have to start somewhere so....
 
 "You cannot call yourself a web developer if you only do CSS-in-JS and don't know the CSS cascade!" said The CSS crowd
 
 Slide 49
-Shots fired shot fired!
 
 "Oh really? I don't even want to learn your archaic knowledge anyway, we work with the real web technologies!" said The JS crowd
-
-A hit a very palpable hit!
 
 Slide 50
 The reaction to this was the following.
@@ -294,11 +291,13 @@ Slide 51
 Slide 52
 Can you guess what happened then?
 
-On the screen there is a picture of four men. This is clearly a re-enactment, but they are all dressed in medieval battle gear and they are really getting into the spirit of ancient warfare. Guy one is storming guy two who has is pike ready, meanwhile guy three is hacking at guy one's leg with his axe while guy four is bringing up the rear leaving an obviously dead guy five behind on the battle field.
+On the screen there is a picture of four men. This is clearly a re-enactment, but they are all dressed in medieval battle gear and they are really getting into the spirit of ancient warfare. Guy one is storming towards guy two who has is pike ready, meanwhile guy three is hacking at guy one's leg with his axe while guy four is bringing up the rear leaving an obviously dead guy five behind on the battle field.
+
+And in the background, tons of spectators.
 
 That is what Twitter looked like...for days.
 
-Tempers flared up, people accused others of insulting their knowledge then went on to insult the knowledge of others and in general each group belittled the other group's knowlegde and technology. Can you guess what the netto effect of this was?
+Tempers flared up, people accused others of insulting their knowledge then went on to insult the knowledge of others and in general each group belittled the other group's technology. Can you guess what the netto effect of this was?
 
 Slide 53:
 
@@ -314,7 +313,7 @@ And when people are in defence mode all cooperation stops. All effort then gets 
 
 Slide 56:
 
-So what can we do? How can we defuse these kind of situations without stepping on too many toes while still adressing the issue at hand?
+So what can we do? How can we defuse these kinds of situations without stepping on too many toes while still adressing the issue at hand?
 
 Here is an example of a response on that very same CSS thread on Twitter. It comes from Sarah Drassner, another prominent figure of the front end community. She said:
 
@@ -338,9 +337,9 @@ So it is completely fine to highlight a problem or challenge as long as one also
 
 And there is a real need for accessibility solutions in front end technologies other than static HTML and vanilla JS.
 
-Believe me, I have often spent a lot of time looking for them. I love accessibility but have sometimes been met with such frustration in relatively simple accessibility matters due to a lack of information. This leaves the developer in a situation where they have to develop the actual solution in record time or having to face the music if "Why did you not make this accessible?"
+Believe me, I have often spent a lot of time looking for them. I love accessibility but have sometimes been met with such frustration on relatively simple accessibility matters due to a lack of information. This often leaves the developer between a rock and a hard place. Delivering the code on time while having to research the accessibility solution from scratch.
 
-It should be easier to find this information. Could it be that our a11y education is a little busted too?
+Instead ,it should be easier to find this information. Could it be that our a11y education is a little busted too?
 
 Slide 58
 
@@ -350,9 +349,9 @@ Let's have a reality check about these front end frameworks.
 
 Slide 59
 
-These tools are gainign popularity in a big way. And I mean in a big way.
+These tools are gaining in popularity in a big way. And I mean in a big way.
 
-Not only that, but even spin-off tooling are being created. For example, GatsbyJS, a static site generated built on React and the react model.
+Not only that, but even spin-off tooling are being created. For example, GatsbyJS, a static site generator built on React and the react model.
 
 To put this into perspective we will look at three of the big ones, React, Vue and Angular.
 
@@ -360,7 +359,7 @@ Slide 60
 
 If we look at the npm downloads of the three over the first half of 2018 we see that React was downloaded over 55 million times, Angular core, the main package of Angular next, over 18 million tomes and both Angular 1 and Vue more than 8 million times each.
 
-Of course every download is not tied to a new app being created, but the vast number suggest how many developers are using these technologies. Developers who can either build their sites accessibly or inaccessibly.
+Of course every download is not tied to a new app being created, but the vast number suggests how many developers are using these technologies. Developers who can either build their sites accessibly or inaccessibly.
 
 The uncomfortable truth at the moment is that the second option is winning by far. In fact WebAIM saw a 60% rise in accessibility issues found in the Alexa Top 100 website's home pages in the space of five years.
 
@@ -404,13 +403,13 @@ Let's look at the current challenges framework developers are facing when it com
 
 Many of the examples in the documentation are inaccessible. New developers copy and paste these examples and therefore these examples spread like a virus in a vast number of code bases.
 
-There is a serious lack of information on how to build accessibly in these tools. It is not enought to only have basic static HTML and vanilla JavaScript examples as you bump into framework specific challenges when trying to apply these examples. Some will persevere, many won't.
+There is a serious lack of information on how to build accessibly in these tools. It is not enough to only have basic static HTML and vanilla JavaScript examples as you bump into framework specific challenges when trying to apply these examples. Some will persevere, many won't.
 
 There is also a serious lack of accessible UI components out there for the frameworks. Expecially newer frameworks. Developers will use something from NPM instead of building it themselves, and rightly so, but this once again spreads badly accessible UI components if these packages are inaccessible.
 
-Accessibility can get very hard in real world JavaScript applications. And I mean rediculously hard sometimes. Recently I spent a number of days with some colleagues just trying to find a semi durable solution to accessibly link an error message to a group of radio buttons or checkboxes. This is a common use case but the accessible examples accept static HTML with preselected radio buttons.
+Accessibility can get very hard in real world JavaScript applications. And I mean rediculously hard sometimes. Recently I spent a number of days with some colleagues just trying to find a semi durable solution to accessibly link an error message to a group of radio buttons or checkboxes. This is such a common use case but the accessible examples accepts static HTML with preselected radio buttons only.
 
-Then there are careless comments from those who reach many. A while ago a spoke at a React conference about accessibility. Amongst other things I mentioned the need for semantic HTML. Almost the next day one of the major speakers tweeted that no one could convince them not to build everything with div's and spans. If only those with this kind of reach will talk about inclusive design instead.
+Then there are careless comments from those who reach many. A while ago I spoke at a React conference about accessibility. Amongst other things I mentioned the need for semantic HTML. Almost the next day one of the major speakers tweeted that no one could convince them not to build everything with div's and spans. If only those with this kind of reach will talk about inclusive design instead.
 
 But how can we address these?
 
@@ -428,21 +427,21 @@ Lack of accessible UI components. Building a fully functional components library
 
 Slide 71
 
-When I was younger I did martial arts. One day I asked my sensei, why is this so hard. And his response was true to a sensei: "I it was easy everyone would already be doing it."
+When I was younger I did martial arts. One day I asked my sensei, why is this so hard. And his response was true to a sensei: "If it was easy everyone would already be doing it."
 
-Accessibility can get really hard in JS apps. Perhaps we are too quickly saying that accessibility is easy. We THINK it is easy because we re-use our patterns and forget how hard it was to learn and then we set developers up with a false hope. When they realise just how hard it can be they can end up rejecting our further advice and accessibility in totality.
+Accessibility can get really hard in JS apps. Perhaps we are too quickly saying that accessibility is easy. We THINK it is easy because we re-use our patterns and forget how hard it was to learn and then we set developers up with a false hope. When they realise just how hard it can be they can end up rejecting our further advice or accessibility completely.
 
-No let's rather be honest about this. Tell people that there are challenges and point towards ways to solve them with examples.
+No let's rather be honest about this. Tell people where the challenges are and point towards ways to solve them with examples.
 
 Slide 72
 
 Then the careless comments from those who reach many. This is the one that we probably can't change so soon. We could only do this by turning around the opinions of those individuals.
 
-But new leaders appear every day. And if they got there learning the benefits of accessibility they will bring this with them. So once again, reaching the developers on their terms only has benefits for current problems as well as for the future.
+But new leaders appear every day. And if they got there learning the benefits of accessibility they will bring this with them. So once again, reaching the developers on their terms has nothing but benefits for current problems as well as for the future.
 
 Slide 73
 
-So that is a lot of talk but talk is cheap. Let me try and put my money where my mouth is.
+So that was a lot of talk and talk can be cheap. Let me try and put my money where my mouth is.
 
 Am I trying to turn things around? Yes, by contributing to the React docs and these days by developing for Tenon.
 
@@ -456,7 +455,7 @@ For one they make me more productive and that is a good feeling.
 
 They also lead to cleaner codebases because I can avoid copy and pasting and just re-use already written code in a sane way.
 
-They make testing a LOT easier. Front end testing has come a long way in the last few years but has been a little bit like the wild west.  Being able to compartimentalize my code a lot better means that unit testing also get a lot easier. And the test tooling for these Frameworks are getting better every day. Easy testing means developers (including me) will actually do it and that leads to a more maintanable, less error prone code base.
+They make testing a LOT easier. Front end testing has come a long way in the last few years but has been a little bit like the wild west.  Being able to compartimentalize my code a lot better means that unit testing also get a lot easier. And the test tooling for these Frameworks are getting better every day. Easy testing means developers (including me) will actually do it and that leads to a more maintainable, less error prone code base.
 
 And finally they are just fun to work with. Thankfully we are as varied as developers as people are in general and each developer can find the mode they want to work best in. Having technologies that support that means I wake up every morning looking forward to building code.
 
@@ -472,9 +471,9 @@ And even as an accessibility fan I still dont want to constantly rewrite the sam
 
 Slide 76
 
-I also believe that it can increase the chance that an entire application will be accessible. Because if you start off by building an application with accessible building blocks it must surely increase the chance.
+I also believe that it can increase the chance that an entire application will be accessible. Because if you start off by building an application with accessible building blocks it must surely increase that chance.
 
-It will never guaruntee that the result is accessible, and will never be a replacement for accessibility knowledge but if you build an application with inaccessible building blocks it will definitely ensure that your application is inaccessible.
+It will never guaruntee that the result is accessible, and will never be a replacement for accessibility knowledge but if you build an application with inaccessible building blocks it will definitely ensure that your application turns out inaccessible.
 
 By encapsulating base accessibility concerns in these re-usable blocks you allow the developer to focus on the rest of the application.
 
@@ -484,13 +483,13 @@ So meet Tenon-UI. A new library of accessible react components I am heavily invo
 
 Slide 78
 
-Out of Tenon-UI I want to use our WAI-ARIA tabbed interface as en example of the points mentioned above. Tabbed interfaces controls are notouriously badly implemented on the web with about as many patterns showing up as examples of tabbed interfaces.
+Out of Tenon-UI I want to show our WAI-ARIA tabbed interface as en example of the points mentioned above. Tabbed interfaces controls are notouriously badly implemented on the web with about as many patterns showing up as there are examples of tabbed interfaces.
 
 Slide 79
 
-Let's first see what is required for such a control? Because this we can distill down and add to our component.
+Let's first see what is required for such a control? Because all this information we can distill down and add to our component.
 
-Well according to the ARIA design patterns specification it needs to tell people that it is tabbed interface by applying the correct roles such a tablist, tab and tabpanel on the correct elements. It needs to let people know that a tab is selected with aria-selected. Only the selected tab should be in the focus order of the browser so we need to implement rolling tabindex. It should also allow naviation using the arrow keys and finally it should be easy to reach the content of the tab panel.
+According to the ARIA design patterns specification it needs to tell people that it is a tabbed interface by applying the correct roles, such as tablist, tab and tabpanel, on the correct elements. It needs to let people know that a tab is selected with aria-selected. Only the selected tab should be in the focus order of the browser so we need to implement rolling tabindex. It should also allow naviation using the arrow keys and finally it should be easy to reach the content of the tab panel.
 
 Slide 80
 
@@ -498,7 +497,7 @@ So what would a developer find when going to the official documentation? Going t
 
 But please, my purpose is not to insult this document. It is amazing that folk would take the time to put this together and it is utterly valuable, I am simply trying to illustrate what a component developer will be faced with.
 
-Translating so much vanilla javascript takes a long time. With proficient React skills and decent accessibility knowledge and the help of expert colleagues it took me the best part of a week to get the Tabs right and properly accessible.
+Translating so much vanilla javascript into a re-usable component can take a long time. With proficient React skills and decent accessibility knowledge and the help of expert colleagues it took me the best part of a week to get the Tabs component functional and properly accessible.
 
 Slide 81
 
@@ -506,9 +505,9 @@ How about re-usability? Vanilla examples are usually built to inject functionali
 
 Well we see that part of the example assumes only one tabbed interface on the page. While other code will operate on all tabs and tab panels. So aside from translation the developer now has to also recode the example.
 
-And then, my humble apologies to the author of this part of the document. I really know that keeping docs actual is hard and sometimes impossible, but here it also shows the use of e.keyCode which is marked as deprecated in other docs of the W3C.
+And then, with humble apologies to the author of this part of the document. I really know that keeping docs actual is hard and sometimes impossible, but here it also shows the use of e.keyCode which is marked as deprecated in other docs of the W3C.
 
-I once again want to stress that my goal is not to insult this document. But simply to show what I myself had to deal with on many occasions and why we so badly need these examples for frameworks as well. These documents are perfect for developers who DO use static HTML and vanilla JavaScript.
+I once again want to stress that my goal is not to insult this document. But simply to show what I myself had to deal with on many occasions and why we so badly need these examples for frameworks as well. These documents are perfect for developers who DO use static HTML and vanilla JavaScript, though.
 
 Slide 82
 
@@ -516,13 +515,13 @@ Today we will not look into the details of the actual code as that is React spec
 
 Slide 83
 
-Well we get a working tabbed interface. And please note that what you see on screen here is actual working React code. If you dig into the presentation later you may see it running in an iframe. That is simply due to limitations in my blogging software, React code can easily and seamlessly be integrated into the HTML of you page at any points.
+Well we get a working tabbed interface. And please note that what you see on screen here is actual working React code. If you dig into the presentation later you may see it running in an iframe. That is simply due to limitations in my blogging software, React code can easily and seamlessly be integrated into the HTML of your page at any point.
 
 But that said, lets have a look at it goooooo!
 
 For the record the React version, including the view (as you code view in directly in JavaScript with JSX in react) comes to 257 lines of code.
 
-That's smaller than the total vanilla version, if I were to add the HTML template, because React makes some things easier for you.
+That's smaller than the total vanilla version if I were to add the HTML template, because React makes some things easier for you.
 
 But lines of code should not be the total measure of a solution so lets look at how you use it:
 
@@ -532,11 +531,11 @@ That! Yes folks that! That is the actual code that you write when you use the Re
 
 Plus it even ensures that every ID generated to properly label the tabpanels is unique, no matter how many tabbed interfaces you use on a screen.
 
-All the code to ensure that it acts as an accessible tabbed interface is managed in the component. Coded once, tested once and accessible in every case.
+All the logic to ensure that it acts as an accessible tabbed interface is managed in the component. Coded once, tested once and accessible in every case.
 
 This example should illustrate how much accessibility complexity can be encapsulated in a component and then easily re-used all over. I am now able to focus on the accessibility of the page itself, as I can trust that every instance of my tabbed interface will act as an accessible WAI-ARIA tabbed control.
 
-I hope that this illustrate what we can achieve. And how these frameworks should not be considered the enemy but rather as powerful tools we can use to power accessibility into the future.
+I hope that this illustrate what we can achieve. And why these frameworks should not be considered the enemy but rather as powerful tools we can use to power accessibility into the future.
 
 Slide 85
 
