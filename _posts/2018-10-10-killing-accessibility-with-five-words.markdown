@@ -1,131 +1,131 @@
 ---
 layout: slide
 title: Killing accessibility with five words
-description: Or how community inclusiveness can improve accessibility
+description: Or how technology inclusion can improve accessibility
 theme: goth
 highlight: tomorrow
 transition: none
 ---
-<section class="no-background" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/screen.jpg">
-<img class="nomax" src="/css/images/2018-09-18-killing-accessibility-with-five-words/killing.svg" style="background-color:transparent; -webkit-transform: scale(1.2);transform: scale(1.2);" alt="Halloween type text saying Killing Accessibility With Five Words on a grayscale movie theatre background."/>
+<section class="no-background" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/screen.jpg">
+<img class="nomax" src="/css/images/2018-10-10-killing-accessibility-with-five-words/killing.svg" style="background-color:transparent; -webkit-transform: scale(1.2);transform: scale(1.2);" alt="Halloween type text saying Killing Accessibility With Five Words on a grayscale movie theatre background."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png" >
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png" >
 <p style="font-size: 3.0rem;">A tragedy by:</p>
 <p>Almero Steyn</p>
 <p style="font-size: 3.0rem;">Who goes by the Tweet name of:</p>
 <p>@kryptos_rsa</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>Gather close, all ye with courage.</p>
 <p>For today's tale is fraught with misadventure.</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>Meet our heroic developer...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitybigsmile.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure with a big toothy smile."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entitybigsmile.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure with a big toothy smile."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>...who, on a warm sunny day,<br/>finds the wonderful world<br/>of coding...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitysun.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure smiing in the sun."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entitysun.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure smiing in the sun."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>...a world where droves<br/>of good tooling abound.</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>From this treasure our hero selects &lt;Fancy Tags>...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitychoice.svg" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Gender neutral figure making a choice for the Fancy Tags framework."/>
+<img class="no-max" src="/css/images/2018-10-10-killing-accessibility-with-five-words/entitychoice.svg" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Gender neutral figure making a choice for the Fancy Tags framework."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>...a tool so powerful,<br/>that an abundance of websites<br/>appear in no time at all!</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>Until the day they hear a rumour<br/>that many cannot use their sites!</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityshock.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing shock."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entityshock.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing shock."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>Our hero is not hindered,<br/>they will learn about<br/>this accessibility magic!</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>So they scour the digital lands<br/>from east to west...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/compass.png" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Open golden handheld compass."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/compass.png" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Open golden handheld compass."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>...but there is little to find...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitydisappointed.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing disappointment."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entitydisappointed.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing disappointment."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>...particularly,<br/>information relating to<br/>&lt;FancyTags />.</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>So they turn to the great Oracle of Tweet...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitytweet.svg" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Gender neutral figure thinking about tweeting."/>
+<img class="no-max" src="/css/images/2018-10-10-killing-accessibility-with-five-words/entitytweet.svg" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Gender neutral figure thinking about tweeting."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>...and ask.<br/>"How can I make accessible magic<br/>with &lt;FancyTags />?"</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>Then the Oracle speaks, with great condemnation...</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/oracle.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Outline of female with megaphone."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/oracle.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Outline of female with megaphone."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"Thou should already knowest this!"</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"Only on a site of<br/>The Great Static HTML<br/>is accessibility to be found"</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"Thy framework is not accessible! Thine quest is doomed to fail!"</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>Our hero is crushed.<br/>This cannot be!</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entitycrying.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure crying."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entitycrying.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure crying."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"All my training cannot be for nothing!"</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"All my peers do not speak false!"</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"No!"</p>
 <p>"It is this accessibility magic<br/>that is false!"</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityangry.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing anger."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entityangry.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing anger."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>"I shall not be thwarted, I shall continue on the path I know!"</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/entityhappy.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing happiness."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/entityhappy.svg" style="background-color:transparent; width:23rem; box-shadow:none;" alt="Gender neutral figure expressing happiness."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>And so our hero returns to the beginning of this misadventure...</p>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>with accessibility doomed to die.</p>
 </section>
 <section data-background="black" class="no-background" >
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/rip.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Grave stone with RIP written on it."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/rip.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Grave stone with RIP written on it."/>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png">
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png">
 <p>... FIN ...</p>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
@@ -133,23 +133,23 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>I come from a science background</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/chem.jpg" style="background-color:transparent; box-shadow:none; width:30rem;" alt="Various colourful and interconnected chemistry flasks."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/chem.jpg" style="background-color:transparent; box-shadow:none; width:30rem;" alt="Various colourful and interconnected chemistry flasks."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>"Found" a11y after more than 15 years</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/surprise.jpg" style="background-color:transparent; box-shadow:none; width:30rem;" alt="Three baboons, two of which is expressing surprise."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/surprise.jpg" style="background-color:transparent; box-shadow:none; width:30rem;" alt="Three baboons, two of which is expressing surprise."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>Development meant hard work to stay relevant</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/sisyph.jpg" style="background-color:transparent; box-shadow:none; width:20rem;" alt="Painting of sisyphys."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/sisyph.jpg" style="background-color:transparent; box-shadow:none; width:20rem;" alt="Painting of sisyphys."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>Fought hard for accessibility</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/kangaroo.jpg" style="background-color:transparent; box-shadow:none; width:20rem;" alt="Two kangaroos boxing."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/kangaroo.jpg" style="background-color:transparent; box-shadow:none; width:20rem;" alt="Two kangaroos boxing."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>Unexpected "attacks" from a11y folk</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/catattack.jpg" style="background-color:transparent; box-shadow:none; " alt="Dog unexpectedly attacked by a cat."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/catattack.jpg" style="background-color:transparent; box-shadow:none; " alt="Dog unexpectedly attacked by a cat."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <h1>Inclusivity also means...</h1>
@@ -159,7 +159,7 @@ transition: none
 <h1>A real-world example...</h1>
 </section>
 <section class="no-background" data-background="white">
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/stoibq.png" style="background-color:transparent; max-height:36rem;" alt="Image of Tweet by Max Stoiber showing only 43% of more than 14000 respondents answered a simple CSS question correctly."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/stoibq.png" style="background-color:transparent; max-height:36rem;" alt="Image of Tweet by Max Stoiber showing only 43% of more than 14000 respondents answered a simple CSS question correctly."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <p>"You cannot call yourself a web developer if you only do CSS-in-JS and don't know the CSS cascade!" - <b>The CSS crowd</b></p>
@@ -175,11 +175,11 @@ transition: none
 </section>
 <section class="no-background" data-background="white">
 <h1>And then...</h1>
-<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/battle.jpg" style="background-color:transparent; max-height:36rem;" alt="Medieval battle re-enactment showing four participants in mock battle."/>
+<img class="no-max" src="/css/images/2018-10-10-killing-accessibility-with-five-words/battle.jpg" style="background-color:transparent; max-height:36rem;" alt="Medieval battle re-enactment showing four participants in mock battle."/>
 </section>
 <section class="no-background" data-background="white">
 <h1>Knowledge transfer pie chart.</h1>
-<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/knowledge.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Joke pie chart showing that now knowledge was transfered."/>
+<img class="no-max" src="/css/images/2018-10-10-killing-accessibility-with-five-words/knowledge.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Joke pie chart showing that now knowledge was transfered."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <p>No one likes to hear that their knowledge is irrelevant.</p>
@@ -189,7 +189,7 @@ transition: none
 </section>
 <section class="no-background" data-background="white">
 <h1>But how do we fix this without stepping on too many toes?</h1>
-<img class="no-max" src="/css/images/2018-09-18-killing-accessibility-with-five-words/sarahd.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Image of tweet by Sarah Drassner suggesting a better approach is needed for education, offering to help make the resources required."/>
+<img class="no-max" src="/css/images/2018-10-10-killing-accessibility-with-five-words/sarahd.png" style="background-color:transparent; max-height:36rem; box-shadow: none;" alt="Image of tweet by Sarah Drassner suggesting a better approach is needed for education, offering to help make the resources required."/>
 </section>
 <section data-background="white" class="no-background smythe-dark" >
 <p>Developers need real solutions for real problems.</p>
@@ -237,7 +237,7 @@ transition: none
 </tbody>
 </table> 
 </section>
-<section class="no-background" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/npmdownloads.png">
+<section class="no-background" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/npmdownloads.png">
 <div style="opacity:0;">
 <h1>Downloads per month</h1>
 <p>There has been a steady increase in downloads for the front-end frameworks over the past two years.</p>
@@ -293,7 +293,7 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Putting my money where my mouth is</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/money-eating.jpg" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Image of money on a plate and in a wineglass ready to be consumed."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/money-eating.jpg" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Image of money on a plate and in a wineglass ready to be consumed."/>
 </section>
 
 <section data-background="white" class="no-background smythe-dark">
@@ -319,7 +319,7 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Tenon UI</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/tenon.png" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Logo of Tenon.io"/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/tenon.png" style="background-color:transparent; box-shadow:none; width:25rem;" alt="Logo of Tenon.io"/>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Example: A WAI-ARIA tabbed interface</h1>
@@ -371,7 +371,7 @@ alert('Soooo deprecated!');
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Lets use some React magic!</h1>
-<img src="/css/images/2018-09-18-killing-accessibility-with-five-words/magic.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Magician's hat and wand."/>
+<img src="/css/images/2018-10-10-killing-accessibility-with-five-words/magic.png" style="background-color:transparent; width:33rem; box-shadow:none;" alt="Magician's hat and wand."/>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Tabs in action</h1>
@@ -398,7 +398,7 @@ alert('Soooo deprecated!');
 <h2>Keep your eye on the Tenon.io blog!</h2>
 <a href="https://blog.tenon.io/">https://blog.tenon.io/</a>
 </section>
-<section class="no-background smythe" data-background-image="/css/images/2018-09-18-killing-accessibility-with-five-words/frame.png" >
+<section class="no-background smythe" data-background-image="/css/images/2018-10-10-killing-accessibility-with-five-words/frame.png" >
 <p style="font-size: 1.5rem;">Brought to you by:</p>
 <p style="font-size: 3.0rem;">Almero Steyn</p>
 <p style="font-size: 1.5rem;">Who goes by the Tweet name of:</p>
