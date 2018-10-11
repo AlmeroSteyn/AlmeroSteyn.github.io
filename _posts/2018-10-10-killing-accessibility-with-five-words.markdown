@@ -375,7 +375,7 @@ alert('Soooo deprecated!');
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Tabs in action</h1>
-<iframe title="Demonstration of Tenon-ui Tabs control" data-src="http://proud-vegetable.surge.sh/" style="width:28rem; height:13rem;"></iframe>
+<iframe title="Demonstration of Tenon-ui Tabs control" data-src="https://proud-vegetable.surge.sh/" style="width:28rem; height:13rem;"></iframe>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>The resulting abstraction</h1>
