@@ -375,7 +375,13 @@ But downloads is one thing, how about the sites being built with these technolog
 
 Slide 62
 
-Who uses React then? Facebook, NPM, AirBNB, IMDb, Instagram, Netflix, Paypal, Pinterest, Reddit, Twitter Mobile, Udemy, Vevo, Walmart, Wix, Workpress Gutenberg, Yahoo and many, many more!
+Who uses React then? 
+
+Of course Facebook created and opensourced React so they use it in their own products.
+
+It is also used by: NPM, AirBNB, IMDb, Instagram, Netflix, Paypal, Pinterest, Reddit, Twitter Mobile, Udemy, Vevo, Walmart, Wix, Yahoo and many, many more!
+
+And then, considering what surfaced in the last few days on Twitter, it is important to mention that the Wordpress Gutenberg editor is also built in React. I think we all already know just how much of an effect this has on global web accessibility currently. And this is also a case where the failure of the product to be accessible was attributed to React as tool. Was it the fault of React? I personally think it that it was instead due to disinterest in accessibility from the management, design and development team. Go find the facts surrounding this issue and decide for yourself.
 
 Slide 63
 
@@ -383,7 +389,11 @@ Who uses Vue?  Facebook, Netflix, Adobe, Alibaba, EuroNews, Grammarly, GitLab an
 
 Slide 64
 
-Who uses Angular? GMail, Google Ads, Google Cloud, PayPal, Google Pay, FitBit, LEGO, ABC News, SanDisk, American Red Cross, UPS, The Guardian and lots more!
+Who uses Angular? 
+
+Angular was created by Google and they use it extensively in their own products, like GMail, Google Ads, Google Cloud and Google Pay
+
+It is also used by PayPal, FitBit, LEGO, ABC News, SanDisk, American Red Cross, UPS, The Guardian and lots more!
 
 Slide 65:
 

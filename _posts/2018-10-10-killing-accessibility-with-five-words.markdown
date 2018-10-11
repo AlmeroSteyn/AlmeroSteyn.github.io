@@ -245,7 +245,7 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Who uses React?</h1>
-<p>Facebook, NPM, AirBNB, IMDb, Instagram, Netflix, Paypal, Pinterest, Reddit, Twitter Mobile, Udemy, Vevo, Walmart, Wix, Workpress Gutenberg, Yahoo and many, many more!</p>
+<p>Facebook, NPM, AirBNB, IMDb, Instagram, Netflix, Paypal, Pinterest, Reddit, Twitter Mobile, Udemy, Vevo, Walmart, Wix, Yahoo, Wordpress Gutenberg and many, many more!</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Who uses Vue</h1>
@@ -253,7 +253,7 @@ transition: none
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>Who uses Angular</h1>
-<p>GMail, Google Ads, Google Cloud, PayPal, Google Pay, FitBit, LEGO, ABC News, SanDisk, American Red Cross, UPS, The Guardian and lots more!</p>
+<p>GMail, Google Ads, Google Cloud, Google Pay, PayPal, FitBit, LEGO, ABC News, SanDisk, American Red Cross, UPS, The Guardian and lots more!</p>
 </section>
 <section data-background="white" class="no-background smythe-dark">
 <h1>This will only increase...</h1>
