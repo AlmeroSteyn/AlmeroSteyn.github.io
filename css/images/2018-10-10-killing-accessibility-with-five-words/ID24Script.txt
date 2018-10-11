@@ -195,11 +195,13 @@ The end...
 
 Slide 39
 
-If this had really been a movie it may have had a tagline alone the lines of "Inspired by true events, the names have been changed out of respect for those involved."
+So there you have it folks! In this whodunnit we just watched the killer of accessibility were the five words: "Your framework is not accessible.".
+
+And if this had really been a movie it may have had a tagline alone the lines of "Inspired by true events, the names have been changed out of respect for those involved."
 
 Usually I like to talk about technical issues but this time I would like to talk about a barrier to accessibility that I encountered myself. But luckily my interest in accessibility was so strong that my story ended far happier than the tragedy we just witnessed.
 
-To put this into persepctive I'd like to share a bit about my history with you.
+To put this into perspective I'd like to share a bit about my history with you.
 
 
 Slide 40
