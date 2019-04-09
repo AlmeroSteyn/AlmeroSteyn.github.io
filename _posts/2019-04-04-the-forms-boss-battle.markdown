@@ -59,7 +59,7 @@ transition: none
 </section>
 <section class="main">
 <h1>An inaccessible login form</h1>
-<iframe src="https://player.vimeo.com/video/328650688" width="840" height="497" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/329304374" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </section>
 <section class="main">
 <h1>How can something so simple be so broken?</h1>
@@ -87,7 +87,8 @@ transition: none
 </code></pre>
 </section>
 <section class="main">
-<h1>Buttons should:</h1>
+<h1 style="margin-bottom:2em;">Buttons should:</h1>
+<div style="display:flex; justify-content: center;">
 <ul style="text-align:left; list-style: disc">
 <li>Tell everyone that it's a button</li>
 <li>Be focusable</li>
@@ -95,6 +96,58 @@ transition: none
 <li>Active on Enter</li>
 <li>Active on Spacebar</li>
 </ul>
+</div>
 
-<p>But &lt;div> does not!</p>
+<p style="margin-top:2em;">But &lt;div> doesn't do that!</p>
+</section>
+<section class="main">
+<h1>How about labels?</h1>
+<pre><code class="html" data-trim>
+    <span>Username</span>
+    <input />
+</code></pre>
+<p style="font-size:0.8em;">The &lt;span> does NOT label the &lt;input>!</p>
+<p style="font-size:0.6em;">In other words this &lt;input> has no accessible name</p>
+</section>
+<section class="main">
+<h1>What is the accessible name?</h1>
+<blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;">The accessible name is the name of a user interface element. Each platform accessibility API provides the accessible name property. The value of the accessible name may be derived from a visible (e.g., the visible text on a button) or invisible (e.g., the text alternative that describes an icon) property of the user interface element. - <span style="font-weight:bold;">W3C</span></blockquote>
+</section>
+<section class="main">
+<h1>How do i give an input an accessible name?</h1>
+<pre><code class="html" data-trim>
+<label>
+    Username
+    <input />
+</label>
+
+<label for="username">Username</label>
+<input id="username" />
+
+<input aria-label="Username" />
+
+<span id="username">Username</span>
+<input aria-labelledby="username" />   
+</code></pre>
+<p style="font-size:0.8em;">Implicit labelling, explicit labelling, aria-label and aria-labelledby</p>
+</section>
+<section class="main">
+<h1>And the winner is...</h1>
+<p style="font-size:0.8em;">Explicit labelling</p>
+<pre><code class="html" data-trim>
+<label for="username">Username</label>
+<input id="username" />
+</code></pre>
+</section>
+<section class="main">
+<h1>An accessible login form</h1>
+<iframe src="https://player.vimeo.com/video/329332491" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</section>
+<section class="main">
+<h1>Don't combine names!</h1>
+<p style="font-size:0.8em;">A control should have only one name.</p>
+<pre><code class="html" data-trim>
+<label for="username">Username</label>
+<input id="username" />
+</code></pre>
 </section>
