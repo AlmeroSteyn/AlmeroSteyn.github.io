@@ -144,10 +144,59 @@ transition: none
 <iframe src="https://player.vimeo.com/video/329332491" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </section>
 <section class="main">
+<h1>The WebAIM Million</h1>
+<p style="font-size:0.6em;">Accessibility evaluation of the top 1 000 000 home pages</p>
+<blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;"><span style="font-weight:bold;">59% of the 3.4 million form inputs identified were unlabeled</span> (either via &lt;label>, aria-label, or aria-labelledby). - <a style="font-weight:bold;" href="https://webaim.org/projects/million/">https://webaim.org/projects/million</a></blockquote>
+</section>
+<section class="main">
 <h1>Don't combine names!</h1>
 <p style="font-size:0.8em;">A control should have only one name.</p>
 <pre><code class="html" data-trim>
 <label for="username">Username</label>
-<input id="username" />
+<input id="username" aria-label="Enter a name for your user"/>
+</code></pre>
+<p style="font-size:0.5em; font-weight:bold;">aria-label overrides the visual label</p>
+</section>
+<section class="main">
+<h1>Think about voice control</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; box-shadow: none; margin-bottom:0;"/>
+<p style="font-size:0.6em;">The accessible name will be used to match commands</p>
+</section>
+<section class="main">
+<h1>What about info texts?</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/infotexts.jpg" alt="A login form showing info text for the username field asking for only characters from the alphabet" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+</section>
+<section class="main">
+<h1>Meet aria-describedby</h1>
+<pre><code class="html" data-trim>
+<label for="username">Username</label>
+<input id="username" aria-describedby="info"/>
+
+<span id="info">Please use only characters from the alphabet</span>
 </code></pre>
 </section>
+<section class="main">
+<h1>Info text in action</h1>
+<iframe src="https://player.vimeo.com/video/329794023" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</section>
+<section class="main">
+<h1>Client side validation</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/validation.jpg" alt="A login form showing required field validation messages" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+</section>
+<section class="main">
+<h1>Aria-describedby to the rescue again!</h1>
+<pre><code class="html" data-trim>
+<label for="username">Username</label>
+<input id="username" aria-describedby="info error"/>
+
+<span id="info">Please use only characters from the alphabet</span>
+<span id="error">A user name is required</span>
+</code></pre>
+</section>
+<section class="main">
+<h1>Validation in action</h1>
+<iframe src="https://player.vimeo.com/video/329801703" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</section>
+
+
+
