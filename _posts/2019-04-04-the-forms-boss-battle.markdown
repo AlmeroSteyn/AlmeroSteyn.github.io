@@ -13,16 +13,13 @@ transition: none
 <hr>
 <div style="display: flex; flex-direction:column;">
 <div style="text-align: center">
-<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 12%; box-shadow: none; "/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none; "/>
 </div>
 <ul>
     <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
     <li><a href="http://almerosteyn.com/" style="font-size: 1em; font-weight: 100;">almerosteyn.com</a></li>
     <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
 </ul>
-<div style="text-align: center">
-<img src="/css/images/2019-04-04-the-forms-boss-battle/tenon-square-white.png" alt="Logo of Tenon.io" style="max-width: 40%; min-width: 100px; max-height:180px; box-shadow: none; "/>
-</div>
 </div>
 </section>
 <section class="main">
@@ -100,6 +97,11 @@ transition: none
 
 <p style="margin-top:2em;">But &lt;div> doesn't do that!</p>
 </section>
+<section class="main">
+<h1>Form accessibility secrets are not shared enough</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+</section>
+
 <section class="main">
 <h1>How about labels?</h1>
 <pre><code class="html" data-trim>
@@ -195,7 +197,32 @@ transition: none
 </section>
 <section class="main">
 <h1>Validation in action</h1>
-<iframe src="https://player.vimeo.com/video/329801703" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/329808301" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</section>
+<section class="main">
+<h1>What is ARIA?</h1>
+<p>Accessible Rich Internet Applications is a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.</p>
+</section>
+<section class="main">
+<h1>So I can still have my div button?</h1>
+<p>...well yes you can.</p>
+<pre><code class="html" data-trim>
+    <div class="button"
+         role="button"
+         tabIndex="0"
+         onClick={onclickhandler}
+         onKeyDown={onkeydownhandler} >
+        Login
+    </div>
+</code></pre>
+</section>
+<section class="main">
+<h1>There is this "First rule of ARIA"</h1>
+<p>If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.</p>
+</section>
+<section class="main">
+<h1>Rebuilding things is harder than re-using things</h1>
+<blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;"><span>Home pages with ARIA present averaged 11.2 more detectable errors than pages without ARIA.</span> - <a style="font-weight:bold;" href="https://webaim.org/projects/million/">https://webaim.org/projects/million</a></blockquote>
 </section>
 
 
