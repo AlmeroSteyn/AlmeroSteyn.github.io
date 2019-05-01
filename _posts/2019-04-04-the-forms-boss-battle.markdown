@@ -200,6 +200,10 @@ transition: none
 <iframe src="https://player.vimeo.com/video/329808301" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </section>
 <section class="main">
+<h1>This works for all single form elements</h1>
+<p>That means also for &lt;textarea>,&lt;input type="checkbox"> and &lt;select></p>
+</section>
+<section class="main">
 <h1>What is ARIA?</h1>
 <p>Accessible Rich Internet Applications is a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.</p>
 </section>
@@ -223,6 +227,100 @@ transition: none
 <section class="main">
 <h1>Rebuilding things is harder than re-using things</h1>
 <blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;"><span>Home pages with ARIA present averaged 11.2 more detectable errors than pages without ARIA.</span> - <a style="font-weight:bold;" href="https://webaim.org/projects/million/">https://webaim.org/projects/million</a></blockquote>
+</section>
+<section class="main">
+<h1>What about groups of controls?</h1>
+<pre><code class="html" data-trim>
+    <label>Choose your favourite time of day</label>
+    
+    <input id="rMorning" type="radio" name="favTime" value="morning" />
+    <label for="rMorning">Morning</label>
+    <input id="rNoon" type="radio" name="favTime" value="noon" />
+    <label for="rNoon">Noon</label>
+    <input id="rNight" type="radio" name="favTime" value="night" />
+    <label for="rNight">Night</label>
+</code></pre>
+<p>Labels can only be linked to ONE control.</p>
+</section>
+<section class="main">
+<h1>Introducing the fieldset</h1>
+<p>Here we label with the &lt;legend> tag</p>
+<pre><code class="html" data-trim>
+<fieldset>
+    <legend>Choose your favourite time of day</legend>
+    
+    <input id="rMorning" type="radio" name="favTime" value="morning" />
+    <label for="rMorning">Morning</label>
+    <input id="rNoon" type="radio" name="favTime" value="noon" />
+    <label for="rNoon">Noon</label>
+    <input id="rNight" type="radio" name="favTime" value="night" />
+    <label for="rNight">Night</label>
+</fieldset>    
+</code></pre>
+<p style="font-size:0.6em;">The &lt;legend> tag HAS to be immediately after the &lt;fieldset> tag!</p>
+</section>
+<section class="main">
+<h1>But what about aria-describedby?</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/noariadescribed.jpg" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<p style="font-size:0.75em;">Attaching aria-describedby to &lt;fieldset> or &lt;legend> is not supported in many screen readers</p>  
+</section>
+<section class="main">
+<h1>How do I validate groups then?</h1>
+<pre><code class="html" data-trim>
+<fieldset>
+    <legend>
+        <span>Choose your favourite time of day</span>
+        <span>You have not chosen a favourite time</span>
+    </legend>
+    
+    <input id="rMorning" type="radio" name="favTime" value="morning" />
+    <label for="rMorning">Morning</label>
+    <input id="rNoon" type="radio" name="favTime" value="noon" />
+    <label for="rNoon">Noon</label>
+</fieldset>    
+</code></pre>
+<p style="font-size:0.8em;">Add text to the legend.</p> 
+<p style="font-size:0.7em;">This means it can also be used for info texts!</p>
+</section>
+<section class="main">
+<h1>You don't want your error texts next to your labels?</h1>
+<p style="font-size:0.8em;">Move with CSS... or:</p>
+<pre><code class="html" data-trim>
+<fieldset>
+    <legend>
+        <span>Choose your favourite time of day</span>
+        <span class="visually-hidden">
+            You have not chosen a favourite time
+        </span>
+    </legend>
+    
+    <input id="rMorning" type="radio" name="favTime" value="morning" />
+    <label for="rMorning">Morning</label>
+    //...
+    <span aria-hidden="true">
+        You have not chosen a favourite time
+    </span>
+</fieldset>    
+</code></pre>
+</section>
+<section class="main">
+<h1>Visually hiding things</h1>
+<pre><code class="css" data-trim>
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+</code></pre>
+<a style="font-size:0.5em;" href="https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html">https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html</a>
+</section>
+<section class="main">
+<h1>A fieldset in action</h1>
+<iframe src="https://player.vimeo.com/video/333546508" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </section>
 
 
