@@ -261,7 +261,10 @@ transition: none
 </section>
 <section class="main">
 <h1>But what about aria-describedby?</h1>
+<figure>
 <img src="/css/images/2019-04-04-the-forms-boss-battle/noariadescribed.jpg" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<figcaption style="font-size: 0.25em;">CC0 Public Domain</figcaption>
+</figure>
 <p style="font-size:0.75em;">Attaching aria-describedby to &lt;fieldset> or &lt;legend> is not supported in many screen readers</p>  
 </section>
 <section class="main">
@@ -321,6 +324,16 @@ transition: none
 <section class="main">
 <h1>A fieldset in action</h1>
 <iframe src="https://player.vimeo.com/video/333546508" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</section>
+<section class="main">
+<h1>Never lose the focus outline</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/focus.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<p style="font-size:0.6em;">Don't do this!</p>
+<pre><code class="css" data-trim>
+    outline: none;
+    outline: 0;
+</code></pre>
+<p style="font-size:0.6em;">Unless you provide your own focus outline style in the CSS</p>
 </section>
 
 
