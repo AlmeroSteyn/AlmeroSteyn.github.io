@@ -89,9 +89,9 @@ transition: none
 <ul style="text-align:left; list-style: disc">
 <li>Tell everyone that it's a button</li>
 <li>Be focusable</li>
-<li>Active on mouse click</li>
-<li>Active on Enter</li>
-<li>Active on Spacebar</li>
+<li>Activate on mouse click</li>
+<li>Activate on Enter</li>
+<li>Activate on Spacebar</li>
 </ul>
 </div>
 
@@ -124,7 +124,7 @@ transition: none
 </label>
 
 <label for="username">Username</label>
-<input id="username" />
+&lt;input id="username" />
 
 <input aria-label="Username" />
 
@@ -138,7 +138,7 @@ transition: none
 <p style="font-size:0.8em;">Explicit labelling</p>
 <pre><code class="html" data-trim>
 <label for="username">Username</label>
-<input id="username" />
+&lt;input id="username" />
 </code></pre>
 </section>
 <section class="main">
@@ -155,7 +155,7 @@ transition: none
 <p style="font-size:0.8em;">A control should have only one name.</p>
 <pre><code class="html" data-trim>
 <label for="username">Username</label>
-<input id="username" aria-label="Enter a name for your user"/>
+&lt;input id="username" aria-label="Enter a name for your user"/>
 </code></pre>
 <p style="font-size:0.5em; font-weight:bold;">aria-label overrides the visual label</p>
 </section>
@@ -172,7 +172,7 @@ transition: none
 <h1>Meet aria-describedby</h1>
 <pre><code class="html" data-trim>
 <label for="username">Username</label>
-<input id="username" aria-describedby="info"/>
+&lt;input id="username" aria-describedby="info"/>
 
 <span id="info">Please use only characters from the alphabet</span>
 </code></pre>
@@ -189,7 +189,7 @@ transition: none
 <h1>Aria-describedby to the rescue again!</h1>
 <pre><code class="html" data-trim>
 <label for="username">Username</label>
-<input id="username" aria-describedby="info error"/>
+&lt;input id="username" aria-describedby="info error"/>
 
 <span id="info">Please use only characters from the alphabet</span>
 <span id="error">A user name is required</span>
@@ -225,7 +225,7 @@ transition: none
 <p>If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.</p>
 </section>
 <section class="main">
-<h1>Rebuilding things is harder than re-using things</h1>
+<h1>Rebuilding things are harder than re-using things</h1>
 <blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;"><span>Home pages with ARIA present averaged 11.2 more detectable errors than pages without ARIA.</span> - <a style="font-weight:bold;" href="https://webaim.org/projects/million/">https://webaim.org/projects/million</a></blockquote>
 </section>
 <section class="main">
@@ -286,7 +286,7 @@ transition: none
 <p style="font-size:0.7em;">This means it can also be used for info texts!</p>
 </section>
 <section class="main">
-<h1>You don't want your error texts next to your labels?</h1>
+<h1>You don't want your error texts next to your legends?</h1>
 <p style="font-size:0.8em;">Move with CSS... or:</p>
 <pre><code class="html" data-trim>
 <fieldset>
@@ -456,6 +456,30 @@ const FormComponent = () => {
     &lt;/React.Fragment>    
   );
 </code></pre>
+</section>
+<section class="main">
+<h1>Conditional rendering</h1>
+<pre><code class="javascript" data-trim>
+  const inputId = React.createRef(generateUniqueId());
+  const errorId = React.createRef(generateUniqueId());
+  
+  //More code
+  
+  return (
+    &lt;React.Fragment>
+         <label htmlFor={inputId.current}>Your pet's name</label>
+         &lt;input id={inputId.current}
+            aria-describedby={hasError ? errorId : null} 
+            onChange={onChangeHandler} 
+            value={inputValue} />
+         {hasError && <span id={errorId}>Please enter a name</span>}   
+    &lt;/React.Fragment>    
+  );
+</code></pre>
+</section>
+<section class="main">
+<h1>Re-using stuff with hooks</h1>
+
 </section>
 
 
