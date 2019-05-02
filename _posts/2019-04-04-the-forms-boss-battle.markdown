@@ -335,6 +335,128 @@ transition: none
 </code></pre>
 <p style="font-size:0.6em;">Unless you provide your own focus outline style in the CSS</p>
 </section>
+<section class="main">
+<h1>Placeholders and titles</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/placeholdertitle.png" alt="Showing an input with a placeholder and a button with icon only and a title" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<p style="font-size:0.6em;">Should be avoided in most cases!</p>
+</section>
+<section class="main">
+<h1>Wasn't this talk supposed to be about React?</h1>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/React-icon.svg" alt="React logo" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<p style="font-size:0.6em;">All video example apps were built in React...</p>
+</section>
+<section class="main">
+<h1>JSX has everyting HTML has</h1>
+<p style="font-size:0.7em;">A few differences:</p>
+<div style="display:flex; justify-content: center;">
+<ul style="text-align:left; list-style: disc; font-weight: normal;">
+<li>Tags should always be closed</li>
+<li>Non-ARIA properties are in camelCase</li>
+<li>for becomes htmlFor</li>
+<li>class becomes className</li>
+</ul>
+</div>
+<p style="font-size:0.6em;">To build accessible React applications you HAVE to know HTML.</p>
+</section>
+<section class="main">
+<h1>Some form JSX</h1>
+<pre><code class="jsx" data-trim>
+<form novalidate={true} onSubmit={onSubmitHandler}>
+
+<label htmlFor="username">Username</label>
+&lt;input id="username" aria-describedby="info error"/>
+
+<span id="info">Please use only characters from the alphabet</span>
+<span id="error">A user name is required</span>
+
+&lt;button className="save-button" type="submit">Submit</button>
+
+</form>
+</code></pre>
+</section>
+<section class="main">
+<h1>React hooks</h1>
+<figure>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/boxinghook.jpg" alt="Boxer performing a hook" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<figcaption style="font-size: 0.25em;">Licensed under the <a style="font-size: 1em;" href="https://pixabay.com/service/license/">Pixabay License</a></figcaption>
+</figure>
+</section>
+<section class="main">
+<h1>Preventing form submission</h1>
+<pre><code class="javascript" data-trim>
+const FormComponent = () => {
+
+  const onSubmitHandler = e => {
+    e.preventDefault();
+    //Rest of the handler code
+  };
+  
+  return (
+      <form onSubmit={onSubmitHandler}>
+        {/* Form JSX */}
+      </form>
+  );
+  
+};
+</code></pre>
+</section>
+<section class="main">
+<h1>Setting focus on things</h1>
+<pre><code class="javascript" data-trim>
+  const buttonRef = React.createRef(null);
+  
+  const onSubmitHandler = e => {
+    //Set focus when required
+    buttonRef.current.focus();
+  };
+  
+  return (
+      <form onSubmit={onSubmitHandler}>
+        {/* Some JSX */}
+        <button type="submit" ref={buttonRef} />
+        {/* Some more JSX */}
+      </form>
+  );
+</code></pre>
+</section>
+<section class="main">
+<h1>Controlled form elements</h1>
+<pre><code class="javascript" data-trim>
+  const [inputValue, setInputValue] = React.useState('');  
+  
+  onChangeHandler = e => {
+      setInputValue(e.target.value)
+  }
+  
+  return (
+    &lt;React.Fragment>
+         <label htmlFor="petname">Your pet's name</label>
+         &lt;input id="petName" 
+            onChange={onChangeHandler}
+            value={inputValue} />
+    &lt;/React.Fragment>    
+  );
+</code></pre>
+</section>
+<section class="main">
+<h1>Keeping id values unique</h1>
+<pre><code class="javascript" data-trim>
+  const inputId = React.createRef(generateUniqueId());
+  const [inputValue, setInputValue] = React.useState('');  
+  
+  onChangeHandler = e => {
+      setInputValue(e.target.value)
+  }
+  
+  return (
+    &lt;React.Fragment>
+         <label htmlFor={inputId.current}>Your pet's name</label>
+         &lt;input id={inputId.current} onChange={onChangeHandler} 
+            value={inputValue} />
+    &lt;/React.Fragment>    
+  );
+</code></pre>
+</section>
 
 
 
