@@ -346,7 +346,7 @@ transition: none
 <p style="font-size:0.6em;">All video example apps were built in React...</p>
 </section>
 <section class="main">
-<h1>JSX has everyting HTML has</h1>
+<h1>JSX has everything HTML has</h1>
 <p style="font-size:0.7em;">A few differences:</p>
 <div style="display:flex; justify-content: center;">
 <ul style="text-align:left; list-style: disc; font-weight: normal;">
@@ -403,7 +403,7 @@ const FormComponent = () => {
 <section class="main">
 <h1>Setting focus on things</h1>
 <pre><code class="javascript" data-trim>
-  const buttonRef = React.createRef(null);
+  const buttonRef = React.useRef(null);
   
   const onSubmitHandler = e => {
     //Set focus when required
@@ -441,7 +441,7 @@ const FormComponent = () => {
 <section class="main">
 <h1>Keeping id values unique</h1>
 <pre><code class="javascript" data-trim>
-  const inputId = React.createRef(generateUniqueId());
+  const inputId = React.useRef(generateUniqueId());
   const [inputValue, setInputValue] = React.useState('');  
   
   onChangeHandler = e => {
@@ -479,7 +479,54 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Re-using stuff with hooks</h1>
-
+<pre><code class="javascript" data-trim>
+  const useInput = () => {
+    const inputId = React.createRef(generateUniqueId());
+    const [inputValue, setInputValue] = React.useState('');  
+      
+    onChangeHandler = e => {
+        setInputValue(e.target.value)
+    }
+    
+    return {
+        id: inputId,
+        value: inputValue
+        onChange: onChangeHandler
+    }
+  }
+</code></pre>
+</section>
+<section class="main">
+<h1>Now apply the custom hook</h1>
+<pre><code class="javascript" data-trim>
+  const inputProps = useInput();
+  
+  return (
+    &lt;React.Fragment>
+         <label htmlFor={inputProps.id}>Your pet's name</label>
+         &lt;input {...inputProps} />
+    &lt;/React.Fragment>    
+  );
+</code></pre>
+</section>
+<section class="main">
+<h1>Applying it all</h1>
+<iframe src="https://player.vimeo.com/video/334265221" width="840" height="497" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</section>
+<section class="main">
+<h1>The Forms Boss Battle</h1>
+<p>... and how to avoid it</p>
+<hr>
+<div style="display: flex; flex-direction:column;">
+<div style="text-align: center">
+<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none; "/>
+</div>
+<ul>
+    <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
+    <li><a href="http://almerosteyn.com/" style="font-size: 1em; font-weight: 100;">almerosteyn.com</a></li>
+    <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
+</ul>
+</div>
 </section>
 
 
