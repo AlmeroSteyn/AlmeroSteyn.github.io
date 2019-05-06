@@ -2,18 +2,18 @@
 layout: slide
 title: The Forms Boss Battle... and how to avoid it
 description: Creating accessible forms in HTML and React
-theme: id24
+theme: ncdt
 highlight: tomorrow
 transition: none
 ---
 
 <section class="main">
-<h1>The Forms Boss Battle</h1>
+<h1>The forms boss battle</h1>
 <p>... and how to avoid it</p>
 <hr>
 <div style="display: flex; flex-direction:column;">
 <div style="text-align: center">
-<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none; "/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
 </div>
 <ul>
     <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
@@ -25,34 +25,34 @@ transition: none
 <section class="main">
 <h1>1977</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/atari.jpg" alt="Atari gaming console" style="max-width: 70%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/atari.jpg" alt="Atari gaming console" style="max-width: 70%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Wikimedia Commons licensed under <a style="font-size: 1em;" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>2019</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/PS4.jpg" alt="Playstation 4 gaming console" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/PS4.jpg" alt="Playstation 4 gaming console" style="max-width: 80%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Released into the <a style="font-size: 1em;" href="https://en.wikipedia.org/wiki/Public_domain">Public Domain</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>The game boss</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/gameboss.jpg" alt="Screenshot of a console game with a large, scary game boss" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/gameboss.jpg" alt="Screenshot of a console game with a large, scary game boss" style="max-width: 80%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Wikimedia Commons licensed under <a style="font-size: 1em;" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>It's too difficult!!!</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/anger.jpg" alt="Woman being angry about a difficult game" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/anger.jpg" alt="Woman being angry about a difficult game" style="max-width: 80%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Licensed under the <a style="font-size: 1em;" href="https://pixabay.com/service/license/">Pixabay License</a></figcaption>
 </figure>
 </section>
 <section>
 <h1>Boss battles on the web</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/loginforminaccessible.jpg" alt="A basic login form with username, password and a login button" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/loginforminaccessible.jpg" alt="A basic login form with username, password and a login button" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 <section class="main">
 <h1>An inaccessible login form</h1>
@@ -60,7 +60,7 @@ transition: none
 </section>
 <section class="main">
 <h1>How can something so simple be so broken?</h1>
-<pre><code class="html" data-trim>
+<pre style="margin-top: 3em;"><code class="html" data-trim>
     <span>Username</span>
     <input />
     <span>Password</span>
@@ -71,8 +71,8 @@ transition: none
 </code></pre>
 </section>
 <section class="main">
-<h1>That button</h1>
-<p style="font-size:0.8em;">If it looks like a button and quacks like a button... what should it be?</p>
+<h1>About that "button"...</h1>
+<p style="font-size:0.8em; margin-top: 2em;">If it looks like a button and quacks like a button... what should it be?</p>
 <pre><code class="html" data-trim>
     <div class="button">
         Login
@@ -99,12 +99,12 @@ transition: none
 </section>
 <section class="main">
 <h1>Form accessibility secrets are not shared enough</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 
 <section class="main">
 <h1>How about labels?</h1>
-<pre><code class="html" data-trim>
+<pre style="margin-top: 3em; margin-bottom:3em;"><code class="html" data-trim>
     <span>Username</span>
     <input />
 </code></pre>
@@ -131,12 +131,13 @@ transition: none
 <span id="username">Username</span>
 <input aria-labelledby="username" />   
 </code></pre>
-<p style="font-size:0.8em;">Implicit labelling, explicit labelling, aria-label and aria-labelledby</p>
+<p style="font-size:0.8em;">Implicit labelling, explicit labelling, aria-label and </p>
+<p style="font-size:0.8em;">aria-labelledby</p>
 </section>
 <section class="main">
 <h1>And the winner is...</h1>
 <p style="font-size:0.8em;">Explicit labelling</p>
-<pre><code class="html" data-trim>
+<pre style="margin-top:4em;"><code class="html" data-trim>
 <label for="username">Username</label>
 &lt;input id="username" />
 </code></pre>
@@ -153,7 +154,7 @@ transition: none
 <section class="main">
 <h1>Don't combine names!</h1>
 <p style="font-size:0.8em;">A control should have only one name.</p>
-<pre><code class="html" data-trim>
+<pre style="margin-top:3em; margin-bottom:3em;"><code class="html" data-trim>
 <label for="username">Username</label>
 &lt;input id="username" aria-label="Enter a name for your user"/>
 </code></pre>
@@ -161,16 +162,16 @@ transition: none
 </section>
 <section class="main">
 <h1>Think about voice control</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; margin-bottom:0;"/>
 <p style="font-size:0.6em;">The accessible name will be used to match commands</p>
 </section>
 <section class="main">
 <h1>What about info texts?</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/infotexts.jpg" alt="A login form showing info text for the username field asking for only characters from the alphabet" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/infotexts.jpg" alt="A login form showing info text for the username field asking for only characters from the alphabet" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 <section class="main">
 <h1>Meet aria-describedby</h1>
-<pre><code class="html" data-trim>
+<pre style="margin-top:4em;"><code class="html" data-trim>
 <label for="username">Username</label>
 &lt;input id="username" aria-describedby="info"/>
 
@@ -183,11 +184,11 @@ transition: none
 </section>
 <section class="main">
 <h1>Client side validation</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/validation.jpg" alt="A login form showing required field validation messages" style="max-width: 80%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/validation.jpg" alt="A login form showing required field validation messages" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 <section class="main">
 <h1>Aria-describedby to the rescue again!</h1>
-<pre><code class="html" data-trim>
+<pre style="margin-top:3em;"><code class="html" data-trim>
 <label for="username">Username</label>
 &lt;input id="username" aria-describedby="info error"/>
 
@@ -201,11 +202,12 @@ transition: none
 </section>
 <section class="main">
 <h1>This works for all single form elements</h1>
-<p>That means also for &lt;textarea>,&lt;input type="checkbox"> and &lt;select></p>
+<p style="margin-top:3em;">That means also for &lt;textarea>,</p>
+<p>&lt;input type="checkbox"> and &lt;select></p>
 </section>
 <section class="main">
 <h1>What about groups of controls?</h1>
-<pre><code class="html" data-trim>
+<pre style="margin-top:3em;"><code class="html" data-trim>
     <label>Choose your favourite time of day</label>
     
     <input id="rMorning" type="radio" name="favTime" value="morning" />
@@ -220,7 +222,7 @@ transition: none
 <section class="main">
 <h1>Introducing the fieldset</h1>
 <p>Here we label with the &lt;legend> tag</p>
-<pre><code class="html" data-trim>
+<pre style="margin-top:3em;"><code class="html" data-trim>
 <fieldset>
     <legend>Choose your favourite time of day</legend>
     
@@ -237,14 +239,14 @@ transition: none
 <section class="main">
 <h1>But what about aria-describedby?</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/noariadescribed.jpg" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/noariadescribed.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; border-radius: 0.4em;"/>
 <figcaption style="font-size: 0.25em;">CC0 Public Domain</figcaption>
 </figure>
 <p style="font-size:0.75em;">Attaching aria-describedby to &lt;fieldset> or &lt;legend> is not supported in many screen readers</p>  
 </section>
 <section class="main">
 <h1>How do I validate groups then?</h1>
-<pre><code class="html" data-trim>
+<pre style="margin-top:3em;"><code class="html" data-trim>
 <fieldset>
     <legend>
         <span>Choose your favourite time of day</span>
@@ -283,7 +285,7 @@ transition: none
 </section>
 <section class="main">
 <h1>Visually hiding things</h1>
-<pre><code class="css" data-trim>
+<pre style="margin-top:3em;"><code class="css" data-trim>
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(100%);
@@ -302,22 +304,21 @@ transition: none
 </section>
 <section class="main">
 <h1>Never lose the focus outline</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/focus.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
-<p style="font-size:0.6em;">Don't do this!</p>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/focus.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; margin-top: 2em;"/>
+<p style="font-size:0.6em;">Don't do this! Unless you provide your own focus outline style in the CSS.</p>
 <pre><code class="css" data-trim>
     outline: none;
     outline: 0;
 </code></pre>
-<p style="font-size:0.6em;">Unless you provide your own focus outline style in the CSS</p>
 </section>
 <section class="main">
 <h1>Placeholders and titles</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/placeholdertitle.png" alt="Showing an input with a placeholder and a button with icon only and a title" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/placeholdertitle.png" alt="Showing an input with a placeholder and a button with icon only and a title" style="max-width: 60%; margin-bottom:0; margin-top: 2em;"/>
 <p style="font-size:0.6em;">Should be avoided in most cases!</p>
 </section>
 <section class="main">
 <h1>Wasn't this talk supposed to be about React?</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/React-icon.svg" alt="React logo" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/React-icon.svg" alt="React logo" style="max-width: 60%; margin-bottom:0; box-shadow: none;"/>
 <p style="font-size:0.6em;">All video example apps were built in React...</p>
 </section>
 <section class="main">
@@ -335,7 +336,7 @@ transition: none
 </section>
 <section class="main">
 <h1>Some form JSX</h1>
-<pre><code class="jsx" data-trim>
+<pre style="margin-top: 3em;"><code class="jsx" data-trim>
 <form novalidate={true} onSubmit={onSubmitHandler}>
 
 <label htmlFor="username">Username</label>
@@ -352,13 +353,13 @@ transition: none
 <section class="main">
 <h1>React hooks</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/boxinghook.jpg" alt="Boxer performing a hook" style="max-width: 60%; box-shadow: none; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/boxinghook.jpg" alt="Boxer performing a hook" style="max-width: 60%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Licensed under the <a style="font-size: 1em;" href="https://pixabay.com/service/license/">Pixabay License</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>Preventing form submission</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
 const FormComponent = () => {
 
   const onSubmitHandler = e => {
@@ -377,7 +378,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Setting focus on things</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
   const buttonRef = React.useRef(null);
   
   const onSubmitHandler = e => {
@@ -396,7 +397,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Controlled form elements</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
   const [inputValue, setInputValue] = React.useState('');  
   
   onChangeHandler = e => {
@@ -415,7 +416,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Keeping id values unique</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
   const inputId = React.useRef(generateUniqueId());
   const [inputValue, setInputValue] = React.useState('');  
   
@@ -434,7 +435,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Conditional rendering</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
   const inputId = React.createRef(generateUniqueId());
   const errorId = React.createRef(generateUniqueId());
   
@@ -454,7 +455,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Re-using stuff with hooks</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
   const useInput = () => {
     const inputId = React.createRef(generateUniqueId());
     const [inputValue, setInputValue] = React.useState('');  
@@ -473,7 +474,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Now apply the custom hook</h1>
-<pre><code class="javascript" data-trim>
+<pre style="margin-top: 3em;"><code class="javascript" data-trim>
   const inputProps = useInput();
   
   return (
@@ -494,7 +495,7 @@ const FormComponent = () => {
 <hr>
 <div style="display: flex; flex-direction:column;">
 <div style="text-align: center">
-<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none; "/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
 </div>
 <ul>
     <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
