@@ -162,7 +162,7 @@ transition: none
 </section>
 <section class="main">
 <h1>Think about voice control</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; margin-bottom:0;"/>
+<img src="/css/images/2019-04-04-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; margin-bottom:0; box-shadow: none;"/>
 <p style="font-size:0.6em;">The accessible name will be used to match commands</p>
 </section>
 <section class="main">
