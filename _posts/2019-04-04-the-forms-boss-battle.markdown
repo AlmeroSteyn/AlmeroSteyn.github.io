@@ -204,31 +204,6 @@ transition: none
 <p>That means also for &lt;textarea>,&lt;input type="checkbox"> and &lt;select></p>
 </section>
 <section class="main">
-<h1>What is ARIA?</h1>
-<p>Accessible Rich Internet Applications is a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.</p>
-</section>
-<section class="main">
-<h1>So I can still have my div button?</h1>
-<p>...well yes you can.</p>
-<pre><code class="html" data-trim>
-    <div class="button"
-         role="button"
-         tabIndex="0"
-         onClick={onclickhandler}
-         onKeyDown={onkeydownhandler} >
-        Login
-    </div>
-</code></pre>
-</section>
-<section class="main">
-<h1>There is this "First rule of ARIA"</h1>
-<p>If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.</p>
-</section>
-<section class="main">
-<h1>Rebuilding things are harder than re-using things</h1>
-<blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;"><span>Home pages with ARIA present averaged 11.2 more detectable errors than pages without ARIA.</span> - <a style="font-weight:bold;" href="https://webaim.org/projects/million/">https://webaim.org/projects/million</a></blockquote>
-</section>
-<section class="main">
 <h1>What about groups of controls?</h1>
 <pre><code class="html" data-trim>
     <label>Choose your favourite time of day</label>
