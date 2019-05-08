@@ -13,7 +13,7 @@ transition: none
 <hr>
 <div style="display: flex; flex-direction:column;">
 <div style="text-align: center">
-<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
 </div>
 <ul>
     <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
@@ -25,34 +25,34 @@ transition: none
 <section class="main">
 <h1>1977</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/atari.jpg" alt="Atari gaming console" style="max-width: 70%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/atari.jpg" alt="Atari gaming console" style="max-width: 70%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Wikimedia Commons licensed under <a style="font-size: 1em;" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>2019</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/PS4.jpg" alt="Playstation 4 gaming console" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/PS4.jpg" alt="Playstation 4 gaming console" style="max-width: 80%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Released into the <a style="font-size: 1em;" href="https://en.wikipedia.org/wiki/Public_domain">Public Domain</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>The game boss</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/gameboss.jpg" alt="Screenshot of a console game with a large, scary game boss" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/gameboss.jpg" alt="Screenshot of a console game with a large, scary game boss" style="max-width: 80%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Wikimedia Commons licensed under <a style="font-size: 1em;" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
 </figure>
 </section>
 <section class="main">
 <h1>It's too difficult!!!</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/anger.jpg" alt="Woman being angry about a difficult game" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/anger.jpg" alt="Woman being angry about a difficult game" style="max-width: 80%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Licensed under the <a style="font-size: 1em;" href="https://pixabay.com/service/license/">Pixabay License</a></figcaption>
 </figure>
 </section>
 <section>
 <h1>Boss battles on the web</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/loginforminaccessible.jpg" alt="A basic login form with username, password and a login button" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/loginforminaccessible.jpg" alt="A basic login form with username, password and a login button" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 <section class="main">
 <h1>An inaccessible login form</h1>
@@ -99,7 +99,7 @@ transition: none
 </section>
 <section class="main">
 <h1>Form accessibility secrets are not shared enough</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 
 <section class="main">
@@ -162,12 +162,12 @@ transition: none
 </section>
 <section class="main">
 <h1>Think about voice control</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; margin-bottom:0; box-shadow: none;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; margin-bottom:0; box-shadow: none;"/>
 <p style="font-size:0.6em;">The accessible name will be used to match commands</p>
 </section>
 <section class="main">
 <h1>What about info texts?</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/infotexts.jpg" alt="A login form showing info text for the username field asking for only characters from the alphabet" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/infotexts.jpg" alt="A login form showing info text for the username field asking for only characters from the alphabet" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 <section class="main">
 <h1>Meet aria-describedby</h1>
@@ -184,7 +184,7 @@ transition: none
 </section>
 <section class="main">
 <h1>Client side validation</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/validation.jpg" alt="A login form showing required field validation messages" style="max-width: 80%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/validation.jpg" alt="A login form showing required field validation messages" style="max-width: 80%; margin-bottom:0;"/>
 </section>
 <section class="main">
 <h1>Aria-describedby to the rescue again!</h1>
@@ -239,7 +239,7 @@ transition: none
 <section class="main">
 <h1>But what about aria-describedby?</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/noariadescribed.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; border-radius: 0.4em;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/noariadescribed.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; border-radius: 0.4em;"/>
 <figcaption style="font-size: 0.25em;">CC0 Public Domain</figcaption>
 </figure>
 <p style="font-size:0.75em;">Attaching aria-describedby to &lt;fieldset> or &lt;legend> is not supported in many screen readers</p>  
@@ -304,7 +304,7 @@ transition: none
 </section>
 <section class="main">
 <h1>Never lose the focus outline</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/focus.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; margin-top: 2em;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/focus.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; margin-top: 2em;"/>
 <p style="font-size:0.6em;">Don't do this! Unless you provide your own focus outline style in the CSS.</p>
 <pre><code class="css" data-trim>
     outline: none;
@@ -313,12 +313,12 @@ transition: none
 </section>
 <section class="main">
 <h1>Placeholders and titles</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/placeholdertitle.png" alt="Showing an input with a placeholder and a button with icon only and a title" style="max-width: 60%; margin-bottom:0; margin-top: 2em;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/placeholdertitle.png" alt="Showing an input with a placeholder and a button with icon only and a title" style="max-width: 60%; margin-bottom:0; margin-top: 2em;"/>
 <p style="font-size:0.6em;">Should be avoided in most cases!</p>
 </section>
 <section class="main">
 <h1>Wasn't this talk supposed to be about React?</h1>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/React-icon.svg" alt="React logo" style="max-width: 60%; margin-bottom:0; box-shadow: none;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/React-icon.svg" alt="React logo" style="max-width: 60%; margin-bottom:0; box-shadow: none;"/>
 <p style="font-size:0.6em;">All video example apps were built in React...</p>
 </section>
 <section class="main">
@@ -353,7 +353,7 @@ transition: none
 <section class="main">
 <h1>React hooks</h1>
 <figure>
-<img src="/css/images/2019-04-04-the-forms-boss-battle/boxinghook.jpg" alt="Boxer performing a hook" style="max-width: 60%; margin-bottom:0;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/boxinghook.jpg" alt="Boxer performing a hook" style="max-width: 60%; margin-bottom:0;"/>
 <figcaption style="font-size: 0.25em;">Licensed under the <a style="font-size: 1em;" href="https://pixabay.com/service/license/">Pixabay License</a></figcaption>
 </figure>
 </section>
@@ -495,7 +495,7 @@ const FormComponent = () => {
 <hr>
 <div style="display: flex; flex-direction:column;">
 <div style="text-align: center">
-<img src="/css/images/2019-04-04-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
+<img src="/css/images/2019-05-07-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
 </div>
 <ul>
     <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
