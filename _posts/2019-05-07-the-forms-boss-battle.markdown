@@ -12,13 +12,23 @@ transition: none
 <p>... and how to avoid it</p>
 <hr>
 <div style="display: flex; flex-direction:column;">
-<div style="text-align: center">
-<img src="/css/images/2019-05-07-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 20%; box-shadow: none;"/>
-</div>
 <ul>
     <li style="font-size: 1.5em; margin-bottom: 25px;">Almero Steyn</li>
     <li><a href="http://almerosteyn.com/" style="font-size: 1em; font-weight: 100;">almerosteyn.com</a></li>
     <li><span style="font-size: 30px; font-weight: 100;">@kryptos_rsa</span></li>
+</ul>
+</div>
+</section>
+<section class="main">
+<img src="/css/images/2019-05-07-the-forms-boss-battle/BHLogo.png" alt="Logo of Binary Horizons" style="max-width: 40%; box-shadow: none;"/>
+<hr>
+<div style="display: flex; flex-direction:column;">
+<div style="text-align: center">
+</div>
+<ul>
+    <li style="font-size: 1.2em; margin-bottom: 25px;">React</li>
+    <li style="font-size: 1.2em; margin-bottom: 25px;">Gatsby</li>
+    <li style="font-size: 1.2em; margin-bottom: 25px;">Accessibility</li>
 </ul>
 </div>
 </section>
@@ -84,20 +94,6 @@ transition: none
 </code></pre>
 </section>
 <section class="main">
-<h1 style="margin-bottom:2em;">Buttons should:</h1>
-<div style="display:flex; justify-content: center;">
-<ul style="text-align:left; list-style: disc">
-<li>Tell everyone that it's a button</li>
-<li>Be focusable</li>
-<li>Activate on mouse click</li>
-<li>Activate on Enter</li>
-<li>Activate on Spacebar</li>
-</ul>
-</div>
-
-<p style="margin-top:2em;">But &lt;div> doesn't do that!</p>
-</section>
-<section class="main">
 <h1>Form accessibility secrets are not shared enough</h1>
 <img src="/css/images/2019-05-07-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; margin-bottom:0;"/>
 </section>
@@ -110,10 +106,6 @@ transition: none
 </code></pre>
 <p style="font-size:0.8em;">The &lt;span> does NOT label the &lt;input>!</p>
 <p style="font-size:0.6em;">In other words this &lt;input> has no accessible name</p>
-</section>
-<section class="main">
-<h1>What is the accessible name?</h1>
-<blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;">The accessible name is the name of a user interface element. Each platform accessibility API provides the accessible name property. The value of the accessible name may be derived from a visible (e.g., the visible text on a button) or invisible (e.g., the text alternative that describes an icon) property of the user interface element. - <span style="font-weight:bold;">W3C</span></blockquote>
 </section>
 <section class="main">
 <h1>How do i give an input an accessible name?</h1>
@@ -135,7 +127,7 @@ transition: none
 <p style="font-size:0.8em;">aria-labelledby</p>
 </section>
 <section class="main">
-<h1>And the winner is...</h1>
+<h1>And the inclusive design winner:</h1>
 <p style="font-size:0.8em;">Explicit labelling</p>
 <pre style="margin-top:4em;"><code class="html" data-trim>
 <label for="username">Username</label>
@@ -158,12 +150,11 @@ transition: none
 <label for="username">Username</label>
 &lt;input id="username" aria-label="Enter a name for your user"/>
 </code></pre>
-<p style="font-size:0.5em; font-weight:bold;">aria-label overrides the visual label</p>
-</section>
-<section class="main">
-<h1>Think about voice control</h1>
-<img src="/css/images/2019-05-07-the-forms-boss-battle/dragon.png" alt="Box packaging of the Dragon Naturally Speaking software" style="max-width: 30%; margin-bottom:0; box-shadow: none;"/>
-<p style="font-size:0.6em;">The accessible name will be used to match commands</p>
+<ul style="text-align:left; list-style: disc; font-weight: normal;">
+<li>A control should have only one name.</li>
+<li>aria-label overrides the label text.</li>
+<li>Think about voice control.</li>
+</ul>
 </section>
 <section class="main">
 <h1>What about info texts?</h1>
@@ -207,21 +198,8 @@ transition: none
 </section>
 <section class="main">
 <h1>What about groups of controls?</h1>
-<pre style="margin-top:3em;"><code class="html" data-trim>
-    <label>Choose your favourite time of day</label>
-    
-    <input id="rMorning" type="radio" name="favTime" value="morning" />
-    <label for="rMorning">Morning</label>
-    <input id="rNoon" type="radio" name="favTime" value="noon" />
-    <label for="rNoon">Noon</label>
-    <input id="rNight" type="radio" name="favTime" value="night" />
-    <label for="rNight">Night</label>
-</code></pre>
-<p>Labels can only be linked to ONE control.</p>
-</section>
-<section class="main">
-<h1>Introducing the fieldset</h1>
-<p>Here we label with the &lt;legend> tag</p>
+<p>Here we group with &lt;fieldset></p>
+<p>and label with &lt;legend></p>
 <pre style="margin-top:3em;"><code class="html" data-trim>
 <fieldset>
     <legend>Choose your favourite time of day</legend>
@@ -237,7 +215,7 @@ transition: none
 <p style="font-size:0.6em;">The &lt;legend> tag HAS to be immediately after the &lt;fieldset> tag!</p>
 </section>
 <section class="main">
-<h1>But what about aria-describedby?</h1>
+<h1>But I can still set validation texts with aria-describedby, right?</h1>
 <figure>
 <img src="/css/images/2019-05-07-the-forms-boss-battle/noariadescribed.png" alt="Road sign with multiple arrows in multiple directions all ending up at the word NO" style="max-width: 60%; margin-bottom:0; border-radius: 0.4em;"/>
 <figcaption style="font-size: 0.25em;">CC0 Public Domain</figcaption>
@@ -335,22 +313,6 @@ transition: none
 <p style="font-size:0.6em;">To build accessible React applications you HAVE to know HTML.</p>
 </section>
 <section class="main">
-<h1>Some form JSX</h1>
-<pre style="margin-top: 3em;"><code class="jsx" data-trim>
-<form novalidate={true} onSubmit={onSubmitHandler}>
-
-<label htmlFor="username">Username</label>
-&lt;input id="username" aria-describedby="info error"/>
-
-<span id="info">Please use only characters from the alphabet</span>
-<span id="error">A user name is required</span>
-
-&lt;button className="save-button" type="submit">Submit</button>
-
-</form>
-</code></pre>
-</section>
-<section class="main">
 <h1>React hooks</h1>
 <figure>
 <img src="/css/images/2019-05-07-the-forms-boss-battle/boxinghook.jpg" alt="Boxer performing a hook" style="max-width: 60%; margin-bottom:0;"/>
@@ -379,17 +341,17 @@ const FormComponent = () => {
 <section class="main">
 <h1>Setting focus on things</h1>
 <pre style="margin-top: 3em;"><code class="javascript" data-trim>
-  const buttonRef = React.useRef(null);
+  const inputRef = React.useRef(null);
   
   const onSubmitHandler = e => {
-    //Set focus when required
-    buttonRef.current.focus();
+    //Set focus on error condition
+    inputRef.current.focus();
   };
   
   return (
       <form onSubmit={onSubmitHandler}>
         {/* Some JSX */}
-        <button type="submit" ref={buttonRef} />
+        <input ref={inputRef} />
         {/* Some more JSX */}
       </form>
   );
