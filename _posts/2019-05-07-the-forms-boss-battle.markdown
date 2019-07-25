@@ -108,7 +108,7 @@ transition: none
 <p style="font-size:0.6em;">In other words this &lt;input> has no accessible name</p>
 </section>
 <section class="main">
-<h1>How do i give an input an accessible name?</h1>
+<h1>How do I give an input an accessible name?</h1>
 <pre><code class="html" data-trim>
 <label>
     Username
@@ -446,6 +446,9 @@ const FormComponent = () => {
     &lt;/React.Fragment>    
   );
 </code></pre>
+</section>
+<section class="main">
+<h1>Code demo</h1>
 </section>
 <section class="main">
 <h1>Applying it all</h1>
