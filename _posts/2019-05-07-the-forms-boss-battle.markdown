@@ -27,7 +27,6 @@ transition: none
 </div>
 <ul>
     <li style="font-size: 1.2em; margin-bottom: 25px;">React</li>
-    <li style="font-size: 1.2em; margin-bottom: 25px;">Gatsby</li>
     <li style="font-size: 1.2em; margin-bottom: 25px;">Accessibility</li>
 </ul>
 </div>
@@ -93,10 +92,7 @@ transition: none
     <button>Login</button>
 </code></pre>
 </section>
-<section class="main">
-<h1>Form accessibility secrets are not shared enough</h1>
-<img src="/css/images/2019-05-07-the-forms-boss-battle/shawntweet.png" alt="Tweet by Shawn Wang stating that he was surprised to only recently learn about button types" style="max-width: 80%; margin-bottom:0;"/>
-</section>
+
 
 <section class="main">
 <h1>How about labels?</h1>
@@ -144,6 +140,9 @@ transition: none
 <blockquote style="font-size: 0.6em; border-left: 3px solid grey; text-align:left; padding-left:1em;"><span style="font-weight:bold;">59% of the 3.4 million form inputs identified were unlabeled</span> (either via &lt;label>, aria-label, or aria-labelledby). - <a style="font-weight:bold;" href="https://webaim.org/projects/million/">https://webaim.org/projects/million</a></blockquote>
 </section>
 <section class="main">
+<h1>We need to share form accessibility secrets</h1>
+</section>
+<section class="main">
 <h1>Don't combine names!</h1>
 <p style="font-size:0.8em;">A control should have only one name.</p>
 <pre style="margin-top:3em; margin-bottom:3em;"><code class="html" data-trim>
@@ -166,7 +165,9 @@ transition: none
 <label for="username">Username</label>
 &lt;input id="username" aria-describedby="info"/>
 
-<span id="info">Please use only characters from the alphabet</span>
+<span id="info">
+    Please use only characters from the alphabet
+</span>
 </code></pre>
 </section>
 <section class="main">
@@ -183,7 +184,9 @@ transition: none
 <label for="username">Username</label>
 &lt;input id="username" aria-describedby="info error"/>
 
-<span id="info">Please use only characters from the alphabet</span>
+<span id="info">
+    Please use only characters from the alphabet
+</span>
 <span id="error">A user name is required</span>
 </code></pre>
 </section>
@@ -200,7 +203,7 @@ transition: none
 <h1>What about groups of controls?</h1>
 <p>Here we group with &lt;fieldset></p>
 <p>and label with &lt;legend></p>
-<pre style="margin-top:3em;"><code class="html" data-trim>
+<pre style="margin-top:3em; width: 100%"><code class="html" data-trim>
 <fieldset>
     <legend>Choose your favourite time of day</legend>
     
@@ -224,7 +227,7 @@ transition: none
 </section>
 <section class="main">
 <h1>How do I validate groups then?</h1>
-<pre style="margin-top:3em;"><code class="html" data-trim>
+<pre style="margin-top:3em; width: 100%;"><code class="html" data-trim>
 <fieldset>
     <legend>
         <span>Choose your favourite time of day</span>
@@ -243,7 +246,7 @@ transition: none
 <section class="main">
 <h1>You don't want your error texts next to your legends?</h1>
 <p style="font-size:0.8em;">Move with CSS... or:</p>
-<pre><code class="html" data-trim>
+<pre style="margin-top:3em; width: 100%;"><code class="html" data-trim>
 <fieldset>
     <legend>
         <span>Choose your favourite time of day</span>
@@ -265,7 +268,7 @@ transition: none
 <h1>Visually hiding things</h1>
 <pre style="margin-top:3em;"><code class="css" data-trim>
 .visually-hidden:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(1px 1px 1px 1px); 
   clip-path: inset(100%);
   height: 1px;
   overflow: hidden;
@@ -274,7 +277,6 @@ transition: none
   width: 1px;
 }
 </code></pre>
-<a style="font-size:0.5em;" href="https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html">https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html</a>
 </section>
 <section class="main">
 <h1>A fieldset in action</h1>
@@ -363,7 +365,7 @@ const FormComponent = () => {
   const [inputValue, setInputValue] = React.useState('');  
   
   onChangeHandler = e => {
-      setInputValue(e.target.value)
+      setInputValue(e.target.value);
   }
   
   return (
@@ -383,7 +385,7 @@ const FormComponent = () => {
   const [inputValue, setInputValue] = React.useState('');  
   
   onChangeHandler = e => {
-      setInputValue(e.target.value)
+      setInputValue(e.target.value);
   }
   
   return (
@@ -397,7 +399,7 @@ const FormComponent = () => {
 </section>
 <section class="main">
 <h1>Conditional rendering</h1>
-<pre style="margin-top: 3em;"><code class="javascript" data-trim>
+<pre style="margin-top: 3em; width:100%"><code class="javascript" data-trim>
   const inputId = React.createRef(generateUniqueId());
   const errorId = React.createRef(generateUniqueId());
   
@@ -423,7 +425,7 @@ const FormComponent = () => {
     const [inputValue, setInputValue] = React.useState('');  
       
     onChangeHandler = e => {
-        setInputValue(e.target.value)
+        setInputValue(e.target.value);
     }
     
     return {
@@ -446,9 +448,6 @@ const FormComponent = () => {
     &lt;/React.Fragment>    
   );
 </code></pre>
-</section>
-<section class="main">
-<h1>Code demo</h1>
 </section>
 <section class="main">
 <h1>Applying it all</h1>
